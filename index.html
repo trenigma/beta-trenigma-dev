@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="BETA — Conditions intelligence for Cascade climbers. Real-time crag conditions, go/wait/no-go signals, and weather data for PNW backcountry. Built by climbers, for climbers.">
+  <meta property="og:title" content="BETA — Cascade Conditions Intel">
+  <meta property="og:description" content="Is Index dry? Should you head to Leavenworth? Go/wait/no-go conditions for PNW crags.">
+  <title>BETA — Cascade Conditions Intel</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ctext y='26' font-size='26'%3E⬡%3C/text%3E%3C/svg%3E">
+</head>
+<body>
+
+  <!-- ============================================
+       NAVIGATION
+       ============================================ -->
+
+  <nav class="nav">
+    <div class="nav__inner">
+      <a href="/" class="nav__logo">
+        BETA <span></span>
+      </a>
+      <ul class="nav__links">
+        <li><a href="#crags">Crags</a></li>
+        <li><a href="tools/index.html">Tools</a></li>
+        <li><a href="#community">Community</a></li>
+        <li><a href="posts/archive.html">Posts</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="about.html#contact" class="nav__cta">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+
+  <!-- ============================================
+       HERO
+       ============================================ -->
+
+  <section class="hero">
+    <div class="container">
+      <div class="hero__content">
+
+        <p class="hero__eyebrow">Cascade Conditions Intel</p>
+
+        <h1 class="hero__title display">
+          <span class="line">IS YOUR</span>
+          <span class="line line--gold">CRAG</span>
+          <span class="line">DRY?</span>
+        </h1>
+
+        <p class="hero__sub">
+          Real-time conditions, weather data, and <strong>go / wait / no-go</strong> signals
+          for climbers in the Cascades. Built by a climber who actually gives a damn
+          about who gets to be out there.
+        </p>
+
+        <div class="hero__actions">
+          <a href="#crags" class="btn btn--primary">
+            Check Conditions
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+          <a href="#how" class="btn btn--ghost">How it works</a>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="hero__scroll">
+      <div class="hero__scroll-line"></div>
+      <span>Scroll</span>
+    </div>
+  </section>
+
+
+  <!-- ============================================
+       SIGNAL STRIP — Live status ticker
+       ============================================ -->
+
+  <div class="signal-strip">
+    <div class="container">
+      <div class="signal-strip__inner">
+        <span class="signal-strip__label">Today's signals</span>
+        <div class="signal-strip__items" id="signalPills">
+
+          <!-- These will eventually be populated by data pipeline -->
+          <!-- For now: illustrative mock data -->
+
+          <div class="signal-pill">
+            <div class="signal-pill__dot signal-pill__dot--go"></div>
+            <span class="signal-pill__name">Index</span>
+            <span class="signal-pill__status">Go</span>
+          </div>
+
+          <div class="signal-pill">
+            <div class="signal-pill__dot signal-pill__dot--go"></div>
+            <span class="signal-pill__name">Leavenworth</span>
+            <span class="signal-pill__status">Go</span>
+          </div>
+
+          <div class="signal-pill">
+            <div class="signal-pill__dot signal-pill__dot--wait"></div>
+            <span class="signal-pill__name">Vantage</span>
+            <span class="signal-pill__status">Wait</span>
+          </div>
+
+          <div class="signal-pill">
+            <div class="signal-pill__dot signal-pill__dot--go"></div>
+            <span class="signal-pill__name">Little Si</span>
+            <span class="signal-pill__status">Go</span>
+          </div>
+
+          <div class="signal-pill">
+            <div class="signal-pill__dot signal-pill__dot--no-go"></div>
+            <span class="signal-pill__name">Mt. Erie</span>
+            <span class="signal-pill__status">No-Go</span>
+          </div>
+
+          <div class="signal-pill">
+            <div class="signal-pill__dot signal-pill__dot--wait"></div>
+            <span class="signal-pill__name">Peshastin</span>
+            <span class="signal-pill__status">Wait</span>
+          </div>
+
+          <div class="signal-pill">
+            <div class="signal-pill__dot signal-pill__dot--go"></div>
+            <span class="signal-pill__name">Castle Rock</span>
+            <span class="signal-pill__status">Go</span>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- ============================================
+       CRAGS GRID
+       ============================================ -->
+
+  <section class="section" id="crags">
+    <div class="container">
+
+      <div class="section-header">
+        <p class="section-header__label">Crag Conditions</p>
+        <h2 class="section-header__title">Pick your wall.</h2>
+        <p class="section-header__sub">
+          Conditions updated daily. Each signal synthesizes precipitation history,
+          humidity, temps, and drying time into one clear read.
+        </p>
+      </div>
+
+      <div class="crags-grid">
+
+        <!-- INDEX -->
+        <a href="tools/index-town-wall.html" class="crag-card">
+          <div class="crag-card__header">
+            <div>
+              <div class="crag-card__name">Index</div>
+              <div class="crag-card__region">Sky Valley / US-2</div>
+            </div>
+            <div class="crag-card__signal crag-card__signal--go">
+              <span>● Go</span>
+            </div>
+          </div>
+          <div class="crag-card__stats">
+            <div class="crag-stat">
+              <span class="crag-stat__label">Precip 48h</span>
+              <span class="crag-stat__value">0.0"</span>
+            </div>
+            <div class="crag-stat">
+              <span class="crag-stat__label">Humidity</span>
+              <span class="crag-stat__value">58%</span>
+            </div>
+            <div class="crag-stat">
+              <span class="crag-stat__label">Temp</span>
+              <span class="crag-stat__value">54°F</span>
+            </div>
+          </div>
+          <div class="crag-card__footer">
+            <span class="crag-card__updated">Updated 2h ago · Mock data</span>
+            <span class="crag-card__arrow">→</span>
+          </div>
+        </a>
+
+        <!-- LEAVENWORTH -->
+        <a href="tools/leavenworth.html" class="crag-card">
+          <div class="crag-card__header">
+            <div>
+              <div class="crag-card__name">Leavenworth</div>
+              <div class="crag-card__region">Wenatchee River Valley</div>
+            </div>
+            <div class="crag-card__signal crag-card__signal--go">
+              <span>● Go</span>
+            </div>
+          </div>
+          <div class="crag-card__stats">
+            <div class="crag-stat">
+              <span class="crag-stat__label">Precip 48h</span>
+              <span class="crag-stat__value">0.1"</span>
+            </div>
+            <div class="crag-stat">
+              <span class="crag-stat__label">Humidity</span>
+              <span class="crag-stat__value">52%</span>
+            </div>
+            <div class="crag-stat">
+              <span class="crag-stat__label">Temp</span>
+              <span class="crag-stat__value">61°F</span>
+            </div>
+          </div>
+          <div class="crag-card__footer">
+            <span class="crag-card__updated">Updated 2h ago · Mock data</span>
+            <span class="crag-card__arrow">→</span>
+          </div>
+        </a>
+
+        <!-- VANTAGE -->
+        <a href="tools/vantage.html" class="crag-card">
+          <div class="crag-card__header">
+            <div>
+              <div class="crag-card__name">Vantage</div>
+              <div class="crag-card__region">Columbia River Gorge</div>
+            </div>
+            <div class="crag-card__signal crag-card__signal--wait">
+              <span>◐ Wait</span>
+            </div>
+          </div>
+          <div class="crag-card__stats">
+            <div class="crag-stat">
+              <span class="crag-stat__label">Precip 48h</span>
+              <span class="crag-stat__value">0.4"</span>
+            </div>
+            <div class="crag-stat">
+              <span class="crag-stat__label">Humidity</span>
+              <span class="crag-stat__value">74%</span>
+            </div>
+            <div class="crag-stat">
+              <span class="crag-stat__label">Temp</span>
+              <span class="crag-stat__value">49°F</span>
+            </div>
+          </div>
+          <div class="crag-card__footer">
+            <span class="crag-card__updated">Updated 2h ago · Mock data</span>
+            <span class="crag-card__arrow">→</span>
+          </div>
+        </a>
+
+        <!-- LITTLE SI -->
+        <a href="tools/little-si.html" class="crag-card">
+          <div class="crag-card__header">
+            <div>
+              <div class="crag-card__name">Little Si</div>
+              <div class="crag-card__region">North Bend / I-90</div>
+            </div>
+            <div class="crag-card__signal crag-card__signal--go">
+              <span>● Go</span>
+            </div>
+          </div>
+          <div class="crag-card__stats">
+            <div class="crag-stat">
+              <span class="crag-stat__label">Precip 48h</span>
+              <span class="crag-stat__value">0.0"</span>
+            </div>
+            <div class="crag-stat">
+              <span class="crag-stat__label">Humidity</span>
+              <span class="crag-stat__value">61%</span>
+            </div>
+            <div class="crag-stat">
+              <span class="crag-stat__label">Temp</span>
+              <span class="crag-stat__value">56°F</span>
+            </div>
+          </div>
+          <div class="crag-card__footer">
+            <span class="crag-card__updated">Updated 2h ago · Mock data</span>
+            <span class="crag-card__arrow">→</span>
+          </div>
+        </a>
+
+        <!-- MT. ERIE — No Go -->
+        <a href="tools/mt-erie.html" class="crag-card">
+          <div class="crag-card__header">
+            <div>
+              <div class="crag-card__name">Mt. Erie</div>
+              <div class="crag-card__region">Anacortes / Fidalgo Island</div>
+            </div>
+            <div class="crag-card__signal crag-card__signal--no-go">
+              <span>✕ No-Go</span>
+            </div>
+          </div>
+          <div class="crag-card__stats">
+            <div class="crag-stat">
+              <span class="crag-stat__label">Precip 48h</span>
+              <span class="crag-stat__value">1.1"</span>
+            </div>
+            <div class="crag-stat">
+              <span class="crag-stat__label">Humidity</span>
+              <span class="crag-stat__value">91%</span>
+            </div>
+            <div class="crag-stat">
+              <span class="crag-stat__label">Temp</span>
+              <span class="crag-stat__value">44°F</span>
+            </div>
+          </div>
+          <div class="crag-card__footer">
+            <span class="crag-card__updated">Updated 2h ago · Mock data</span>
+            <span class="crag-card__arrow">→</span>
+          </div>
+        </a>
+
+        <!-- PESHASTIN -->
+        <a href="tools/peshastin.html" class="crag-card">
+          <div class="crag-card__header">
+            <div>
+              <div class="crag-card__name">Peshastin Pinnacles</div>
+              <div class="crag-card__region">Cashmere / US-2</div>
+            </div>
+            <div class="crag-card__signal crag-card__signal--wait">
+              <span>◐ Wait</span>
+            </div>
+          </div>
+          <div class="crag-card__stats">
+            <div class="crag-stat">
+              <span class="crag-stat__label">Precip 48h</span>
+              <span class="crag-stat__value">0.3"</span>
+            </div>
+            <div class="crag-stat">
+              <span class="crag-stat__label">Humidity</span>
+              <span class="crag-stat__value">68%</span>
+            </div>
+            <div class="crag-stat">
+              <span class="crag-stat__label">Temp</span>
+              <span class="crag-stat__value">57°F</span>
+            </div>
+          </div>
+          <div class="crag-card__footer">
+            <span class="crag-card__updated">Updated 2h ago · Mock data</span>
+            <span class="crag-card__arrow">→</span>
+          </div>
+        </a>
+
+        <!-- COMING SOON — Castle Rock -->
+        <div class="crag-card crag-card--soon">
+          <div class="crag-card__header">
+            <div>
+              <div class="crag-card__name">Castle Rock</div>
+              <div class="crag-card__region">Tumwater Canyon</div>
+            </div>
+          </div>
+          <div class="crag-card__stats">
+            <div class="crag-stat">
+              <span class="crag-stat__label">Precip 48h</span>
+              <span class="crag-stat__value">—</span>
+            </div>
+            <div class="crag-stat">
+              <span class="crag-stat__label">Humidity</span>
+              <span class="crag-stat__value">—</span>
+            </div>
+            <div class="crag-stat">
+              <span class="crag-stat__label">Temp</span>
+              <span class="crag-stat__value">—</span>
+            </div>
+          </div>
+          <div class="crag-card__footer">
+            <span class="crag-card__updated">Data pipeline coming</span>
+            <span class="crag-card__arrow">→</span>
+          </div>
+        </div>
+
+        <!-- COMING SOON — Smith Rock -->
+        <div class="crag-card crag-card--soon">
+          <div class="crag-card__header">
+            <div>
+              <div class="crag-card__name">Smith Rock</div>
+              <div class="crag-card__region">Central Oregon</div>
+            </div>
+          </div>
+          <div class="crag-card__stats">
+            <div class="crag-stat">
+              <span class="crag-stat__label">Precip 48h</span>
+              <span class="crag-stat__value">—</span>
+            </div>
+            <div class="crag-stat">
+              <span class="crag-stat__label">Humidity</span>
+              <span class="crag-stat__value">—</span>
+            </div>
+            <div class="crag-stat">
+              <span class="crag-stat__label">Temp</span>
+              <span class="crag-stat__value">—</span>
+            </div>
+          </div>
+          <div class="crag-card__footer">
+            <span class="crag-card__updated">Data pipeline coming</span>
+            <span class="crag-card__arrow">→</span>
+          </div>
+        </div>
+
+      </div><!-- /crags-grid -->
+    </div>
+  </section>
+
+
+  <!-- ============================================
+       HOW IT WORKS
+       ============================================ -->
+
+  <section class="section section--tight" id="how" style="background: var(--bg-surface); border-top: 1px solid var(--bg-raised); border-bottom: 1px solid var(--bg-raised);">
+    <div class="container">
+
+      <div class="section-header">
+        <p class="section-header__label">The Signal</p>
+        <h2 class="section-header__title">How the read works.</h2>
+        <p class="section-header__sub">
+          No single number tells the whole story. We synthesize multiple
+          weather streams into one honest signal.
+        </p>
+      </div>
+
+      <div class="how-grid">
+
+        <div class="how-step">
+          <div class="how-step__number">01</div>
+          <div class="how-step__icon">🌧️</div>
+          <h3 class="how-step__title">Precipitation History</h3>
+          <p class="how-step__body">
+            We pull 24h and 48h precipitation totals for each crag's nearest weather station.
+            Rock needs time to dry — we factor in drying windows based on rock type and aspect.
+          </p>
+        </div>
+
+        <div class="how-step">
+          <div class="how-step__number">02</div>
+          <div class="how-step__icon">💧</div>
+          <h3 class="how-step__title">Humidity + Temperature</h3>
+          <p class="how-step__body">
+            High humidity means your rock stays damp longer even without rain.
+            Low temps slow drying significantly. We weight both into the final signal.
+          </p>
+        </div>
+
+        <div class="how-step">
+          <div class="how-step__number">03</div>
+          <div class="how-step__icon">🎯</div>
+          <h3 class="how-step__title">Go / Wait / No-Go</h3>
+          <p class="how-step__body">
+            The output is a clear, honest recommendation — not a wall of numbers.
+            <span style="color: var(--green-go); font-weight: 700;">Go</span> means dry conditions.
+            <span style="color: var(--gold); font-weight: 700;">Wait</span> means marginal.
+            <span style="color: var(--red-warning); font-weight: 700;">No-Go</span> means stay home and train.
+          </p>
+        </div>
+
+      </div>
+
+      <p style="margin-top: var(--space-xl); font-size: 0.875rem; color: var(--text-muted); font-family: var(--font-mono); letter-spacing: 0.04em;">
+        ⚠️ Always verify with NWAC, NWS, and local knowledge. This tool is a starting point, not a substitute for judgment.
+      </p>
+
+    </div>
+  </section>
+
+
+  <!-- ============================================
+       COMMUNITY SECTION
+       ============================================ -->
+
+  <section class="section community" id="community">
+    <div class="container">
+      <div class="community__inner">
+
+        <div class="community__quote">
+          Built by climbers <em>of color</em>,<br>
+          for climbers <em>of color</em> —<br>
+          and everyone <em>out there</em>.
+        </div>
+
+        <div>
+          <p class="community__body">
+            The outdoor world has a history of making certain folks feel like they don't belong.
+            <strong>That's changing.</strong> This tool is part of that change — a resource that comes
+            from within the community, built with the specific needs and crags of PNW BIPOC climbers
+            in mind, and maintained by someone who shows up to steward these spaces.
+          </p>
+          <p class="community__body">
+            Developed in collaboration with the <strong>Rising Roots</strong> climbing community —
+            creating welcoming spaces for underrepresented climbers in the Pacific Northwest
+            since day one.
+          </p>
+          <a class="community__tag" href="https://www.instagram.com/rising.roots.climbing/" target="_blank" rel="noopener">
+            <span>🌱</span> Rising Roots Climbing
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ============================================
+       ABOUT TEASER
+       ============================================ -->
+
+  <section class="section" id="about">
+    <div class="container">
+
+      <div class="section-header">
+        <p class="section-header__label">The Builder</p>
+        <h2 class="section-header__title">Who made this.</h2>
+      </div>
+
+      <div class="about-teaser">
+        <div class="about-teaser__avatar">🧗</div>
+        <div>
+          <div class="about-teaser__name">Tree</div>
+          <div class="about-teaser__role">SRE / Platform Engineer · Seattle, WA</div>
+          <p class="about-teaser__bio">
+            Site Reliability Engineer with 10+ years of AWS and infrastructure experience,
+            co-facilitator of Rising Roots climbing community, and the kind of person who
+            thinks about drying time while driving to the crag. This tool is what happens
+            when you apply production-grade engineering thinking to a problem you actually
+            care about.
+          </p>
+          <div class="about-teaser__tags">
+            <span class="tag">SRE / DevOps</span>
+            <span class="tag">AWS · Terraform</span>
+            <span class="tag">Seattle Bouldering Project</span>
+            <span class="tag">Rising Roots</span>
+            <span class="tag">Northstar Cycling</span>
+            <span class="tag">Ride the Rim</span>
+            <span class="tag">Patagonia nerd</span>
+          </div>
+          <div style="margin-top: var(--space-lg);">
+            <a href="about.html" class="btn btn--ghost">Full background →</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ============================================
+       DATA SOURCES STRIP
+       ============================================ -->
+
+  <div class="sources-strip">
+    <div class="container">
+      <div class="sources-strip__inner">
+        <span class="sources-strip__label">Data sources</span>
+        <div class="sources-strip__items">
+          <a href="https://nwac.us" target="_blank" rel="noopener" class="source-item">NWAC</a>
+          <a href="https://weather.gov/sew" target="_blank" rel="noopener" class="source-item">NWS Seattle</a>
+          <a href="https://www.nrcs.usda.gov/wps/portal/wcc/home/" target="_blank" rel="noopener" class="source-item">SNOTEL / NRCS</a>
+          <a href="https://open-meteo.com" target="_blank" rel="noopener" class="source-item">Open-Meteo</a>
+          <a href="https://mesowest.utah.edu" target="_blank" rel="noopener" class="source-item">MesoWest</a>
+          <a href="https://wsdot.wa.gov/travel" target="_blank" rel="noopener" class="source-item">WSDOT</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- ============================================
+       FOOTER
+       ============================================ -->
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <div>
+          <div class="footer__brand">BETA</div>
+          <p class="footer__tagline">
+            Cascade conditions intel · <a href="https://blog.trenigma.dev" target="_blank">blog.trenigma.dev</a>
+          </p>
+          <p class="footer__disclaimer">
+            For informational purposes only. Always verify with official NWAC forecasts,
+            NWS, and your own judgment before heading to the crag or backcountry.
+            Conditions can change rapidly. We are not responsible for any outcomes
+            resulting from use of this information. Get out there safely. 🏔️
+          </p>
+        </div>
+        <ul class="footer__links">
+          <li><a href="#crags">Crags</a></li>
+          <li><a href="tools/index.html">Tools</a></li>
+          <li><a href="posts/archive.html">Posts</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="https://github.com/trenigma/beta-site" target="_blank">GitHub</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+
+  <!-- ============================================
+       MINIMAL JS — Nav scroll behavior
+       ============================================ -->
+
+  <script>
+    // Add scrolled class to nav for subtle style change
+    const nav = document.querySelector('.nav');
+    window.addEventListener('scroll', () => {
+      nav.style.padding = window.scrollY > 60
+        ? '10px 0'
+        : '16px 0';
+    });
+
+    // Placeholder: in Phase 4, this function will fetch real data
+    // and populate the signal pills and crag cards dynamically
+    // async function loadConditions() {
+    //   const res = await fetch('data/conditions.json');
+    //   const data = await res.json();
+    //   // update DOM...
+    // }
+  </script>
+
+</body>
+</html>

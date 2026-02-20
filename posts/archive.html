@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Posts Archive — BETA</title>
+  <link rel="stylesheet" href="../style.css">
+  <style>
+    .archive-hero {
+      padding-top: 140px;
+      padding-bottom: var(--space-2xl);
+    }
+    .posts-list {
+      display: flex;
+      flex-direction: column;
+      gap: var(--space-md);
+      max-width: 800px;
+    }
+    .post-row {
+      display: grid;
+      grid-template-columns: 120px 1fr auto;
+      gap: var(--space-xl);
+      align-items: start;
+      padding: var(--space-xl);
+      background: var(--bg-surface);
+      border: 1px solid var(--bg-raised);
+      border-radius: var(--radius-md);
+      text-decoration: none;
+      transition: border-color 0.2s var(--ease), transform 0.2s var(--ease);
+    }
+    .post-row:hover {
+      border-color: rgba(232, 168, 56, 0.3);
+      transform: translateX(4px);
+    }
+    .post-date {
+      font-family: var(--font-mono);
+      font-size: 0.6875rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--text-muted);
+      padding-top: 4px;
+    }
+    .post-title {
+      font-family: var(--font-ui);
+      font-size: 1.0625rem;
+      font-weight: 700;
+      color: var(--text-primary);
+      margin-bottom: 6px;
+    }
+    .post-excerpt {
+      font-size: 0.875rem;
+      color: var(--text-muted);
+      line-height: 1.6;
+    }
+    .post-tag {
+      font-family: var(--font-mono);
+      font-size: 0.625rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      padding: 3px 8px;
+      border-radius: 100px;
+      background: var(--bg-raised);
+      border: 1px solid var(--bg-overlay);
+      color: var(--text-muted);
+      white-space: nowrap;
+      align-self: center;
+    }
+    .empty-state {
+      padding: var(--space-3xl);
+      text-align: center;
+      border: 1px dashed var(--bg-overlay);
+      border-radius: var(--radius-lg);
+      max-width: 480px;
+    }
+    .empty-state__icon { font-size: 2.5rem; margin-bottom: var(--space-md); }
+    .empty-state__title {
+      font-family: var(--font-ui);
+      font-size: 1.25rem;
+      font-weight: 700;
+      margin-bottom: var(--space-sm);
+    }
+    .empty-state__body { font-size: 0.9375rem; color: var(--text-muted); }
+  </style>
+</head>
+<body>
+
+  <nav class="nav">
+    <div class="nav__inner">
+      <a href="/" class="nav__logo">BETA <span></span></a>
+      <ul class="nav__links">
+        <li><a href="../index.html#crags">Crags</a></li>
+        <li><a href="../tools/index.html">Tools</a></li>
+        <li><a href="../index.html#community">Community</a></li>
+        <li><a href="archive.html">Posts</a></li>
+        <li><a href="../about.html">About</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="archive-hero">
+    <div class="container">
+      <p class="hero__eyebrow" style="opacity:1; animation:none;">Field Notes</p>
+      <h1 class="display" style="font-size: clamp(3rem, 7vw, 5rem); margin-bottom: var(--space-md);">Posts.</h1>
+      <p style="font-size: 1.125rem; color: var(--text-secondary); max-width: 480px;">
+        Conditions write-ups, gear observations, data nerdery, and whatever
+        else is worth putting into words from the field.
+      </p>
+    </div>
+  </div>
+
+  <section class="section--tight" style="padding-top: 0;">
+    <div class="container">
+
+      <!-- When there are no posts yet, show empty state -->
+      <div class="empty-state">
+        <div class="empty-state__icon">✍️</div>
+        <div class="empty-state__title">First post incoming.</div>
+        <p class="empty-state__body">
+          Building the data pipeline first, then the words follow.
+          Check back soon — or watch the GitHub for commits.
+        </p>
+      </div>
+
+      <!-- Posts will go here. Example structure for future posts:
+      <div class="posts-list">
+        <a href="2025-03-01-index-conditions.html" class="post-row">
+          <div class="post-date">Mar 1, 2025</div>
+          <div>
+            <div class="post-title">Index Town Wall: Spring conditions update</div>
+            <div class="post-excerpt">
+              Checked conditions after last week's rain. Lower Wall is dry, Upper Wall
+              has some seepage on the north-facing slabs but clears by afternoon...
+            </div>
+          </div>
+          <span class="post-tag">Conditions</span>
+        </a>
+      </div>
+      -->
+
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <div>
+          <div class="footer__brand">BETA</div>
+          <p class="footer__tagline">
+            Cascade conditions intel · <a href="https://blog.trenigma.dev" target="_blank">blog.trenigma.dev</a>
+          </p>
+        </div>
+        <ul class="footer__links">
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../about.html">About</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

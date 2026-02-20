@@ -1,0 +1,172 @@
+# ============================================
+# BETA — beta.trenigma.dev
+# .gitignore
+# ============================================
+
+
+# --------------------------------------------
+# SECRETS & ENVIRONMENT — never commit these
+# --------------------------------------------
+.env
+.env.*
+.env.local
+.env.production
+*.env
+secrets.json
+secrets.yaml
+secrets.yml
+config/secrets.*
+credentials.json
+*_credentials.*
+api_keys.*
+
+
+# --------------------------------------------
+# PYTHON
+# --------------------------------------------
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyo
+*.pyd
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+.Python
+
+# Distribution / packaging
+dist/
+build/
+*.egg-info/
+*.egg
+.eggs/
+
+# Jupyter Notebooks
+.ipynb_checkpoints/
+*.ipynb
+
+# pytest / testing
+.pytest_cache/
+.coverage
+htmlcov/
+*.cover
+.tox/
+
+# mypy / type checking
+.mypy_cache/
+.dmypy.json
+
+
+# --------------------------------------------
+# NODE / NPM (if any tooling gets added later)
+# --------------------------------------------
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+package-lock.json
+yarn.lock
+
+
+# --------------------------------------------
+# MACOS
+# --------------------------------------------
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+.AppleDouble
+.LSOverride
+Icon?
+
+
+# --------------------------------------------
+# LINUX
+# --------------------------------------------
+*~
+.fuse_hidden*
+.directory
+.Trash-*
+.nfs*
+
+
+# --------------------------------------------
+# EDITORS & IDEs
+# --------------------------------------------
+
+# VS Code
+.vscode/
+*.code-workspace
+
+# JetBrains (PyCharm, etc.)
+.idea/
+*.iml
+*.iws
+*.ipr
+out/
+
+# Vim / Neovim
+*.swp
+*.swo
+*.swn
+[._]*.s[a-v][a-z]
+[._]*.sw[a-p]
+Session.vim
+Neovim.log
+
+# Emacs
+*~
+\#*\#
+.\#*
+*.elc
+
+
+# --------------------------------------------
+# LOGS & TEMP FILES
+# --------------------------------------------
+*.log
+*.tmp
+*.temp
+logs/
+tmp/
+temp/
+
+
+# --------------------------------------------
+# DATA PIPELINE — generated outputs (Phase 4)
+# Commit the scripts, not the generated data.
+# Exception: conditions.json IS committed
+# (GitHub Actions commits it on each run)
+# --------------------------------------------
+
+# Raw API response cache
+data/cache/
+data/raw/
+*.cache
+
+# Large weather model files
+*.nc
+*.grib
+*.grib2
+*.grb
+
+# Generated figures (committed by GH Actions)
+# assets/images/*.png  <-- intentionally NOT ignored
+# (GitHub Actions commits these on each run)
+
+
+# --------------------------------------------
+# MISC
+# --------------------------------------------
+*.bak
+*.orig
+*.rej
+.sass-cache/
+thumbs.db
+Thumbs.db
+ehthumbs.db

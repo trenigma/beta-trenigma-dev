@@ -1,0 +1,45 @@
+# Phase 4: Automated conditions data pipeline
+# This workflow will run on a schedule to fetch weather data
+# and update the conditions.json file that the site reads from.
+#
+# UNCOMMENT AND CONFIGURE when Phase 4 data scripts are ready.
+
+# name: Update Crag Conditions
+
+# on:
+#   schedule:
+#     # Run every 6 hours (matches Cascade Mountain Weather cadence)
+#     - cron: '0 */6 * * *'
+#   workflow_dispatch: # Allow manual trigger
+
+# jobs:
+#   update-conditions:
+#     runs-on: ubuntu-latest
+#     steps:
+#       - uses: actions/checkout@v4
+
+#       - name: Set up Python
+#         uses: actions/setup-python@v5
+#         with:
+#           python-version: '3.11'
+
+#       - name: Install dependencies
+#         run: pip install -r requirements.txt
+
+#       - name: Fetch conditions data
+#         run: python scripts/fetch_conditions.py
+
+#       - name: Commit and push updated data
+#         run: |
+#           git config --local user.email "action@github.com"
+#           git config --local user.name "GitHub Action"
+#           git add data/conditions.json assets/images/
+#           git diff --staged --quiet || git commit -m "Auto: Update conditions $(date -u +'%Y-%m-%d %H:%M UTC')"
+#           git push
+
+# TODO Phase 4:
+# - Write scripts/fetch_conditions.py using Open-Meteo API
+# - Define crag lat/lng coordinates in data/crags.json
+# - Build go/wait/no-go scoring algorithm
+# - Output to data/conditions.json
+# - Wire up index.html to read from conditions.json via fetch()
