@@ -82,52 +82,11 @@
       <div class="signal-strip__inner">
         <span class="signal-strip__label">Today's signals</span>
         <div class="signal-strip__items" id="signalPills">
-
-          <!-- These will eventually be populated by data pipeline -->
-          <!-- For now: illustrative mock data -->
-
-          <div class="signal-pill">
-            <div class="signal-pill__dot signal-pill__dot--go"></div>
-            <span class="signal-pill__name">Index</span>
-            <span class="signal-pill__status">Go</span>
+          <!-- Populated by loadConditions() -->
+          <div class="signal-pill" style="opacity:0.4;">
+            <div class="signal-pill__dot" style="background:var(--text-muted);"></div>
+            <span class="signal-pill__name">Loading…</span>
           </div>
-
-          <div class="signal-pill">
-            <div class="signal-pill__dot signal-pill__dot--go"></div>
-            <span class="signal-pill__name">Leavenworth</span>
-            <span class="signal-pill__status">Go</span>
-          </div>
-
-          <div class="signal-pill">
-            <div class="signal-pill__dot signal-pill__dot--wait"></div>
-            <span class="signal-pill__name">Vantage</span>
-            <span class="signal-pill__status">Wait</span>
-          </div>
-
-          <div class="signal-pill">
-            <div class="signal-pill__dot signal-pill__dot--go"></div>
-            <span class="signal-pill__name">Little Si</span>
-            <span class="signal-pill__status">Go</span>
-          </div>
-
-          <div class="signal-pill">
-            <div class="signal-pill__dot signal-pill__dot--no-go"></div>
-            <span class="signal-pill__name">Mt. Erie</span>
-            <span class="signal-pill__status">No-Go</span>
-          </div>
-
-          <div class="signal-pill">
-            <div class="signal-pill__dot signal-pill__dot--wait"></div>
-            <span class="signal-pill__name">Peshastin</span>
-            <span class="signal-pill__status">Wait</span>
-          </div>
-
-          <div class="signal-pill">
-            <div class="signal-pill__dot signal-pill__dot--go"></div>
-            <span class="signal-pill__name">Castle Rock</span>
-            <span class="signal-pill__status">Go</span>
-          </div>
-
         </div>
       </div>
     </div>
@@ -150,195 +109,19 @@
         </p>
       </div>
 
-      <div class="crags-grid">
+      <div class="crags-grid" id="cragsGrid">
 
-        <!-- INDEX -->
-        <a href="tools/index-town-wall.html" class="crag-card">
+        <!-- Populated by loadConditions() -->
+        <div class="crag-card" style="opacity:0.3; pointer-events:none;">
           <div class="crag-card__header">
             <div>
-              <div class="crag-card__name">Index</div>
-              <div class="crag-card__region">Sky Valley / US-2</div>
-            </div>
-            <div class="crag-card__signal crag-card__signal--go">
-              <span>● Go</span>
+              <div class="crag-card__name">Loading…</div>
+              <div class="crag-card__region">Fetching conditions</div>
             </div>
           </div>
-          <div class="crag-card__stats">
-            <div class="crag-stat">
-              <span class="crag-stat__label">Precip 48h</span>
-              <span class="crag-stat__value">0.0"</span>
-            </div>
-            <div class="crag-stat">
-              <span class="crag-stat__label">Humidity</span>
-              <span class="crag-stat__value">58%</span>
-            </div>
-            <div class="crag-stat">
-              <span class="crag-stat__label">Temp</span>
-              <span class="crag-stat__value">54°F</span>
-            </div>
-          </div>
-          <div class="crag-card__footer">
-            <span class="crag-card__updated">Updated 2h ago · Mock data</span>
-            <span class="crag-card__arrow">→</span>
-          </div>
-        </a>
+        </div>
 
-        <!-- LEAVENWORTH -->
-        <a href="tools/leavenworth.html" class="crag-card">
-          <div class="crag-card__header">
-            <div>
-              <div class="crag-card__name">Leavenworth</div>
-              <div class="crag-card__region">Wenatchee River Valley</div>
-            </div>
-            <div class="crag-card__signal crag-card__signal--go">
-              <span>● Go</span>
-            </div>
-          </div>
-          <div class="crag-card__stats">
-            <div class="crag-stat">
-              <span class="crag-stat__label">Precip 48h</span>
-              <span class="crag-stat__value">0.1"</span>
-            </div>
-            <div class="crag-stat">
-              <span class="crag-stat__label">Humidity</span>
-              <span class="crag-stat__value">52%</span>
-            </div>
-            <div class="crag-stat">
-              <span class="crag-stat__label">Temp</span>
-              <span class="crag-stat__value">61°F</span>
-            </div>
-          </div>
-          <div class="crag-card__footer">
-            <span class="crag-card__updated">Updated 2h ago · Mock data</span>
-            <span class="crag-card__arrow">→</span>
-          </div>
-        </a>
-
-        <!-- VANTAGE -->
-        <a href="tools/vantage.html" class="crag-card">
-          <div class="crag-card__header">
-            <div>
-              <div class="crag-card__name">Vantage</div>
-              <div class="crag-card__region">Columbia River Gorge</div>
-            </div>
-            <div class="crag-card__signal crag-card__signal--wait">
-              <span>◐ Wait</span>
-            </div>
-          </div>
-          <div class="crag-card__stats">
-            <div class="crag-stat">
-              <span class="crag-stat__label">Precip 48h</span>
-              <span class="crag-stat__value">0.4"</span>
-            </div>
-            <div class="crag-stat">
-              <span class="crag-stat__label">Humidity</span>
-              <span class="crag-stat__value">74%</span>
-            </div>
-            <div class="crag-stat">
-              <span class="crag-stat__label">Temp</span>
-              <span class="crag-stat__value">49°F</span>
-            </div>
-          </div>
-          <div class="crag-card__footer">
-            <span class="crag-card__updated">Updated 2h ago · Mock data</span>
-            <span class="crag-card__arrow">→</span>
-          </div>
-        </a>
-
-        <!-- LITTLE SI -->
-        <a href="tools/little-si.html" class="crag-card">
-          <div class="crag-card__header">
-            <div>
-              <div class="crag-card__name">Little Si</div>
-              <div class="crag-card__region">North Bend / I-90</div>
-            </div>
-            <div class="crag-card__signal crag-card__signal--go">
-              <span>● Go</span>
-            </div>
-          </div>
-          <div class="crag-card__stats">
-            <div class="crag-stat">
-              <span class="crag-stat__label">Precip 48h</span>
-              <span class="crag-stat__value">0.0"</span>
-            </div>
-            <div class="crag-stat">
-              <span class="crag-stat__label">Humidity</span>
-              <span class="crag-stat__value">61%</span>
-            </div>
-            <div class="crag-stat">
-              <span class="crag-stat__label">Temp</span>
-              <span class="crag-stat__value">56°F</span>
-            </div>
-          </div>
-          <div class="crag-card__footer">
-            <span class="crag-card__updated">Updated 2h ago · Mock data</span>
-            <span class="crag-card__arrow">→</span>
-          </div>
-        </a>
-
-        <!-- MT. ERIE — No Go -->
-        <a href="tools/mt-erie.html" class="crag-card">
-          <div class="crag-card__header">
-            <div>
-              <div class="crag-card__name">Mt. Erie</div>
-              <div class="crag-card__region">Anacortes / Fidalgo Island</div>
-            </div>
-            <div class="crag-card__signal crag-card__signal--no-go">
-              <span>✕ No-Go</span>
-            </div>
-          </div>
-          <div class="crag-card__stats">
-            <div class="crag-stat">
-              <span class="crag-stat__label">Precip 48h</span>
-              <span class="crag-stat__value">1.1"</span>
-            </div>
-            <div class="crag-stat">
-              <span class="crag-stat__label">Humidity</span>
-              <span class="crag-stat__value">91%</span>
-            </div>
-            <div class="crag-stat">
-              <span class="crag-stat__label">Temp</span>
-              <span class="crag-stat__value">44°F</span>
-            </div>
-          </div>
-          <div class="crag-card__footer">
-            <span class="crag-card__updated">Updated 2h ago · Mock data</span>
-            <span class="crag-card__arrow">→</span>
-          </div>
-        </a>
-
-        <!-- PESHASTIN -->
-        <a href="tools/peshastin.html" class="crag-card">
-          <div class="crag-card__header">
-            <div>
-              <div class="crag-card__name">Peshastin Pinnacles</div>
-              <div class="crag-card__region">Cashmere / US-2</div>
-            </div>
-            <div class="crag-card__signal crag-card__signal--wait">
-              <span>◐ Wait</span>
-            </div>
-          </div>
-          <div class="crag-card__stats">
-            <div class="crag-stat">
-              <span class="crag-stat__label">Precip 48h</span>
-              <span class="crag-stat__value">0.3"</span>
-            </div>
-            <div class="crag-stat">
-              <span class="crag-stat__label">Humidity</span>
-              <span class="crag-stat__value">68%</span>
-            </div>
-            <div class="crag-stat">
-              <span class="crag-stat__label">Temp</span>
-              <span class="crag-stat__value">57°F</span>
-            </div>
-          </div>
-          <div class="crag-card__footer">
-            <span class="crag-card__updated">Updated 2h ago · Mock data</span>
-            <span class="crag-card__arrow">→</span>
-          </div>
-        </a>
-
-        <!-- COMING SOON — Castle Rock -->
+        <!-- COMING SOON — Castle Rock (static, not yet in data pipeline) -->
         <div class="crag-card crag-card--soon">
           <div class="crag-card__header">
             <div>
@@ -510,8 +293,8 @@
       <div class="about-teaser">
         <div class="about-teaser__avatar">
           <img src="assets/images/tree-avatar.jpg"
-            alt="Tree at the crag"
-            style="width:100%; height:100%; object-fit:cover; object-position: 75%;">
+               alt="Tree at the crag"
+               style="width:100%; height:100%; object-fit:cover; object-position: 75%;">
         </div>
         <div>
           <div class="about-teaser__name">Tree</div>
@@ -599,21 +382,171 @@
        ============================================ -->
 
   <script>
-    // Add scrolled class to nav for subtle style change
+    // ============================================================
+    // NAV — shrink on scroll
+    // ============================================================
     const nav = document.querySelector('.nav');
     window.addEventListener('scroll', () => {
-      nav.style.padding = window.scrollY > 60
-        ? '10px 0'
-        : '16px 0';
+      nav.style.padding = window.scrollY > 60 ? '10px 0' : '16px 0';
     });
 
-    // Placeholder: in Phase 4, this function will fetch real data
-    // and populate the signal pills and crag cards dynamically
-    // async function loadConditions() {
-    //   const res = await fetch('data/conditions.json');
-    //   const data = await res.json();
-    //   // update DOM...
-    // }
+    // ============================================================
+    // CONDITIONS — fetch data/conditions.json and wire up UI
+    // ============================================================
+
+    // Crag ID → tool page URL mapping
+    const CRAG_URLS = {
+      'index':       'tools/index-town-wall.html',
+      'leavenworth': 'tools/leavenworth.html',
+      'vantage':     'tools/vantage.html',
+      'little-si':   'tools/little-si.html',
+      'mt-erie':     'tools/mt-erie.html',
+      'peshastin':   'tools/peshastin.html',
+    };
+
+    // Signal config — icons and CSS class per signal value
+    const SIGNAL = {
+      'go':      { icon: '●', label: 'Go',    cls: 'go',    dot: 'go'    },
+      'wait':    { icon: '◐', label: 'Wait',  cls: 'wait',  dot: 'wait'  },
+      'no-go':   { icon: '✕', label: 'No-Go', cls: 'no-go', dot: 'no-go' },
+      'unknown': { icon: '?', label: '—',     cls: 'wait',  dot: 'wait'  },
+    };
+
+    // Format the "updated X ago" timestamp
+    function timeAgo(isoString) {
+      const diff = Math.floor((Date.now() - new Date(isoString)) / 60000);
+      if (diff < 2)   return 'Just updated';
+      if (diff < 60)  return `${diff}m ago`;
+      const h = Math.floor(diff / 60);
+      return `${h}h ago`;
+    }
+
+    // Build a single signal pill for the strip
+    function buildPill(crag) {
+      const sig = SIGNAL[crag.signal] || SIGNAL['unknown'];
+      return `
+        <div class="signal-pill">
+          <div class="signal-pill__dot signal-pill__dot--${sig.dot}"></div>
+          <span class="signal-pill__name">${crag.name.split(' ')[0]}</span>
+          <span class="signal-pill__status">${sig.label}</span>
+        </div>`;
+    }
+
+    // Build a full crag card
+    function buildCard(crag, generatedAt) {
+      const sig  = SIGNAL[crag.signal] || SIGNAL['unknown'];
+      const c    = crag.conditions || {};
+      const url  = CRAG_URLS[crag.id] || '#';
+
+      const precip   = c.precip_48h  != null ? `${c.precip_48h}"` : '—';
+      const humidity = c.humidity    != null ? `${c.humidity}%`   : '—';
+      const temp     = c.temp_f      != null ? `${c.temp_f}°F`    : '—';
+      const updated  = generatedAt   ? timeAgo(generatedAt)       : '—';
+
+      // First reason = primary context line on the card
+      const reason = crag.reasons && crag.reasons[0] ? crag.reasons[0] : '';
+
+      return `
+        <a href="${url}" class="crag-card">
+          <div class="crag-card__header">
+            <div>
+              <div class="crag-card__name">${crag.name}</div>
+              <div class="crag-card__region">${crag.region}</div>
+            </div>
+            <div class="crag-card__signal crag-card__signal--${sig.cls}">
+              <span>${sig.icon} ${sig.label}</span>
+            </div>
+          </div>
+          <div class="crag-card__stats">
+            <div class="crag-stat">
+              <span class="crag-stat__label">Precip 48h</span>
+              <span class="crag-stat__value">${precip}</span>
+            </div>
+            <div class="crag-stat">
+              <span class="crag-stat__label">Humidity</span>
+              <span class="crag-stat__value">${humidity}</span>
+            </div>
+            <div class="crag-stat">
+              <span class="crag-stat__label">Temp</span>
+              <span class="crag-stat__value">${temp}</span>
+            </div>
+          </div>
+          ${reason ? `<p style="font-size:0.8125rem; color:var(--text-muted); margin-bottom:var(--space-md); line-height:1.4;">→ ${reason}</p>` : ''}
+          <div class="crag-card__footer">
+            <span class="crag-card__updated">Updated ${updated} · Open-Meteo</span>
+            <span class="crag-card__arrow">→</span>
+          </div>
+        </a>`;
+    }
+
+    // "Coming soon" cards — appended after live cards
+    const COMING_SOON_CARDS = `
+      <div class="crag-card crag-card--soon">
+        <div class="crag-card__header">
+          <div>
+            <div class="crag-card__name">Castle Rock</div>
+            <div class="crag-card__region">Tumwater Canyon</div>
+          </div>
+        </div>
+        <div class="crag-card__stats">
+          <div class="crag-stat"><span class="crag-stat__label">Precip 48h</span><span class="crag-stat__value">—</span></div>
+          <div class="crag-stat"><span class="crag-stat__label">Humidity</span><span class="crag-stat__value">—</span></div>
+          <div class="crag-stat"><span class="crag-stat__label">Temp</span><span class="crag-stat__value">—</span></div>
+        </div>
+        <div class="crag-card__footer"><span class="crag-card__updated">Data pipeline coming</span><span class="crag-card__arrow">→</span></div>
+      </div>
+      <div class="crag-card crag-card--soon">
+        <div class="crag-card__header">
+          <div>
+            <div class="crag-card__name">Smith Rock</div>
+            <div class="crag-card__region">Central Oregon</div>
+          </div>
+        </div>
+        <div class="crag-card__stats">
+          <div class="crag-stat"><span class="crag-stat__label">Precip 48h</span><span class="crag-stat__value">—</span></div>
+          <div class="crag-stat"><span class="crag-stat__label">Humidity</span><span class="crag-stat__value">—</span></div>
+          <div class="crag-stat"><span class="crag-stat__label">Temp</span><span class="crag-stat__value">—</span></div>
+        </div>
+        <div class="crag-card__footer"><span class="crag-card__updated">Data pipeline coming</span><span class="crag-card__arrow">→</span></div>
+      </div>`;
+
+    // Main loader
+    async function loadConditions() {
+      const pillsEl = document.getElementById('signalPills');
+      const gridEl  = document.getElementById('cragsGrid');
+
+      try {
+        const res  = await fetch('data/conditions.json');
+        if (!res.ok) throw new Error(`HTTP ${res.status}`);
+        const data = await res.json();
+        const crags = data.crags || [];
+        const generatedAt = data.generated_at;
+
+        // Render signal pills
+        pillsEl.innerHTML = crags.map(buildPill).join('');
+
+        // Render crag cards + coming soon
+        gridEl.innerHTML = crags.map(c => buildCard(c, generatedAt)).join('') + COMING_SOON_CARDS;
+
+      } catch (err) {
+        console.error('Failed to load conditions.json:', err);
+
+        // Graceful degradation — show error state, don't break the page
+        pillsEl.innerHTML = `
+          <div class="signal-pill" style="opacity:0.5;">
+            <div class="signal-pill__dot" style="background:var(--text-muted);"></div>
+            <span class="signal-pill__name">Data unavailable</span>
+          </div>`;
+
+        gridEl.innerHTML = `
+          <div style="grid-column:1/-1; padding:var(--space-xl); text-align:center; color:var(--text-muted); font-family:var(--font-mono); font-size:0.875rem;">
+            ⚠️ Could not load conditions data. Check back soon.
+          </div>` + COMING_SOON_CARDS;
+      }
+    }
+
+    // Fire on page load
+    loadConditions();
   </script>
 
 </body>
