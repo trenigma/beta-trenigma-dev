@@ -1,0 +1,76 @@
+{
+  "crags": [
+    {
+      "id": "index",
+      "name": "Index Town Wall",
+      "region": "Sky Valley / US-2",
+      "lat": 47.8218,
+      "lng": -121.5537,
+      "elevation_ft": 900,
+      "rock_type": "granite",
+      "aspect": "south",
+      "drying_multiplier": 1.0,
+      "notes": "Granite dries fast. Lower Wall sheds water quickly; Upper Wall slower after heavy rain."
+    },
+    {
+      "id": "leavenworth",
+      "name": "Leavenworth",
+      "region": "Wenatchee River Valley",
+      "lat": 47.5957,
+      "lng": -120.6615,
+      "elevation_ft": 1100,
+      "rock_type": "granite",
+      "aspect": "south",
+      "drying_multiplier": 0.8,
+      "notes": "Rain shadow effect — dries significantly faster than west-side crags. Icicle Canyon blocks moisture."
+    },
+    {
+      "id": "vantage",
+      "name": "Vantage",
+      "region": "Columbia River Gorge",
+      "lat": 46.9471,
+      "lng": -119.9897,
+      "elevation_ft": 800,
+      "rock_type": "basalt",
+      "aspect": "west",
+      "drying_multiplier": 0.7,
+      "notes": "Desert climate, basalt dries fast. Wind is a major factor — often climbable when west-side crags are soaked."
+    },
+    {
+      "id": "little-si",
+      "name": "Little Si",
+      "region": "North Bend / I-90",
+      "lat": 47.4897,
+      "lng": -121.7279,
+      "elevation_ft": 1200,
+      "rock_type": "granite",
+      "aspect": "south",
+      "drying_multiplier": 1.2,
+      "notes": "Wetter microclimate than Index. Higher humidity typical. Needs more drying time."
+    },
+    {
+      "id": "mt-erie",
+      "name": "Mt. Erie",
+      "region": "Anacortes / Fidalgo Island",
+      "lat": 48.4776,
+      "lng": -122.6268,
+      "elevation_ft": 1270,
+      "rock_type": "granite",
+      "aspect": "varied",
+      "drying_multiplier": 1.4,
+      "notes": "Island climate — high humidity, slow drying. Needs 48h+ after rain to be reliable."
+    },
+    {
+      "id": "peshastin",
+      "name": "Peshastin Pinnacles",
+      "region": "Cashmere / US-2",
+      "lat": 47.5285,
+      "lng": -120.5873,
+      "elevation_ft": 1400,
+      "rock_type": "sandstone",
+      "aspect": "south",
+      "drying_multiplier": 1.5,
+      "notes": "Sandstone — NEVER climb when wet. Holds water in pockets, damages rock when damp. Needs 48-72h after rain."
+    }
+  ]
+}

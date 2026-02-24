@@ -1,0 +1,161 @@
+{
+  "generated_at": "2026-02-24T01:39:08.769537+00:00",
+  "generated_at_pacific": "2026-02-23 05:39 PM PST",
+  "crags": [
+    {
+      "id": "index",
+      "name": "Index Town Wall",
+      "region": "Sky Valley / US-2",
+      "signal": "wait",
+      "score": 64,
+      "reasons": [
+        "0.23\" rain in last 24h (light)",
+        "Elevated humidity (72%)",
+        "Cold (39.0\u00b0F) \u2014 slow drying",
+        "0.85\" rain forecasted \u2014 conditions deteriorating"
+      ],
+      "conditions": {
+        "precip_24h": 0.23,
+        "precip_48h": 0.24,
+        "precip_forecast_48h": 0.85,
+        "humidity": 72,
+        "temp_f": 39.0,
+        "windspeed_mph": 5.0
+      },
+      "crag_meta": {
+        "rock_type": "granite",
+        "aspect": "south",
+        "elevation_ft": 900,
+        "notes": "Granite dries fast. Lower Wall sheds water quickly; Upper Wall slower after heavy rain."
+      }
+    },
+    {
+      "id": "leavenworth",
+      "name": "Leavenworth",
+      "region": "Wenatchee River Valley",
+      "signal": "wait",
+      "score": 58,
+      "reasons": [
+        "Elevated humidity (76%)",
+        "Below freezing (30.3\u00b0F) \u2014 ice risk"
+      ],
+      "conditions": {
+        "precip_24h": 0.0,
+        "precip_48h": 0.0,
+        "precip_forecast_48h": 0.2,
+        "humidity": 76,
+        "temp_f": 30.3,
+        "windspeed_mph": 4.7
+      },
+      "crag_meta": {
+        "rock_type": "granite",
+        "aspect": "south",
+        "elevation_ft": 1100,
+        "notes": "Rain shadow effect \u2014 dries significantly faster than west-side crags. Icicle Canyon blocks moisture."
+      }
+    },
+    {
+      "id": "vantage",
+      "name": "Vantage",
+      "region": "Columbia River Gorge",
+      "signal": "wait",
+      "score": 55,
+      "reasons": [
+        "Very high humidity (92%) \u2014 rock stays damp",
+        "Cold (37.8\u00b0F) \u2014 slow drying",
+        "0.53\" rain forecasted \u2014 conditions deteriorating"
+      ],
+      "conditions": {
+        "precip_24h": 0.03,
+        "precip_48h": 0.03,
+        "precip_forecast_48h": 0.53,
+        "humidity": 92,
+        "temp_f": 37.8,
+        "windspeed_mph": 2.6
+      },
+      "crag_meta": {
+        "rock_type": "basalt",
+        "aspect": "west",
+        "elevation_ft": 800,
+        "notes": "Desert climate, basalt dries fast. Wind is a major factor \u2014 often climbable when west-side crags are soaked."
+      }
+    },
+    {
+      "id": "little-si",
+      "name": "Little Si",
+      "region": "North Bend / I-90",
+      "signal": "wait",
+      "score": 52,
+      "reasons": [
+        "0.15\" rain in last 24h (light)",
+        "Very high humidity (92%) \u2014 rock stays damp",
+        "Cold (37.3\u00b0F) \u2014 slow drying",
+        "0.63\" rain forecasted \u2014 conditions deteriorating"
+      ],
+      "conditions": {
+        "precip_24h": 0.15,
+        "precip_48h": 0.18,
+        "precip_forecast_48h": 0.63,
+        "humidity": 92,
+        "temp_f": 37.3,
+        "windspeed_mph": 2.1
+      },
+      "crag_meta": {
+        "rock_type": "granite",
+        "aspect": "south",
+        "elevation_ft": 1200,
+        "notes": "Wetter microclimate than Index. Higher humidity typical. Needs more drying time."
+      }
+    },
+    {
+      "id": "mt-erie",
+      "name": "Mt. Erie",
+      "region": "Anacortes / Fidalgo Island",
+      "signal": "wait",
+      "score": 78,
+      "reasons": [
+        "Elevated humidity (82%)",
+        "Cold (38.7\u00b0F) \u2014 slow drying"
+      ],
+      "conditions": {
+        "precip_24h": 0.02,
+        "precip_48h": 0.09,
+        "precip_forecast_48h": 0.0,
+        "humidity": 82,
+        "temp_f": 38.7,
+        "windspeed_mph": 0.4
+      },
+      "crag_meta": {
+        "rock_type": "granite",
+        "aspect": "varied",
+        "elevation_ft": 1270,
+        "notes": "Island climate \u2014 high humidity, slow drying. Needs 48h+ after rain to be reliable."
+      }
+    },
+    {
+      "id": "peshastin",
+      "name": "Peshastin Pinnacles",
+      "region": "Cashmere / US-2",
+      "signal": "wait",
+      "score": 65,
+      "reasons": [
+        "Very high humidity (96%) \u2014 rock stays damp",
+        "Cold (32.7\u00b0F) \u2014 slow drying"
+      ],
+      "conditions": {
+        "precip_24h": 0,
+        "precip_48h": 0,
+        "precip_forecast_48h": 0.33,
+        "humidity": 96,
+        "temp_f": 32.7,
+        "windspeed_mph": 1.8
+      },
+      "crag_meta": {
+        "rock_type": "sandstone",
+        "aspect": "south",
+        "elevation_ft": 1400,
+        "notes": "Sandstone \u2014 NEVER climb when wet. Holds water in pockets, damages rock when damp. Needs 48-72h after rain."
+      }
+    }
+  ]
+}
