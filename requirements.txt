@@ -1,0 +1,10 @@
+# BETA — Python dependencies
+# fetch_conditions.py uses only stdlib (urllib, json, datetime, pathlib)
+# so no external packages are required.
+#
+# If future phases add external libraries (e.g. requests, pandas, boto3),
+# add them here and they'll be installed automatically in GitHub Actions.
+#
+# Example for Phase 5+ additions:
+requests==2.31.0
+python-dotenv==1.0.0
