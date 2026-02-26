@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-02-26T21:22:04.265388+00:00",
-  "generated_at_pacific": "2026-02-26 09:22 PM PST",
+  "generated_at": "2026-02-26T22:22:17.713041+00:00",
+  "generated_at_pacific": "2026-02-26 02:22 PM PST",
   "crags": [
     {
       "id": "index",
@@ -9,15 +9,15 @@
       "signal": "wait",
       "score": 75,
       "reasons": [
-        "Very high humidity (93%) \u2014 rock stays damp"
+        "Very high humidity (89%) \u2014 rock stays damp"
       ],
       "conditions": {
         "precip_24h": 0,
         "precip_48h": 0,
-        "precip_forecast_48h": 0.16,
-        "humidity": 93,
-        "temp_f": 42.0,
-        "windspeed_mph": 7.6
+        "precip_forecast_48h": 0.15,
+        "humidity": 89,
+        "temp_f": 42.2,
+        "windspeed_mph": 6.7
       },
       "crag_meta": {
         "rock_type": "granite",
@@ -30,19 +30,18 @@
       "id": "leavenworth",
       "name": "Leavenworth",
       "region": "Wenatchee River Valley",
-      "signal": "wait",
-      "score": 78,
+      "signal": "go",
+      "score": 90,
       "reasons": [
-        "Elevated humidity (71%)",
-        "Cold (39.0\u00b0F) \u2014 slow drying"
+        "Cold (38.2\u00b0F) \u2014 slow drying"
       ],
       "conditions": {
         "precip_24h": 0,
         "precip_48h": 0,
         "precip_forecast_48h": 0,
-        "humidity": 71,
-        "temp_f": 39.0,
-        "windspeed_mph": 2.3
+        "humidity": 70,
+        "temp_f": 38.2,
+        "windspeed_mph": 1.4
       },
       "crag_meta": {
         "rock_type": "granite",
@@ -64,9 +63,9 @@
         "precip_24h": 0,
         "precip_48h": 0.1,
         "precip_forecast_48h": 0,
-        "humidity": 47,
-        "temp_f": 46.4,
-        "windspeed_mph": 11.1
+        "humidity": 51,
+        "temp_f": 43.3,
+        "windspeed_mph": 0.9
       },
       "crag_meta": {
         "rock_type": "basalt",
@@ -82,15 +81,15 @@
       "signal": "go",
       "score": 88,
       "reasons": [
-        "Elevated humidity (80%)"
+        "Elevated humidity (85%)"
       ],
       "conditions": {
         "precip_24h": 0,
         "precip_48h": 0,
         "precip_forecast_48h": 0.17,
-        "humidity": 80,
-        "temp_f": 41.1,
-        "windspeed_mph": 9.0
+        "humidity": 85,
+        "temp_f": 41.6,
+        "windspeed_mph": 7.4
       },
       "crag_meta": {
         "rock_type": "granite",
@@ -106,15 +105,15 @@
       "signal": "go",
       "score": 88,
       "reasons": [
-        "Elevated humidity (81%)"
+        "Elevated humidity (80%)"
       ],
       "conditions": {
         "precip_24h": 0,
         "precip_48h": 0,
         "precip_forecast_48h": 0,
-        "humidity": 81,
-        "temp_f": 43.1,
-        "windspeed_mph": 12.3
+        "humidity": 80,
+        "temp_f": 43.0,
+        "windspeed_mph": 12.2
       },
       "crag_meta": {
         "rock_type": "granite",
@@ -130,21 +129,96 @@
       "signal": "go",
       "score": 90,
       "reasons": [
-        "Cold (38.0\u00b0F) \u2014 slow drying"
+        "Cold (38.2\u00b0F) \u2014 slow drying"
       ],
       "conditions": {
         "precip_24h": 0,
         "precip_48h": 0,
         "precip_forecast_48h": 0,
-        "humidity": 70,
-        "temp_f": 38.0,
-        "windspeed_mph": 7.1
+        "humidity": 65,
+        "temp_f": 38.2,
+        "windspeed_mph": 7.6
       },
       "crag_meta": {
         "rock_type": "sandstone",
         "aspect": "south",
         "elevation_ft": 1400,
         "notes": "Sandstone \u2014 NEVER climb when wet. Holds water in pockets, damages rock when damp. Needs 48-72h after rain."
+      }
+    },
+    {
+      "id": "exit-38",
+      "name": "Exit 38",
+      "region": "I-90 Corridor / North Bend",
+      "signal": "wait",
+      "score": 65,
+      "reasons": [
+        "Very high humidity (97%) \u2014 rock stays damp",
+        "Cold (38.4\u00b0F) \u2014 slow drying"
+      ],
+      "conditions": {
+        "precip_24h": 0,
+        "precip_48h": 0.02,
+        "precip_forecast_48h": 0.13,
+        "humidity": 97,
+        "temp_f": 38.4,
+        "windspeed_mph": 7.6
+      },
+      "crag_meta": {
+        "rock_type": "metamorphic",
+        "aspect": "varied",
+        "elevation_ft": 1400,
+        "notes": "Closest sport climbing to Seattle. Metamorphic andesite dries slower than granite. Many walls face north or are shaded by forest \u2014 factor in extra drying time. Deception Crags is most popular; Far Side and Mt Washington have longer approaches."
+      }
+    },
+    {
+      "id": "castle-rock",
+      "name": "Castle Rock",
+      "region": "Tumwater Canyon / US-2",
+      "signal": "wait",
+      "score": 58,
+      "reasons": [
+        "Elevated humidity (83%)",
+        "Below freezing (21.0\u00b0F) \u2014 ice risk"
+      ],
+      "conditions": {
+        "precip_24h": 0,
+        "precip_48h": 0.03,
+        "precip_forecast_48h": 0,
+        "humidity": 83,
+        "temp_f": 21.0,
+        "windspeed_mph": 20.7
+      },
+      "crag_meta": {
+        "rock_type": "granite",
+        "aspect": "southwest",
+        "elevation_ft": 2200,
+        "notes": "Southwest-facing granite in Tumwater Canyon. Gets afternoon sun, dries reasonably fast. Home to Washington's first multipitch technical rock climb (Midway, Fred Beckey 1948). Rock is polished from heavy traffic \u2014 friction matters more when damp."
+      }
+    },
+    {
+      "id": "smith-rock",
+      "name": "Smith Rock",
+      "region": "Central Oregon",
+      "signal": "go",
+      "score": 95,
+      "reasons": [
+        "Low humidity (38%) \u2014 good drying conditions",
+        "Cold (38.6\u00b0F) \u2014 slow drying"
+      ],
+      "conditions": {
+        "precip_24h": 0,
+        "precip_48h": 0.15,
+        "precip_forecast_48h": 0,
+        "humidity": 38,
+        "temp_f": 38.6,
+        "windspeed_mph": 2.2
+      },
+      "crag_meta": {
+        "rock_type": "volcanic tuff",
+        "aspect": "varied",
+        "elevation_ft": 3200,
+        "notes": "High desert volcanic tuff dries fast and the climate is much drier than PNW. Often climbable year-round. Watch for seasonal raptor closures (Feb-Aug on some walls). Juniper Basin area dries fastest."
       }
     }
   ]
