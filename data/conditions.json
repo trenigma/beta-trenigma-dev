@@ -1,26 +1,23 @@
 {
-  "generated_at": "2026-02-24T01:39:08.769537+00:00",
-  "generated_at_pacific": "2026-02-23 05:39 PM PST",
+  "generated_at": "2026-02-26T21:22:04.265388+00:00",
+  "generated_at_pacific": "2026-02-26 09:22 PM PST",
   "crags": [
     {
       "id": "index",
       "name": "Index Town Wall",
       "region": "Sky Valley / US-2",
       "signal": "wait",
-      "score": 64,
+      "score": 75,
       "reasons": [
-        "0.23\" rain in last 24h (light)",
-        "Elevated humidity (72%)",
-        "Cold (39.0\u00b0F) \u2014 slow drying",
-        "0.85\" rain forecasted \u2014 conditions deteriorating"
+        "Very high humidity (93%) \u2014 rock stays damp"
       ],
       "conditions": {
-        "precip_24h": 0.23,
-        "precip_48h": 0.24,
-        "precip_forecast_48h": 0.85,
-        "humidity": 72,
-        "temp_f": 39.0,
-        "windspeed_mph": 5.0
+        "precip_24h": 0,
+        "precip_48h": 0,
+        "precip_forecast_48h": 0.16,
+        "humidity": 93,
+        "temp_f": 42.0,
+        "windspeed_mph": 7.6
       },
       "crag_meta": {
         "rock_type": "granite",
@@ -34,18 +31,18 @@
       "name": "Leavenworth",
       "region": "Wenatchee River Valley",
       "signal": "wait",
-      "score": 58,
+      "score": 78,
       "reasons": [
-        "Elevated humidity (76%)",
-        "Below freezing (30.3\u00b0F) \u2014 ice risk"
+        "Elevated humidity (71%)",
+        "Cold (39.0\u00b0F) \u2014 slow drying"
       ],
       "conditions": {
-        "precip_24h": 0.0,
-        "precip_48h": 0.0,
-        "precip_forecast_48h": 0.2,
-        "humidity": 76,
-        "temp_f": 30.3,
-        "windspeed_mph": 4.7
+        "precip_24h": 0,
+        "precip_48h": 0,
+        "precip_forecast_48h": 0,
+        "humidity": 71,
+        "temp_f": 39.0,
+        "windspeed_mph": 2.3
       },
       "crag_meta": {
         "rock_type": "granite",
@@ -58,20 +55,18 @@
       "id": "vantage",
       "name": "Vantage",
       "region": "Columbia River Gorge",
-      "signal": "wait",
-      "score": 55,
+      "signal": "go",
+      "score": 100,
       "reasons": [
-        "Very high humidity (92%) \u2014 rock stays damp",
-        "Cold (37.8\u00b0F) \u2014 slow drying",
-        "0.53\" rain forecasted \u2014 conditions deteriorating"
+        "Dry conditions, good temps"
       ],
       "conditions": {
-        "precip_24h": 0.03,
-        "precip_48h": 0.03,
-        "precip_forecast_48h": 0.53,
-        "humidity": 92,
-        "temp_f": 37.8,
-        "windspeed_mph": 2.6
+        "precip_24h": 0,
+        "precip_48h": 0.1,
+        "precip_forecast_48h": 0,
+        "humidity": 47,
+        "temp_f": 46.4,
+        "windspeed_mph": 11.1
       },
       "crag_meta": {
         "rock_type": "basalt",
@@ -84,21 +79,18 @@
       "id": "little-si",
       "name": "Little Si",
       "region": "North Bend / I-90",
-      "signal": "wait",
-      "score": 52,
+      "signal": "go",
+      "score": 88,
       "reasons": [
-        "0.15\" rain in last 24h (light)",
-        "Very high humidity (92%) \u2014 rock stays damp",
-        "Cold (37.3\u00b0F) \u2014 slow drying",
-        "0.63\" rain forecasted \u2014 conditions deteriorating"
+        "Elevated humidity (80%)"
       ],
       "conditions": {
-        "precip_24h": 0.15,
-        "precip_48h": 0.18,
-        "precip_forecast_48h": 0.63,
-        "humidity": 92,
-        "temp_f": 37.3,
-        "windspeed_mph": 2.1
+        "precip_24h": 0,
+        "precip_48h": 0,
+        "precip_forecast_48h": 0.17,
+        "humidity": 80,
+        "temp_f": 41.1,
+        "windspeed_mph": 9.0
       },
       "crag_meta": {
         "rock_type": "granite",
@@ -111,19 +103,18 @@
       "id": "mt-erie",
       "name": "Mt. Erie",
       "region": "Anacortes / Fidalgo Island",
-      "signal": "wait",
-      "score": 78,
+      "signal": "go",
+      "score": 88,
       "reasons": [
-        "Elevated humidity (82%)",
-        "Cold (38.7\u00b0F) \u2014 slow drying"
+        "Elevated humidity (81%)"
       ],
       "conditions": {
-        "precip_24h": 0.02,
-        "precip_48h": 0.09,
-        "precip_forecast_48h": 0.0,
-        "humidity": 82,
-        "temp_f": 38.7,
-        "windspeed_mph": 0.4
+        "precip_24h": 0,
+        "precip_48h": 0,
+        "precip_forecast_48h": 0,
+        "humidity": 81,
+        "temp_f": 43.1,
+        "windspeed_mph": 12.3
       },
       "crag_meta": {
         "rock_type": "granite",
@@ -136,19 +127,18 @@
       "id": "peshastin",
       "name": "Peshastin Pinnacles",
       "region": "Cashmere / US-2",
-      "signal": "wait",
-      "score": 65,
+      "signal": "go",
+      "score": 90,
       "reasons": [
-        "Very high humidity (96%) \u2014 rock stays damp",
-        "Cold (32.7\u00b0F) \u2014 slow drying"
+        "Cold (38.0\u00b0F) \u2014 slow drying"
       ],
       "conditions": {
         "precip_24h": 0,
         "precip_48h": 0,
-        "precip_forecast_48h": 0.33,
-        "humidity": 96,
-        "temp_f": 32.7,
-        "windspeed_mph": 1.8
+        "precip_forecast_48h": 0,
+        "humidity": 70,
+        "temp_f": 38.0,
+        "windspeed_mph": 7.1
       },
       "crag_meta": {
         "rock_type": "sandstone",
