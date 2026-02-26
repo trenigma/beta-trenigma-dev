@@ -170,3 +170,5 @@ data/raw/
 thumbs.db
 Thumbs.db
 ehthumbs.db
+ROADMAP.*
+*_old.*
