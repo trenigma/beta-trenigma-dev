@@ -10,7 +10,8 @@
       "rock_type": "granite",
       "aspect": "south",
       "drying_multiplier": 1.0,
-      "notes": "Granite dries fast. Lower Wall sheds water quickly; Upper Wall slower after heavy rain."
+      "notes": "Granite dries fast. Lower Wall sheds water quickly; Upper Wall slower after heavy rain.",
+      "wind_threshold_mph": 25
     },
     {
       "id": "leavenworth",
@@ -22,7 +23,8 @@
       "rock_type": "granite",
       "aspect": "south",
       "drying_multiplier": 0.8,
-      "notes": "Rain shadow effect \u2014 dries significantly faster than west-side crags. Icicle Canyon blocks moisture."
+      "notes": "Rain shadow effect \u2014 dries significantly faster than west-side crags. Icicle Canyon blocks moisture.",
+      "wind_threshold_mph": 25
     },
     {
       "id": "vantage",
@@ -34,7 +36,8 @@
       "rock_type": "basalt",
       "aspect": "west",
       "drying_multiplier": 0.7,
-      "notes": "Desert climate, basalt dries fast. Wind is a major factor \u2014 often climbable when west-side crags are soaked."
+      "notes": "Desert climate, basalt dries fast. Wind is a major factor \u2014 often climbable when west-side crags are soaked.",
+      "wind_threshold_mph": 15
     },
     {
       "id": "little-si",
@@ -46,7 +49,8 @@
       "rock_type": "granite",
       "aspect": "south",
       "drying_multiplier": 1.2,
-      "notes": "Wetter microclimate than Index. Higher humidity typical. Needs more drying time."
+      "notes": "Wetter microclimate than Index. Higher humidity typical. Needs more drying time.",
+      "wind_threshold_mph": 25
     },
     {
       "id": "mt-erie",
@@ -58,7 +62,8 @@
       "rock_type": "granite",
       "aspect": "varied",
       "drying_multiplier": 1.4,
-      "notes": "Island climate \u2014 high humidity, slow drying. Needs 48h+ after rain to be reliable."
+      "notes": "Island climate \u2014 high humidity, slow drying. Needs 48h+ after rain to be reliable.",
+      "wind_threshold_mph": 20
     },
     {
       "id": "peshastin",
@@ -70,7 +75,8 @@
       "rock_type": "sandstone",
       "aspect": "south",
       "drying_multiplier": 1.5,
-      "notes": "Sandstone \u2014 NEVER climb when wet. Holds water in pockets, damages rock when damp. Needs 48-72h after rain."
+      "notes": "Sandstone \u2014 NEVER climb when wet. Holds water in pockets, damages rock when damp. Needs 48-72h after rain.",
+      "wind_threshold_mph": 25
     },
     {
       "id": "exit-38",
@@ -82,7 +88,8 @@
       "rock_type": "metamorphic",
       "aspect": "varied",
       "drying_multiplier": 1.3,
-      "notes": "Closest sport climbing to Seattle. Metamorphic andesite dries slower than granite. Many walls face north or are shaded by forest \u2014 factor in extra drying time. Deception Crags is most popular; Far Side and Mt Washington have longer approaches."
+      "notes": "Closest sport climbing to Seattle. Metamorphic andesite dries slower than granite. Many walls face north or are shaded by forest \u2014 factor in extra drying time. Deception Crags is most popular; Far Side and Mt Washington have longer approaches.",
+      "wind_threshold_mph": 20
     },
     {
       "id": "castle-rock",
@@ -94,7 +101,8 @@
       "rock_type": "granite",
       "aspect": "southwest",
       "drying_multiplier": 0.9,
-      "notes": "Southwest-facing granite in Tumwater Canyon. Gets afternoon sun, dries reasonably fast. Home to Washington's first multipitch technical rock climb (Midway, Fred Beckey 1948). Rock is polished from heavy traffic \u2014 friction matters more when damp."
+      "notes": "Southwest-facing granite in Tumwater Canyon. Gets afternoon sun, dries reasonably fast. Home to Washington's first multipitch technical rock climb (Midway, 1948). Rock is polished from heavy traffic \u2014 friction matters more when damp.",
+      "wind_threshold_mph": 25
     },
     {
       "id": "smith-rock",
@@ -106,7 +114,8 @@
       "rock_type": "volcanic tuff",
       "aspect": "varied",
       "drying_multiplier": 0.6,
-      "notes": "High desert volcanic tuff dries fast and the climate is much drier than PNW. Often climbable year-round. Watch for seasonal raptor closures (Feb-Aug on some walls). Juniper Basin area dries fastest."
+      "notes": "High desert volcanic tuff dries fast and the climate is much drier than PNW. Often climbable year-round. Watch for seasonal raptor closures (Feb-Aug on some walls). Juniper Basin area dries fastest.",
+      "wind_threshold_mph": 20
     }
   ]
 }

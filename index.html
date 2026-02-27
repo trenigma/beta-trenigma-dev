@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="BETA — Conditions intelligence for Cascade climbers. Real-time crag conditions, go/wait/no-go signals, and weather data for PNW backcountry. Built by a climber, for climbers.">
+  <meta name="description" content="BETA — Conditions intelligence for Cascade climbers. Real-time crag conditions, go/wait/no-go signals, and weather data for PNW backcountry. Built by climbers, for climbers.">
   <meta property="og:title" content="BETA — Cascade Conditions Intel">
   <meta property="og:description" content="Is Index dry? Should you head to Leavenworth? Go/wait/no-go conditions for PNW crags.">
   <title>BETA — Cascade Conditions Intel</title>
@@ -105,7 +105,7 @@
         <h2 class="section-header__title">Pick your wall.</h2>
         <p class="section-header__sub">
           Conditions updated daily. Each signal synthesizes precipitation history,
-          humidity, temps, and drying time into one clear read.
+          humidity, wind, temps, and drying time into one clear read.
         </p>
       </div>
 
@@ -193,7 +193,7 @@
       <div class="community__inner">
 
         <div class="community__quote">
-          Built by a climber <em>of color</em>,<br>
+          Built by climbers <em>of color</em>,<br>
           for climbers <em>of color</em> —<br>
           and everyone <em>out there</em>.
         </div>
@@ -383,9 +383,10 @@
       const c    = crag.conditions || {};
       const url  = CRAG_URLS[crag.id] || '#';
 
-      const precip   = c.precip_48h  != null ? `${c.precip_48h}"` : '—';
-      const humidity = c.humidity    != null ? `${c.humidity}%`   : '—';
-      const temp     = c.temp_f      != null ? `${c.temp_f}°F`    : '—';
+      const precip   = c.precip_48h    != null ? `${c.precip_48h}"` : '—';
+      const humidity = c.humidity      != null ? `${c.humidity}%`   : '—';
+      const temp     = c.temp_f        != null ? `${c.temp_f}°F`    : '—';
+      const wind     = c.windspeed_mph != null ? `${Math.round(c.windspeed_mph)} mph` : '—';
       const updated  = generatedAt   ? timeAgo(generatedAt)       : '—';
 
       // First reason = primary context line on the card
@@ -414,6 +415,10 @@
             <div class="crag-stat">
               <span class="crag-stat__label">Temp</span>
               <span class="crag-stat__value">${temp}</span>
+            </div>
+            <div class="crag-stat">
+              <span class="crag-stat__label">Wind</span>
+              <span class="crag-stat__value">${wind}</span>
             </div>
           </div>
           ${reason ? `<p style="font-size:0.8125rem; color:var(--text-muted); margin-bottom:var(--space-md); line-height:1.4;">→ ${reason}</p>` : ''}

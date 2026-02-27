@@ -202,6 +202,19 @@ def score_conditions(conditions: dict, crag: dict) -> dict:
             score   -= 15
             reasons.append(f"Very hot ({temp}°F) — poor friction")
 
+    # --- WIND ---
+    # High wind = dangerous for multipitch, poor friction, tired arms
+    # Vantage / gorge crags have lower thresholds — Columbia Gorge is notorious
+    wind = conditions.get("windspeed_mph")
+    wind_threshold = crag.get("wind_threshold_mph", 25)
+    if wind is not None:
+        if wind >= wind_threshold * 2:
+            score   -= 25
+            reasons.append(f"High wind ({wind:.0f} mph) — dangerous conditions")
+        elif wind >= wind_threshold:
+            score   -= 12
+            reasons.append(f"Elevated wind ({wind:.0f} mph) — check before going")
+
     # --- INCOMING WEATHER ---
     # Don't drive to the crag if it's about to rain
     p_forecast = conditions.get("precip_forecast_48h", 0)

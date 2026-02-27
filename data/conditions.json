@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-02-27T18:10:51.462293+00:00",
-  "generated_at_pacific": "2026-02-27 06:10 PM PST",
+  "generated_at": "2026-02-27T19:40:38.345618+00:00",
+  "generated_at_pacific": "2026-02-27 11:40 AM PST",
   "crags": [
     {
       "id": "index",
@@ -9,14 +9,14 @@
       "signal": "wait",
       "score": 75,
       "reasons": [
-        "Very high humidity (100%) \u2014 rock stays damp"
+        "Very high humidity (98%) \u2014 rock stays damp"
       ],
       "conditions": {
         "precip_24h": 0.01,
         "precip_48h": 0.01,
-        "precip_forecast_48h": 0.01,
-        "humidity": 100,
-        "temp_f": 41.7,
+        "precip_forecast_48h": 0.05,
+        "humidity": 98,
+        "temp_f": 42.8,
         "windspeed_mph": 5.4
       },
       "crag_meta": {
@@ -31,17 +31,17 @@
       "name": "Leavenworth",
       "region": "Wenatchee River Valley",
       "signal": "go",
-      "score": 100,
+      "score": 88,
       "reasons": [
-        "Dry conditions, good temps"
+        "Elevated humidity (74%)"
       ],
       "conditions": {
         "precip_24h": 0,
         "precip_48h": 0,
         "precip_forecast_48h": 0,
-        "humidity": 70,
-        "temp_f": 42.9,
-        "windspeed_mph": 8.1
+        "humidity": 74,
+        "temp_f": 41.6,
+        "windspeed_mph": 6.8
       },
       "crag_meta": {
         "rock_type": "granite",
@@ -55,17 +55,17 @@
       "name": "Vantage",
       "region": "Columbia River Gorge",
       "signal": "go",
-      "score": 100,
+      "score": 88,
       "reasons": [
-        "Low humidity (39%) \u2014 good drying conditions"
+        "Elevated wind (17 mph) \u2014 check before going"
       ],
       "conditions": {
         "precip_24h": 0,
         "precip_48h": 0,
         "precip_forecast_48h": 0,
-        "humidity": 39,
-        "temp_f": 52.4,
-        "windspeed_mph": 17.1
+        "humidity": 41,
+        "temp_f": 51.3,
+        "windspeed_mph": 17.2
       },
       "crag_meta": {
         "rock_type": "basalt",
@@ -88,8 +88,8 @@
         "precip_48h": 0,
         "precip_forecast_48h": 0,
         "humidity": 81,
-        "temp_f": 43.8,
-        "windspeed_mph": 6.1
+        "temp_f": 44.1,
+        "windspeed_mph": 5.5
       },
       "crag_meta": {
         "rock_type": "granite",
@@ -105,15 +105,15 @@
       "signal": "go",
       "score": 88,
       "reasons": [
-        "Elevated humidity (81%)"
+        "Elevated humidity (82%)"
       ],
       "conditions": {
         "precip_24h": 0,
         "precip_48h": 0,
         "precip_forecast_48h": 0,
-        "humidity": 81,
-        "temp_f": 41.6,
-        "windspeed_mph": 9.5
+        "humidity": 82,
+        "temp_f": 41.2,
+        "windspeed_mph": 8.5
       },
       "crag_meta": {
         "rock_type": "granite",
@@ -135,9 +135,9 @@
         "precip_24h": 0,
         "precip_48h": 0,
         "precip_forecast_48h": 0,
-        "humidity": 66,
-        "temp_f": 42.1,
-        "windspeed_mph": 7.0
+        "humidity": 67,
+        "temp_f": 40.7,
+        "windspeed_mph": 6.9
       },
       "crag_meta": {
         "rock_type": "sandstone",
@@ -151,18 +151,17 @@
       "name": "Exit 38",
       "region": "I-90 Corridor / North Bend",
       "signal": "wait",
-      "score": 65,
+      "score": 75,
       "reasons": [
-        "Very high humidity (100%) \u2014 rock stays damp",
-        "Cold (39.6\u00b0F) \u2014 slow drying"
+        "Very high humidity (100%) \u2014 rock stays damp"
       ],
       "conditions": {
         "precip_24h": 0,
         "precip_48h": 0,
         "precip_forecast_48h": 0,
         "humidity": 100,
-        "temp_f": 39.6,
-        "windspeed_mph": 7.1
+        "temp_f": 40.0,
+        "windspeed_mph": 8.3
       },
       "crag_meta": {
         "rock_type": "metamorphic",
@@ -178,22 +177,22 @@
       "signal": "wait",
       "score": 58,
       "reasons": [
-        "Elevated humidity (75%)",
-        "Below freezing (23.2\u00b0F) \u2014 ice risk"
+        "Elevated humidity (79%)",
+        "Below freezing (22.5\u00b0F) \u2014 ice risk"
       ],
       "conditions": {
         "precip_24h": 0,
         "precip_48h": 0,
         "precip_forecast_48h": 0,
-        "humidity": 75,
-        "temp_f": 23.2,
-        "windspeed_mph": 20.1
+        "humidity": 79,
+        "temp_f": 22.5,
+        "windspeed_mph": 17.6
       },
       "crag_meta": {
         "rock_type": "granite",
         "aspect": "southwest",
         "elevation_ft": 2200,
-        "notes": "Southwest-facing granite in Tumwater Canyon. Gets afternoon sun, dries reasonably fast. Home to Washington's first multipitch technical rock climb (Midway, Fred Beckey 1948). Rock is polished from heavy traffic \u2014 friction matters more when damp."
+        "notes": "Southwest-facing granite in Tumwater Canyon. Gets afternoon sun, dries reasonably fast. Home to Washington's first multipitch technical rock climb (Midway, 1948). Rock is polished from heavy traffic \u2014 friction matters more when damp."
       }
     },
     {
@@ -203,15 +202,15 @@
       "signal": "go",
       "score": 100,
       "reasons": [
-        "Low humidity (17%) \u2014 good drying conditions"
+        "Low humidity (23%) \u2014 good drying conditions"
       ],
       "conditions": {
         "precip_24h": 0,
         "precip_48h": 0,
         "precip_forecast_48h": 0,
-        "humidity": 17,
-        "temp_f": 50.0,
-        "windspeed_mph": 7.1
+        "humidity": 23,
+        "temp_f": 47.6,
+        "windspeed_mph": 6.6
       },
       "crag_meta": {
         "rock_type": "volcanic tuff",
