@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-02-27T00:20:21.584667+00:00",
-  "generated_at_pacific": "2026-02-27 12:20 AM PST",
+  "generated_at": "2026-02-27T06:17:34.461490+00:00",
+  "generated_at_pacific": "2026-02-27 06:17 AM PST",
   "crags": [
     {
       "id": "index",
@@ -9,15 +9,15 @@
       "signal": "wait",
       "score": 75,
       "reasons": [
-        "Very high humidity (93%) \u2014 rock stays damp"
+        "Very high humidity (94%) \u2014 rock stays damp"
       ],
       "conditions": {
         "precip_24h": 0,
         "precip_48h": 0,
-        "precip_forecast_48h": 0.16,
-        "humidity": 93,
-        "temp_f": 42.3,
-        "windspeed_mph": 6.7
+        "precip_forecast_48h": 0.14,
+        "humidity": 94,
+        "temp_f": 41.7,
+        "windspeed_mph": 7.0
       },
       "crag_meta": {
         "rock_type": "granite",
@@ -33,16 +33,16 @@
       "signal": "wait",
       "score": 78,
       "reasons": [
-        "Elevated humidity (74%)",
-        "Cold (36.8\u00b0F) \u2014 slow drying"
+        "Elevated humidity (81%)",
+        "Cold (34.7\u00b0F) \u2014 slow drying"
       ],
       "conditions": {
         "precip_24h": 0,
         "precip_48h": 0,
         "precip_forecast_48h": 0,
-        "humidity": 74,
-        "temp_f": 36.8,
-        "windspeed_mph": 5.0
+        "humidity": 81,
+        "temp_f": 34.7,
+        "windspeed_mph": 5.6
       },
       "crag_meta": {
         "rock_type": "granite",
@@ -65,8 +65,8 @@
         "precip_48h": 0.1,
         "precip_forecast_48h": 0,
         "humidity": 52,
-        "temp_f": 43.6,
-        "windspeed_mph": 4.5
+        "temp_f": 40.9,
+        "windspeed_mph": 5.3
       },
       "crag_meta": {
         "rock_type": "basalt",
@@ -82,15 +82,15 @@
       "signal": "go",
       "score": 88,
       "reasons": [
-        "Elevated humidity (84%)"
+        "Elevated humidity (85%)"
       ],
       "conditions": {
         "precip_24h": 0,
         "precip_48h": 0,
-        "precip_forecast_48h": 0.17,
-        "humidity": 84,
-        "temp_f": 42.2,
-        "windspeed_mph": 8.1
+        "precip_forecast_48h": 0.03,
+        "humidity": 85,
+        "temp_f": 42.0,
+        "windspeed_mph": 6.6
       },
       "crag_meta": {
         "rock_type": "granite",
@@ -103,18 +103,18 @@
       "id": "mt-erie",
       "name": "Mt. Erie",
       "region": "Anacortes / Fidalgo Island",
-      "signal": "go",
-      "score": 88,
+      "signal": "wait",
+      "score": 75,
       "reasons": [
-        "Elevated humidity (80%)"
+        "Very high humidity (90%) \u2014 rock stays damp"
       ],
       "conditions": {
         "precip_24h": 0,
         "precip_48h": 0,
         "precip_forecast_48h": 0,
-        "humidity": 80,
-        "temp_f": 41.1,
-        "windspeed_mph": 9.2
+        "humidity": 90,
+        "temp_f": 42.3,
+        "windspeed_mph": 5.7
       },
       "crag_meta": {
         "rock_type": "granite",
@@ -130,16 +130,16 @@
       "signal": "wait",
       "score": 78,
       "reasons": [
-        "Elevated humidity (74%)",
-        "Cold (37.1\u00b0F) \u2014 slow drying"
+        "Elevated humidity (75%)",
+        "Cold (34.6\u00b0F) \u2014 slow drying"
       ],
       "conditions": {
         "precip_24h": 0,
         "precip_48h": 0,
         "precip_forecast_48h": 0,
-        "humidity": 74,
-        "temp_f": 37.1,
-        "windspeed_mph": 7.0
+        "humidity": 75,
+        "temp_f": 34.6,
+        "windspeed_mph": 5.9
       },
       "crag_meta": {
         "rock_type": "sandstone",
@@ -155,16 +155,16 @@
       "signal": "wait",
       "score": 65,
       "reasons": [
-        "Very high humidity (93%) \u2014 rock stays damp",
-        "Cold (39.3\u00b0F) \u2014 slow drying"
+        "Very high humidity (100%) \u2014 rock stays damp",
+        "Cold (38.0\u00b0F) \u2014 slow drying"
       ],
       "conditions": {
         "precip_24h": 0,
         "precip_48h": 0.02,
-        "precip_forecast_48h": 0.13,
-        "humidity": 93,
-        "temp_f": 39.3,
-        "windspeed_mph": 6.8
+        "precip_forecast_48h": 0,
+        "humidity": 100,
+        "temp_f": 38.0,
+        "windspeed_mph": 6.9
       },
       "crag_meta": {
         "rock_type": "metamorphic",
@@ -180,16 +180,16 @@
       "signal": "wait",
       "score": 58,
       "reasons": [
-        "Elevated humidity (80%)",
-        "Below freezing (21.7\u00b0F) \u2014 ice risk"
+        "Elevated humidity (76%)",
+        "Below freezing (22.0\u00b0F) \u2014 ice risk"
       ],
       "conditions": {
         "precip_24h": 0,
         "precip_48h": 0.03,
         "precip_forecast_48h": 0,
-        "humidity": 80,
-        "temp_f": 21.7,
-        "windspeed_mph": 20.4
+        "humidity": 76,
+        "temp_f": 22.0,
+        "windspeed_mph": 18.1
       },
       "crag_meta": {
         "rock_type": "granite",
@@ -202,19 +202,18 @@
       "id": "smith-rock",
       "name": "Smith Rock",
       "region": "Central Oregon",
-      "signal": "go",
-      "score": 95,
+      "signal": "wait",
+      "score": 70,
       "reasons": [
-        "Low humidity (39%) \u2014 good drying conditions",
-        "Cold (35.4\u00b0F) \u2014 slow drying"
+        "Below freezing (29.8\u00b0F) \u2014 ice risk"
       ],
       "conditions": {
         "precip_24h": 0,
         "precip_48h": 0.15,
         "precip_forecast_48h": 0,
-        "humidity": 39,
-        "temp_f": 35.4,
-        "windspeed_mph": 3.8
+        "humidity": 45,
+        "temp_f": 29.8,
+        "windspeed_mph": 8.2
       },
       "crag_meta": {
         "rock_type": "volcanic tuff",
