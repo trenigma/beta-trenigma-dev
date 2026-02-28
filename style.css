@@ -651,6 +651,9 @@ h1, h2, h3, h4 {
   letter-spacing: 0.1em;
   text-transform: uppercase;
   color: var(--text-muted);
+  min-height: 2.2em;
+  display: flex;
+  align-items: flex-end;
 }
 
 .crag-stat__value {
