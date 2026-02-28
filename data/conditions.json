@@ -1,23 +1,23 @@
 {
-  "generated_at": "2026-02-28T12:06:51.389072+00:00",
-  "generated_at_pacific": "2026-02-28 12:06 PM PST",
+  "generated_at": "2026-02-28T18:05:28.635544+00:00",
+  "generated_at_pacific": "2026-02-28 06:05 PM PST",
   "crags": [
     {
       "id": "index",
       "name": "Index Town Wall",
       "region": "Sky Valley / US-2",
-      "signal": "go",
-      "score": 88,
+      "signal": "wait",
+      "score": 75,
       "reasons": [
-        "Elevated humidity (84%)"
+        "Very high humidity (95%) \u2014 rock stays damp"
       ],
       "conditions": {
         "precip_24h": 0,
         "precip_48h": 0.01,
         "precip_forecast_48h": 0,
-        "humidity": 84,
-        "temp_f": 49.5,
-        "windspeed_mph": 6.8
+        "humidity": 95,
+        "temp_f": 45.9,
+        "windspeed_mph": 3.1
       },
       "crag_meta": {
         "rock_type": "granite",
@@ -39,9 +39,9 @@
         "precip_24h": 0,
         "precip_48h": 0,
         "precip_forecast_48h": 0,
-        "humidity": 53,
-        "temp_f": 50.5,
-        "windspeed_mph": 4.9
+        "humidity": 66,
+        "temp_f": 46.3,
+        "windspeed_mph": 0.8
       },
       "crag_meta": {
         "rock_type": "granite",
@@ -57,16 +57,15 @@
       "signal": "go",
       "score": 100,
       "reasons": [
-        "Low humidity (32%) \u2014 good drying conditions",
-        "Ideal temp (56.5\u00b0F)"
+        "Low humidity (32%) \u2014 good drying conditions"
       ],
       "conditions": {
         "precip_24h": 0,
         "precip_48h": 0,
         "precip_forecast_48h": 0,
         "humidity": 32,
-        "temp_f": 56.5,
-        "windspeed_mph": 3.6
+        "temp_f": 51.5,
+        "windspeed_mph": 2.3
       },
       "crag_meta": {
         "rock_type": "basalt",
@@ -79,18 +78,18 @@
       "id": "little-si",
       "name": "Little Si",
       "region": "North Bend / I-90",
-      "signal": "go",
-      "score": 88,
+      "signal": "wait",
+      "score": 75,
       "reasons": [
-        "Elevated humidity (79%)"
+        "Very high humidity (90%) \u2014 rock stays damp"
       ],
       "conditions": {
         "precip_24h": 0,
         "precip_48h": 0,
         "precip_forecast_48h": 0,
-        "humidity": 79,
-        "temp_f": 48.2,
-        "windspeed_mph": 7.8
+        "humidity": 90,
+        "temp_f": 44.4,
+        "windspeed_mph": 4.1
       },
       "crag_meta": {
         "rock_type": "granite",
@@ -103,18 +102,19 @@
       "id": "mt-erie",
       "name": "Mt. Erie",
       "region": "Anacortes / Fidalgo Island",
-      "signal": "go",
-      "score": 88,
+      "signal": "wait",
+      "score": 78,
       "reasons": [
-        "Elevated humidity (79%)"
+        "Elevated humidity (82%)",
+        "Cold (39.6\u00b0F) \u2014 slow drying"
       ],
       "conditions": {
         "precip_24h": 0,
         "precip_48h": 0,
         "precip_forecast_48h": 0,
-        "humidity": 79,
-        "temp_f": 44.4,
-        "windspeed_mph": 10.5
+        "humidity": 82,
+        "temp_f": 39.6,
+        "windspeed_mph": 5.0
       },
       "crag_meta": {
         "rock_type": "granite",
@@ -136,9 +136,9 @@
         "precip_24h": 0,
         "precip_48h": 0,
         "precip_forecast_48h": 0,
-        "humidity": 43,
-        "temp_f": 50.1,
-        "windspeed_mph": 2.9
+        "humidity": 54,
+        "temp_f": 44.4,
+        "windspeed_mph": 4.7
       },
       "crag_meta": {
         "rock_type": "sandstone",
@@ -151,18 +151,18 @@
       "id": "exit-38",
       "name": "Exit 38",
       "region": "I-90 Corridor / North Bend",
-      "signal": "go",
-      "score": 88,
+      "signal": "wait",
+      "score": 75,
       "reasons": [
-        "Elevated humidity (71%)"
+        "Very high humidity (87%) \u2014 rock stays damp"
       ],
       "conditions": {
         "precip_24h": 0,
         "precip_48h": 0,
         "precip_forecast_48h": 0,
-        "humidity": 71,
-        "temp_f": 50.9,
-        "windspeed_mph": 2.8
+        "humidity": 87,
+        "temp_f": 44.7,
+        "windspeed_mph": 0.6
       },
       "crag_meta": {
         "rock_type": "metamorphic",
@@ -178,15 +178,15 @@
       "signal": "wait",
       "score": 70,
       "reasons": [
-        "Below freezing (31.2\u00b0F) \u2014 ice risk"
+        "Below freezing (28.1\u00b0F) \u2014 ice risk"
       ],
       "conditions": {
         "precip_24h": 0,
         "precip_48h": 0,
         "precip_forecast_48h": 0,
-        "humidity": 59,
-        "temp_f": 31.2,
-        "windspeed_mph": 5.1
+        "humidity": 51,
+        "temp_f": 28.1,
+        "windspeed_mph": 4.5
       },
       "crag_meta": {
         "rock_type": "granite",
@@ -202,16 +202,15 @@
       "signal": "go",
       "score": 100,
       "reasons": [
-        "Low humidity (27%) \u2014 good drying conditions",
-        "Ideal temp (59.2\u00b0F)"
+        "Low humidity (32%) \u2014 good drying conditions"
       ],
       "conditions": {
         "precip_24h": 0,
         "precip_48h": 0,
-        "precip_forecast_48h": 0.15,
-        "humidity": 27,
-        "temp_f": 59.2,
-        "windspeed_mph": 6.2
+        "precip_forecast_48h": 0.13,
+        "humidity": 32,
+        "temp_f": 51.9,
+        "windspeed_mph": 3.5
       },
       "crag_meta": {
         "rock_type": "volcanic tuff",
@@ -224,19 +223,18 @@
       "id": "squamish-chief",
       "name": "The Chief",
       "region": "Squamish, BC",
-      "signal": "wait",
-      "score": 65,
+      "signal": "go",
+      "score": 100,
       "reasons": [
-        "Very high humidity (88%) \u2014 rock stays damp",
-        "Cold (39.8\u00b0F) \u2014 slow drying"
+        "Dry conditions, good temps"
       ],
       "conditions": {
         "precip_24h": 0,
         "precip_48h": 0.01,
         "precip_forecast_48h": 0,
-        "humidity": 88,
-        "temp_f": 39.8,
-        "windspeed_mph": 3.0
+        "humidity": 58,
+        "temp_f": 40.4,
+        "windspeed_mph": 6.0
       },
       "crag_meta": {
         "rock_type": "granite",
@@ -252,15 +250,15 @@
       "signal": "go",
       "score": 88,
       "reasons": [
-        "Elevated humidity (76%)"
+        "Elevated humidity (72%)"
       ],
       "conditions": {
         "precip_24h": 0,
         "precip_48h": 0.02,
         "precip_forecast_48h": 0,
-        "humidity": 76,
-        "temp_f": 46.1,
-        "windspeed_mph": 2.9
+        "humidity": 72,
+        "temp_f": 44.2,
+        "windspeed_mph": 3.5
       },
       "crag_meta": {
         "rock_type": "granite",
