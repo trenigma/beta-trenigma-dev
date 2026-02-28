@@ -116,6 +116,32 @@
       "drying_multiplier": 0.6,
       "notes": "High desert volcanic tuff dries fast and the climate is much drier than PNW. Often climbable year-round. Watch for seasonal raptor closures (Feb-Aug on some walls). Juniper Basin area dries fastest.",
       "wind_threshold_mph": 20
+    },
+    {
+      "id": "squamish-chief",
+      "name": "The Chief",
+      "region": "Squamish, BC",
+      "lat": 49.6677,
+      "lng": -123.1467,
+      "elevation_ft": 2100,
+      "rock_type": "granite",
+      "aspect": "south",
+      "drying_multiplier": 1.4,
+      "wind_threshold_mph": 25,
+      "notes": "The big one. Massive south-facing granite wall \u2014 beautiful in good conditions but very slow to dry due to size and coastal moisture. Seeps can persist for days after heavy rain. Upper Chief dries slower than the base. Check the access society for any closures before heading up."
+    },
+    {
+      "id": "squamish-smoke-bluffs",
+      "name": "Smoke Bluffs",
+      "region": "Squamish, BC",
+      "lat": 49.7012,
+      "lng": -123.152,
+      "elevation_ft": 600,
+      "rock_type": "granite",
+      "aspect": "varied",
+      "drying_multiplier": 1.0,
+      "wind_threshold_mph": 25,
+      "notes": "The local's playground \u2014 lower elevation, well-traveled, and significantly faster-drying than The Chief. Often climbable a day after rain clears when the Chief is still weeping. Varied aspects mean some walls see sun most of the day. One of the best urban crags in North America."
     }
   ]
 }
