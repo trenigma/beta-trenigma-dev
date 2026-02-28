@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-02-27T23:16:42.978679+00:00",
-  "generated_at_pacific": "2026-02-27 03:16 PM PST",
+  "generated_at": "2026-02-28T00:13:26.420030+00:00",
+  "generated_at_pacific": "2026-02-28 12:13 AM PST",
   "crags": [
     {
       "id": "index",
@@ -9,15 +9,15 @@
       "signal": "wait",
       "score": 75,
       "reasons": [
-        "Very high humidity (96%) \u2014 rock stays damp"
+        "Very high humidity (92%) \u2014 rock stays damp"
       ],
       "conditions": {
         "precip_24h": 0.01,
         "precip_48h": 0.01,
-        "precip_forecast_48h": 0.0,
-        "humidity": 96,
-        "temp_f": 41.4,
-        "windspeed_mph": 3.7
+        "precip_forecast_48h": 0,
+        "humidity": 92,
+        "temp_f": 41.6,
+        "windspeed_mph": 2.9
       },
       "crag_meta": {
         "rock_type": "granite",
@@ -30,18 +30,19 @@
       "id": "leavenworth",
       "name": "Leavenworth",
       "region": "Wenatchee River Valley",
-      "signal": "go",
-      "score": 90,
+      "signal": "wait",
+      "score": 78,
       "reasons": [
-        "Cold (38.0\u00b0F) \u2014 slow drying"
+        "Elevated humidity (74%)",
+        "Cold (36.9\u00b0F) \u2014 slow drying"
       ],
       "conditions": {
         "precip_24h": 0,
         "precip_48h": 0,
         "precip_forecast_48h": 0,
-        "humidity": 68,
-        "temp_f": 38.0,
-        "windspeed_mph": 3.6
+        "humidity": 74,
+        "temp_f": 36.9,
+        "windspeed_mph": 5.8
       },
       "crag_meta": {
         "rock_type": "granite",
@@ -63,9 +64,9 @@
         "precip_24h": 0,
         "precip_48h": 0,
         "precip_forecast_48h": 0,
-        "humidity": 49,
-        "temp_f": 46.9,
-        "windspeed_mph": 9.2
+        "humidity": 47,
+        "temp_f": 47.0,
+        "windspeed_mph": 10.1
       },
       "crag_meta": {
         "rock_type": "basalt",
@@ -78,18 +79,19 @@
       "id": "little-si",
       "name": "Little Si",
       "region": "North Bend / I-90",
-      "signal": "go",
-      "score": 88,
+      "signal": "wait",
+      "score": 78,
       "reasons": [
-        "Elevated humidity (82%)"
+        "Elevated humidity (82%)",
+        "Cold (39.7\u00b0F) \u2014 slow drying"
       ],
       "conditions": {
         "precip_24h": 0,
         "precip_48h": 0,
         "precip_forecast_48h": 0,
         "humidity": 82,
-        "temp_f": 42.0,
-        "windspeed_mph": 3.9
+        "temp_f": 39.7,
+        "windspeed_mph": 3.8
       },
       "crag_meta": {
         "rock_type": "granite",
@@ -103,18 +105,18 @@
       "name": "Mt. Erie",
       "region": "Anacortes / Fidalgo Island",
       "signal": "wait",
-      "score": 65,
+      "score": 78,
       "reasons": [
-        "Very high humidity (87%) \u2014 rock stays damp",
-        "Cold (39.0\u00b0F) \u2014 slow drying"
+        "Elevated humidity (83%)",
+        "Cold (38.8\u00b0F) \u2014 slow drying"
       ],
       "conditions": {
         "precip_24h": 0,
         "precip_48h": 0,
         "precip_forecast_48h": 0,
-        "humidity": 87,
-        "temp_f": 39.0,
-        "windspeed_mph": 5.1
+        "humidity": 83,
+        "temp_f": 38.8,
+        "windspeed_mph": 5.3
       },
       "crag_meta": {
         "rock_type": "granite",
@@ -130,15 +132,15 @@
       "signal": "go",
       "score": 90,
       "reasons": [
-        "Cold (37.7\u00b0F) \u2014 slow drying"
+        "Cold (37.6\u00b0F) \u2014 slow drying"
       ],
       "conditions": {
         "precip_24h": 0,
         "precip_48h": 0,
         "precip_forecast_48h": 0,
-        "humidity": 60,
-        "temp_f": 37.7,
-        "windspeed_mph": 2.2
+        "humidity": 62,
+        "temp_f": 37.6,
+        "windspeed_mph": 5.1
       },
       "crag_meta": {
         "rock_type": "sandstone",
@@ -154,16 +156,16 @@
       "signal": "wait",
       "score": 65,
       "reasons": [
-        "Very high humidity (93%) \u2014 rock stays damp",
-        "Cold (37.9\u00b0F) \u2014 slow drying"
+        "Very high humidity (89%) \u2014 rock stays damp",
+        "Cold (37.4\u00b0F) \u2014 slow drying"
       ],
       "conditions": {
         "precip_24h": 0,
         "precip_48h": 0,
         "precip_forecast_48h": 0,
-        "humidity": 93,
-        "temp_f": 37.9,
-        "windspeed_mph": 6.9
+        "humidity": 89,
+        "temp_f": 37.4,
+        "windspeed_mph": 7.1
       },
       "crag_meta": {
         "rock_type": "metamorphic",
@@ -179,16 +181,16 @@
       "signal": "wait",
       "score": 58,
       "reasons": [
-        "Elevated humidity (72%)",
-        "Below freezing (24.1\u00b0F) \u2014 ice risk"
+        "Elevated humidity (73%)",
+        "Below freezing (23.6\u00b0F) \u2014 ice risk"
       ],
       "conditions": {
         "precip_24h": 0,
         "precip_48h": 0,
         "precip_forecast_48h": 0,
-        "humidity": 72,
-        "temp_f": 24.1,
-        "windspeed_mph": 22.7
+        "humidity": 73,
+        "temp_f": 23.6,
+        "windspeed_mph": 22.8
       },
       "crag_meta": {
         "rock_type": "granite",
@@ -202,24 +204,71 @@
       "name": "Smith Rock",
       "region": "Central Oregon",
       "signal": "go",
-      "score": 95,
+      "score": 90,
       "reasons": [
-        "Low humidity (38%) \u2014 good drying conditions",
-        "Cold (38.7\u00b0F) \u2014 slow drying"
+        "Cold (36.4\u00b0F) \u2014 slow drying"
       ],
       "conditions": {
         "precip_24h": 0,
         "precip_48h": 0,
         "precip_forecast_48h": 0,
-        "humidity": 38,
-        "temp_f": 38.7,
-        "windspeed_mph": 4.8
+        "humidity": 47,
+        "temp_f": 36.4,
+        "windspeed_mph": 6.7
       },
       "crag_meta": {
         "rock_type": "volcanic tuff",
         "aspect": "varied",
         "elevation_ft": 3200,
         "notes": "High desert volcanic tuff dries fast and the climate is much drier than PNW. Often climbable year-round. Watch for seasonal raptor closures (Feb-Aug on some walls). Juniper Basin area dries fastest."
+      }
+    },
+    {
+      "id": "squamish-chief",
+      "name": "The Chief",
+      "region": "Squamish, BC",
+      "signal": "go",
+      "score": 90,
+      "reasons": [
+        "Cold (34.7\u00b0F) \u2014 slow drying"
+      ],
+      "conditions": {
+        "precip_24h": 0.01,
+        "precip_48h": 0.01,
+        "precip_forecast_48h": 0,
+        "humidity": 67,
+        "temp_f": 34.7,
+        "windspeed_mph": 1.4
+      },
+      "crag_meta": {
+        "rock_type": "granite",
+        "aspect": "south",
+        "elevation_ft": 2100,
+        "notes": "The big one. Massive south-facing granite wall \u2014 beautiful in good conditions but very slow to dry due to size and coastal moisture. Seeps can persist for days after heavy rain. Upper Chief dries slower than the base. Check the access society for any closures before heading up."
+      }
+    },
+    {
+      "id": "squamish-smoke-bluffs",
+      "name": "Smoke Bluffs",
+      "region": "Squamish, BC",
+      "signal": "go",
+      "score": 90,
+      "reasons": [
+        "Cold (38.6\u00b0F) \u2014 slow drying"
+      ],
+      "conditions": {
+        "precip_24h": 0.02,
+        "precip_48h": 0.02,
+        "precip_forecast_48h": 0,
+        "humidity": 66,
+        "temp_f": 38.6,
+        "windspeed_mph": 2.4
+      },
+      "crag_meta": {
+        "rock_type": "granite",
+        "aspect": "varied",
+        "elevation_ft": 600,
+        "notes": "The local's playground \u2014 lower elevation, well-traveled, and significantly faster-drying than The Chief. Often climbable a day after rain clears when the Chief is still weeping. Varied aspects mean some walls see sun most of the day. One of the best urban crags in North America."
       }
     }
   ]
