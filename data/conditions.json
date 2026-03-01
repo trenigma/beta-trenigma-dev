@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-03-01T00:20:30.706202+00:00",
-  "generated_at_pacific": "2026-03-01 12:20 AM PST",
+  "generated_at": "2026-03-01T06:14:42.530424+00:00",
+  "generated_at_pacific": "2026-03-01 06:14 AM PST",
   "crags": [
     {
       "id": "index",
@@ -15,9 +15,9 @@
         "precip_24h": 0,
         "precip_48h": 0.01,
         "precip_forecast_48h": 0,
-        "humidity": 70,
-        "temp_f": 41.6,
-        "windspeed_mph": 1.8
+        "humidity": 45,
+        "temp_f": 41.5,
+        "windspeed_mph": 4.7
       },
       "crag_meta": {
         "rock_type": "granite",
@@ -31,17 +31,17 @@
       "name": "Leavenworth",
       "region": "Wenatchee River Valley",
       "signal": "go",
-      "score": 100,
+      "score": 90,
       "reasons": [
-        "Dry conditions, good temps"
+        "Cold (37.4\u00b0F) \u2014 slow drying"
       ],
       "conditions": {
         "precip_24h": 0,
         "precip_48h": 0,
         "precip_forecast_48h": 0,
-        "humidity": 58,
-        "temp_f": 41.3,
-        "windspeed_mph": 1.1
+        "humidity": 56,
+        "temp_f": 37.4,
+        "windspeed_mph": 2.6
       },
       "crag_meta": {
         "rock_type": "granite",
@@ -55,17 +55,17 @@
       "name": "Vantage",
       "region": "Columbia River Gorge",
       "signal": "go",
-      "score": 100,
+      "score": 90,
       "reasons": [
-        "Low humidity (39%) \u2014 good drying conditions"
+        "Cold (36.5\u00b0F) \u2014 slow drying"
       ],
       "conditions": {
         "precip_24h": 0,
         "precip_48h": 0,
         "precip_forecast_48h": 0,
-        "humidity": 39,
-        "temp_f": 43.6,
-        "windspeed_mph": 4.3
+        "humidity": 57,
+        "temp_f": 36.5,
+        "windspeed_mph": 7.2
       },
       "crag_meta": {
         "rock_type": "basalt",
@@ -81,16 +81,16 @@
       "signal": "wait",
       "score": 78,
       "reasons": [
-        "Elevated humidity (85%)",
-        "Cold (38.5\u00b0F) \u2014 slow drying"
+        "Elevated humidity (77%)",
+        "Cold (35.2\u00b0F) \u2014 slow drying"
       ],
       "conditions": {
         "precip_24h": 0,
         "precip_48h": 0,
         "precip_forecast_48h": 0,
-        "humidity": 85,
-        "temp_f": 38.5,
-        "windspeed_mph": 0.7
+        "humidity": 77,
+        "temp_f": 35.2,
+        "windspeed_mph": 2.7
       },
       "crag_meta": {
         "rock_type": "granite",
@@ -106,16 +106,16 @@
       "signal": "wait",
       "score": 78,
       "reasons": [
-        "Elevated humidity (77%)",
-        "Cold (36.5\u00b0F) \u2014 slow drying"
+        "Elevated humidity (76%)",
+        "Cold (35.8\u00b0F) \u2014 slow drying"
       ],
       "conditions": {
         "precip_24h": 0,
         "precip_48h": 0,
         "precip_forecast_48h": 0,
-        "humidity": 77,
-        "temp_f": 36.5,
-        "windspeed_mph": 6.1
+        "humidity": 76,
+        "temp_f": 35.8,
+        "windspeed_mph": 5.0
       },
       "crag_meta": {
         "rock_type": "granite",
@@ -131,15 +131,15 @@
       "signal": "go",
       "score": 90,
       "reasons": [
-        "Cold (39.7\u00b0F) \u2014 slow drying"
+        "Cold (36.2\u00b0F) \u2014 slow drying"
       ],
       "conditions": {
         "precip_24h": 0,
         "precip_48h": 0,
         "precip_forecast_48h": 0,
         "humidity": 55,
-        "temp_f": 39.7,
-        "windspeed_mph": 3.4
+        "temp_f": 36.2,
+        "windspeed_mph": 1.1
       },
       "crag_meta": {
         "rock_type": "sandstone",
@@ -161,9 +161,9 @@
         "precip_24h": 0,
         "precip_48h": 0,
         "precip_forecast_48h": 0,
-        "humidity": 55,
-        "temp_f": 42.3,
-        "windspeed_mph": 3.7
+        "humidity": 43,
+        "temp_f": 41.7,
+        "windspeed_mph": 7.9
       },
       "crag_meta": {
         "rock_type": "metamorphic",
@@ -179,16 +179,16 @@
       "signal": "wait",
       "score": 75,
       "reasons": [
-        "Low humidity (30%) \u2014 good drying conditions",
-        "Below freezing (25.1\u00b0F) \u2014 ice risk"
+        "Low humidity (25%) \u2014 good drying conditions",
+        "Below freezing (22.2\u00b0F) \u2014 ice risk"
       ],
       "conditions": {
         "precip_24h": 0,
         "precip_48h": 0,
         "precip_forecast_48h": 0,
-        "humidity": 30,
-        "temp_f": 25.1,
-        "windspeed_mph": 2.3
+        "humidity": 25,
+        "temp_f": 22.2,
+        "windspeed_mph": 5.3
       },
       "crag_meta": {
         "rock_type": "granite",
@@ -201,18 +201,19 @@
       "id": "smith-rock",
       "name": "Smith Rock",
       "region": "Central Oregon",
-      "signal": "go",
-      "score": 100,
+      "signal": "wait",
+      "score": 58,
       "reasons": [
-        "Dry conditions, good temps"
+        "Elevated humidity (78%)",
+        "Below freezing (31.3\u00b0F) \u2014 ice risk"
       ],
       "conditions": {
         "precip_24h": 0,
         "precip_48h": 0,
-        "precip_forecast_48h": 0.05,
-        "humidity": 67,
-        "temp_f": 42.4,
-        "windspeed_mph": 0.7
+        "precip_forecast_48h": 0.03,
+        "humidity": 78,
+        "temp_f": 31.3,
+        "windspeed_mph": 4.9
       },
       "crag_meta": {
         "rock_type": "volcanic tuff",
@@ -226,17 +227,17 @@
       "name": "The Chief",
       "region": "Squamish, BC",
       "signal": "go",
-      "score": 90,
+      "score": 100,
       "reasons": [
-        "Cold (39.1\u00b0F) \u2014 slow drying"
+        "Low humidity (34%) \u2014 good drying conditions"
       ],
       "conditions": {
         "precip_24h": 0,
         "precip_48h": 0.01,
         "precip_forecast_48h": 0,
-        "humidity": 51,
-        "temp_f": 39.1,
-        "windspeed_mph": 2.3
+        "humidity": 34,
+        "temp_f": 43.8,
+        "windspeed_mph": 1.6
       },
       "crag_meta": {
         "rock_type": "granite",
@@ -258,9 +259,9 @@
         "precip_24h": 0,
         "precip_48h": 0.02,
         "precip_forecast_48h": 0,
-        "humidity": 64,
-        "temp_f": 40.3,
-        "windspeed_mph": 1.9
+        "humidity": 47,
+        "temp_f": 41.0,
+        "windspeed_mph": 4.3
       },
       "crag_meta": {
         "rock_type": "granite",
