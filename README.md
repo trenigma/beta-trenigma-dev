@@ -140,7 +140,7 @@ Built by a climber of color in Seattle, WA.
 
 ## License
 
-Copyright (c) 2026 trenigma. All rights reserved.
+Copyright (c) 2026 Tree (trenigma). All rights reserved.
 
 This project is free for personal, educational, and non-commercial use. You're welcome to fork it, learn from it, adapt it for your local climbing community, or build on it — as long as you're not making money from it.
 
