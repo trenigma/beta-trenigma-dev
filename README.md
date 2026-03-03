@@ -133,7 +133,7 @@ Then open a pull request against `main` on GitHub. Include a note about the crag
 Built by a climber of color in Seattle, WA.
 
 - GitHub: [@trenigma](https://github.com/trenigma)
-- Instagram: [@trenigma](https://www.instagram.com/visceral_pnw/)
+- Instagram: [@visceral_pnw](https://www.instagram.com/visceral_pnw/)
 - Community: [Rising Roots PNW](https://www.instagram.com/risingrootspnw/) — building welcoming spaces for underrepresented climbers
 
 ---
