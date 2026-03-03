@@ -16,13 +16,11 @@ jobs:
   update-conditions:
     runs-on: ubuntu-latest
 
-    # Required: allows the workflow to commit files back to the repo
-    permissions:
-      contents: write
-
     steps:
       - name: Checkout repo
         uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.PAT_TOKEN }}
 
       - name: Set up Python
         uses: actions/setup-python@v5
