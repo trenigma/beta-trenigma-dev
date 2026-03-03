@@ -1,23 +1,24 @@
 {
-  "generated_at": "2026-03-02T18:13:32.977492+00:00",
-  "generated_at_pacific": "2026-03-02 06:13 PM PST",
+  "generated_at": "2026-03-03T00:19:35.379200+00:00",
+  "generated_at_pacific": "2026-03-03 12:19 AM PST",
   "crags": [
     {
       "id": "index",
       "name": "Index Town Wall",
       "region": "Sky Valley / US-2",
-      "signal": "go",
-      "score": 88,
+      "signal": "wait",
+      "score": 78,
       "reasons": [
-        "Elevated humidity (79%)"
+        "Elevated humidity (82%)",
+        "0.6\" rain forecasted \u2014 conditions deteriorating"
       ],
       "conditions": {
         "precip_24h": 0,
         "precip_48h": 0,
-        "precip_forecast_48h": 0.4,
-        "humidity": 79,
-        "temp_f": 47.6,
-        "windspeed_mph": 2.7
+        "precip_forecast_48h": 0.6,
+        "humidity": 82,
+        "temp_f": 44.1,
+        "windspeed_mph": 5.2
       },
       "crag_meta": {
         "rock_type": "granite",
@@ -39,9 +40,9 @@
         "precip_24h": 0,
         "precip_48h": 0,
         "precip_forecast_48h": 0,
-        "humidity": 57,
-        "temp_f": 51.3,
-        "windspeed_mph": 3.2
+        "humidity": 65,
+        "temp_f": 43.2,
+        "windspeed_mph": 6.5
       },
       "crag_meta": {
         "rock_type": "granite",
@@ -57,15 +58,15 @@
       "signal": "go",
       "score": 100,
       "reasons": [
-        "Low humidity (33%) \u2014 good drying conditions"
+        "Dry conditions, good temps"
       ],
       "conditions": {
         "precip_24h": 0,
         "precip_48h": 0,
         "precip_forecast_48h": 0,
-        "humidity": 33,
-        "temp_f": 52.2,
-        "windspeed_mph": 4.1
+        "humidity": 57,
+        "temp_f": 42.7,
+        "windspeed_mph": 7.6
       },
       "crag_meta": {
         "rock_type": "basalt",
@@ -78,19 +79,18 @@
       "id": "little-si",
       "name": "Little Si",
       "region": "North Bend / I-90",
-      "signal": "wait",
-      "score": 78,
+      "signal": "go",
+      "score": 88,
       "reasons": [
-        "Elevated humidity (77%)",
-        "0.76\" rain forecasted \u2014 conditions deteriorating"
+        "Elevated humidity (82%)"
       ],
       "conditions": {
         "precip_24h": 0,
         "precip_48h": 0,
-        "precip_forecast_48h": 0.76,
-        "humidity": 77,
-        "temp_f": 48.4,
-        "windspeed_mph": 1.1
+        "precip_forecast_48h": 0.35,
+        "humidity": 82,
+        "temp_f": 46.2,
+        "windspeed_mph": 7.2
       },
       "crag_meta": {
         "rock_type": "granite",
@@ -106,15 +106,15 @@
       "signal": "go",
       "score": 88,
       "reasons": [
-        "Elevated humidity (75%)"
+        "Elevated humidity (80%)"
       ],
       "conditions": {
         "precip_24h": 0,
         "precip_48h": 0,
-        "precip_forecast_48h": 0.02,
-        "humidity": 75,
-        "temp_f": 45.4,
-        "windspeed_mph": 4.2
+        "precip_forecast_48h": 0.06,
+        "humidity": 80,
+        "temp_f": 41.3,
+        "windspeed_mph": 5.8
       },
       "crag_meta": {
         "rock_type": "granite",
@@ -136,9 +136,9 @@
         "precip_24h": 0,
         "precip_48h": 0,
         "precip_forecast_48h": 0,
-        "humidity": 41,
-        "temp_f": 49.9,
-        "windspeed_mph": 3.0
+        "humidity": 51,
+        "temp_f": 42.9,
+        "windspeed_mph": 3.4
       },
       "crag_meta": {
         "rock_type": "sandstone",
@@ -151,18 +151,19 @@
       "id": "exit-38",
       "name": "Exit 38",
       "region": "I-90 Corridor / North Bend",
-      "signal": "go",
-      "score": 90,
+      "signal": "wait",
+      "score": 78,
       "reasons": [
-        "0.83\" rain forecasted \u2014 conditions deteriorating"
+        "Elevated humidity (74%)",
+        "0.55\" rain forecasted \u2014 conditions deteriorating"
       ],
       "conditions": {
         "precip_24h": 0,
         "precip_48h": 0,
-        "precip_forecast_48h": 0.83,
-        "humidity": 61,
-        "temp_f": 46.7,
-        "windspeed_mph": 3.0
+        "precip_forecast_48h": 0.55,
+        "humidity": 74,
+        "temp_f": 44.1,
+        "windspeed_mph": 5.3
       },
       "crag_meta": {
         "rock_type": "metamorphic",
@@ -175,19 +176,19 @@
       "id": "castle-rock",
       "name": "Castle Rock",
       "region": "Tumwater Canyon / US-2",
-      "signal": "go",
-      "score": 95,
+      "signal": "wait",
+      "score": 75,
       "reasons": [
-        "Low humidity (30%) \u2014 good drying conditions",
-        "Cold (35.3\u00b0F) \u2014 slow drying"
+        "Low humidity (25%) \u2014 good drying conditions",
+        "Below freezing (29.0\u00b0F) \u2014 ice risk"
       ],
       "conditions": {
         "precip_24h": 0,
         "precip_48h": 0,
-        "precip_forecast_48h": 0.05,
-        "humidity": 30,
-        "temp_f": 35.3,
-        "windspeed_mph": 7.3
+        "precip_forecast_48h": 0,
+        "humidity": 25,
+        "temp_f": 29.0,
+        "windspeed_mph": 6.5
       },
       "crag_meta": {
         "rock_type": "granite",
@@ -200,18 +201,19 @@
       "id": "smith-rock",
       "name": "Smith Rock",
       "region": "Central Oregon",
-      "signal": "go",
-      "score": 100,
+      "signal": "wait",
+      "score": 78,
       "reasons": [
-        "Dry conditions, good temps"
+        "Elevated humidity (76%)",
+        "Cold (38.7\u00b0F) \u2014 slow drying"
       ],
       "conditions": {
         "precip_24h": 0,
         "precip_48h": 0,
         "precip_forecast_48h": 0,
-        "humidity": 46,
-        "temp_f": 50.0,
-        "windspeed_mph": 5.2
+        "humidity": 76,
+        "temp_f": 38.7,
+        "windspeed_mph": 6.5
       },
       "crag_meta": {
         "rock_type": "volcanic tuff",
@@ -227,15 +229,15 @@
       "signal": "go",
       "score": 90,
       "reasons": [
-        "1.46\" rain forecasted \u2014 conditions deteriorating"
+        "1.86\" rain forecasted \u2014 conditions deteriorating"
       ],
       "conditions": {
         "precip_24h": 0,
         "precip_48h": 0,
-        "precip_forecast_48h": 1.46,
-        "humidity": 51,
-        "temp_f": 42.8,
-        "windspeed_mph": 5.9
+        "precip_forecast_48h": 1.86,
+        "humidity": 52,
+        "temp_f": 42.5,
+        "windspeed_mph": 2.3
       },
       "crag_meta": {
         "rock_type": "granite",
@@ -251,15 +253,15 @@
       "signal": "go",
       "score": 90,
       "reasons": [
-        "1.19\" rain forecasted \u2014 conditions deteriorating"
+        "1.21\" rain forecasted \u2014 conditions deteriorating"
       ],
       "conditions": {
         "precip_24h": 0,
         "precip_48h": 0,
-        "precip_forecast_48h": 1.19,
-        "humidity": 60,
-        "temp_f": 46.5,
-        "windspeed_mph": 8.2
+        "precip_forecast_48h": 1.21,
+        "humidity": 48,
+        "temp_f": 47.9,
+        "windspeed_mph": 5.9
       },
       "crag_meta": {
         "rock_type": "granite",
