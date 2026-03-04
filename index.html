@@ -9,6 +9,34 @@
   <title>BETA — Cascade Conditions Intel</title>
   <link rel="stylesheet" href="style.css">
   <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ctext y='26' font-size='26'%3E⬡%3C/text%3E%3C/svg%3E">
+  <!-- Grafana Faro RUM -->
+<script>
+  (function () {
+    var webSdkScript = document.createElement("script");
+    webSdkScript.src =
+      "https://unpkg.com/@grafana/faro-web-sdk@2/dist/bundle/faro-web-sdk.iife.js";
+    webSdkScript.onload = () => {
+      window.GrafanaFaroWebSdk.initializeFaro({
+        url: "https://faro-collector-prod-us-west-0.grafana.net/collect/920f5e3ea764638ceb0d2a3786b456fa",
+        app: {
+          name: "beta-trenigma-dev",
+          version: "1.0.0",
+          environment: "production",
+        },
+      });
+      var webTracingScript = document.createElement("script");
+      webTracingScript.src =
+        "https://unpkg.com/@grafana/faro-web-tracing@2/dist/bundle/faro-web-tracing.iife.js";
+      webTracingScript.onload = () => {
+        window.GrafanaFaroWebSdk.faro.instrumentations.add(
+          new window.GrafanaFaroWebTracing.TracingInstrumentation()
+        );
+      };
+      document.head.appendChild(webTracingScript);
+    };
+    document.head.appendChild(webSdkScript);
+  })();
+</script>
 </head>
 <body>
 
