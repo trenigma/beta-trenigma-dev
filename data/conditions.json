@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-03-04T18:13:24.866665+00:00",
-  "generated_at_pacific": "2026-03-04 06:13 PM PST",
+  "generated_at": "2026-03-05T00:19:11.270555+00:00",
+  "generated_at_pacific": "2026-03-05 12:19 AM PST",
   "crags": [
     {
       "id": "index",
@@ -10,16 +10,16 @@
       "score": 62,
       "reasons": [
         "0.17\" rain in last 24h (light)",
-        "Very high humidity (95%) \u2014 rock stays damp",
-        "1.61\" rain forecasted \u2014 conditions deteriorating"
+        "Very high humidity (96%) \u2014 rock stays damp",
+        "1.27\" rain forecasted \u2014 conditions deteriorating"
       ],
       "conditions": {
         "precip_24h": 0.17,
         "precip_48h": 0.17,
-        "precip_forecast_48h": 1.61,
-        "humidity": 95,
-        "temp_f": 45.7,
-        "windspeed_mph": 9.1
+        "precip_forecast_48h": 1.27,
+        "humidity": 96,
+        "temp_f": 43.1,
+        "windspeed_mph": 9.4
       },
       "crag_meta": {
         "rock_type": "granite",
@@ -32,18 +32,19 @@
       "id": "leavenworth",
       "name": "Leavenworth",
       "region": "Wenatchee River Valley",
-      "signal": "go",
-      "score": 100,
+      "signal": "wait",
+      "score": 78,
       "reasons": [
-        "Dry conditions, good temps"
+        "Elevated humidity (72%)",
+        "Cold (39.0\u00b0F) \u2014 slow drying"
       ],
       "conditions": {
         "precip_24h": 0,
         "precip_48h": 0,
-        "precip_forecast_48h": 0.01,
-        "humidity": 68,
-        "temp_f": 45.4,
-        "windspeed_mph": 10.1
+        "precip_forecast_48h": 0,
+        "humidity": 72,
+        "temp_f": 39.0,
+        "windspeed_mph": 7.0
       },
       "crag_meta": {
         "rock_type": "granite",
@@ -64,10 +65,10 @@
       "conditions": {
         "precip_24h": 0,
         "precip_48h": 0,
-        "precip_forecast_48h": 0.0,
-        "humidity": 60,
-        "temp_f": 51.5,
-        "windspeed_mph": 18.4
+        "precip_forecast_48h": 0,
+        "humidity": 61,
+        "temp_f": 45.5,
+        "windspeed_mph": 17.8
       },
       "crag_meta": {
         "rock_type": "basalt",
@@ -83,16 +84,16 @@
       "signal": "wait",
       "score": 65,
       "reasons": [
-        "Very high humidity (88%) \u2014 rock stays damp",
-        "1.9\" rain forecasted \u2014 conditions deteriorating"
+        "Very high humidity (87%) \u2014 rock stays damp",
+        "1.05\" rain forecasted \u2014 conditions deteriorating"
       ],
       "conditions": {
         "precip_24h": 0.05,
         "precip_48h": 0.05,
-        "precip_forecast_48h": 1.9,
-        "humidity": 88,
-        "temp_f": 44.7,
-        "windspeed_mph": 2.0
+        "precip_forecast_48h": 1.05,
+        "humidity": 87,
+        "temp_f": 43.6,
+        "windspeed_mph": 5.6
       },
       "crag_meta": {
         "rock_type": "granite",
@@ -108,16 +109,16 @@
       "signal": "wait",
       "score": 65,
       "reasons": [
-        "Very high humidity (93%) \u2014 rock stays damp",
-        "0.67\" rain forecasted \u2014 conditions deteriorating"
+        "Very high humidity (87%) \u2014 rock stays damp",
+        "0.7\" rain forecasted \u2014 conditions deteriorating"
       ],
       "conditions": {
         "precip_24h": 0.0,
         "precip_48h": 0.0,
-        "precip_forecast_48h": 0.67,
-        "humidity": 93,
-        "temp_f": 46.1,
-        "windspeed_mph": 2.7
+        "precip_forecast_48h": 0.7,
+        "humidity": 87,
+        "temp_f": 43.9,
+        "windspeed_mph": 13.0
       },
       "crag_meta": {
         "rock_type": "granite",
@@ -130,18 +131,19 @@
       "id": "peshastin",
       "name": "Peshastin Pinnacles",
       "region": "Cashmere / US-2",
-      "signal": "go",
-      "score": 88,
+      "signal": "wait",
+      "score": 78,
       "reasons": [
-        "Elevated humidity (71%)"
+        "Elevated humidity (71%)",
+        "Cold (38.4\u00b0F) \u2014 slow drying"
       ],
       "conditions": {
         "precip_24h": 0,
         "precip_48h": 0,
-        "precip_forecast_48h": 0.02,
+        "precip_forecast_48h": 0,
         "humidity": 71,
-        "temp_f": 42.9,
-        "windspeed_mph": 4.4
+        "temp_f": 38.4,
+        "windspeed_mph": 8.3
       },
       "crag_meta": {
         "rock_type": "sandstone",
@@ -158,15 +160,15 @@
       "score": 65,
       "reasons": [
         "Very high humidity (95%) \u2014 rock stays damp",
-        "2.53\" rain forecasted \u2014 conditions deteriorating"
+        "1.51\" rain forecasted \u2014 conditions deteriorating"
       ],
       "conditions": {
         "precip_24h": 0.04,
         "precip_48h": 0.04,
-        "precip_forecast_48h": 2.53,
+        "precip_forecast_48h": 1.51,
         "humidity": 95,
-        "temp_f": 40.0,
-        "windspeed_mph": 4.2
+        "temp_f": 40.4,
+        "windspeed_mph": 5.6
       },
       "crag_meta": {
         "rock_type": "metamorphic",
@@ -182,16 +184,16 @@
       "signal": "no-go",
       "score": 45,
       "reasons": [
-        "Very high humidity (97%) \u2014 rock stays damp",
-        "Below freezing (25.4\u00b0F) \u2014 ice risk"
+        "Very high humidity (90%) \u2014 rock stays damp",
+        "Below freezing (21.6\u00b0F) \u2014 ice risk"
       ],
       "conditions": {
         "precip_24h": 0.0,
         "precip_48h": 0.0,
-        "precip_forecast_48h": 0.14,
-        "humidity": 97,
-        "temp_f": 25.4,
-        "windspeed_mph": 20.6
+        "precip_forecast_48h": 0.13,
+        "humidity": 90,
+        "temp_f": 21.6,
+        "windspeed_mph": 20.0
       },
       "crag_meta": {
         "rock_type": "granite",
@@ -207,16 +209,16 @@
       "signal": "wait",
       "score": 78,
       "reasons": [
-        "Elevated humidity (82%)",
-        "Cold (36.6\u00b0F) \u2014 slow drying"
+        "Elevated humidity (76%)",
+        "Cold (36.8\u00b0F) \u2014 slow drying"
       ],
       "conditions": {
         "precip_24h": 0,
         "precip_48h": 0,
         "precip_forecast_48h": 0.02,
-        "humidity": 82,
-        "temp_f": 36.6,
-        "windspeed_mph": 10.5
+        "humidity": 76,
+        "temp_f": 36.8,
+        "windspeed_mph": 10.0
       },
       "crag_meta": {
         "rock_type": "volcanic tuff",
@@ -229,18 +231,20 @@
       "id": "squamish-chief",
       "name": "The Chief",
       "region": "Squamish, BC",
-      "signal": "go",
-      "score": 93,
+      "signal": "wait",
+      "score": 71,
       "reasons": [
-        "0.26\" rain in last 24h (light)"
+        "0.26\" rain in last 24h (light)",
+        "Elevated humidity (80%)",
+        "Cold (39.5\u00b0F) \u2014 slow drying"
       ],
       "conditions": {
         "precip_24h": 0.26,
         "precip_48h": 0.26,
-        "precip_forecast_48h": 0.26,
-        "humidity": 68,
-        "temp_f": 42.8,
-        "windspeed_mph": 6.5
+        "precip_forecast_48h": 0.31,
+        "humidity": 80,
+        "temp_f": 39.5,
+        "windspeed_mph": 6.2
       },
       "crag_meta": {
         "rock_type": "granite",
@@ -254,17 +258,18 @@
       "name": "Smoke Bluffs",
       "region": "Squamish, BC",
       "signal": "go",
-      "score": 96,
+      "score": 84,
       "reasons": [
-        "0.2\" rain in last 24h (light)"
+        "0.2\" rain in last 24h (light)",
+        "Elevated humidity (75%)"
       ],
       "conditions": {
         "precip_24h": 0.2,
         "precip_48h": 0.2,
         "precip_forecast_48h": 0.24,
-        "humidity": 67,
-        "temp_f": 48.3,
-        "windspeed_mph": 7.2
+        "humidity": 75,
+        "temp_f": 46.0,
+        "windspeed_mph": 5.0
       },
       "crag_meta": {
         "rock_type": "granite",
