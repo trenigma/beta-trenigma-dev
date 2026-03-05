@@ -174,4 +174,4 @@ ROADMAP.*
 *_old.*
 data/conditions.json
 *.png
-*.dashboard*
+*dashboard*
