@@ -983,7 +983,7 @@ h1, h2, h3, h4 {
 
 .footer__disclaimer {
   font-family: var(--font-mono);
-  font-size: 0.625rem;
+  font-size: 0.75rem;
   color: var(--text-muted);
   letter-spacing: 0.05em;
   line-height: 1.7;
@@ -999,7 +999,7 @@ h1, h2, h3, h4 {
 
 .footer__links a {
   font-family: var(--font-mono);
-  font-size: 0.75rem;
+  font-size: 0.8125rem;
   letter-spacing: 0.08em;
   text-transform: uppercase;
   color: var(--text-muted);
