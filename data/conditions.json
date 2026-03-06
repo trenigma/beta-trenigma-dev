@@ -203,6 +203,28 @@
       }
     },
     {
+      "id": "miller-river",
+      "name": "Miller River Boulders",
+      "region": "Skykomish Valley / US-2",
+      "signal": "unknown",
+      "score": null,
+      "reasons": [],
+      "conditions": {
+        "precip_24h": null,
+        "precip_48h": null,
+        "precip_forecast_48h": null,
+        "humidity": null,
+        "temp_f": null,
+        "windspeed_mph": null
+      },
+      "crag_meta": {
+        "rock_type": "granodiorite",
+        "aspect": "mixed",
+        "elevation_ft": 1268,
+        "notes": "Dense forest canopy and river valley microclimate — expect slow drying. River crossings on approach may be impassable early season."
+      }
+    },
+    {
       "id": "smith-rock",
       "name": "Smith Rock",
       "region": "Central Oregon",

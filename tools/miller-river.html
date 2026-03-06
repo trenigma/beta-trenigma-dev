@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Current conditions for Miller River Boulders — go/wait/no-go signal, precipitation, humidity, and temperature data for Cascade climbers.">
+  <title>Miller River Boulders — BETA Conditions</title>
+  <link rel="stylesheet" href="../style.css">
+  <style>
+    .crag-hero {
+      padding-top: 140px;
+      padding-bottom: var(--space-2xl);
+      position: relative;
+      overflow: hidden;
+    }
+    .crag-hero::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(ellipse 70% 60% at 80% 50%, rgba(232, 168, 56, 0.06), transparent 70%);
+      pointer-events: none;
+    }
+    .crag-hero__back {
+      font-family: var(--font-mono);
+      font-size: 0.75rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--text-muted);
+      display: inline-flex;
+      align-items: center;
+      gap: var(--space-sm);
+      margin-bottom: var(--space-xl);
+      transition: color 0.2s var(--ease);
+    }
+    .crag-hero__back:hover { color: var(--gold); }
+
+    .crag-hero__meta {
+      font-family: var(--font-mono);
+      font-size: 0.75rem;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: var(--space-md);
+    }
+    .crag-hero__name {
+      font-size: clamp(2.5rem, 6vw, 5rem);
+      margin-bottom: var(--space-sm);
+    }
+    .crag-hero__region {
+      font-family: var(--font-mono);
+      font-size: 0.875rem;
+      color: var(--text-muted);
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      margin-bottom: var(--space-2xl);
+    }
+
+    /* Big signal display */
+    .signal-display {
+      display: inline-flex;
+      align-items: center;
+      gap: var(--space-lg);
+      background: var(--bg-surface);
+      border: 1px solid var(--bg-raised);
+      border-radius: var(--radius-lg);
+      padding: var(--space-xl) var(--space-2xl);
+      margin-bottom: var(--space-2xl);
+    }
+    .signal-display__dot {
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      flex-shrink: 0;
+    }
+    .signal-display__dot--go    { background: var(--green-go);    box-shadow: 0 0 16px rgba(90,158,111,0.5); }
+    .signal-display__dot--wait  { background: var(--amber-wait);  box-shadow: 0 0 16px rgba(232,168,56,0.5); }
+    .signal-display__dot--no-go { background: var(--red-warning); box-shadow: 0 0 16px rgba(224,85,85,0.5);  }
+    .signal-display__label {
+      font-family: var(--font-display);
+      font-size: clamp(2rem, 5vw, 3.5rem);
+      line-height: 1;
+    }
+    .signal-display__label--go    { color: var(--green-go); }
+    .signal-display__label--wait  { color: var(--gold); }
+    .signal-display__label--no-go { color: var(--red-warning); }
+    .signal-display__score {
+      font-family: var(--font-mono);
+      font-size: 0.75rem;
+      color: var(--text-muted);
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      border-left: 1px solid var(--bg-overlay);
+      padding-left: var(--space-lg);
+    }
+    .signal-display__score span {
+      display: block;
+      font-size: 2rem;
+      font-weight: 700;
+      color: var(--text-primary);
+      font-family: var(--font-ui);
+      letter-spacing: normal;
+    }
+
+    /* Stats row */
+    .stats-row {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+      gap: var(--space-md);
+      margin-bottom: var(--space-2xl);
+    }
+    .stat-block {
+      background: var(--bg-surface);
+      border: 1px solid var(--bg-raised);
+      border-radius: var(--radius-md);
+      padding: var(--space-lg);
+    }
+    .stat-block__label {
+      font-family: var(--font-mono);
+      font-size: 0.625rem;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--text-muted);
+      margin-bottom: var(--space-sm);
+    }
+    .stat-block__value {
+      font-family: var(--font-mono);
+      font-size: 1.75rem;
+      font-weight: 700;
+      color: var(--text-primary);
+      line-height: 1;
+      margin-bottom: 4px;
+    }
+    .stat-block__sub {
+      font-size: 0.75rem;
+      color: var(--text-muted);
+    }
+
+    /* Reasons list */
+    .reasons-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: var(--space-sm);
+      margin-bottom: var(--space-2xl);
+    }
+    .reasons-list li {
+      display: flex;
+      align-items: flex-start;
+      gap: var(--space-md);
+      font-size: 0.9375rem;
+      color: var(--text-secondary);
+      background: var(--bg-surface);
+      border: 1px solid var(--bg-raised);
+      border-radius: var(--radius-sm);
+      padding: var(--space-md) var(--space-lg);
+    }
+    .reasons-list li::before {
+      content: '→';
+      color: var(--gold);
+      font-family: var(--font-mono);
+      flex-shrink: 0;
+    }
+
+    /* Crag info card */
+    .crag-info {
+      background: var(--bg-surface);
+      border: 1px solid var(--bg-raised);
+      border-radius: var(--radius-lg);
+      padding: var(--space-xl);
+      margin-bottom: var(--space-2xl);
+    }
+    .crag-info__grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+      gap: var(--space-xl);
+      margin-bottom: var(--space-xl);
+    }
+    .crag-info__item {}
+    .crag-info__label {
+      font-family: var(--font-mono);
+      font-size: 0.625rem;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--text-muted);
+      margin-bottom: 4px;
+    }
+    .crag-info__value {
+      font-family: var(--font-ui);
+      font-size: 0.9375rem;
+      font-weight: 600;
+      color: var(--text-primary);
+      text-transform: capitalize;
+    }
+    .crag-info__notes {
+      font-size: 0.9375rem;
+      color: var(--text-secondary);
+      line-height: 1.7;
+      border-top: 1px solid var(--bg-raised);
+      padding-top: var(--space-lg);
+    }
+
+    /* External links */
+    .ext-links {
+      display: flex;
+      gap: var(--space-md);
+      flex-wrap: wrap;
+    }
+
+    /* Updated timestamp */
+    .updated-bar {
+      font-family: var(--font-mono);
+      font-size: 0.6875rem;
+      letter-spacing: 0.08em;
+      color: var(--text-muted);
+      margin-bottom: var(--space-xl);
+      display: flex;
+      align-items: center;
+      gap: var(--space-sm);
+    }
+    .updated-bar::before {
+      content: '';
+      display: block;
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: var(--green-go);
+      animation: pulse 2s ease-in-out infinite;
+    }
+
+    /* Loading / error states */
+    .loading-state {
+      padding: var(--space-3xl);
+      text-align: center;
+      color: var(--text-muted);
+      font-family: var(--font-mono);
+      font-size: 0.875rem;
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="nav">
+    <div class="nav__inner">
+      <a href="/" class="nav__logo">BETA <span></span></a>
+      <ul class="nav__links">
+        <li><a href="../index.html#crags">Crags</a></li>
+        <li><a href="../index.html#community">Community</a></li>
+        <li><a href="../posts/archive.html">Posts</a></li>
+        <li><a href="../about.html">About</a></li>
+        <li><a href="../about.html#contact" class="nav__cta">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="crag-hero">
+    <div class="container">
+      <a href="../index.html#crags" class="crag-hero__back">← All Crags</a>
+      <p class="crag-hero__meta">Cascade Conditions Intel</p>
+      <h1 class="crag-hero__name display">Miller River Boulders</h1>
+      <p class="crag-hero__region" id="cragHeroRegion"></p>
+
+      <div id="conditionsDisplay">
+        <div class="loading-state">Fetching conditions…</div>
+      </div>
+    </div>
+  </div>
+
+  <section class="section--tight" style="padding-top:0;">
+    <div class="container">
+
+      <!-- Crag info — populated from crag-meta.js -->
+      <div id="cragInfoDisplay"></div>
+
+      <!-- External resources — populated from crag-meta.js -->
+      <div id="cragLinksDisplay"></div>
+
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <div>
+          <div class="footer__brand">BETA</div>
+          <p class="footer__tagline">Cascade conditions intel</p>
+          <p class="footer__disclaimer">
+            For informational purposes only. Always cross-check with <a href="https://nwac.us" target="_blank" rel="noopener" style="color:inherit;text-decoration:underline;">NWAC</a>,
+            <a href="https://weather.gov" target="_blank" rel="noopener" style="color:inherit;text-decoration:underline;">NWS</a>,
+            and the thing between your ears. Conditions change fast out there. Use this tool, not as a substitute
+            for experience and judgment. We're not liable for outcomes — that part's on you. Now go get after it. 🏔️
+          </p>
+          <a href="https://ko-fi.com/trenigma" target="_blank" rel="noopener" class="kofi-btn">
+            🪨 buy me some chalk
+          </a>
+        </div>
+        <ul class="footer__links">
+          <li><a href="../index.html#crags">Crags</a></li>
+          <li><a href="tools/index.html">Tools</a></li>
+          <li><a href="posts/archive.html">Posts</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="https://github.com/trenigma/beta-trenigma-dev" target="_blank">GitHub</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../crag-meta.js"></script>
+  <script>
+    const CRAG_ID = 'miller-river'; // ← ONLY line that changes between crag pages
+
+    function renderCragMeta() {
+      const meta = CRAG_META[CRAG_ID];
+      if (!meta) return;
+
+      // Hero region line
+      const heroRegion = document.getElementById('cragHeroRegion');
+      if (heroRegion) {
+        heroRegion.textContent = `${meta.region} · ${meta.elevation} · ${meta.rock_type}`;
+      }
+
+      // Crag info card
+      const infoEl = document.getElementById('cragInfoDisplay');
+      if (infoEl) {
+        infoEl.innerHTML = `
+          <div class="crag-info">
+            <div class="crag-info__grid">
+              <div class="crag-info__item">
+                <div class="crag-info__label">Rock Type</div>
+                <div class="crag-info__value">${meta.rock_type}</div>
+              </div>
+              <div class="crag-info__item">
+                <div class="crag-info__label">Aspect</div>
+                <div class="crag-info__value">${meta.aspect}</div>
+              </div>
+              <div class="crag-info__item">
+                <div class="crag-info__label">Elevation</div>
+                <div class="crag-info__value">${meta.elevation}</div>
+              </div>
+              <div class="crag-info__item">
+                <div class="crag-info__label">Drying Speed</div>
+                <div class="crag-info__value">${meta.drying_speed}</div>
+              </div>
+            </div>
+            <p class="crag-info__notes">${meta.description}</p>
+          </div>
+        `;
+      }
+
+      // External links
+      const linksEl = document.getElementById('cragLinksDisplay');
+      if (linksEl && meta.links && meta.links.length) {
+        const btns = meta.links.map(l =>
+          `<a href="${l.url}" target="_blank" rel="noopener" class="btn btn--ghost">${l.label}</a>`
+        ).join('\n        ');
+        linksEl.innerHTML = `
+          <div class="section-header">
+            <p class="section-header__label">Plan your visit</p>
+            <h2 style="font-size:1.5rem; font-family:var(--font-ui); font-weight:700; margin-bottom:var(--space-lg);">Resources</h2>
+          </div>
+          <div class="ext-links">
+            ${btns}
+          </div>
+        `;
+      }
+    }
+
+    renderCragMeta();
+
+    const SIGNAL_CONFIG = {
+      'go':      { dot: 'go',    label: 'GO',    cls: 'go'    },
+      'wait':    { dot: 'wait',  label: 'WAIT',  cls: 'wait'  },
+      'no-go':   { dot: 'no-go', label: 'NO-GO', cls: 'no-go' },
+      'unknown': { dot: 'wait',  label: '—',     cls: 'wait'  },
+    };
+
+    function timeAgo(isoString) {
+      const diff = Math.floor((Date.now() - new Date(isoString)) / 60000);
+      if (diff < 2)  return 'Just updated';
+      if (diff < 60) return `${diff}m ago`;
+      const h = Math.floor(diff / 60);
+      if (h < 24)    return `${h}h ago`;
+      return `${Math.floor(h/24)}d ago`;
+    }
+
+    async function loadCragConditions() {
+      const el = document.getElementById('conditionsDisplay');
+      try {
+        const res  = await fetch('../data/conditions.json');
+        if (!res.ok) throw new Error(`HTTP ${res.status}`);
+        const data = await res.json();
+
+        const crag = data.crags.find(c => c.id === CRAG_ID);
+        if (!crag) throw new Error('Crag not found in conditions data');
+
+        const sig = SIGNAL_CONFIG[crag.signal] || SIGNAL_CONFIG['unknown'];
+        const c   = crag.conditions || {};
+        const updated = timeAgo(data.generated_at);
+
+        const reasonsHTML = (crag.reasons || []).map(r =>
+          `<li>${r}</li>`
+        ).join('');
+
+        el.innerHTML = `
+          <p class="updated-bar">Updated ${updated} · Open-Meteo</p>
+
+          <div class="signal-display">
+            <div class="signal-display__dot signal-display__dot--${sig.dot}"></div>
+            <div class="signal-display__label signal-display__label--${sig.cls}">${sig.label}</div>
+            <div class="signal-display__score">
+              Score<span>${crag.score ?? '—'}</span><small>/100</small>
+            </div>
+          </div>
+
+          <div class="stats-row">
+            <div class="stat-block">
+              <div class="stat-block__label">Precip 24h</div>
+              <div class="stat-block__value">${c.precip_24h ?? '—'}"</div>
+              <div class="stat-block__sub">inches of rain</div>
+            </div>
+            <div class="stat-block">
+              <div class="stat-block__label">Precip 48h</div>
+              <div class="stat-block__value">${c.precip_48h ?? '—'}"</div>
+              <div class="stat-block__sub">inches of rain</div>
+            </div>
+            <div class="stat-block">
+              <div class="stat-block__label">Humidity</div>
+              <div class="stat-block__value">${c.humidity ?? '—'}%</div>
+              <div class="stat-block__sub">relative humidity</div>
+            </div>
+            <div class="stat-block">
+              <div class="stat-block__label">Temperature</div>
+              <div class="stat-block__value">${c.temp_f ?? '—'}°</div>
+              <div class="stat-block__sub">fahrenheit</div>
+            </div>
+            <div class="stat-block">
+              <div class="stat-block__label">Wind</div>
+              <div class="stat-block__value">${c.windspeed_mph ?? '—'}</div>
+              <div class="stat-block__sub">mph</div>
+            </div>
+            <div class="stat-block">
+              <div class="stat-block__label">Forecast 48h</div>
+              <div class="stat-block__value">${c.precip_forecast_48h ?? '—'}"</div>
+              <div class="stat-block__sub">rain incoming</div>
+            </div>
+          </div>
+
+          ${reasonsHTML ? `
+          <div class="section-header" style="margin-bottom:var(--space-md);">
+            <p class="section-header__label">Why this signal</p>
+          </div>
+          <ul class="reasons-list">${reasonsHTML}</ul>
+          ` : ''}
+        `;
+
+      } catch (err) {
+        console.error(err);
+        el.innerHTML = `
+          <div style="padding:var(--space-xl); background:var(--bg-surface); border:1px solid var(--bg-raised); border-radius:var(--radius-md); color:var(--text-muted); font-family:var(--font-mono); font-size:0.875rem;">
+            ⚠️ Could not load conditions data. Try refreshing, or check back soon.
+          </div>`;
+      }
+    }
+
+    loadCragConditions();
+  </script>
+
+</body>
+</html>
