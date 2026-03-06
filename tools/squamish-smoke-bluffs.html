@@ -257,7 +257,7 @@
       <a href="../index.html#crags" class="crag-hero__back">← All Crags</a>
       <p class="crag-hero__meta">Cascade Conditions Intel</p>
       <h1 class="crag-hero__name display">Smoke Bluffs</h1>
-      <p class="crag-hero__region">Squamish, BC · 600ft elevation · Granite</p>
+      <p class="crag-hero__region" id="cragHeroRegion"></p>
 
       <div id="conditionsDisplay">
         <div class="loading-state">Fetching conditions…</div>
@@ -268,53 +268,11 @@
   <section class="section--tight" style="padding-top:0;">
     <div class="container">
 
-      <!-- Static crag info — always shown -->
-      <div class="crag-info">
-        <div class="crag-info__grid">
-          <div class="crag-info__item">
-            <div class="crag-info__label">Rock Type</div>
-            <div class="crag-info__value">Granite</div>
-          </div>
-          <div class="crag-info__item">
-            <div class="crag-info__label">Aspect</div>
-            <div class="crag-info__value">Varied</div>
-          </div>
-          <div class="crag-info__item">
-            <div class="crag-info__label">Elevation</div>
-            <div class="crag-info__value">~600 ft</div>
-          </div>
-          <div class="crag-info__item">
-            <div class="crag-info__label">Drying Speed</div>
-            <div class="crag-info__value">Moderate-Fast (lower, more sun)</div>
-          </div>
-        </div>
-        <p class="crag-info__notes">
-          Granite dries fast. Lower Wall sheds water quickly; Upper Wall slower after heavy rain.
-          South-facing aspect means afternoon sun helps dry things out. One of the most reliable
-          crags on the west side when conditions cooperate.
-        </p>
-      </div>
+      <!-- Crag info — populated from crag-meta.js -->
+      <div id="cragInfoDisplay"></div>
 
-      <!-- External resources -->
-      <div class="section-header">
-        <p class="section-header__label">Plan your visit</p>
-        <h2 style="font-size:1.5rem; font-family:var(--font-ui); font-weight:700; margin-bottom:var(--space-lg);">Resources</h2>
-      </div>
-      <div class="ext-links">
-        <a href="https://www.squamishaccess.ca/" target="_blank" rel="noopener" class="btn btn--ghost">Squamish Access Society ↗
-        </a>
-        <a href="https://nwac.us" target="_blank" rel="noopener" class="btn btn--ghost">
-          NWAC Forecast ↗
-        </a>
-        <a href="https://weather.gc.ca/en/forecast/hourly/index.html?coords=49.702,-123.147" target="_blank" rel="noopener" class="btn btn--ghost">
-          Environment Canada — Squamish ↗
-        </a>
-        <a href="https://www.drivebc.ca/?pan=-123.19392500000001%2C49.48295352928807&zoom=10.450012356646624&start=Vancouver%2C%20BC&end=Squamish%2C%20BC" target="_blank" rel="noopener" class="btn btn--ghost">
-          DriveBC (BC-99) ↗
-        </a>
-      </div>
-
-    </div>
+      <!-- External resources — populated from crag-meta.js -->
+      <div id="cragLinksDisplay"></div>
   </section>
 
   <footer class="footer">
@@ -344,8 +302,66 @@
     </div>
   </footer>
 
+  <script src="../crag-meta.js"></script>
   <script>
-    const CRAG_ID = 'squamish-smoke-bluffs'; // matches id in conditions.json
+    const CRAG_ID = 'squamish-smoke-bluffs'; // ← ONLY line that changes between crag pages
+
+    function renderCragMeta() {
+      const meta = CRAG_META[CRAG_ID];
+      if (!meta) return;
+
+      const heroRegion = document.getElementById('cragHeroRegion');
+      if (heroRegion) {
+        heroRegion.textContent = `${meta.region} · ${meta.elevation} · ${meta.rock_type}`;
+      }
+
+      const infoEl = document.getElementById('cragInfoDisplay');
+      if (infoEl) {
+        infoEl.innerHTML = `
+          <div class="crag-info">
+            <div class="crag-info__grid">
+              <div class="crag-info__item">
+                <div class="crag-info__label">Rock Type</div>
+                <div class="crag-info__value">${meta.rock_type}</div>
+              </div>
+              <div class="crag-info__item">
+                <div class="crag-info__label">Aspect</div>
+                <div class="crag-info__value">${meta.aspect}</div>
+              </div>
+              <div class="crag-info__item">
+                <div class="crag-info__label">Elevation</div>
+                <div class="crag-info__value">${meta.elevation}</div>
+              </div>
+              <div class="crag-info__item">
+                <div class="crag-info__label">Drying Speed</div>
+                <div class="crag-info__value">${meta.drying_speed}</div>
+              </div>
+            </div>
+            <p class="crag-info__notes">${meta.description}</p>
+          </div>
+        `;
+      }
+
+      const linksEl = document.getElementById('cragLinksDisplay');
+      if (linksEl && meta.links && meta.links.length) {
+        const btns = meta.links.map(l =>
+          `<a href="${l.url}" target="_blank" rel="noopener" class="btn btn--ghost">${l.label}</a>`
+        ).join('
+        ');
+        linksEl.innerHTML = `
+          <div class="section-header">
+            <p class="section-header__label">Plan your visit</p>
+            <h2 style="font-size:1.5rem; font-family:var(--font-ui); font-weight:700; margin-bottom:var(--space-lg);">Resources</h2>
+          </div>
+          <div class="ext-links">
+            ${btns}
+          </div>
+        `;
+      }
+    }
+
+    renderCragMeta();
+
 
     const SIGNAL_CONFIG = {
       'go':      { dot: 'go',    label: 'GO',    cls: 'go'    },

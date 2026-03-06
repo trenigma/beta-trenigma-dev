@@ -257,7 +257,7 @@
       <a href="../index.html#crags" class="crag-hero__back">← All Crags</a>
       <p class="crag-hero__meta">Cascade Conditions Intel</p>
       <h1 class="crag-hero__name display">Smith Rock</h1>
-      <p class="crag-hero__region">Central Oregon · 3,200ft elevation · Volcanic Tuff</p>
+      <p class="crag-hero__region" id="cragHeroRegion"></p>
 
       <div id="conditionsDisplay">
         <div class="loading-state">Fetching conditions…</div>
@@ -268,54 +268,11 @@
   <section class="section--tight" style="padding-top:0;">
     <div class="container">
 
-      <!-- Static crag info — always shown -->
-      <div class="crag-info">
-        <div class="crag-info__grid">
-          <div class="crag-info__item">
-            <div class="crag-info__label">Rock Type</div>
-            <div class="crag-info__value">Volcanic Tuff</div>
-          </div>
-          <div class="crag-info__item">
-            <div class="crag-info__label">Aspect</div>
-            <div class="crag-info__value">Varied</div>
-          </div>
-          <div class="crag-info__item">
-            <div class="crag-info__label">Elevation</div>
-            <div class="crag-info__value">~3,200 ft</div>
-          </div>
-          <div class="crag-info__item">
-            <div class="crag-info__label">Drying Speed</div>
-            <div class="crag-info__value">Very Fast (high desert)</div>
-          </div>
-        </div>
-        <p class="crag-info__notes">
-          Granite dries fast. Lower Wall sheds water quickly; Upper Wall slower after heavy rain.
-          South-facing aspect means afternoon sun helps dry things out. One of the most reliable
-          crags on the west side when conditions cooperate.
-        </p>
-      </div>
+      <!-- Crag info — populated from crag-meta.js -->
+      <div id="cragInfoDisplay"></div>
 
-      <!-- External resources -->
-      <div class="section-header">
-        <p class="section-header__label">Plan your visit</p>
-        <h2 style="font-size:1.5rem; font-family:var(--font-ui); font-weight:700; margin-bottom:var(--space-lg);">Resources</h2>
-      </div>
-      <div class="ext-links">
-        <a href="https://www.mountainproject.com/area/105788989/smith-rock" target="_blank" rel="noopener" class="btn btn--ghost">
-          Mountain Project ↗
-        </a>
-        <a href="https://nwac.us" target="_blank" rel="noopener" class="btn btn--ghost">
-          NWAC Forecast ↗
-        </a>
-        <a href="https://forecast.weather.gov/MapClick.php?CityName=Terrebonne&state=OR&site=PDT" target="_blank" rel="noopener" class="btn btn--ghost">
-          NWS Redmond/Bend ↗
-        </a>
-        <a href="https://www.tripcheck.com/" target="_blank" rel="noopener" class="btn btn--ghost">
-          US-97 Road Conditions ↗
-        </a>
-      </div>
-
-    </div>
+      <!-- External resources — populated from crag-meta.js -->
+      <div id="cragLinksDisplay"></div>
   </section>
 
   <footer class="footer">
@@ -345,8 +302,66 @@
     </div>
   </footer>
 
+  <script src="../crag-meta.js"></script>
   <script>
-    const CRAG_ID = 'smith-rock'; // matches id in conditions.json
+    const CRAG_ID = 'smith-rock'; // ← ONLY line that changes between crag pages
+
+    function renderCragMeta() {
+      const meta = CRAG_META[CRAG_ID];
+      if (!meta) return;
+
+      const heroRegion = document.getElementById('cragHeroRegion');
+      if (heroRegion) {
+        heroRegion.textContent = `${meta.region} · ${meta.elevation} · ${meta.rock_type}`;
+      }
+
+      const infoEl = document.getElementById('cragInfoDisplay');
+      if (infoEl) {
+        infoEl.innerHTML = `
+          <div class="crag-info">
+            <div class="crag-info__grid">
+              <div class="crag-info__item">
+                <div class="crag-info__label">Rock Type</div>
+                <div class="crag-info__value">${meta.rock_type}</div>
+              </div>
+              <div class="crag-info__item">
+                <div class="crag-info__label">Aspect</div>
+                <div class="crag-info__value">${meta.aspect}</div>
+              </div>
+              <div class="crag-info__item">
+                <div class="crag-info__label">Elevation</div>
+                <div class="crag-info__value">${meta.elevation}</div>
+              </div>
+              <div class="crag-info__item">
+                <div class="crag-info__label">Drying Speed</div>
+                <div class="crag-info__value">${meta.drying_speed}</div>
+              </div>
+            </div>
+            <p class="crag-info__notes">${meta.description}</p>
+          </div>
+        `;
+      }
+
+      const linksEl = document.getElementById('cragLinksDisplay');
+      if (linksEl && meta.links && meta.links.length) {
+        const btns = meta.links.map(l =>
+          `<a href="${l.url}" target="_blank" rel="noopener" class="btn btn--ghost">${l.label}</a>`
+        ).join('
+        ');
+        linksEl.innerHTML = `
+          <div class="section-header">
+            <p class="section-header__label">Plan your visit</p>
+            <h2 style="font-size:1.5rem; font-family:var(--font-ui); font-weight:700; margin-bottom:var(--space-lg);">Resources</h2>
+          </div>
+          <div class="ext-links">
+            ${btns}
+          </div>
+        `;
+      }
+    }
+
+    renderCragMeta();
+
 
     const SIGNAL_CONFIG = {
       'go':      { dot: 'go',    label: 'GO',    cls: 'go'    },
