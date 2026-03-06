@@ -346,8 +346,7 @@
       if (linksEl && meta.links && meta.links.length) {
         const btns = meta.links.map(l =>
           `<a href="${l.url}" target="_blank" rel="noopener" class="btn btn--ghost">${l.label}</a>`
-        ).join('
-        ');
+        ).join('\n        ');
         linksEl.innerHTML = `
           <div class="section-header">
             <p class="section-header__label">Plan your visit</p>
