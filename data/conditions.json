@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-03-07T12:06:54.210847+00:00",
-  "generated_at_pacific": "2026-03-07 12:06 PM PST",
+  "generated_at": "2026-03-07T18:05:40.376777+00:00",
+  "generated_at_pacific": "2026-03-07 06:05 PM PST",
   "crags": [
     {
       "id": "index",
@@ -10,15 +10,15 @@
       "score": 57,
       "reasons": [
         "0.41\" rain in last 24h (light)",
-        "Very high humidity (95%) \u2014 rock stays damp",
-        "1.99\" rain forecasted \u2014 conditions deteriorating"
+        "Very high humidity (96%) \u2014 rock stays damp",
+        "1.46\" rain forecasted \u2014 conditions deteriorating"
       ],
       "conditions": {
         "precip_24h": 0.41,
         "precip_48h": 0.98,
-        "precip_forecast_48h": 1.99,
-        "humidity": 95,
-        "temp_f": 49.8,
+        "precip_forecast_48h": 1.46,
+        "humidity": 96,
+        "temp_f": 49.1,
         "windspeed_mph": 6.3
       },
       "crag_meta": {
@@ -33,17 +33,17 @@
       "name": "Leavenworth",
       "region": "Wenatchee River Valley",
       "signal": "go",
-      "score": 100,
+      "score": 88,
       "reasons": [
-        "Ideal temp (62.4\u00b0F)"
+        "Elevated humidity (71%)"
       ],
       "conditions": {
         "precip_24h": 0,
         "precip_48h": 0,
-        "precip_forecast_48h": 0.05,
-        "humidity": 55,
-        "temp_f": 62.4,
-        "windspeed_mph": 7.2
+        "precip_forecast_48h": 0.03,
+        "humidity": 71,
+        "temp_f": 52.3,
+        "windspeed_mph": 4.5
       },
       "crag_meta": {
         "rock_type": "granite",
@@ -59,16 +59,16 @@
       "signal": "go",
       "score": 93,
       "reasons": [
-        "Ideal temp (68.1\u00b0F)",
-        "Elevated wind (25 mph) \u2014 check before going"
+        "Ideal temp (60.9\u00b0F)",
+        "Elevated wind (18 mph) \u2014 check before going"
       ],
       "conditions": {
         "precip_24h": 0,
         "precip_48h": 0,
         "precip_forecast_48h": 0,
-        "humidity": 43,
-        "temp_f": 68.1,
-        "windspeed_mph": 25.0
+        "humidity": 49,
+        "temp_f": 60.9,
+        "windspeed_mph": 18.4
       },
       "crag_meta": {
         "rock_type": "basalt",
@@ -86,15 +86,15 @@
       "reasons": [
         "0.3\" rain in last 24h (light)",
         "Very high humidity (95%) \u2014 rock stays damp",
-        "1.22\" rain forecasted \u2014 conditions deteriorating"
+        "0.78\" rain forecasted \u2014 conditions deteriorating"
       ],
       "conditions": {
         "precip_24h": 0.3,
         "precip_48h": 0.47,
-        "precip_forecast_48h": 1.22,
+        "precip_forecast_48h": 0.78,
         "humidity": 95,
-        "temp_f": 49.9,
-        "windspeed_mph": 2.5
+        "temp_f": 49.2,
+        "windspeed_mph": 5.6
       },
       "crag_meta": {
         "rock_type": "granite",
@@ -111,15 +111,15 @@
       "score": 69,
       "reasons": [
         "0.23\" rain in last 24h (light)",
-        "Very high humidity (96%) \u2014 rock stays damp"
+        "Very high humidity (93%) \u2014 rock stays damp"
       ],
       "conditions": {
         "precip_24h": 0.23,
         "precip_48h": 0.23,
-        "precip_forecast_48h": 0.2,
-        "humidity": 96,
-        "temp_f": 50.1,
-        "windspeed_mph": 7.1
+        "precip_forecast_48h": 0.06,
+        "humidity": 93,
+        "temp_f": 49.6,
+        "windspeed_mph": 4.8
       },
       "crag_meta": {
         "rock_type": "granite",
@@ -135,15 +135,15 @@
       "signal": "go",
       "score": 100,
       "reasons": [
-        "Ideal temp (60.8\u00b0F)"
+        "Dry conditions, good temps"
       ],
       "conditions": {
         "precip_24h": 0,
         "precip_48h": 0,
         "precip_forecast_48h": 0,
-        "humidity": 52,
-        "temp_f": 60.8,
-        "windspeed_mph": 10.8
+        "humidity": 63,
+        "temp_f": 52.4,
+        "windspeed_mph": 8.8
       },
       "crag_meta": {
         "rock_type": "sandstone",
@@ -160,16 +160,16 @@
       "score": 54,
       "reasons": [
         "0.45\" rain in last 24h (light)",
-        "Very high humidity (100%) \u2014 rock stays damp",
-        "1.74\" rain forecasted \u2014 conditions deteriorating"
+        "Very high humidity (99%) \u2014 rock stays damp",
+        "1.66\" rain forecasted \u2014 conditions deteriorating"
       ],
       "conditions": {
         "precip_24h": 0.45,
         "precip_48h": 0.58,
-        "precip_forecast_48h": 1.74,
-        "humidity": 100,
-        "temp_f": 48.5,
-        "windspeed_mph": 7.0
+        "precip_forecast_48h": 1.66,
+        "humidity": 99,
+        "temp_f": 47.8,
+        "windspeed_mph": 8.6
       },
       "crag_meta": {
         "rock_type": "metamorphic",
@@ -185,16 +185,16 @@
       "signal": "wait",
       "score": 65,
       "reasons": [
-        "Very high humidity (90%) \u2014 rock stays damp",
-        "Cold (37.1\u00b0F) \u2014 slow drying"
+        "Very high humidity (91%) \u2014 rock stays damp",
+        "Cold (32.2\u00b0F) \u2014 slow drying"
       ],
       "conditions": {
         "precip_24h": 0.02,
         "precip_48h": 0.02,
-        "precip_forecast_48h": 0.23,
-        "humidity": 90,
-        "temp_f": 37.1,
-        "windspeed_mph": 21.6
+        "precip_forecast_48h": 0.28,
+        "humidity": 91,
+        "temp_f": 32.2,
+        "windspeed_mph": 11.9
       },
       "crag_meta": {
         "rock_type": "granite",
@@ -210,15 +210,15 @@
       "signal": "go",
       "score": 100,
       "reasons": [
-        "Ideal temp (62.1\u00b0F)"
+        "Ideal temp (56.9\u00b0F)"
       ],
       "conditions": {
         "precip_24h": 0,
         "precip_48h": 0,
         "precip_forecast_48h": 0,
-        "humidity": 42,
-        "temp_f": 62.1,
-        "windspeed_mph": 3.8
+        "humidity": 53,
+        "temp_f": 56.9,
+        "windspeed_mph": 7.2
       },
       "crag_meta": {
         "rock_type": "volcanic tuff",
@@ -235,15 +235,15 @@
       "score": 71,
       "reasons": [
         "0.15\" rain in last 24h (light)",
-        "Very high humidity (97%) \u2014 rock stays damp"
+        "Very high humidity (88%) \u2014 rock stays damp"
       ],
       "conditions": {
         "precip_24h": 0.15,
         "precip_48h": 0.15,
-        "precip_forecast_48h": 0.41,
-        "humidity": 97,
-        "temp_f": 45.9,
-        "windspeed_mph": 1.4
+        "precip_forecast_48h": 0.27,
+        "humidity": 88,
+        "temp_f": 46.9,
+        "windspeed_mph": 12.1
       },
       "crag_meta": {
         "rock_type": "granite",
@@ -260,15 +260,15 @@
       "score": 73,
       "reasons": [
         "0.13\" rain in last 24h (light)",
-        "Very high humidity (96%) \u2014 rock stays damp"
+        "Very high humidity (87%) \u2014 rock stays damp"
       ],
       "conditions": {
         "precip_24h": 0.13,
         "precip_48h": 0.13,
-        "precip_forecast_48h": 0.5,
-        "humidity": 96,
-        "temp_f": 50.5,
-        "windspeed_mph": 3.0
+        "precip_forecast_48h": 0.38,
+        "humidity": 87,
+        "temp_f": 51.3,
+        "windspeed_mph": 2.5
       },
       "crag_meta": {
         "rock_type": "granite",
