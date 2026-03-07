@@ -31,6 +31,7 @@ No more toggling between five browser tabs trying to mentally combine humidity, 
 | Smith Rock | Central Oregon |
 | The Chief | Squamish, BC |
 | Smoke Bluffs | Squamish, BC |
+| Miller River Boulders | Sky Valley / US-2 |
 
 More coming. Got a crag you want to see? [Open an issue](https://github.com/trenigma/beta-trenigma-dev/issues) or [add it yourself](#contributing).
 
