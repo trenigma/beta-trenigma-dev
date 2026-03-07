@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-03-06T18:11:35.707533+00:00",
-  "generated_at_pacific": "2026-03-06 06:11 PM PST",
+  "generated_at": "2026-03-07T00:18:24.566162+00:00",
+  "generated_at_pacific": "2026-03-07 12:18 AM PST",
   "crags": [
     {
       "id": "index",
@@ -10,16 +10,16 @@
       "score": 43,
       "reasons": [
         "0.57\" rain in last 24h",
-        "Very high humidity (91%) \u2014 rock stays damp",
-        "1.16\" rain forecasted \u2014 conditions deteriorating"
+        "Very high humidity (93%) \u2014 rock stays damp",
+        "1.14\" rain forecasted \u2014 conditions deteriorating"
       ],
       "conditions": {
         "precip_24h": 0.57,
         "precip_48h": 1.63,
-        "precip_forecast_48h": 1.16,
-        "humidity": 91,
-        "temp_f": 45.5,
-        "windspeed_mph": 8.8
+        "precip_forecast_48h": 1.14,
+        "humidity": 93,
+        "temp_f": 46.8,
+        "windspeed_mph": 7.6
       },
       "crag_meta": {
         "rock_type": "granite",
@@ -35,15 +35,15 @@
       "signal": "go",
       "score": 88,
       "reasons": [
-        "Elevated humidity (78%)"
+        "Elevated humidity (82%)"
       ],
       "conditions": {
         "precip_24h": 0,
         "precip_48h": 0,
         "precip_forecast_48h": 0,
-        "humidity": 78,
-        "temp_f": 47.8,
-        "windspeed_mph": 5.4
+        "humidity": 82,
+        "temp_f": 46.2,
+        "windspeed_mph": 5.6
       },
       "crag_meta": {
         "rock_type": "granite",
@@ -57,17 +57,17 @@
       "name": "Vantage",
       "region": "Columbia River Gorge",
       "signal": "go",
-      "score": 100,
+      "score": 88,
       "reasons": [
-        "Ideal temp (56.1\u00b0F)"
+        "Elevated humidity (79%)"
       ],
       "conditions": {
         "precip_24h": 0,
         "precip_48h": 0,
-        "precip_forecast_48h": 0,
-        "humidity": 52,
-        "temp_f": 56.1,
-        "windspeed_mph": 7.5
+        "precip_forecast_48h": 0.02,
+        "humidity": 79,
+        "temp_f": 50.5,
+        "windspeed_mph": 8.7
       },
       "crag_meta": {
         "rock_type": "basalt",
@@ -81,18 +81,17 @@
       "name": "Little Si",
       "region": "North Bend / I-90",
       "signal": "wait",
-      "score": 61,
+      "score": 71,
       "reasons": [
         "0.17\" rain in last 24h (light)",
-        "Very high humidity (87%) \u2014 rock stays damp",
-        "0.76\" rain forecasted \u2014 conditions deteriorating"
+        "Very high humidity (92%) \u2014 rock stays damp"
       ],
       "conditions": {
         "precip_24h": 0.17,
         "precip_48h": 0.66,
-        "precip_forecast_48h": 0.76,
-        "humidity": 87,
-        "temp_f": 46.8,
+        "precip_forecast_48h": 0.45,
+        "humidity": 92,
+        "temp_f": 47.5,
         "windspeed_mph": 8.5
       },
       "crag_meta": {
@@ -109,16 +108,16 @@
       "signal": "wait",
       "score": 65,
       "reasons": [
-        "Very high humidity (96%) \u2014 rock stays damp",
-        "0.96\" rain forecasted \u2014 conditions deteriorating"
+        "Very high humidity (98%) \u2014 rock stays damp",
+        "0.65\" rain forecasted \u2014 conditions deteriorating"
       ],
       "conditions": {
         "precip_24h": 0,
         "precip_48h": 0.44,
-        "precip_forecast_48h": 0.96,
-        "humidity": 96,
-        "temp_f": 45.8,
-        "windspeed_mph": 10.1
+        "precip_forecast_48h": 0.65,
+        "humidity": 98,
+        "temp_f": 46.6,
+        "windspeed_mph": 6.7
       },
       "crag_meta": {
         "rock_type": "granite",
@@ -132,17 +131,17 @@
       "name": "Peshastin Pinnacles",
       "region": "Cashmere / US-2",
       "signal": "go",
-      "score": 100,
+      "score": 88,
       "reasons": [
-        "Dry conditions, good temps"
+        "Elevated humidity (75%)"
       ],
       "conditions": {
         "precip_24h": 0,
         "precip_48h": 0,
         "precip_forecast_48h": 0,
-        "humidity": 69,
-        "temp_f": 46.1,
-        "windspeed_mph": 5.2
+        "humidity": 75,
+        "temp_f": 45.2,
+        "windspeed_mph": 6.1
       },
       "crag_meta": {
         "rock_type": "sandstone",
@@ -159,16 +158,16 @@
       "score": 62,
       "reasons": [
         "0.14\" rain in last 24h (light)",
-        "Very high humidity (93%) \u2014 rock stays damp",
-        "1.52\" rain forecasted \u2014 conditions deteriorating"
+        "Very high humidity (99%) \u2014 rock stays damp",
+        "1.19\" rain forecasted \u2014 conditions deteriorating"
       ],
       "conditions": {
         "precip_24h": 0.14,
         "precip_48h": 0.63,
-        "precip_forecast_48h": 1.52,
-        "humidity": 93,
-        "temp_f": 44.8,
-        "windspeed_mph": 7.2
+        "precip_forecast_48h": 1.19,
+        "humidity": 99,
+        "temp_f": 45.6,
+        "windspeed_mph": 7.4
       },
       "crag_meta": {
         "rock_type": "metamorphic",
@@ -181,19 +180,19 @@
       "id": "castle-rock",
       "name": "Castle Rock",
       "region": "Tumwater Canyon / US-2",
-      "signal": "no-go",
-      "score": 45,
+      "signal": "wait",
+      "score": 65,
       "reasons": [
-        "Very high humidity (89%) \u2014 rock stays damp",
-        "Below freezing (30.3\u00b0F) \u2014 ice risk"
+        "Very high humidity (92%) \u2014 rock stays damp",
+        "Cold (32.7\u00b0F) \u2014 slow drying"
       ],
       "conditions": {
         "precip_24h": 0.0,
         "precip_48h": 0.1,
-        "precip_forecast_48h": 0.09,
-        "humidity": 89,
-        "temp_f": 30.3,
-        "windspeed_mph": 21.9
+        "precip_forecast_48h": 0.1,
+        "humidity": 92,
+        "temp_f": 32.7,
+        "windspeed_mph": 24.6
       },
       "crag_meta": {
         "rock_type": "granite",
@@ -203,43 +202,21 @@
       }
     },
     {
-      "id": "miller-river",
-      "name": "Miller River Boulders",
-      "region": "Skykomish Valley / US-2",
-      "signal": "unknown",
-      "score": null,
-      "reasons": [],
-      "conditions": {
-        "precip_24h": null,
-        "precip_48h": null,
-        "precip_forecast_48h": null,
-        "humidity": null,
-        "temp_f": null,
-        "windspeed_mph": null
-      },
-      "crag_meta": {
-        "rock_type": "granodiorite",
-        "aspect": "mixed",
-        "elevation_ft": 1268,
-        "notes": "Dense forest canopy and river valley microclimate — expect slow drying. River crossings on approach may be impassable early season."
-      }
-    },
-    {
       "id": "smith-rock",
       "name": "Smith Rock",
       "region": "Central Oregon",
-      "signal": "wait",
-      "score": 75,
+      "signal": "go",
+      "score": 88,
       "reasons": [
-        "Very high humidity (87%) \u2014 rock stays damp"
+        "Elevated humidity (75%)"
       ],
       "conditions": {
         "precip_24h": 0,
         "precip_48h": 0.01,
-        "precip_forecast_48h": 0.06,
-        "humidity": 87,
-        "temp_f": 45.0,
-        "windspeed_mph": 7.9
+        "precip_forecast_48h": 0,
+        "humidity": 75,
+        "temp_f": 42.9,
+        "windspeed_mph": 4.0
       },
       "crag_meta": {
         "rock_type": "volcanic tuff",
@@ -253,18 +230,18 @@
       "name": "The Chief",
       "region": "Squamish, BC",
       "signal": "wait",
-      "score": 65,
+      "score": 78,
       "reasons": [
-        "Very high humidity (90%) \u2014 rock stays damp",
-        "0.57\" rain forecasted \u2014 conditions deteriorating"
+        "Elevated humidity (84%)",
+        "0.63\" rain forecasted \u2014 conditions deteriorating"
       ],
       "conditions": {
         "precip_24h": 0,
         "precip_48h": 0.13,
-        "precip_forecast_48h": 0.57,
-        "humidity": 90,
-        "temp_f": 41.4,
-        "windspeed_mph": 1.6
+        "precip_forecast_48h": 0.63,
+        "humidity": 84,
+        "temp_f": 43.2,
+        "windspeed_mph": 1.8
       },
       "crag_meta": {
         "rock_type": "granite",
@@ -280,16 +257,16 @@
       "signal": "wait",
       "score": 78,
       "reasons": [
-        "Elevated humidity (85%)",
-        "0.81\" rain forecasted \u2014 conditions deteriorating"
+        "Elevated humidity (82%)",
+        "0.69\" rain forecasted \u2014 conditions deteriorating"
       ],
       "conditions": {
         "precip_24h": 0,
         "precip_48h": 0.09,
-        "precip_forecast_48h": 0.81,
-        "humidity": 85,
-        "temp_f": 47.0,
-        "windspeed_mph": 5.7
+        "precip_forecast_48h": 0.69,
+        "humidity": 82,
+        "temp_f": 49.5,
+        "windspeed_mph": 6.8
       },
       "crag_meta": {
         "rock_type": "granite",
