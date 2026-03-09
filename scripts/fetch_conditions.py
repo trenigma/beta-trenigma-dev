@@ -13,10 +13,12 @@ No API key required. Open-Meteo is free and open.
 """
 
 import json
+import os
+import base64
 import urllib.request
 import urllib.parse
 from datetime import datetime, timezone
-from pathlib import Path
+from pathlib import Path    
 
 # ============================================================
 # CONFIG
@@ -26,6 +28,7 @@ from pathlib import Path
 REPO_ROOT   = Path(__file__).parent.parent
 CRAGS_FILE  = REPO_ROOT / "data" / "crags.json"
 OUTPUT_FILE = REPO_ROOT / "data" / "conditions.json"
+HISTORY_DIR = REPO_ROOT / "data" / "history"
 
 # Open-Meteo API — no key needed
 OPEN_METEO_URL = "https://api.open-meteo.com/v1/forecast"
@@ -243,6 +246,87 @@ def score_conditions(conditions: dict, crag: dict) -> dict:
         "reasons": reasons,
     }
 
+# ============================================================
+# ARCHIVE
+# ============================================================
+
+def archive_conditions(output: dict) -> None:
+    """
+    Write a timestamped snapshot to data/history/.
+
+    Like a signed waiver at the trailhead — timestamped proof
+    of exactly what the system said at this moment. Git history
+    makes these commits cryptographically verifiable.
+    """
+    HISTORY_DIR.mkdir(parents=True, exist_ok=True)
+
+    run_time  = datetime.now(timezone.utc)
+    filename  = run_time.strftime("%Y-%m-%d_%H%M_UTC.json")
+    archive_path = HISTORY_DIR / filename
+
+    with open(archive_path, "w") as f:
+        json.dump(output, f, indent=2)
+
+    print(f"   📁 Archived → data/history/{filename}")
+
+
+# ============================================================
+# LOKI PUSH
+# ============================================================
+
+def push_to_loki(output: dict) -> None:
+    """
+    Ship the full conditions payload to Grafana Cloud Loki.
+
+    Loki is like Prometheus but for logs — stores JSON payloads
+    with labels, queryable with LogQL in Grafana.
+    Safe no-op if env vars aren't set (local runs won't push).
+    """
+    loki_user    = os.environ.get("LOKI_USER")
+    loki_api_key = os.environ.get("LOKI_API_KEY")
+    loki_url     = os.environ.get("LOKI_URL")
+
+    if not all([loki_user, loki_api_key, loki_url]):
+        print("   ℹ️  Loki env vars not set — skipping push (local run)")
+        return
+
+    # Nanosecond timestamp as string — Loki's required format
+    ts_ns = str(int(datetime.now(timezone.utc).timestamp() * 1_000_000_000))
+
+    payload = {
+        "streams": [
+            {
+                "stream": {
+                    "job":    "beta-conditions",
+                    "app":    "beta-trenigma-dev",
+                    "source": "github-actions",
+                },
+                "values": [
+                    [ts_ns, json.dumps(output)]
+                ]
+            }
+        ]
+    }
+
+    body        = json.dumps(payload).encode("utf-8")
+    credentials = base64.b64encode(f"{loki_user}:{loki_api_key}".encode()).decode()
+
+    req = urllib.request.Request(
+        f"{loki_url}/loki/api/v1/push",
+        data=body,
+        headers={
+            "Content-Type":  "application/json",
+            "Authorization": f"Basic {credentials}",
+        },
+        method="POST",
+    )
+
+    try:
+        with urllib.request.urlopen(req, timeout=10) as resp:
+            print(f"   📡 Loki push → HTTP {resp.status}")
+    except Exception as e:
+        # Non-fatal — archive already written, run continues
+        print(f"   ⚠️  Loki push failed (non-fatal): {e}")
 
 # ============================================================
 # MAIN
@@ -305,6 +389,10 @@ def main():
 
     print(f"\n✅ conditions.json written → {OUTPUT_FILE}")
     print(f"   {len(results)} crags processed at {output['generated_at_pacific']}")
+
+    archive_conditions(output)
+    push_to_loki(output)
+
     print("\n")
 
 

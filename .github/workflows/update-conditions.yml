@@ -2,14 +2,7 @@ name: Update Crag Conditions
 
 on:
   schedule:
-    # Run every 6 hours — keeps conditions fresh without hammering the API
-    # Cron syntax: minute hour day month weekday
-    # 0 */6 * * * = top of every 6th hour (00:00, 06:00, 12:00, 18:00 UTC)
-    # In Pacific time: 4pm, 10pm, 4am, 10am — good coverage for morning send checks
     - cron: '0 */6 * * *'
-
-  # Allow manual trigger from GitHub Actions tab
-  # Useful for testing and forcing a refresh on demand
   workflow_dispatch:
 
 jobs:
@@ -32,14 +25,22 @@ jobs:
           pip install -r requirements.txt
 
       - name: Fetch crag conditions
+        env:
+          LOKI_USER:    ${{ secrets.LOKI_USER }}
+          LOKI_API_KEY: ${{ secrets.LOKI_API_KEY }}
+          LOKI_URL:     ${{ secrets.LOKI_URL }}
         run: |
           python scripts/fetch_conditions.py
+
+      - name: Purge history files older than 30 days
+        run: |
+          find data/history/ -name "*.json" -mtime +30 -delete 2>/dev/null || true
+          echo "Purge step complete"
 
       - name: Commit and push updated conditions
         run: |
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
-          git add -f data/conditions.json
-          # Only commit if conditions.json actually changed
+          git add data/conditions.json data/history/
           git diff --staged --quiet || git commit -m "Auto: Update crag conditions $(date -u +'%Y-%m-%d %H:%M UTC')"
           git push
