@@ -142,6 +142,18 @@
       "drying_multiplier": 1.0,
       "wind_threshold_mph": 25,
       "notes": "The local's playground \u2014 lower elevation, well-traveled, and significantly faster-drying than The Chief. Often climbable a day after rain clears when the Chief is still weeping. Varied aspects mean some walls see sun most of the day. One of the best urban crags in North America."
-    }
+    },
+    {
+      "id": "miller-river",
+      "name": "Miller River Boulders",
+      "region": "Skykomish / US-2",
+      "lat": 47.66734,
+      "lng": -121.38683,
+      "elevation_ft": 1266,
+      "rock_type": "granodiorite",
+      "aspect": "mixed",
+      "drying_multiplier": 1.3,
+      "notes": "Deep forest setting, slow drying. 6 sub-areas: Morpheus, Paradise, Prospect, Hideout, Jungle Gym, Apex. 205 problems. Needs significant dry time after rain."
+  }
   ]
 }
