@@ -167,6 +167,19 @@ const CRAG_META = {
     ],
   },
 
+  'miller-river': {
+    name: 'Miller River Boulders', region: 'Skykomish / US-2',
+    rock_type: 'Granodiorite', aspect: 'Mixed', elevation: '1,266 ft',
+    drying_speed: 'Slow', season: 'May–Oct',
+    description: "A deep forest bouldering sanctuary tucked into the Skykomish River valley. Six sub-areas — Morpheus, Paradise, Prospect, Hideout, Jungle Gym, and Apex — spread across 205 problems on featured granodiorite. The old-growth setting is stunning but holds moisture; plan for 2–3 dry days minimum after rain.",
+    links: [
+      { label: 'Mountain Project ↗',    url: 'https://www.mountainproject.com/area/120379690/miller-river-boulders' },
+      { label: 'Google Earth ↗',        url: 'https://earth.google.com/web/@47.66767577,-121.39112656,414.31892744a,4993.75470187d,35y,277.80123667h' },
+      { label: 'NWAC Forecast ↗',       url: 'https://nwac.us' },
+      { label: 'Stevens Pass (US-2) ↗', url: 'https://wsdot.com/travel/real-time/mountainpasses/stevens' },
+    ],
+  },
+
 };
 
 // CommonJS export for Node/GitHub Actions build context
