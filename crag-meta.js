@@ -18,6 +18,7 @@ const CRAG_META = {
   'index': {
     name: 'Index Town Wall', region: 'Sky Valley / US-2',
     rock_type: 'Granite', aspect: 'South', elevation: '900 ft',
+    gauge_id: '12134500', gauge_name: 'Skykomish River Near Gold Bar',
     drying_speed: 'Moderate', season: 'May–Oct',
     description: 'Granite dries fast. Lower Wall sheds water quickly; Upper Wall slower after heavy rain. South-facing aspect means afternoon sun helps dry things out. One of the most reliable crags on the west side when conditions cooperate.',
     links: [
@@ -170,6 +171,7 @@ const CRAG_META = {
   'miller-river': {
     name: 'Miller River Boulders', region: 'Skykomish / US-2',
     rock_type: 'Granodiorite', aspect: 'Mixed', elevation: '1,266 ft',
+    gauge_id: '12134500', gauge_name: 'Skykomish River (proxy)',
     drying_speed: 'Slow', season: 'May–Oct',
     description: "A deep forest bouldering sanctuary tucked into the Skykomish River valley. Six sub-areas — Morpheus, Paradise, Prospect, Hideout, Jungle Gym, and Apex — spread across 205 problems on featured granodiorite. The old-growth setting is stunning but holds moisture; plan for 2–3 dry days minimum after rain.",
     links: [

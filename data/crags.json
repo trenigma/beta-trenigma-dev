@@ -11,7 +11,9 @@
       "aspect": "south",
       "drying_multiplier": 1.0,
       "notes": "Granite dries fast. Lower Wall sheds water quickly; Upper Wall slower after heavy rain.",
-      "wind_threshold_mph": 25
+      "wind_threshold_mph": 25,
+      "gauge_id": "12134500",
+      "gauge_name": "Skykomish River Near Gold Bar"
     },
     {
       "id": "leavenworth",
@@ -153,6 +155,8 @@
       "rock_type": "granodiorite",
       "aspect": "mixed",
       "drying_multiplier": 1.3,
+      "gauge_id": "12134500",
+      "gauge_name": "Skykomish River (proxy)",
       "notes": "Deep forest setting, slow drying. 6 sub-areas: Morpheus, Paradise, Prospect, Hideout, Jungle Gym, Apex. 205 problems. Needs significant dry time after rain."
   }
   ]

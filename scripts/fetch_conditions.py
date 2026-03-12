@@ -75,6 +75,72 @@ def fetch_weather(lat: float, lng: float) -> dict:
 
 
 # ============================================================
+# STREAMFLOW FETCH
+# ============================================================
+
+USGS_URL = "https://waterservices.usgs.gov/nwis/iv/"
+
+def fetch_streamflow(gauge_id: str) -> dict:
+    """
+    Fetch real-time discharge (CFS) from a USGS stream gauge.
+
+    Requests the last 2 hours of 15-min interval readings — gives us
+    ~8 values. Like reading the last page of a logbook: we only need
+    the most recent entry and the one before it to know direction.
+
+    Parameter code 00060 = streamflow discharge in cubic feet per second.
+    No API key required. Safe to poll at 6h cadence.
+    """
+    params = {
+        "sites":        gauge_id,
+        "parameterCd":  "00060",
+        "period":       "PT2H",
+        "format":       "json",
+    }
+
+    url = USGS_URL + "?" + urllib.parse.urlencode(params)
+
+    try:
+        with urllib.request.urlopen(url, timeout=10) as response:
+            data = json.loads(response.read().decode())
+    except Exception as e:
+        print(f"  ⚠️  USGS API error for gauge {gauge_id}: {e}")
+        return None
+
+    try:
+        values = data["value"]["timeSeries"][0]["values"][0]["value"]
+    except (KeyError, IndexError):
+        print(f"  ⚠️  Unexpected USGS response shape for gauge {gauge_id}")
+        return None
+
+    # Filter out missing/masked readings (-999999 is USGS sentinel value)
+    valid = [v for v in values if float(v["value"]) >= 0]
+
+    if len(valid) < 2:
+        print(f"  ⚠️  Insufficient valid readings for gauge {gauge_id}")
+        return None
+
+    current_cfs  = float(valid[-1]["value"])
+    previous_cfs = float(valid[-2]["value"])
+    delta        = current_cfs - previous_cfs
+
+    # 5 CFS threshold avoids trend noise on flat/low rivers
+    if delta > 5:
+        trend = "rising"
+    elif delta < -5:
+        trend = "falling"
+    else:
+        trend = "steady"
+
+    return {
+        "cfs":        round(current_cfs),
+        "trend":      trend,
+        "gauge_id":   gauge_id,
+        "fetched_at": datetime.now(timezone.utc).isoformat(),
+    }
+
+
+# ============================================================
 # DATA EXTRACTION
 # ============================================================
 
@@ -347,10 +413,19 @@ def main():
         print(f"\n📍 {crag['name']}")
         print(f"   Fetching weather for {crag['lat']}, {crag['lng']}...")
 
-        # Fetch
+        # Fetch weather
         weather    = fetch_weather(crag["lat"], crag["lng"])
         conditions = extract_conditions(weather)
         scoring    = score_conditions(conditions, crag)
+
+        # Fetch streamflow — only for crags with a gauge_id in crags.json
+        streamflow = None
+        if crag.get("gauge_id"):
+            print(f"   Fetching streamflow from USGS gauge {crag['gauge_id']}...")
+            streamflow = fetch_streamflow(crag["gauge_id"])
+            if streamflow:
+                trend_emoji = {"rising": "📈", "falling": "📉", "steady": "➡️"}.get(streamflow["trend"], "")
+                print(f"   💧 Streamflow: {streamflow['cfs']} CFS {trend_emoji} {streamflow['trend']}")
 
         # Report
         signal_emoji = {"go": "🟢", "wait": "🟡", "no-go": "🔴", "unknown": "⚪"}.get(scoring["signal"], "⚪")
@@ -369,6 +444,7 @@ def main():
             "score":      scoring["score"],
             "reasons":    scoring["reasons"],
             "conditions": conditions,
+            "streamflow": streamflow,
             "crag_meta":  {
                 "rock_type":  crag["rock_type"],
                 "aspect":     crag["aspect"],
