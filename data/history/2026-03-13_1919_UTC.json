@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-03-13T19:33:59.235668+00:00",
-  "generated_at_pacific": "2026-03-13 12:34 PM PST",
+  "generated_at": "2026-03-13T19:19:10.835771+00:00",
+  "generated_at_pacific": "2026-03-13 12:19 PM PST",
   "crags": [
     {
       "id": "index",
@@ -26,9 +26,8 @@
         "cfs": 7250,
         "trend": "falling",
         "gauge_id": "12134500",
-        "fetched_at": "2026-03-13T19:34:00.416945+00:00"
+        "fetched_at": "2026-03-13T19:19:12.000658+00:00"
       },
-      "aqi": null,
       "crag_meta": {
         "rock_type": "granite",
         "aspect": "south",
@@ -57,7 +56,6 @@
         "windspeed_mph": 2.7
       },
       "streamflow": null,
-      "aqi": null,
       "crag_meta": {
         "rock_type": "granite",
         "aspect": "south",
@@ -84,7 +82,6 @@
         "windspeed_mph": 2.5
       },
       "streamflow": null,
-      "aqi": null,
       "crag_meta": {
         "rock_type": "basalt",
         "aspect": "west",
@@ -113,7 +110,6 @@
         "windspeed_mph": 1.8
       },
       "streamflow": null,
-      "aqi": null,
       "crag_meta": {
         "rock_type": "granite",
         "aspect": "south",
@@ -141,7 +137,6 @@
         "windspeed_mph": 4.2
       },
       "streamflow": null,
-      "aqi": null,
       "crag_meta": {
         "rock_type": "granite",
         "aspect": "varied",
@@ -171,7 +166,6 @@
         "windspeed_mph": 1.2
       },
       "streamflow": null,
-      "aqi": null,
       "crag_meta": {
         "rock_type": "sandstone",
         "aspect": "south",
@@ -200,7 +194,6 @@
         "windspeed_mph": 4.9
       },
       "streamflow": null,
-      "aqi": null,
       "crag_meta": {
         "rock_type": "metamorphic",
         "aspect": "varied",
@@ -229,7 +222,6 @@
         "windspeed_mph": 7.2
       },
       "streamflow": null,
-      "aqi": null,
       "crag_meta": {
         "rock_type": "granite",
         "aspect": "southwest",
@@ -255,7 +247,6 @@
         "windspeed_mph": 11.1
       },
       "streamflow": null,
-      "aqi": null,
       "crag_meta": {
         "rock_type": "volcanic tuff",
         "aspect": "varied",
@@ -282,7 +273,6 @@
         "windspeed_mph": 4.3
       },
       "streamflow": null,
-      "aqi": null,
       "crag_meta": {
         "rock_type": "granite",
         "aspect": "south",
@@ -308,7 +298,6 @@
         "windspeed_mph": 4.0
       },
       "streamflow": null,
-      "aqi": null,
       "crag_meta": {
         "rock_type": "granite",
         "aspect": "varied",
@@ -340,9 +329,8 @@
         "cfs": 7250,
         "trend": "falling",
         "gauge_id": "12134500",
-        "fetched_at": "2026-03-13T19:34:15.682297+00:00"
+        "fetched_at": "2026-03-13T19:19:40.013058+00:00"
       },
-      "aqi": null,
       "crag_meta": {
         "rock_type": "granodiorite",
         "aspect": "mixed",

@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-03-13T19:33:59.235668+00:00",
-  "generated_at_pacific": "2026-03-13 12:34 PM PST",
+  "generated_at": "2026-03-13T19:01:06.764043+00:00",
+  "generated_at_pacific": "2026-03-13 12:04 PM PST",
   "crags": [
     {
       "id": "index",
@@ -11,24 +11,28 @@
       "reasons": [
         "1.69\" rain in last 24h",
         "Very high humidity (96%) \u2014 rock stays damp",
-        "Cold (33.9\u00b0F) \u2014 slow drying",
-        "1.01\" rain forecasted \u2014 conditions deteriorating"
+        "Cold (34.0\u00b0F) \u2014 slow drying",
+        "0.91\" rain forecasted \u2014 conditions deteriorating"
       ],
       "conditions": {
         "precip_24h": 1.69,
         "precip_48h": 2.85,
-        "precip_forecast_48h": 1.01,
+        "precip_forecast_48h": 0.91,
         "humidity": 96,
-        "temp_f": 33.9,
-        "windspeed_mph": 3.1
+        "temp_f": 34.0,
+        "windspeed_mph": 3.6
       },
       "streamflow": {
         "cfs": 7250,
         "trend": "falling",
         "gauge_id": "12134500",
-        "fetched_at": "2026-03-13T19:34:00.416945+00:00"
+        "fetched_at": "2026-03-13T19:01:07.992436+00:00"
       },
-      "aqi": null,
+      "nws": {
+        "alerts": [],
+        "forecast": "Patchy fog and rain and snow. Mostly cloudy. High near 40, with temperatures falling to around 38 in the afternoon. West northwest wind around 2 mph. Chance of precipitation is 90%. New rainfall amounts less than a tenth of an inch possible.",
+        "fetched_at": "2026-03-13T19:01:34.546567+00:00"
+      },
       "crag_meta": {
         "rock_type": "granite",
         "aspect": "south",
@@ -45,19 +49,23 @@
       "reasons": [
         "0.22\" rain in last 24h (light)",
         "Very high humidity (97%) \u2014 rock stays damp",
-        "Cold (32.9\u00b0F) \u2014 slow drying",
-        "1.49\" rain forecasted \u2014 conditions deteriorating"
+        "Cold (33.3\u00b0F) \u2014 slow drying",
+        "1.46\" rain forecasted \u2014 conditions deteriorating"
       ],
       "conditions": {
         "precip_24h": 0.22,
         "precip_48h": 0.87,
-        "precip_forecast_48h": 1.49,
+        "precip_forecast_48h": 1.46,
         "humidity": 97,
-        "temp_f": 32.9,
-        "windspeed_mph": 2.7
+        "temp_f": 33.3,
+        "windspeed_mph": 2.6
       },
       "streamflow": null,
-      "aqi": null,
+      "nws": {
+        "alerts": [],
+        "forecast": "Snow likely before 3pm, then rain likely. Mostly cloudy, with a high near 37. Northwest wind around 5 mph. Chance of precipitation is 70%. New snow accumulation of around one inch possible.",
+        "fetched_at": "2026-03-13T19:01:51.731356+00:00"
+      },
       "crag_meta": {
         "rock_type": "granite",
         "aspect": "south",
@@ -73,18 +81,22 @@
       "score": 65,
       "reasons": [
         "Very high humidity (89%) \u2014 rock stays damp",
-        "0.82\" rain forecasted \u2014 conditions deteriorating"
+        "0.8\" rain forecasted \u2014 conditions deteriorating"
       ],
       "conditions": {
         "precip_24h": 0.02,
         "precip_48h": 0.02,
-        "precip_forecast_48h": 0.82,
+        "precip_forecast_48h": 0.8,
         "humidity": 89,
-        "temp_f": 43.4,
-        "windspeed_mph": 2.5
+        "temp_f": 43.5,
+        "windspeed_mph": 3.8
       },
       "streamflow": null,
-      "aqi": null,
+      "nws": {
+        "alerts": [],
+        "forecast": "Rain likely. Mostly cloudy. High near 52, with temperatures falling to around 49 in the afternoon. Northwest wind around 9 mph. Chance of precipitation is 70%. New rainfall amounts less than a tenth of an inch possible.",
+        "fetched_at": "2026-03-13T19:02:04.642995+00:00"
+      },
       "crag_meta": {
         "rock_type": "basalt",
         "aspect": "west",
@@ -101,7 +113,7 @@
       "reasons": [
         "0.34\" rain in last 24h (light)",
         "Very high humidity (98%) \u2014 rock stays damp",
-        "Cold (32.2\u00b0F) \u2014 slow drying",
+        "Cold (32.4\u00b0F) \u2014 slow drying",
         "1.82\" rain forecasted \u2014 conditions deteriorating"
       ],
       "conditions": {
@@ -109,11 +121,21 @@
         "precip_48h": 2.26,
         "precip_forecast_48h": 1.82,
         "humidity": 98,
-        "temp_f": 32.2,
-        "windspeed_mph": 1.8
+        "temp_f": 32.4,
+        "windspeed_mph": 4.4
       },
       "streamflow": null,
-      "aqi": null,
+      "nws": {
+        "alerts": [
+          {
+            "event": "Winter Weather Advisory",
+            "severity": "Moderate",
+            "headline": "Winter Weather Advisory issued March 13 at 8:20AM PDT until March 13 at 3:00PM PDT by NWS Seattle WA"
+          }
+        ],
+        "forecast": null,
+        "fetched_at": "2026-03-13T19:02:25.181767+00:00"
+      },
       "crag_meta": {
         "rock_type": "granite",
         "aspect": "south",
@@ -130,18 +152,22 @@
       "reasons": [
         "0.56\" rain in last 24h",
         "Very high humidity (89%) \u2014 rock stays damp",
-        "Cold (35.6\u00b0F) \u2014 slow drying"
+        "Cold (35.8\u00b0F) \u2014 slow drying"
       ],
       "conditions": {
         "precip_24h": 0.56,
         "precip_48h": 0.78,
-        "precip_forecast_48h": 0.46,
+        "precip_forecast_48h": 0.47,
         "humidity": 89,
-        "temp_f": 35.6,
-        "windspeed_mph": 4.2
+        "temp_f": 35.8,
+        "windspeed_mph": 4.3
       },
       "streamflow": null,
-      "aqi": null,
+      "nws": {
+        "alerts": [],
+        "forecast": "A chance of rain and snow before noon, then a chance of rain and snow between noon and 2pm. Mostly cloudy. High near 44, with temperatures falling to around 42 in the afternoon. West wind around 3 mph. Chance of precipitation is 40%. New rainfall amounts between a tenth and quarter of an inch possible.",
+        "fetched_at": "2026-03-13T19:02:42.917393+00:00"
+      },
       "crag_meta": {
         "rock_type": "granite",
         "aspect": "varied",
@@ -159,19 +185,29 @@
         "0.16\" rain in last 24h (light)",
         "Sandstone \u2014 never climb wet, damages rock",
         "Very high humidity (99%) \u2014 rock stays damp",
-        "Below freezing (31.8\u00b0F) \u2014 ice risk",
-        "1.53\" rain forecasted \u2014 conditions deteriorating"
+        "Below freezing (31.9\u00b0F) \u2014 ice risk",
+        "1.54\" rain forecasted \u2014 conditions deteriorating"
       ],
       "conditions": {
         "precip_24h": 0.16,
         "precip_48h": 0.85,
-        "precip_forecast_48h": 1.53,
+        "precip_forecast_48h": 1.54,
         "humidity": 99,
-        "temp_f": 31.8,
-        "windspeed_mph": 1.2
+        "temp_f": 31.9,
+        "windspeed_mph": 1.1
       },
       "streamflow": null,
-      "aqi": null,
+      "nws": {
+        "alerts": [
+          {
+            "event": "Winter Storm Warning",
+            "severity": "Severe",
+            "headline": "Winter Storm Warning issued March 13 at 11:29AM PDT until March 13 at 10:00PM PDT by NWS Spokane WA"
+          }
+        ],
+        "forecast": "Snow before 4pm, then rain and snow. Cloudy. High near 43, with temperatures falling to around 40 in the afternoon. Northwest wind around 5 mph. Chance of precipitation is 90%. New snow accumulation of less than half an inch possible.",
+        "fetched_at": "2026-03-13T19:02:56.643078+00:00"
+      },
       "crag_meta": {
         "rock_type": "sandstone",
         "aspect": "south",
@@ -189,18 +225,28 @@
         "0.6\" rain in last 24h",
         "Very high humidity (94%) \u2014 rock stays damp",
         "Cold (36.6\u00b0F) \u2014 slow drying",
-        "2.29\" rain forecasted \u2014 conditions deteriorating"
+        "2.31\" rain forecasted \u2014 conditions deteriorating"
       ],
       "conditions": {
         "precip_24h": 0.6,
         "precip_48h": 2.42,
-        "precip_forecast_48h": 2.29,
+        "precip_forecast_48h": 2.31,
         "humidity": 94,
         "temp_f": 36.6,
-        "windspeed_mph": 4.9
+        "windspeed_mph": 7.2
       },
       "streamflow": null,
-      "aqi": null,
+      "nws": {
+        "alerts": [
+          {
+            "event": "Winter Storm Warning",
+            "severity": "Severe",
+            "headline": "Winter Storm Warning issued March 13 at 8:20AM PDT until March 14 at 5:00AM PDT by NWS Seattle WA"
+          }
+        ],
+        "forecast": "Areas of fog and rain and snow before 1pm, then areas of fog and rain and snow. Cloudy. High near 37, with temperatures falling to around 35 in the afternoon. West northwest wind around 2 mph. Chance of precipitation is 100%. New rainfall amounts between a quarter and half of an inch possible.",
+        "fetched_at": "2026-03-13T19:03:22.473448+00:00"
+      },
       "crag_meta": {
         "rock_type": "metamorphic",
         "aspect": "varied",
@@ -217,19 +263,19 @@
       "reasons": [
         "0.91\" rain in last 24h",
         "Very high humidity (93%) \u2014 rock stays damp",
-        "Below freezing (26.7\u00b0F) \u2014 ice risk",
-        "1.94\" rain forecasted \u2014 conditions deteriorating"
+        "Below freezing (26.5\u00b0F) \u2014 ice risk",
+        "2.0\" rain forecasted \u2014 conditions deteriorating"
       ],
       "conditions": {
         "precip_24h": 0.91,
         "precip_48h": 1.74,
-        "precip_forecast_48h": 1.94,
+        "precip_forecast_48h": 2.0,
         "humidity": 93,
-        "temp_f": 26.7,
-        "windspeed_mph": 7.2
+        "temp_f": 26.5,
+        "windspeed_mph": 6.5
       },
       "streamflow": null,
-      "aqi": null,
+      "nws": null,
       "crag_meta": {
         "rock_type": "granite",
         "aspect": "southwest",
@@ -251,11 +297,15 @@
         "precip_48h": 0,
         "precip_forecast_48h": 0,
         "humidity": 60,
-        "temp_f": 49.4,
-        "windspeed_mph": 11.1
+        "temp_f": 49.0,
+        "windspeed_mph": 11.9
       },
       "streamflow": null,
-      "aqi": null,
+      "nws": {
+        "alerts": [],
+        "forecast": "A chance of rain after 2pm. Mostly cloudy. High near 57, with temperatures falling to around 55 in the afternoon. Southwest wind around 16 mph, with gusts as high as 28 mph. Chance of precipitation is 30%.",
+        "fetched_at": "2026-03-13T19:03:49.591968+00:00"
+      },
       "crag_meta": {
         "rock_type": "volcanic tuff",
         "aspect": "varied",
@@ -268,21 +318,21 @@
       "name": "The Chief",
       "region": "Squamish, BC",
       "signal": "wait",
-      "score": 59,
+      "score": 79,
       "reasons": [
         "0.63\" rain in last 48h",
-        "Below freezing (31.8\u00b0F) \u2014 ice risk"
+        "Cold (32.0\u00b0F) \u2014 slow drying"
       ],
       "conditions": {
         "precip_24h": 0.07,
         "precip_48h": 0.63,
         "precip_forecast_48h": 0.15,
         "humidity": 64,
-        "temp_f": 31.8,
-        "windspeed_mph": 4.3
+        "temp_f": 32.0,
+        "windspeed_mph": 4.2
       },
       "streamflow": null,
-      "aqi": null,
+      "nws": null,
       "crag_meta": {
         "rock_type": "granite",
         "aspect": "south",
@@ -304,11 +354,11 @@
         "precip_48h": 0.52,
         "precip_forecast_48h": 0.13,
         "humidity": 70,
-        "temp_f": 41.1,
-        "windspeed_mph": 4.0
+        "temp_f": 40.7,
+        "windspeed_mph": 3.5
       },
       "streamflow": null,
-      "aqi": null,
+      "nws": null,
       "crag_meta": {
         "rock_type": "granite",
         "aspect": "varied",
@@ -320,29 +370,23 @@
       "id": "miller-river",
       "name": "Miller River Boulders",
       "region": "Skykomish / US-2",
-      "signal": "no-go",
-      "score": 0,
+      "signal": "unknown",
+      "score": null,
       "reasons": [
-        "1.17\" rain in last 24h",
-        "Very high humidity (96%) \u2014 rock stays damp",
-        "Cold (35.4\u00b0F) \u2014 slow drying",
-        "1.31\" rain forecasted \u2014 conditions deteriorating"
+        "Data unavailable"
       ],
-      "conditions": {
-        "precip_24h": 1.17,
-        "precip_48h": 2.91,
-        "precip_forecast_48h": 1.31,
-        "humidity": 96,
-        "temp_f": 35.4,
-        "windspeed_mph": 2.0
-      },
+      "conditions": null,
       "streamflow": {
         "cfs": 7250,
         "trend": "falling",
         "gauge_id": "12134500",
-        "fetched_at": "2026-03-13T19:34:15.682297+00:00"
+        "fetched_at": "2026-03-13T19:04:11.454500+00:00"
       },
-      "aqi": null,
+      "nws": {
+        "alerts": [],
+        "forecast": null,
+        "fetched_at": "2026-03-13T19:04:25.048091+00:00"
+      },
       "crag_meta": {
         "rock_type": "granodiorite",
         "aspect": "mixed",

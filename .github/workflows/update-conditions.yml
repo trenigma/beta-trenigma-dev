@@ -26,9 +26,10 @@ jobs:
 
       - name: Fetch crag conditions
         env:
-          LOKI_USER:    ${{ secrets.LOKI_USER }}
-          LOKI_API_KEY: ${{ secrets.LOKI_API_KEY }}
-          LOKI_URL:     ${{ secrets.LOKI_URL }}
+          LOKI_USER:         ${{ secrets.LOKI_USER }}
+          LOKI_API_KEY:      ${{ secrets.LOKI_API_KEY }}
+          LOKI_URL:          ${{ secrets.LOKI_URL }}
+          PURPLEAIR_API_KEY: ${{ secrets.PURPLEAIR_API_KEY }}
         run: |
           python scripts/fetch_conditions.py
 
