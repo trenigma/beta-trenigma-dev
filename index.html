@@ -425,6 +425,13 @@
       // First reason = primary context line on the card
       const reason = crag.reasons && crag.reasons[0] ? crag.reasons[0] : '';
 
+      // Last GO — only show when not currently green
+      const lastGoHTML = (crag.signal !== 'go' && crag.last_go) ? (() => {
+        const days = Math.floor((Date.now() - new Date(crag.last_go)) / 86400000);
+        const label = days === 0 ? 'today' : days === 1 ? 'yesterday' : `${days}d ago`;
+        return `<p style="font-size:0.75rem; color:var(--text-muted); font-family:var(--font-mono); margin-bottom:var(--space-sm);">Last green: ${label}</p>`;
+      })() : '';
+
       // Streamflow badge — only renders for crags with gauge data
       const sf = crag.streamflow;
       const streamflowHTML = sf ? (() => {
@@ -497,6 +504,7 @@
           ${streamflowHTML}
           ${aqiHTML}
           ${reason ? `<p style="font-size:0.8125rem; color:var(--text-muted); margin-bottom:var(--space-md); line-height:1.4;">→ ${reason}</p>` : ''}
+          ${lastGoHTML}
           <div class="crag-card__footer">
             <span class="crag-card__updated">Updated ${updated} · ${attribution}</span>
             <span class="crag-card__arrow">→</span>

@@ -609,6 +609,35 @@ def main():
             }
         })
 
+    # ── LAST GO ──────────────────────────────────────────────
+    # Scan history snapshots to find when each crag last had a
+    # "go" signal. Like checking the logbook at the trailhead —
+    # when was the last time someone signed in saying "conditions great"?
+    last_go_map = {}  # crag_id → ISO timestamp string of most recent go
+
+    if HISTORY_DIR.exists():
+        # Sort descending — newest first, stop early once all crags found
+        history_files = sorted(HISTORY_DIR.glob("*.json"), reverse=True)
+        for hfile in history_files:
+            if len(last_go_map) == len(results):
+                break  # found a last-go for every crag, done
+            try:
+                with open(hfile) as f:
+                    snap = json.load(f)
+                for hcrag in snap.get("crags", []):
+                    cid = hcrag.get("id")
+                    if cid and cid not in last_go_map and hcrag.get("signal") == "go":
+                        last_go_map[cid] = snap.get("generated_at")
+            except Exception:
+                continue  # corrupt/partial file — skip silently
+
+    # Attach last_go to each result
+    for r in results:
+        r["last_go"] = last_go_map.get(r["id"])
+
+    go_hits = sum(1 for r in results if r["last_go"])
+    print(f"\n📅 Last-GO scan: {go_hits}/{len(results)} crags have history")
+
     # Write output
     output = {
         "generated_at": timestamp,
