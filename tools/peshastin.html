@@ -473,6 +473,12 @@
           </div>
           <ul class="reasons-list">${reasonsHTML}</ul>
           ` : ''}
+
+          ${(crag.signal !== 'go' && crag.last_go) ? (() => {
+            const days = Math.floor((Date.now() - new Date(crag.last_go)) / 86400000);
+            const label = days === 0 ? 'today' : days === 1 ? 'yesterday' : `${days}d ago`;
+            return `<p style="font-family:var(--font-mono); font-size:0.75rem; color:var(--text-muted); margin-top:var(--space-lg);">📅 Last green: ${label}</p>`;
+          })() : ''}
         `;
 
       } catch (err) {
