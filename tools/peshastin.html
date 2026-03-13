@@ -392,12 +392,38 @@
         const c   = crag.conditions || {};
         const updated = timeAgo(data.generated_at);
 
+        // AQI stat blocks — only render if PurpleAir data exists
+        const aq = crag.aqi;
+        const aqiBlocksHTML = aq ? (() => {
+          const color =
+            aq.aqi <= 50  ? 'var(--green-go)'    :
+            aq.aqi <= 100 ? 'var(--amber-wait)'  :
+            aq.aqi <= 150 ? '#E8834A'            :
+                            'var(--red-warning)';
+          return `
+            <div class="stat-block">
+              <div class="stat-block__label">AQI</div>
+              <div class="stat-block__value" style="color:${color};">${aq.aqi}</div>
+              <div class="stat-block__sub">PM2.5: ${aq.pm25} µg/m³</div>
+            </div>
+            <div class="stat-block">
+              <div class="stat-block__label">Air Quality</div>
+              <div class="stat-block__value" style="font-size:0.8rem; line-height:1.3; color:${color};">${aq.category}</div>
+              <div class="stat-block__sub">${aq.sensor_name} · ${aq.distance_km}km · PurpleAir</div>
+            </div>`;
+        })() : '';
+
+        // Attribution — dynamic based on available sources
+        const attributionParts = ['Open-Meteo'];
+        if (aq) attributionParts.push('PurpleAir');
+        const attributionStr = attributionParts.join(' · ');
+
         const reasonsHTML = (crag.reasons || []).map(r =>
           `<li>${r}</li>`
         ).join('');
 
         el.innerHTML = `
-          <p class="updated-bar">Updated ${updated} · Open-Meteo</p>
+          <p class="updated-bar">Updated ${updated} · ${attributionStr}</p>
 
           <div class="signal-display">
             <div class="signal-display__dot signal-display__dot--${sig.dot}"></div>
@@ -438,6 +464,7 @@
               <div class="stat-block__value">${c.precip_forecast_48h ?? '—'}"</div>
               <div class="stat-block__sub">rain incoming</div>
             </div>
+            ${aqiBlocksHTML}
           </div>
 
           ${reasonsHTML ? `
