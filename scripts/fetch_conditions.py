@@ -205,6 +205,7 @@ def fetch_aqi(lat: float, lng: float) -> dict:
     Requires PURPLEAIR_API_KEY env var.
     """
     if not PURPLEAIR_API_KEY:
+        print(f"  ⚠️  PurpleAir: API key not set")
         return None
 
     # Bounding box: ~0.27 deg lat ≈ 30km, lng scaled by cos(lat)
@@ -236,6 +237,7 @@ def fetch_aqi(lat: float, lng: float) -> dict:
     sensors = data.get("data", [])
 
     if not sensors:
+        print(f"  ⚠️  PurpleAir: 0 sensors returned in bounding box for {lat},{lng}")
         return None
 
     # Map field names to indices for flexible response parsing
@@ -268,6 +270,7 @@ def fetch_aqi(lat: float, lng: float) -> dict:
             best      = (s_pm, s_name, dist)
 
     if not best:
+        print(f"  ⚠️  PurpleAir: {len(sensors)} sensors found but none within {PURPLEAIR_MAX_KM}km of {lat},{lng}")
         return None
 
     pm25, sensor_name, distance_km = best
