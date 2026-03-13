@@ -33,6 +33,13 @@ HISTORY_DIR = REPO_ROOT / "data" / "history"
 # Open-Meteo API — no key needed
 OPEN_METEO_URL = "https://api.open-meteo.com/v1/forecast"
 
+# PurpleAir API — READ key, set via PURPLEAIR_API_KEY env var / repo secret
+PURPLEAIR_API_KEY = os.environ.get("PURPLEAIR_API_KEY")
+PURPLEAIR_URL     = "https://api.purpleair.com/v1/sensors"
+# Smoke is regional — a sensor 30km away is still valid for wildfire events.
+# Beyond that, return null rather than mislead.
+PURPLEAIR_MAX_KM  = 30
+
 # Scoring thresholds
 # Think of these like a climbing grade system:
 # Green circle = 5.easy, Yellow = 5.hard, Red = project-not-today
@@ -137,6 +144,142 @@ def fetch_streamflow(gauge_id: str) -> dict:
         "trend":      trend,
         "gauge_id":   gauge_id,
         "fetched_at": datetime.now(timezone.utc).isoformat(),
+    }
+
+
+
+# ============================================================
+# PURPLEAIR AQI FETCH
+# ============================================================
+
+def _pm25_to_aqi(pm: float) -> tuple[int, str]:
+    """
+    Convert PM2.5 (µg/m³) to AQI using EPA breakpoints.
+
+    Like converting a climbing grade between systems — the math is
+    just interpolation between known anchor points. EPA defines 7 bands;
+    we find which band our PM2.5 falls in and scale linearly within it.
+
+    Returns (aqi_int, category_label).
+    """
+    # (PM_low, PM_high, AQI_low, AQI_high, label)
+    breakpoints = [
+        (0.0,   12.0,   0,   50,  "Good"),
+        (12.1,  35.4,  51,  100,  "Moderate"),
+        (35.5,  55.4, 101,  150,  "Unhealthy for Sensitive Groups"),
+        (55.5, 150.4, 151,  200,  "Unhealthy"),
+        (150.5, 250.4, 201, 300,  "Very Unhealthy"),
+        (250.5, 350.4, 301, 400,  "Hazardous"),
+        (350.5, 500.4, 401, 500,  "Hazardous"),
+    ]
+    for pm_lo, pm_hi, aqi_lo, aqi_hi, label in breakpoints:
+        if pm_lo <= pm <= pm_hi:
+            aqi = round((aqi_hi - aqi_lo) / (pm_hi - pm_lo) * (pm - pm_lo) + aqi_lo)
+            return aqi, label
+    # Off the top of the scale
+    return 500, "Hazardous"
+
+
+def _haversine_km(lat1: float, lng1: float, lat2: float, lng2: float) -> float:
+    """
+    Straight-line distance between two lat/lng points in km.
+    Accurate enough for our 30km search radius.
+    """
+    import math
+    R    = 6371
+    dlat = math.radians(lat2 - lat1)
+    dlng = math.radians(lng2 - lng1)
+    a    = math.sin(dlat/2)**2 + math.cos(math.radians(lat1)) * math.cos(math.radians(lat2)) * math.sin(dlng/2)**2
+    return R * 2 * math.asin(math.sqrt(a))
+
+
+def fetch_aqi(lat: float, lng: float) -> dict:
+    """
+    Fetch nearest outdoor PurpleAir sensor within PURPLEAIR_MAX_KM.
+
+    Strategy: query a bounding box slightly larger than our radius,
+    then pick the closest sensor by Haversine distance. Like casting
+    a wide net and keeping only the nearest catch.
+
+    Returns dict with aqi, category, pm25, distance_km, sensor_name — or None.
+    Requires PURPLEAIR_API_KEY env var.
+    """
+    if not PURPLEAIR_API_KEY:
+        return None
+
+    # Bounding box: ~0.27 deg lat ≈ 30km, lng scaled by cos(lat)
+    import math
+    pad_lat = 0.27
+    pad_lng = pad_lat / math.cos(math.radians(lat))
+
+    params = {
+        "fields":        "pm2.5_atm,latitude,longitude,last_seen,name",
+        "location_type": "0",          # outdoor sensors only
+        "max_age":       "3600",        # must have reported in last hour
+        "nwlat":         round(lat + pad_lat, 6),
+        "nwlng":         round(lng - pad_lng, 6),
+        "selat":         round(lat - pad_lat, 6),
+        "selng":         round(lng + pad_lng, 6),
+    }
+
+    url = PURPLEAIR_URL + "?" + urllib.parse.urlencode(params)
+    req = urllib.request.Request(url, headers={"X-API-Key": PURPLEAIR_API_KEY})
+
+    try:
+        with urllib.request.urlopen(req, timeout=8) as resp:
+            data = json.loads(resp.read().decode())
+    except Exception as e:
+        print(f"  ⚠️  PurpleAir API error for {lat},{lng}: {e}")
+        return None
+
+    fields  = data.get("fields", [])
+    sensors = data.get("data", [])
+
+    if not sensors:
+        return None
+
+    # Map field names to indices for flexible response parsing
+    try:
+        i_pm   = fields.index("pm2.5_atm")
+        i_lat  = fields.index("latitude")
+        i_lng  = fields.index("longitude")
+        i_name = fields.index("name")
+    except ValueError as e:
+        print(f"  ⚠️  PurpleAir unexpected field schema: {e}")
+        return None
+
+    # Find nearest sensor within radius
+    best      = None
+    best_dist = float("inf")
+
+    for row in sensors:
+        s_lat  = row[i_lat]
+        s_lng  = row[i_lng]
+        s_pm   = row[i_pm]
+        s_name = row[i_name]
+
+        # Skip sensors with null/invalid PM2.5
+        if s_pm is None or s_pm < 0:
+            continue
+
+        dist = _haversine_km(lat, lng, s_lat, s_lng)
+        if dist < best_dist and dist <= PURPLEAIR_MAX_KM:
+            best_dist = dist
+            best      = (s_pm, s_name, dist)
+
+    if not best:
+        return None
+
+    pm25, sensor_name, distance_km = best
+    aqi, category = _pm25_to_aqi(pm25)
+
+    return {
+        "aqi":          aqi,
+        "category":     category,
+        "pm25":         round(pm25, 1),
+        "sensor_name":  sensor_name,
+        "distance_km":  round(distance_km, 1),
+        "fetched_at":   datetime.now(timezone.utc).isoformat(),
     }
 
 
@@ -427,6 +570,15 @@ def main():
                 trend_emoji = {"rising": "📈", "falling": "📉", "steady": "➡️"}.get(streamflow["trend"], "")
                 print(f"   💧 Streamflow: {streamflow['cfs']} CFS {trend_emoji} {streamflow['trend']}")
 
+        # Fetch AQI from nearest PurpleAir sensor
+        print(f"   Fetching AQI from PurpleAir...")
+        aqi_data = fetch_aqi(crag["lat"], crag["lng"])
+        if aqi_data:
+            aqi_emoji = "🟢" if aqi_data["aqi"] <= 50 else "🟡" if aqi_data["aqi"] <= 100 else "🟠" if aqi_data["aqi"] <= 150 else "🔴"
+            print(f"   {aqi_emoji} AQI: {aqi_data['aqi']} ({aqi_data['category']}) · PM2.5: {aqi_data['pm25']} µg/m³ · {aqi_data['distance_km']}km away")
+        else:
+            print(f"   ℹ️  AQI: No sensor within {PURPLEAIR_MAX_KM}km")
+
         # Report
         signal_emoji = {"go": "🟢", "wait": "🟡", "no-go": "🔴", "unknown": "⚪"}.get(scoring["signal"], "⚪")
         print(f"   {signal_emoji} {scoring['signal'].upper()} (score: {scoring['score']})")
@@ -445,6 +597,7 @@ def main():
             "reasons":    scoring["reasons"],
             "conditions": conditions,
             "streamflow": streamflow,
+            "aqi":        aqi_data,
             "crag_meta":  {
                 "rock_type":  crag["rock_type"],
                 "aspect":     crag["aspect"],
