@@ -425,6 +425,27 @@
       // First reason = primary context line on the card
       const reason = crag.reasons && crag.reasons[0] ? crag.reasons[0] : '';
 
+      // Streamflow badge — only renders for crags with gauge data
+      const sf = crag.streamflow;
+      const streamflowHTML = sf ? (() => {
+        const arrow = { rising: '↑', falling: '↓', steady: '→' }[sf.trend] || '';
+        const color = {
+          rising:  'var(--red-warning)',
+          falling: 'var(--green-go)',
+          steady:  'var(--text-muted)',
+        }[sf.trend] || 'var(--text-muted)';
+        return `
+          <div style="font-family:var(--font-mono); font-size:0.75rem; color:var(--text-muted); margin-bottom:var(--space-md); display:flex; align-items:center; gap:var(--space-sm);">
+            💧 <strong style="color:var(--text-primary);">${sf.cfs.toLocaleString()} CFS</strong>
+            <span style="color:${color};">${arrow} ${sf.trend}</span>
+            <span style="color:var(--bg-overlay);">·</span>
+            <span>Skykomish</span>
+          </div>`;
+      })() : '';
+
+      // Attribution — add USGS when streamflow is present
+      const attribution = sf ? 'Open-Meteo · USGS' : 'Open-Meteo';
+
       return `
         <a href="${url}" class="crag-card">
           <div class="crag-card__header">
@@ -454,9 +475,10 @@
               <span class="crag-stat__value">${wind}</span>
             </div>
           </div>
+          ${streamflowHTML}
           ${reason ? `<p style="font-size:0.8125rem; color:var(--text-muted); margin-bottom:var(--space-md); line-height:1.4;">→ ${reason}</p>` : ''}
           <div class="crag-card__footer">
-            <span class="crag-card__updated">Updated ${updated} · Open-Meteo</span>
+            <span class="crag-card__updated">Updated ${updated} · ${attribution}</span>
             <span class="crag-card__arrow">→</span>
           </div>
         </a>`;

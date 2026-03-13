@@ -400,8 +400,34 @@
           `<li>${r}</li>`
         ).join('');
 
+        // Streamflow blocks — only render if data exists
+        const sf = crag.streamflow;
+        const streamflowBlocksHTML = sf ? (() => {
+          const arrow = { rising: '↑', falling: '↓', steady: '→' }[sf.trend] || '';
+          const color = {
+            rising:  'var(--red-warning)',
+            falling: 'var(--green-go)',
+            steady:  'var(--text-muted)',
+          }[sf.trend] || 'var(--text-muted)';
+          const gaugeName = (CRAG_META[CRAG_ID] && CRAG_META[CRAG_ID].gauge_name) || sf.gauge_id;
+          return `
+            <div class="stat-block">
+              <div class="stat-block__label">Streamflow</div>
+              <div class="stat-block__value" style="color:${color};">${sf.cfs.toLocaleString()}</div>
+              <div class="stat-block__sub"><span style="color:${color};">${arrow} ${sf.trend}</span> · CFS</div>
+            </div>
+            <div class="stat-block">
+              <div class="stat-block__label">Gauge</div>
+              <div class="stat-block__value" style="font-size:0.8rem; line-height:1.3;">${gaugeName}</div>
+              <div class="stat-block__sub">USGS Water Services</div>
+            </div>`;
+        })() : '';
+
+        // Attribution — add USGS when streamflow is present
+        const attribution = sf ? 'Open-Meteo · USGS' : 'Open-Meteo';
+
         el.innerHTML = `
-          <p class="updated-bar">Updated ${updated} · Open-Meteo</p>
+          <p class="updated-bar">Updated ${updated} · ${attribution}</p>
 
           <div class="signal-display">
             <div class="signal-display__dot signal-display__dot--${sig.dot}"></div>
@@ -442,6 +468,7 @@
               <div class="stat-block__value">${c.precip_forecast_48h ?? '—'}"</div>
               <div class="stat-block__sub">rain incoming</div>
             </div>
+            ${streamflowBlocksHTML}
           </div>
 
           ${reasonsHTML ? `
