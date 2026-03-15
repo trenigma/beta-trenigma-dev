@@ -24,7 +24,7 @@ const CRAG_META = {
     links: [
       { label: 'Mountain Project ↗',    url: 'https://www.mountainproject.com/area/105790635/index' },
       { label: 'Google Earth ↗', url: 'https://earth.google.com/web/@47.8248,-121.5595,400a,800d,75y,200h' },
-      { label: '⚠️ Terrain Above — NWAC Forecast ↗', url: 'https://nwac.us/avalanche-forecast/#/all/' },
+      { label: '⚠️ Terrain Above — NWAC Forecast ↗', url: 'https://nwac.us/avalanche-forecast/#/stevens-pass/' },
       { label: 'NWS Index ↗',           url: 'https://forecast.weather.gov/MapClick.php?CityName=Index&state=WA&site=SEW' },
       { label: 'Stevens Pass (US-2) ↗', url: 'https://wsdot.com/travel/real-time/mountainpasses/stevens' },
     ],
@@ -38,7 +38,7 @@ const CRAG_META = {
     links: [
       { label: 'Mountain Project ↗',    url: 'https://www.mountainproject.com/area/120379546/leavenworth' },
       { label: 'Google Earth ↗', url: 'https://earth.google.com/web/@47.527,-120.742,400a,4000d,65y,270h' },
-      { label: '⚠️ Terrain Above — NWAC Forecast ↗', url: 'https://nwac.us/avalanche-forecast/#/all/' },
+      { label: '⚠️ Terrain Above — NWAC Forecast ↗', url: 'https://nwac.us/avalanche-forecast/#/east-slopes-central/' },
       { label: 'NWS Leavenworth ↗',     url: 'https://forecast.weather.gov/MapClick.php?CityName=Leavenworth&state=WA&site=SEW' },
       { label: 'Stevens Pass (US-2) ↗', url: 'https://wsdot.com/travel/real-time/mountainpasses/stevens' },
     ],
@@ -122,7 +122,7 @@ const CRAG_META = {
     links: [
       { label: 'Mountain Project ↗',    url: 'https://www.mountainproject.com/area/105790784/castle-rock' },
       { label: 'Google Earth ↗', url: 'https://earth.google.com/web/@47.5978,-120.7401,600a,2500d,70y,270h' },
-      { label: '⚠️ Terrain Above — NWAC Forecast ↗', url: 'https://nwac.us/avalanche-forecast/#/all/' },
+      { label: '⚠️ Terrain Above — NWAC Forecast ↗', url: 'https://nwac.us/avalanche-forecast/#/east-slopes-central/' },
       { label: 'NWS Leavenworth ↗',     url: 'https://forecast.weather.gov/MapClick.php?CityName=Leavenworth&state=WA&site=SEW' },
       { label: 'Stevens Pass (US-2) ↗', url: 'https://wsdot.com/travel/real-time/mountainpasses/stevens' },
     ],
@@ -177,7 +177,7 @@ const CRAG_META = {
     links: [
       { label: 'Mountain Project ↗',    url: 'https://www.mountainproject.com/area/120379690/miller-river-boulders' },
       { label: 'Google Earth ↗',        url: 'https://earth.google.com/web/@47.66767577,-121.39112656,414.31892744a,4993.75470187d,35y,277.80123667h' },
-      { label: '⚠️ Terrain Above — NWAC Forecast ↗', url: 'https://nwac.us/avalanche-forecast/#/all/' },
+      { label: '⚠️ Terrain Above — NWAC Forecast ↗', url: 'https://nwac.us/avalanche-forecast/#/stevens-pass/' },
       { label: 'Stevens Pass (US-2) ↗', url: 'https://wsdot.com/travel/real-time/mountainpasses/stevens' },
     ],
   },
