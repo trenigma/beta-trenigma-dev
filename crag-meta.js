@@ -24,7 +24,7 @@ const CRAG_META = {
     links: [
       { label: 'Mountain Project ↗',    url: 'https://www.mountainproject.com/area/105790635/index' },
       { label: 'Google Earth ↗', url: 'https://earth.google.com/web/@47.8248,-121.5595,400a,800d,75y,200h' },
-      { label: 'NWAC Forecast ↗',       url: 'https://nwac.us' },
+      { label: '⚠️ Terrain Above — NWAC Forecast ↗', url: 'https://nwac.us/avalanche-forecast/#/all/' },
       { label: 'NWS Index ↗',           url: 'https://forecast.weather.gov/MapClick.php?CityName=Index&state=WA&site=SEW' },
       { label: 'Stevens Pass (US-2) ↗', url: 'https://wsdot.com/travel/real-time/mountainpasses/stevens' },
     ],
@@ -38,7 +38,7 @@ const CRAG_META = {
     links: [
       { label: 'Mountain Project ↗',    url: 'https://www.mountainproject.com/area/120379546/leavenworth' },
       { label: 'Google Earth ↗', url: 'https://earth.google.com/web/@47.527,-120.742,400a,4000d,65y,270h' },
-      { label: 'NWAC Forecast ↗',       url: 'https://nwac.us' },
+      { label: '⚠️ Terrain Above — NWAC Forecast ↗', url: 'https://nwac.us/avalanche-forecast/#/all/' },
       { label: 'NWS Leavenworth ↗',     url: 'https://forecast.weather.gov/MapClick.php?CityName=Leavenworth&state=WA&site=SEW' },
       { label: 'Stevens Pass (US-2) ↗', url: 'https://wsdot.com/travel/real-time/mountainpasses/stevens' },
     ],
@@ -52,7 +52,7 @@ const CRAG_META = {
     links: [
       { label: 'Mountain Project ↗',       url: 'https://www.mountainproject.com/area/105792231/frenchman-coulee-vantage' },
       { label: 'Google Earth ↗', url: 'https://earth.google.com/web/@46.965,-119.975,300a,2500d,70y,180h' },
-      { label: 'NWAC Forecast ↗',          url: 'https://nwac.us' },
+      { label: 'NWAC Forecast ↗',          url: 'https://nwac.us/avalanche-forecast/#/all/' },
       { label: 'NWS Vantage ↗',            url: 'https://forecast.weather.gov/MapClick.php?CityName=Vantage&state=WA&site=OTX' },
       { label: 'Snoqualmie Pass (I-90) ↗', url: 'https://wsdot.com/travel/real-time/mountainpasses/snoqualmie' },
     ],
@@ -66,7 +66,7 @@ const CRAG_META = {
     links: [
       { label: 'Mountain Project ↗',       url: 'https://www.mountainproject.com/area/105789876/exit-32-little-si' },
       { label: 'Google Earth ↗', url: 'https://earth.google.com/web/@47.4927,-121.7235,500a,4000d,70y,90h' },
-      { label: 'NWAC Forecast ↗',          url: 'https://nwac.us' },
+      { label: 'NWAC Forecast ↗',          url: 'https://nwac.us/avalanche-forecast/#/all/' },
       { label: 'NWS North Bend ↗',         url: 'https://forecast.weather.gov/MapClick.php?CityName=North+Bend&state=WA&site=SEW' },
       { label: 'Snoqualmie Pass (I-90) ↗', url: 'https://wsdot.com/travel/real-time/mountainpasses/snoqualmie' },
     ],
@@ -80,7 +80,7 @@ const CRAG_META = {
     links: [
       { label: 'Mountain Project ↗', url: 'https://www.mountainproject.com/area/106413714/mount-erie' },
       { label: 'Google Earth ↗', url: 'https://earth.google.com/web/@48.4591998,-122.61677217,170.81843207a,5216.18177899d,65y,180.0075006h' },
-      { label: 'NWAC Forecast ↗',    url: 'https://nwac.us' },
+      { label: 'NWAC Forecast ↗',    url: 'https://nwac.us/avalanche-forecast/#/all/' },
       { label: 'NWS Anacortes ↗',    url: 'https://forecast.weather.gov/MapClick.php?CityName=Anacortes&state=WA&site=SEW' },
       { label: 'SR-20 Road Info ↗',  url: 'https://wsdot.com/travel/real-time/alerts/road/020' },
     ],
@@ -94,7 +94,7 @@ const CRAG_META = {
     links: [
       { label: 'Mountain Project ↗',    url: 'https://www.mountainproject.com/area/105874324/peshastin-pinnacles-state-park' },
       { label: 'Google Earth ↗', url: 'https://earth.google.com/web/@47.5285,-120.5873,427a,1500d,70y,180h' },
-      { label: 'NWAC Forecast ↗',       url: 'https://nwac.us' },
+      { label: 'NWAC Forecast ↗',       url: 'https://nwac.us/avalanche-forecast/#/all/' },
       { label: 'NWS Cashmere ↗',        url: 'https://forecast.weather.gov/MapClick.php?CityName=Cashmere&state=WA&site=SEW' },
       { label: 'Stevens Pass (US-2) ↗', url: 'https://wsdot.com/travel/real-time/mountainpasses/stevens' },
     ],
@@ -108,7 +108,7 @@ const CRAG_META = {
     links: [
       { label: 'Mountain Project ↗',       url: 'https://www.mountainproject.com/area/114278624/exit-38' },
       { label: 'Google Earth ↗', url: 'https://earth.google.com/web/@47.44252213,-121.70255169,415.66338333a,4098.19970488d,35y,167.97035001h' },
-      { label: 'NWAC Forecast ↗',          url: 'https://nwac.us' },
+      { label: 'NWAC Forecast ↗',          url: 'https://nwac.us/avalanche-forecast/#/all/' },
       { label: 'NWS North Bend ↗',         url: 'https://forecast.weather.gov/MapClick.php?CityName=North+Bend&state=WA&site=SEW' },
       { label: 'Snoqualmie Pass (I-90) ↗', url: 'https://wsdot.com/travel/real-time/mountainpasses/snoqualmie' },
     ],
@@ -122,7 +122,7 @@ const CRAG_META = {
     links: [
       { label: 'Mountain Project ↗',    url: 'https://www.mountainproject.com/area/105790784/castle-rock' },
       { label: 'Google Earth ↗', url: 'https://earth.google.com/web/@47.5978,-120.7401,600a,2500d,70y,270h' },
-      { label: 'NWAC Forecast ↗',       url: 'https://nwac.us' },
+      { label: '⚠️ Terrain Above — NWAC Forecast ↗', url: 'https://nwac.us/avalanche-forecast/#/all/' },
       { label: 'NWS Leavenworth ↗',     url: 'https://forecast.weather.gov/MapClick.php?CityName=Leavenworth&state=WA&site=SEW' },
       { label: 'Stevens Pass (US-2) ↗', url: 'https://wsdot.com/travel/real-time/mountainpasses/stevens' },
     ],
@@ -136,7 +136,7 @@ const CRAG_META = {
     links: [
       { label: 'Mountain Project ↗', url: 'https://www.mountainproject.com/area/105788989/smith-rock' },
       { label: 'Google Earth ↗', url: 'https://earth.google.com/web/@44.36614706,-121.14549398,812.80833947a,1627.43293944d,35y,-87.25940215h' },
-      { label: 'NWAC Forecast ↗',    url: 'https://nwac.us' },
+      { label: 'NWAC Forecast ↗',    url: 'https://nwac.us/avalanche-forecast/#/all/' },
       { label: 'NWS Terrebonne ↗',   url: 'https://forecast.weather.gov/MapClick.php?CityName=Terrebonne&state=OR&site=PDT' },
       { label: 'TripCheck Oregon ↗', url: 'https://www.tripcheck.com/' },
     ],
@@ -150,7 +150,7 @@ const CRAG_META = {
     links: [
       { label: 'Squamish Access Society ↗', url: 'https://www.squamishaccess.ca/' },
       { label: 'Google Earth ↗', url: 'https://earth.google.com/web/@49.69282248,-123.14711697,29.81851037a,8320.92059877d,35y,151.12667439h' },
-      { label: 'NWAC Forecast ↗',           url: 'https://nwac.us' },
+      { label: 'NWAC Forecast ↗',           url: 'https://nwac.us/avalanche-forecast/#/all/' },
       { label: 'DriveBC (Hwy 99) ↗',        url: 'https://www.drivebc.ca/?pan=-123.19392500000001%2C49.48295352928807&zoom=10.450012356646624&start=Vancouver%2C%20BC&end=Squamish%2C%20BC' },
     ],
   },
@@ -163,7 +163,7 @@ const CRAG_META = {
     links: [
       { label: 'Squamish Access Society ↗', url: 'https://www.squamishaccess.ca/' },
       { label: 'Google Earth ↗', url: 'https://earth.google.com/web/@49.70783175,-123.13414614,213.58369658a,1469.41631823d,65y,39.58799107h' },
-      { label: 'NWAC Forecast ↗',           url: 'https://nwac.us' },
+      { label: 'NWAC Forecast ↗',           url: 'https://nwac.us/avalanche-forecast/#/all/' },
       { label: 'DriveBC (Hwy 99) ↗',        url: 'https://www.drivebc.ca/?pan=-123.19392500000001%2C49.48295352928807&zoom=10.450012356646624&start=Vancouver%2C%20BC&end=Squamish%2C%20BC' },
     ],
   },
@@ -177,7 +177,7 @@ const CRAG_META = {
     links: [
       { label: 'Mountain Project ↗',    url: 'https://www.mountainproject.com/area/120379690/miller-river-boulders' },
       { label: 'Google Earth ↗',        url: 'https://earth.google.com/web/@47.66767577,-121.39112656,414.31892744a,4993.75470187d,35y,277.80123667h' },
-      { label: 'NWAC Forecast ↗',       url: 'https://nwac.us' },
+      { label: '⚠️ Terrain Above — NWAC Forecast ↗', url: 'https://nwac.us/avalanche-forecast/#/all/' },
       { label: 'Stevens Pass (US-2) ↗', url: 'https://wsdot.com/travel/real-time/mountainpasses/stevens' },
     ],
   },
