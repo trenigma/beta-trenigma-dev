@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Why I built BETA — a climbing conditions tool for the Cascades, built by a climber of color for the Rising Roots community and everyone out there.">
+  <meta property="og:title" content="Why I Built BETA — BETA Field Notes">
+  <meta property="og:description" content="There's a whole body of knowledge that determines whether your Saturday is a great day on rock or a wasted drive. A lot of it lives in people's heads. Specifically: certain people's heads.">
+  <title>Why I Built BETA — BETA Field Notes</title>
+  <link rel="stylesheet" href="../style.css">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ctext y='26' font-size='26'%3E⬡%3C/text%3E%3C/svg%3E">
+  <style>
+    .post-hero {
+      padding-top: 140px;
+      padding-bottom: var(--space-2xl);
+      border-bottom: 1px solid var(--bg-raised);
+    }
+
+    .post-hero__back {
+      font-family: var(--font-mono);
+      font-size: 0.75rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--text-muted);
+      display: inline-flex;
+      align-items: center;
+      gap: var(--space-sm);
+      margin-bottom: var(--space-xl);
+      transition: color 0.2s var(--ease);
+      text-decoration: none;
+    }
+    .post-hero__back:hover { color: var(--gold); }
+
+    .post-hero__eyebrow {
+      font-family: var(--font-mono);
+      font-size: 0.75rem;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: var(--space-md);
+    }
+
+    .post-hero__title {
+      font-size: clamp(2.5rem, 6vw, 4.5rem);
+      line-height: 1.05;
+      margin-bottom: var(--space-xl);
+      max-width: 800px;
+    }
+
+    .post-hero__meta {
+      font-family: var(--font-mono);
+      font-size: 0.6875rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--text-muted);
+      display: flex;
+      align-items: center;
+      gap: var(--space-lg);
+    }
+
+    .post-hero__meta span {
+      display: flex;
+      align-items: center;
+      gap: var(--space-sm);
+    }
+
+    .post-hero__tag {
+      padding: 3px 10px;
+      border-radius: 100px;
+      background: var(--bg-raised);
+      border: 1px solid var(--bg-overlay);
+      color: var(--text-muted);
+    }
+
+    /* Post body */
+    .post-body {
+      max-width: 680px;
+      padding: var(--space-3xl) 0;
+    }
+
+    .post-body p {
+      font-size: 1.0625rem;
+      line-height: 1.8;
+      color: var(--text-secondary);
+      margin-bottom: var(--space-lg);
+    }
+
+    .post-body strong {
+      color: var(--text-primary);
+      font-weight: 600;
+    }
+
+    .post-body em {
+      color: var(--text-primary);
+      font-style: italic;
+    }
+
+    .post-body h2 {
+      font-size: clamp(1.5rem, 3vw, 2rem);
+      font-family: var(--font-display);
+      color: var(--text-primary);
+      margin-top: var(--space-3xl);
+      margin-bottom: var(--space-lg);
+      padding-top: var(--space-2xl);
+      border-top: 1px solid var(--bg-raised);
+    }
+
+    .post-body hr {
+      display: none;
+    }
+
+    .post-body a {
+      color: var(--gold);
+      text-decoration: underline;
+      text-underline-offset: 3px;
+    }
+
+    .post-body a:hover {
+      color: var(--text-primary);
+    }
+
+    .post-footer {
+      border-top: 1px solid var(--bg-raised);
+      padding: var(--space-2xl) 0;
+      max-width: 680px;
+      font-family: var(--font-mono);
+      font-size: 0.75rem;
+      color: var(--text-muted);
+      line-height: 1.8;
+    }
+
+    .post-footer a {
+      color: var(--gold);
+      text-decoration: none;
+    }
+
+    .post-nav {
+      margin-top: var(--space-2xl);
+      padding-top: var(--space-xl);
+      border-top: 1px solid var(--bg-raised);
+      max-width: 680px;
+    }
+
+    .post-nav__back {
+      font-family: var(--font-mono);
+      font-size: 0.75rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--text-muted);
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: var(--space-sm);
+      transition: color 0.2s var(--ease);
+    }
+    .post-nav__back:hover { color: var(--gold); }
+  </style>
+</head>
+<body>
+
+  <nav class="nav">
+    <div class="nav__inner">
+      <a href="/" class="nav__logo">BETA <span></span></a>
+      <ul class="nav__links">
+        <li><a href="../index.html#crags">Crags</a></li>
+        <li><a href="../tools/index.html">Tools</a></li>
+        <li><a href="../index.html#community">Community</a></li>
+        <li><a href="archive.html">Posts</a></li>
+        <li><a href="../about.html">About</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="post-hero">
+    <div class="container">
+      <a href="archive.html" class="post-hero__back">← Field Notes</a>
+      <p class="post-hero__eyebrow">Origin Story</p>
+      <h1 class="post-hero__title">Why I Built BETA</h1>
+      <div class="post-hero__meta">
+        <span>March 15, 2026</span>
+        <span>·</span>
+        <span>Tree</span>
+        <span>·</span>
+        <span class="post-hero__tag">Community</span>
+      </div>
+    </div>
+  </div>
+
+  <section class="section" style="padding-top: 0;">
+    <div class="container">
+      <div class="post-body">
+
+        <p>Let me tell you something about climbing in the PNW.</p>
+
+        <p>There's a whole body of knowledge that determines whether your Saturday is a great day on rock or a wasted drive to a soaking wet crag. Precip totals. Humidity. Rock type. Which way the wall faces. How long since it rained. What the river looks like. It's not complicated — but it's fragmented across a dozen sources, and a lot of it just lives in people's heads.</p>
+
+        <p>Specifically: it lives in the heads of people who've been climbing these crags for decades. And in the PNW, that demographic skews pretty heavily in one direction.</p>
+
+        <p>I looked at that and thought — <em>wtf, this thing doesn't exist as a tool?</em> And then I thought about why. And then I got to work.</p>
+
+        <h2>How outside became home</h2>
+
+        <p>I've been outside my whole life. Not in the "I go camping sometimes" way. In the "my mom and my aunt had me out there before I had a say in it" way. Hiking, camping, equestrian endurance riding, cycling, kayaking, whitewater rafting, being in the mountains — it was just part of life growing up. I didn't have to discover the outdoors as an adult and figure out if I belonged there. It was already mine. Already home.</p>
+
+        <p>I know how rare that is for a Black kid in America.</p>
+
+        <p>So many people who look like me never get that early introduction. Never have a role model who looks like them navigating a trail or reading a river. The outdoors has literally saved my life and nourished my soul more times than I can count. And I carry the weight of knowing that's not everybody's story.</p>
+
+        <p>That context shapes this tool I built and this community I help lead.</p>
+
+        <h2>The conversation that started this</h2>
+
+        <p>Rising Roots PNW is a climbing community I help facilitate — we create welcoming spaces for BIPOC climbers in the Pacific Northwest. In February 2026 we organized an NWAC avalanche awareness class. We secured the space at The Mountaineers, handled the snacks and drinks, and got our community in the room learning about something that matters if you're moving through Cascade terrain.</p>
+
+        <p>I thought to myself — "how come something like NWAC avalanche forecasting doesn't exist for climbers? Some kind of tool that helps us decide when conditions are solid without having to cross-reference a shitload of resources?"</p>
+
+        <p>I had a quick conversation with a PhD student about the information that supports the avalanche awareness class, and then I sat with my question a little harder. <em>WTF — why doesn't this exist for climbers?!</em></p>
+
+        <p>The knowledge exists. You're checking Weather.gov here, Mountain Project forums there, texting someone who went last weekend. It's out there — but it's scattered, and a lot of it lives in informal networks. Networks that, in the PNW climbing world, have historically been pretty homogeneous and not so subtly exclusive. That accumulated knowledge about which crag dries fastest, which approach gets sketchy in March, what the river level means for the boulder field — it gets passed down. Just not always to everyone.</p>
+
+        <p>I'm a Site Reliability Engineer. I build systems that take fragmented data streams and synthesize them into clear signals. The second I framed it that way I couldn't un-see it.</p>
+
+        <p><em>This is just a conditions pipeline. I can build this.</em></p>
+
+        <p>A week later BETA was live at <a href="https://beta.trenigma.dev" target="_blank">beta.trenigma.dev</a>.</p>
+
+        <h2>Who this is for</h2>
+
+        <p>Honestly? I built BETA for me first. I wanted a tool I'd actually use before driving an hour to Index on a Saturday morning.</p>
+
+        <p>But I'm also not going to pretend that who I am doesn't shape what I build. I'm a Black man who climbs. I co-facilitate a community specifically built around creating space for people who've historically been made to feel like they don't belong in these mountains. When I thought about who this tool was for, I thought about Rising Roots. I thought about the first-generation Cascade climber who doesn't have a 20-year network to text for a conditions check.</p>
+
+        <p>Good beta means access. BETA puts it in one place, free, for anyone.</p>
+
+        <p>Built by a climber of color, for climbers of color — and everyone else that wants to experience the joy of climbing.</p>
+
+        <h2>What the community said back</h2>
+
+        <p>I wasn't sure what to expect when I launched. I put it out in the Rising Roots community and the response was immediate and real. People envisioning using it before weekend trips or a mid-week quick session. Feedback on crags I hadn't thought about. Someone noticing features I hadn't even fully articulated yet — pointing out that the 48h forecast data suggested trip planning use cases, not just "should I go right now." Feature direction surfaced by a user on day two.</p>
+
+        <p>That feedback loop is crucial. This isn't a tool I built and handed off — it's something that's curated for and growing with the community it's meant to serve.</p>
+
+        <h2>On legacy</h2>
+
+        <p>The outdoors has given me so much. Clarity, challenge, peace, community. It's one of the constants in my life across every season.</p>
+
+        <p>I think about legacy a lot. What will I actually leave behind? What makes things more awesome for the people coming after me?</p>
+
+        <p>BETA is a small answer to that question. It's already changing the game for my community, and that is meaningful impact. It's already helping new and seasoned Cascade climbers make more confident decisions about when to head to the crag, and if it makes these mountains feel a little more accessible to someone who didn't grow up with a mom and an aunt who had them out there since day one — that's something.</p>
+
+        <div class="post-footer">
+          BETA is a free, open-source climbing conditions tool for the Cascades. Built in collaboration with the <a href="https://www.instagram.com/risingrootspnw/" target="_blank">Rising Roots PNW</a> climbing community. <a href="https://beta.trenigma.dev" target="_blank">beta.trenigma.dev</a> · <a href="https://github.com/trenigma/beta-trenigma-dev" target="_blank">GitHub</a>
+        </div>
+
+        <div class="post-nav">
+          <a href="archive.html" class="post-nav__back">← All posts</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <div>
+          <div class="footer__brand">BETA</div>
+          <p class="footer__tagline">Cascade conditions intel</p>
+          <p class="footer__disclaimer">
+            For informational purposes only. Always cross-check with <a href="https://nwac.us" target="_blank" rel="noopener" style="color:inherit;text-decoration:underline;">NWAC</a>,
+            <a href="https://weather.gov" target="_blank" rel="noopener" style="color:inherit;text-decoration:underline;">NWS</a>,
+            and the thing between your ears. Conditions change fast out there. Use this tool, not as a substitute
+            for experience and judgment. We're not liable for outcomes — that part's on you. Now go get after it. 🏔️
+          </p>
+          <a href="https://ko-fi.com/trenigma" target="_blank" rel="noopener" class="kofi-btn">
+            🪨 buy me some chalk
+          </a>
+        </div>
+        <ul class="footer__links">
+          <li><a href="../index.html#crags">Crags</a></li>
+          <li><a href="../tools/index.html">Tools</a></li>
+          <li><a href="archive.html">Posts</a></li>
+          <li><a href="../about.html">About</a></li>
+          <li><a href="https://github.com/trenigma/beta-trenigma-dev" target="_blank">GitHub</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
