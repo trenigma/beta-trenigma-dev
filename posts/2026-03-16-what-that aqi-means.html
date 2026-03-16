@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="What the AQI badge on your BETA crag page is actually telling you — and why it's not always wildfire smoke.">
+  <meta property="og:title" content="What That AQI Number Is Actually Telling You — BETA Field Notes">
+  <meta property="og:description" content="I added air quality data to every crag page. Here's what it means and when you should care.">
+  <title>What That AQI Number Is Actually Telling You — BETA Field Notes</title>
+  <link rel="stylesheet" href="../style.css">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ctext y='26' font-size='26'%3E⬡%3C/text%3E%3C/svg%3E">
+  <style>
+    .post-hero {
+      padding-top: 140px;
+      padding-bottom: var(--space-2xl);
+      border-bottom: 1px solid var(--bg-raised);
+    }
+    .post-hero__back {
+      font-family: var(--font-mono);
+      font-size: 0.75rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--text-muted);
+      display: inline-flex;
+      align-items: center;
+      gap: var(--space-sm);
+      margin-bottom: var(--space-xl);
+      transition: color 0.2s var(--ease);
+      text-decoration: none;
+    }
+    .post-hero__back:hover { color: var(--gold); }
+    .post-hero__eyebrow {
+      font-family: var(--font-mono);
+      font-size: 0.75rem;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: var(--space-md);
+    }
+    .post-hero__title {
+      font-size: clamp(2.5rem, 6vw, 4.5rem);
+      line-height: 1.05;
+      margin-bottom: var(--space-xl);
+      max-width: 800px;
+    }
+    .post-hero__meta {
+      font-family: var(--font-mono);
+      font-size: 0.6875rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--text-muted);
+      display: flex;
+      align-items: center;
+      gap: var(--space-lg);
+    }
+    .post-hero__tag {
+      padding: 3px 10px;
+      border-radius: 100px;
+      background: var(--bg-raised);
+      border: 1px solid var(--bg-overlay);
+      color: var(--text-muted);
+    }
+    .post-body {
+      max-width: 680px;
+      padding: var(--space-3xl) 0;
+    }
+    .post-body p {
+      font-size: 1.0625rem;
+      line-height: 1.8;
+      color: var(--text-secondary);
+      margin-bottom: var(--space-lg);
+    }
+    .post-body strong { color: var(--text-primary); font-weight: 600; }
+    .post-body em { color: var(--text-primary); font-style: italic; }
+    .post-body h2 {
+      font-size: clamp(1.5rem, 3vw, 2rem);
+      font-family: var(--font-display);
+      color: var(--text-primary);
+      margin-top: var(--space-3xl);
+      margin-bottom: var(--space-lg);
+      padding-top: var(--space-2xl);
+      border-top: 1px solid var(--bg-raised);
+    }
+    .post-body hr { display: none; }
+    .post-body a { color: var(--gold); text-decoration: underline; text-underline-offset: 3px; }
+    .post-body a:hover { color: var(--text-primary); }
+    .post-body table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: var(--space-lg);
+      font-family: var(--font-mono);
+      font-size: 0.875rem;
+    }
+    .post-body th {
+      text-align: left;
+      padding: var(--space-sm) var(--space-md);
+      border-bottom: 2px solid var(--bg-overlay);
+      color: var(--text-muted);
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      font-size: 0.6875rem;
+    }
+    .post-body td {
+      padding: var(--space-sm) var(--space-md);
+      border-bottom: 1px solid var(--bg-raised);
+      color: var(--text-secondary);
+      vertical-align: top;
+    }
+    .post-body td:first-child {
+      color: var(--text-primary);
+      font-weight: 700;
+      white-space: nowrap;
+    }
+    .post-body code {
+      font-family: var(--font-mono);
+      font-size: 0.875em;
+      background: var(--bg-raised);
+      padding: 2px 6px;
+      border-radius: 4px;
+      color: var(--gold);
+    }
+    .post-footer {
+      border-top: 1px solid var(--bg-raised);
+      padding: var(--space-2xl) 0;
+      max-width: 680px;
+      font-family: var(--font-mono);
+      font-size: 0.75rem;
+      color: var(--text-muted);
+      line-height: 1.8;
+    }
+    .post-footer a { color: var(--gold); text-decoration: none; }
+    .post-nav {
+      margin-top: var(--space-2xl);
+      padding-top: var(--space-xl);
+      border-top: 1px solid var(--bg-raised);
+      max-width: 680px;
+    }
+    .post-nav__back {
+      font-family: var(--font-mono);
+      font-size: 0.75rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--text-muted);
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: var(--space-sm);
+      transition: color 0.2s var(--ease);
+    }
+    .post-nav__back:hover { color: var(--gold); }
+  </style>
+</head>
+<body>
+
+  <nav class="nav">
+    <div class="nav__inner">
+      <a href="/" class="nav__logo">BETA <span></span></a>
+      <ul class="nav__links">
+        <li><a href="../index.html#crags">Crags</a></li>
+        <li><a href="../tools/index.html">Tools</a></li>
+        <li><a href="../index.html#community">Community</a></li>
+        <li><a href="archive.html">Posts</a></li>
+        <li><a href="../about.html">About</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="post-hero">
+    <div class="container">
+      <a href="archive.html" class="post-hero__back">← Field Notes</a>
+      <p class="post-hero__eyebrow">Data</p>
+      <h1 class="post-hero__title">What That AQI Number Is Actually Telling You</h1>
+      <div class="post-hero__meta">
+        <span>March 16, 2026</span>
+        <span>·</span>
+        <span>Tree</span>
+        <span>·</span>
+        <span class="post-hero__tag">Data</span>
+      </div>
+    </div>
+  </div>
+
+  <section class="section" style="padding-top: 0;">
+    <div class="container">
+      <div class="post-body">
+
+        <p>I added air quality data to every crag page on BETA. Here's what it means and when you should care.</p>
+
+        <h2>The quick version</h2>
+
+        <p>The AQI badge is pulling from the nearest PurpleAir sensor to that crag — usually within 5–15km. It's measuring PM2.5, fine particulate matter. The number runs from 0 to 500.</p>
+
+        <p>For climbing purposes:</p>
+
+        <table>
+          <thead>
+            <tr><th>AQI</th><th>What's up</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>0–50</td><td>Good. You're fine.</td></tr>
+            <tr><td>51–100</td><td>Moderate. Most people won't notice.</td></tr>
+            <tr><td>101–150</td><td>Getting sketchy for sensitive folks. Worth thinking about on long days out.</td></tr>
+            <tr><td>151+</td><td>Unhealthy. Long approaches in this are rough.</td></tr>
+          </tbody>
+        </table>
+
+        <h2>It's not always wildfire smoke</h2>
+
+        <p>This one caught me off guard when I first turned the data on.</p>
+
+        <p>One rainy day in March, Index Town Wall was showing AQI 120. Exit 38 was at 115. No wildfire anywhere near the Cascades. So what happened?</p>
+
+        <p>Cold inversion layer. When temps drop and it's wet in the Skykomish valley, cold dense air gets locked under a warmer layer above it. Normally that mixing layer moves particulates around. When it's stuck, nothing goes anywhere. Everyone in Index, Skykomish, and Gold Bar fires up their woodstove. The smoke just sits there at crag level, right where you're breathing on the approach and at the belay.</p>
+
+        <p>Looks exactly like wildfire smoke in the data. It's not. But you're still breathing particulate matter. Worth knowing.</p>
+
+        <h2>Wildfire season is the real one to watch</h2>
+
+        <p>Come July and August, check the AQI before you leave the house — not just the night before.</p>
+
+        <p>Fine particulates are invisible. You can be staring at a completely bluebird day and breathing 180 AQI air. It happens. East side crags — Leavenworth, Vantage, Peshastin — often get hit harder than the west side during smoke events. Valley drainages concentrate smoke overnight too.</p>
+
+        <p>The data updates every 6 hours. During active smoke events that gap matters. Check it morning of.</p>
+
+        <h2>About the sensor distance</h2>
+
+        <p>The AQI block shows you the sensor name and how far away it is — like <em>Big Bend Sky River Manor · 6.5km · PurpleAir.</em></p>
+
+        <p>That number matters. PurpleAir is crowd-sourced, so coverage gets thin in the backcountry. Leavenworth has a sensor 0.7km from the crags — basically local. A more remote crag might be pulling from something 20km out.</p>
+
+        <p>For wildfire smoke that distance is less of an issue since smoke events are regional. For the woodstove inversion scenario, a sensor 20km away might be missing what's happening in your specific drainage.</p>
+
+        <p>I show the distance so you can make that call yourself.</p>
+
+        <h2>One thing I don't cover yet</h2>
+
+        <p>Ground-level ozone isn't in PurpleAir data. On hot summer days at Vantage or Smith Rock when it's pushing 95°F, ozone can be a real factor completely separate from the PM2.5 reading. <a href="https://www.airnow.gov" target="_blank" rel="noopener">EPA AirNow</a> has you covered there.</p>
+
+        <p>Good air, dry rock, and reasonable temps don't all line up that often in the PNW. When they do, you'll know. Go get it. 🤙🏽</p>
+
+        <div class="post-footer">
+          AQI data from <a href="https://www.purpleair.com" target="_blank" rel="noopener">PurpleAir</a>. Sensor name and distance shown on each crag detail page.
+        </div>
+
+        <div class="post-nav">
+          <a href="archive.html" class="post-nav__back">← All posts</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <div>
+          <div class="footer__brand">BETA</div>
+          <p class="footer__tagline">Cascade conditions intel</p>
+          <p class="footer__disclaimer">
+            For informational purposes only. Always cross-check with <a href="https://nwac.us" target="_blank" rel="noopener" style="color:inherit;text-decoration:underline;">NWAC</a>,
+            <a href="https://weather.gov" target="_blank" rel="noopener" style="color:inherit;text-decoration:underline;">NWS</a>,
+            and the thing between your ears. Conditions change fast out there. Use this tool, not as a substitute
+            for experience and judgment. We're not liable for outcomes — that part's on you. Now go get after it. 🏔️
+          </p>
+          <a href="https://ko-fi.com/trenigma" target="_blank" rel="noopener" class="kofi-btn">
+            🪨 buy me some chalk
+          </a>
+        </div>
+        <ul class="footer__links">
+          <li><a href="../index.html#crags">Crags</a></li>
+          <li><a href="../tools/index.html">Tools</a></li>
+          <li><a href="archive.html">Posts</a></li>
+          <li><a href="../about.html">About</a></li>
+          <li><a href="https://github.com/trenigma/beta-trenigma-dev" target="_blank">GitHub</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
