@@ -35,7 +35,7 @@ jobs:
 
       - name: Purge history files older than 30 days
         run: |
-          find data/history/ -name "*.json" -mtime +30 -delete 2>/dev/null || true
+          find data/history/ -name "*.json" -mtime +90 -delete 2>/dev/null || true
           echo "Purge step complete"
 
       - name: Commit and push updated conditions
