@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="What the streamflow badge on your BETA crag page is telling you — and the story of the dead USGS gauge I almost used.">
+  <meta property="og:title" content="The River Doesn't Lie — BETA Field Notes">
+  <meta property="og:description" content="There's a streamflow badge on the Index and Miller River pages. Here's where that data comes from and what it's actually telling you.">
+  <title>The River Doesn't Lie — BETA Field Notes</title>
+  <link rel="stylesheet" href="../style.css">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ctext y='26' font-size='26'%3E⬡%3C/text%3E%3C/svg%3E">
+  <style>
+    .post-hero {
+      padding-top: 140px;
+      padding-bottom: var(--space-2xl);
+      border-bottom: 1px solid var(--bg-raised);
+    }
+    .post-hero__back {
+      font-family: var(--font-mono);
+      font-size: 0.75rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--text-muted);
+      display: inline-flex;
+      align-items: center;
+      gap: var(--space-sm);
+      margin-bottom: var(--space-xl);
+      transition: color 0.2s var(--ease);
+      text-decoration: none;
+    }
+    .post-hero__back:hover { color: var(--gold); }
+    .post-hero__eyebrow {
+      font-family: var(--font-mono);
+      font-size: 0.75rem;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: var(--space-md);
+    }
+    .post-hero__title {
+      font-size: clamp(2.5rem, 6vw, 4.5rem);
+      line-height: 1.05;
+      margin-bottom: var(--space-xl);
+      max-width: 800px;
+    }
+    .post-hero__meta {
+      font-family: var(--font-mono);
+      font-size: 0.6875rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--text-muted);
+      display: flex;
+      align-items: center;
+      gap: var(--space-lg);
+    }
+    .post-hero__tag {
+      padding: 3px 10px;
+      border-radius: 100px;
+      background: var(--bg-raised);
+      border: 1px solid var(--bg-overlay);
+      color: var(--text-muted);
+    }
+    .post-body {
+      max-width: 680px;
+      padding: var(--space-3xl) 0;
+    }
+    .post-body p {
+      font-size: 1.0625rem;
+      line-height: 1.8;
+      color: var(--text-secondary);
+      margin-bottom: var(--space-lg);
+    }
+    .post-body strong { color: var(--text-primary); font-weight: 600; }
+    .post-body em { color: var(--text-primary); font-style: italic; }
+    .post-body h2 {
+      font-size: clamp(1.5rem, 3vw, 2rem);
+      font-family: var(--font-display);
+      color: var(--text-primary);
+      margin-top: var(--space-3xl);
+      margin-bottom: var(--space-lg);
+      padding-top: var(--space-2xl);
+      border-top: 1px solid var(--bg-raised);
+    }
+    .post-body hr { display: none; }
+    .post-body a { color: var(--gold); text-decoration: underline; text-underline-offset: 3px; }
+    .post-body a:hover { color: var(--text-primary); }
+    .post-body code {
+      font-family: var(--font-mono);
+      font-size: 0.875em;
+      background: var(--bg-raised);
+      padding: 2px 6px;
+      border-radius: 4px;
+      color: var(--gold);
+    }
+    .cfs-blocks {
+      display: flex;
+      flex-direction: column;
+      gap: var(--space-sm);
+      margin-bottom: var(--space-lg);
+    }
+    .cfs-block {
+      display: grid;
+      grid-template-columns: 160px 1fr;
+      gap: var(--space-lg);
+      align-items: baseline;
+      padding: var(--space-md) var(--space-lg);
+      background: var(--bg-surface);
+      border: 1px solid var(--bg-raised);
+      border-radius: var(--radius-sm);
+    }
+    .cfs-block__range {
+      font-family: var(--font-mono);
+      font-size: 0.875rem;
+      font-weight: 700;
+      color: var(--text-primary);
+    }
+    .cfs-block__desc {
+      font-size: 0.9375rem;
+      color: var(--text-secondary);
+    }
+    .post-footer {
+      border-top: 1px solid var(--bg-raised);
+      padding: var(--space-2xl) 0;
+      max-width: 680px;
+      font-family: var(--font-mono);
+      font-size: 0.75rem;
+      color: var(--text-muted);
+      line-height: 1.8;
+    }
+    .post-footer a { color: var(--gold); text-decoration: none; }
+    .post-nav {
+      margin-top: var(--space-2xl);
+      padding-top: var(--space-xl);
+      border-top: 1px solid var(--bg-raised);
+      max-width: 680px;
+    }
+    .post-nav__back {
+      font-family: var(--font-mono);
+      font-size: 0.75rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--text-muted);
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: var(--space-sm);
+      transition: color 0.2s var(--ease);
+    }
+    .post-nav__back:hover { color: var(--gold); }
+  </style>
+</head>
+<body>
+
+  <nav class="nav">
+    <div class="nav__inner">
+      <a href="/" class="nav__logo">BETA <span></span></a>
+      <ul class="nav__links">
+        <li><a href="../index.html#crags">Crags</a></li>
+        <li><a href="../tools/index.html">Tools</a></li>
+        <li><a href="../index.html#community">Community</a></li>
+        <li><a href="archive.html">Posts</a></li>
+        <li><a href="../about.html">About</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="post-hero">
+    <div class="container">
+      <a href="archive.html" class="post-hero__back">← Field Notes</a>
+      <p class="post-hero__eyebrow">Data</p>
+      <h1 class="post-hero__title">The River Doesn't Lie</h1>
+      <div class="post-hero__meta">
+        <span>March 16, 2026</span>
+        <span>·</span>
+        <span>Tree</span>
+        <span>·</span>
+        <span class="post-hero__tag">Data</span>
+      </div>
+    </div>
+  </div>
+
+  <section class="section" style="padding-top: 0;">
+    <div class="container">
+      <div class="post-body">
+
+        <p>There's a streamflow badge on the Index Town Wall and Miller River pages. A number, an arrow, a trend. Here's where that data comes from, why I almost didn't build it, and what it's actually telling you.</p>
+
+        <h2>A gauge that looked alive but wasn't</h2>
+
+        <p>When I was building BETA, I knew I wanted river data for the Skykomish crags. The Skykomish is the vein running through the whole US-2 corridor — when it's running high and angry, the approaches are a mess regardless of what the weather's doing right now.</p>
+
+        <p>I found a USGS gauge closer to Miller River that looked perfect on the map. Active status, right location, exactly what I needed. I wired it up, ran the pipeline, and got nothing back. Crickets. Turns out that gauge has been inactive for years — just sitting there on the USGS map looking like it's doing something.</p>
+
+        <p>That's the kind of thing that makes you want to flip a table. But okay — fell back to the Gold Bar gauge, 10 miles downstream. Close enough for what we need.</p>
+
+        <p>That gauge is <code>12134500</code> — Skykomish River near Gold Bar — and it's what you're looking at on the crag page.</p>
+
+        <h2>What CFS actually means</h2>
+
+        <p>Cubic feet per second. How much water is moving past that point in the river every second.</p>
+
+        <p>For the Skykomish and these crags, here's a rough read:</p>
+
+        <div class="cfs-blocks">
+          <div class="cfs-block">
+            <span class="cfs-block__range">Under 2,000 CFS</span>
+            <span class="cfs-block__desc">River is low. Approaches are solid.</span>
+          </div>
+          <div class="cfs-block">
+            <span class="cfs-block__range">2,000–5,000 CFS</span>
+            <span class="cfs-block__desc">Normal wet PNW winter range. Watch the trend.</span>
+          </div>
+          <div class="cfs-block">
+            <span class="cfs-block__range">5,000–8,000 CFS</span>
+            <span class="cfs-block__desc">Running high. Miller River approach conditions get iffy.</span>
+          </div>
+          <div class="cfs-block">
+            <span class="cfs-block__range">8,000+ CFS</span>
+            <span class="cfs-block__desc">It's been raining hard. Which probably tells you everything about the rock already.</span>
+          </div>
+        </div>
+
+        <h2>The arrow matters more than the number</h2>
+
+        <p>Rising, falling, or steady. That trend is often more useful than the raw CFS.</p>
+
+        <p>A falling river at 6,000 CFS is a better sign than a rising river at 3,000. Rising means conditions are deteriorating right now. Falling means the storm is draining out and things are moving in the right direction.</p>
+
+        <p>When you're planning a trip for later in the week, watch which way the arrow is pointing.</p>
+
+        <h2>Why only some crags have it</h2>
+
+        <p>Streamflow shows up on Index and Miller River because those crags are directly tied to what the Skykomish is doing. The other ten crags don't have it because it wouldn't tell you anything useful — Vantage is in the Columbia Gorge desert, Smith Rock sits above a canyon, Mt. Erie is on an island.</p>
+
+        <p>I only surface data that's actually relevant to your decision. Everything else is noise.</p>
+
+        <div class="post-footer">
+          Streamflow data from <a href="https://waterdata.usgs.gov" target="_blank" rel="noopener">USGS National Water Information System</a>. Gauge 12134500 — Skykomish River near Gold Bar, WA.
+        </div>
+
+        <div class="post-nav">
+          <a href="archive.html" class="post-nav__back">← All posts</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <div>
+          <div class="footer__brand">BETA</div>
+          <p class="footer__tagline">Cascade conditions intel</p>
+          <p class="footer__disclaimer">
+            For informational purposes only. Always cross-check with <a href="https://nwac.us" target="_blank" rel="noopener" style="color:inherit;text-decoration:underline;">NWAC</a>,
+            <a href="https://weather.gov" target="_blank" rel="noopener" style="color:inherit;text-decoration:underline;">NWS</a>,
+            and the thing between your ears. Conditions change fast out there. Use this tool, not as a substitute
+            for experience and judgment. We're not liable for outcomes — that part's on you. Now go get after it. 🏔️
+          </p>
+          <a href="https://ko-fi.com/trenigma" target="_blank" rel="noopener" class="kofi-btn">
+            🪨 buy me some chalk
+          </a>
+        </div>
+        <ul class="footer__links">
+          <li><a href="../index.html#crags">Crags</a></li>
+          <li><a href="../tools/index.html">Tools</a></li>
+          <li><a href="archive.html">Posts</a></li>
+          <li><a href="../about.html">About</a></li>
+          <li><a href="https://github.com/trenigma/beta-trenigma-dev" target="_blank">GitHub</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
