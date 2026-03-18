@@ -23,6 +23,9 @@
           version: "1.0.0",
           environment: "production",
         },
+        instrumentations: [
+          ...window.GrafanaFaroWebSdk.getWebInstrumentations(),
+        ],
       });
       var webTracingScript = document.createElement("script");
       webTracingScript.src =
