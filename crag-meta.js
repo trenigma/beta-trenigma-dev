@@ -10,7 +10,7 @@
  *   To add a new crag → add an entry here, create tools/your-crag.html from the template,
  *   set CRAG_ID = 'your-crag-id', and add it to CRAG_URLS in index.html.
  *
- * ⚠️  Fields marked [VERIFY] need confirmation from local knowledge before shipping.
+ * ⚠️  Fields marked need confirmation from local knowledge before shipping.
  */
 
 const CRAG_META = {
@@ -34,7 +34,7 @@ const CRAG_META = {
     name: 'Leavenworth', region: 'Wenatchee River Valley / US-2',
     rock_type: 'Granite', aspect: 'Mixed', elevation: '1,100 ft',
     drying_speed: 'Fast', season: 'Apr–Nov',
-    description: '[VERIFY] Leavenworth is a granite mecca in the eastern Cascades with dozens of crags across Icicle Canyon. The drier east-side climate means faster drying times than west-side PNW crags. Wall aspects vary by sub-area — some catch morning sun, others bake in the afternoon.',
+    description: 'Leavenworth is a granite mecca in the eastern Cascades with dozens of crags across Icicle Canyon. The drier east-side climate means faster drying times than west-side PNW crags. Wall aspects vary by sub-area — some catch morning sun, others bake in the afternoon.',
     links: [
       { label: 'Mountain Project ↗',    url: 'https://www.mountainproject.com/area/120379546/leavenworth' },
       { label: 'Google Earth ↗', url: 'https://earth.google.com/web/@47.527,-120.742,400a,4000d,65y,270h' },
@@ -48,7 +48,7 @@ const CRAG_META = {
     name: 'Frenchman Coulee', region: 'Columbia River Gorge / I-90',
     rock_type: 'Basalt', aspect: 'West', elevation: '800 ft',
     drying_speed: 'Fast', season: 'Mar–Jun, Sep–Nov',
-    description: '[VERIFY] Frenchman Coulee offers striking basalt columns above the Columbia River, best known for The Feathers. The desert setting means rapid drying and wide temperature swings. Spring and fall are prime; summer heat and winter cold both push the limits. Basalt dries faster than granite — often climbable within a day of rain.',
+    description: 'Frenchman Coulee offers striking basalt columns above the Columbia River, best known for The Feathers. The desert setting means rapid drying and wide temperature swings. Spring and fall are prime; summer heat and winter cold both push the limits. Basalt dries faster than granite — often climbable within a day of rain.',
     links: [
       { label: 'Mountain Project ↗',       url: 'https://www.mountainproject.com/area/105792231/frenchman-coulee-vantage' },
       { label: 'Google Earth ↗', url: 'https://earth.google.com/web/@46.965,-119.975,300a,2500d,70y,180h' },
@@ -62,7 +62,7 @@ const CRAG_META = {
     name: 'Little Si', region: 'North Bend / I-90',
     rock_type: 'Granite', aspect: 'Southwest', elevation: '1,200 ft',
     drying_speed: 'Slow', season: 'May–Oct',
-    description: '[VERIFY] Little Si offers accessible Pacific Northwest granite climbing close to Seattle. Expect extended drying times typical of the west Cascades — plan for at least 2–3 dry days after significant rain before rock is climbable.',
+    description: 'Little Si offers accessible Pacific Northwest granite climbing close to Seattle. Expect extended drying times typical of the west Cascades — plan for at least 2–3 dry days after significant rain before rock is climbable.',
     links: [
       { label: 'Mountain Project ↗',       url: 'https://www.mountainproject.com/area/105789876/exit-32-little-si' },
       { label: 'Google Earth ↗', url: 'https://earth.google.com/web/@47.4927,-121.7235,500a,4000d,70y,90h' },
@@ -76,7 +76,7 @@ const CRAG_META = {
     name: 'Mt. Erie', region: 'Anacortes / Fidalgo Island',
     rock_type: 'Granite', aspect: 'Mixed', elevation: '1,270 ft',
     drying_speed: 'Moderate', season: 'Apr–Oct',
-    description: '[VERIFY] Mt. Erie sits above Anacortes with views across the San Juans. The granite is generally solid and the island setting can bring drying winds off the water, though maritime moisture keeps it wetter than east-side crags. Multiple aspects mean some walls dry faster than others.',
+    description: 'Mt. Erie sits above Anacortes with views across the San Juans. The granite is generally solid and the island setting can bring drying winds off the water, though maritime moisture keeps it wetter than east-side crags. Multiple aspects mean some walls dry faster than others.',
     links: [
       { label: 'Mountain Project ↗', url: 'https://www.mountainproject.com/area/106413714/mount-erie' },
       { label: 'Google Earth ↗', url: 'https://earth.google.com/web/@48.4591998,-122.61677217,170.81843207a,5216.18177899d,65y,180.0075006h' },
@@ -90,7 +90,7 @@ const CRAG_META = {
     name: 'Peshastin Pinnacles', region: 'Cashmere / US-2',
     rock_type: 'Sandstone', aspect: 'South', elevation: '1,400 ft',
     drying_speed: 'Fast', season: 'Mar–Oct',
-    description: "[VERIFY] Peshastin Pinnacles is one of the few sandstone crags in Washington, tucked into a dry orchard valley near Leavenworth. The south-facing exposure and east-side rain shadow mean early season access and fast drying. Important: avoid climbing on wet sandstone — it damages the rock. Wait 24–48h after any rain.",
+    description: "Peshastin Pinnacles is one of the few sandstone crags in Washington, tucked into a dry orchard valley near Leavenworth. The south-facing exposure and east-side rain shadow mean early season access and fast drying. Important: avoid climbing on wet sandstone — it damages the rock. Wait 24–48h after any rain.",
     links: [
       { label: 'Mountain Project ↗',    url: 'https://www.mountainproject.com/area/105874324/peshastin-pinnacles-state-park' },
       { label: 'Google Earth ↗', url: 'https://earth.google.com/web/@47.5285,-120.5873,427a,1500d,70y,180h' },
@@ -104,7 +104,7 @@ const CRAG_META = {
     name: 'Exit 38', region: 'I-90 Corridor / North Bend',
     rock_type: 'Metamorphic', aspect: 'Southeast', elevation: '1,400 ft',
     drying_speed: 'Moderate', season: 'May–Oct',
-    description: "[VERIFY] Exit 38 is Seattle's closest sport climbing venue, just off I-90 in the Cascade foothills. The metamorphic rock and steep walls shed water reasonably well, but the heavy west Cascade rainfall means extended drying windows are still common. Often a solid bet on the first clear day after a dry stretch.",
+    description: "Exit 38 is Seattle's closest sport climbing venue, just off I-90 in the Cascade foothills. The metamorphic rock and steep walls shed water reasonably well, but the heavy west Cascade rainfall means extended drying windows are still common. Often a solid bet on the first clear day after a dry stretch.",
     links: [
       { label: 'Mountain Project ↗',       url: 'https://www.mountainproject.com/area/114278624/exit-38' },
       { label: 'Google Earth ↗', url: 'https://earth.google.com/web/@47.44252213,-121.70255169,415.66338333a,4098.19970488d,35y,167.97035001h' },
@@ -118,7 +118,7 @@ const CRAG_META = {
     name: 'Castle Rock', region: 'Tumwater Canyon / US-2',
     rock_type: 'Granite', aspect: 'South', elevation: '2,200 ft',
     drying_speed: 'Fast', season: 'Apr–Nov',
-    description: '[VERIFY] Castle Rock is a classic Leavenworth granite dome in Tumwater Canyon, known for moderate multi-pitch routes on clean rock. The south-facing aspect means generous sun exposure and fast drying compared to west-side crags. A go-to early and late season destination.',
+    description: 'Castle Rock is a classic Leavenworth granite dome in Tumwater Canyon, known for moderate multi-pitch routes on clean rock. The south-facing aspect means generous sun exposure and fast drying compared to west-side crags. A go-to early and late season destination.',
     links: [
       { label: 'Mountain Project ↗',    url: 'https://www.mountainproject.com/area/105790784/castle-rock' },
       { label: 'Google Earth ↗', url: 'https://earth.google.com/web/@47.5978,-120.7401,600a,2500d,70y,270h' },
@@ -146,7 +146,7 @@ const CRAG_META = {
     name: 'The Chief', region: 'Squamish, BC / Hwy 99',
     rock_type: 'Granite', aspect: 'West', elevation: '2,100 ft',
     drying_speed: 'Slow', season: 'May–Oct',
-    description: "[VERIFY] The Stawamus Chief is a massive granite dome above Squamish offering world-class multi-pitch and single-pitch climbing. West-facing walls catch afternoon sun, but Squamish's heavy coastal rainfall means extended drying — typically 2–4 days after significant rain. Factor extra drying time vs. eastern Cascades crags.",
+    description: "The Stawamus Chief is a massive granite dome above Squamish offering world-class multi-pitch and single-pitch climbing. West-facing walls catch afternoon sun, but Squamish's heavy coastal rainfall means extended drying — typically 2–4 days after significant rain. Factor extra drying time vs. eastern Cascades crags.",
     links: [
       { label: 'Squamish Access Society ↗', url: 'https://www.squamishaccess.ca/' },
       { label: 'Google Earth ↗', url: 'https://earth.google.com/web/@49.69282248,-123.14711697,29.81851037a,8320.92059877d,35y,151.12667439h' },
@@ -159,7 +159,7 @@ const CRAG_META = {
     name: 'Smoke Bluffs', region: 'Squamish, BC / Hwy 99',
     rock_type: 'Granite', aspect: 'Mixed', elevation: '600 ft',
     drying_speed: 'Moderate', season: 'Apr–Oct',
-    description: "[VERIFY] The Smoke Bluffs are a network of granite bluffs woven through the town of Squamish, offering accessible single-pitch climbing within walking distance of downtown. Aspects vary wall to wall — some dry quickly in afternoon sun while others stay damp for days after rain. A great option when The Chief is still drying out.",
+    description: "The Smoke Bluffs are a network of granite bluffs woven through the town of Squamish, offering accessible single-pitch climbing within walking distance of downtown. Aspects vary wall to wall — some dry quickly in afternoon sun while others stay damp for days after rain. A great option when The Chief is still drying out.",
     links: [
       { label: 'Squamish Access Society ↗', url: 'https://www.squamishaccess.ca/' },
       { label: 'Google Earth ↗', url: 'https://earth.google.com/web/@49.70783175,-123.13414614,213.58369658a,1469.41631823d,65y,39.58799107h' },
