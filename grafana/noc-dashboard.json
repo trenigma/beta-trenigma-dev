@@ -1,20 +1,22 @@
 {
-  "apiVersion": "dashboard.grafana.app/v2beta1",
+  "apiVersion": "dashboard.grafana.app/v2",
   "kind": "Dashboard",
   "metadata": {
-    "name": "dashboard-trenigma-noc-final-v4",
+    "name": "trenigma-noc-golden-v4",
     "namespace": "stacks-1545208",
-    "uid": "27017023-ab88-4003-ab06-6f0185e94935",
-    "resourceVersion": "1775024890826581",
-    "generation": 1,
-    "creationTimestamp": "2026-04-01T06:28:10Z",
+    "uid": "ce1dc403-95f7-4322-a22c-b79aacfc160b",
+    "resourceVersion": "1775069993932598",
+    "generation": 7,
+    "creationTimestamp": "2026-04-01T18:29:03Z",
     "labels": {
-      "grafana.app/deprecatedInternalID": "3601278508191744"
+      "grafana.app/deprecatedInternalID": "3782691529355264"
     },
     "annotations": {
       "grafana.app/createdBy": "user:efexojljso3k0c",
       "grafana.app/folder": "",
-      "grafana.app/saved-from-ui": "Grafana Cloud"
+      "grafana.app/saved-from-ui": "Grafana Cloud",
+      "grafana.app/updatedBy": "user:efexojljso3k0c",
+      "grafana.app/updatedTimestamp": "2026-04-01T18:59:53Z"
     }
   },
   "spec": {
@@ -35,10 +37,7 @@
           "hide": true,
           "iconColor": "rgba(0, 211, 255, 1)",
           "name": "Annotations & Alerts",
-          "builtIn": true,
-          "legacyOptions": {
-            "type": "dashboard"
-          }
+          "builtIn": true
         }
       }
     ],
@@ -83,13 +82,14 @@
           "vizConfig": {
             "kind": "VizConfig",
             "group": "stat",
-            "version": "10.0.0",
+            "version": "13.0.0-23744474324",
             "spec": {
               "options": {
                 "colorMode": "value",
                 "graphMode": "area",
                 "justifyMode": "auto",
                 "orientation": "auto",
+                "percentChangeColorMode": "standard",
                 "reduceOptions": {
                   "calcs": [
                     "lastNotNull"
@@ -97,7 +97,9 @@
                   "fields": "",
                   "values": false
                 },
-                "textMode": "auto"
+                "showPercentChange": false,
+                "textMode": "auto",
+                "wideLayout": true
               },
               "fieldConfig": {
                 "defaults": {
@@ -109,7 +111,7 @@
                     "mode": "absolute",
                     "steps": [
                       {
-                        "value": null,
+                        "value": 0,
                         "color": "red"
                       },
                       {
@@ -169,13 +171,14 @@
           "vizConfig": {
             "kind": "VizConfig",
             "group": "stat",
-            "version": "10.0.0",
+            "version": "13.0.0-23744474324",
             "spec": {
               "options": {
                 "colorMode": "value",
                 "graphMode": "area",
                 "justifyMode": "auto",
                 "orientation": "auto",
+                "percentChangeColorMode": "standard",
                 "reduceOptions": {
                   "calcs": [
                     "lastNotNull"
@@ -183,7 +186,9 @@
                   "fields": "",
                   "values": false
                 },
-                "textMode": "auto"
+                "showPercentChange": false,
+                "textMode": "auto",
+                "wideLayout": true
               },
               "fieldConfig": {
                 "defaults": {
@@ -195,7 +200,7 @@
                     "mode": "absolute",
                     "steps": [
                       {
-                        "value": null,
+                        "value": 0,
                         "color": "red"
                       },
                       {
@@ -256,9 +261,13 @@
           "vizConfig": {
             "kind": "VizConfig",
             "group": "timeseries",
-            "version": "10.0.0",
+            "version": "13.0.0-23744474324",
             "spec": {
               "options": {
+                "annotations": {
+                  "clustering": -1,
+                  "multiLane": false
+                },
                 "legend": {
                   "calcs": [
                     "mean",
@@ -270,6 +279,7 @@
                   "showLegend": true
                 },
                 "tooltip": {
+                  "hideZeros": false,
                   "mode": "multi",
                   "sort": "none"
                 }
@@ -281,7 +291,7 @@
                     "mode": "absolute",
                     "steps": [
                       {
-                        "value": null,
+                        "value": 0,
                         "color": "green"
                       }
                     ]
@@ -290,11 +300,13 @@
                     "mode": "palette-classic"
                   },
                   "custom": {
+                    "axisBorderShow": false,
                     "axisCenteredZero": false,
                     "axisColorMode": "text",
                     "axisLabel": "",
                     "axisPlacement": "auto",
                     "barAlignment": 0,
+                    "barWidthFactor": 0.6,
                     "drawStyle": "line",
                     "fillOpacity": 20,
                     "gradientMode": "none",
@@ -303,6 +315,7 @@
                       "tooltip": false,
                       "viz": false
                     },
+                    "insertNulls": false,
                     "lineInterpolation": "smooth",
                     "lineWidth": 2,
                     "pointSize": 5,
@@ -310,6 +323,7 @@
                       "type": "linear"
                     },
                     "showPoints": "never",
+                    "showValues": false,
                     "spanNulls": false,
                     "stacking": {
                       "group": "A",
@@ -363,13 +377,14 @@
           "vizConfig": {
             "kind": "VizConfig",
             "group": "stat",
-            "version": "10.0.0",
+            "version": "13.0.0-23744474324",
             "spec": {
               "options": {
                 "colorMode": "value",
                 "graphMode": "area",
                 "justifyMode": "auto",
                 "orientation": "auto",
+                "percentChangeColorMode": "standard",
                 "reduceOptions": {
                   "calcs": [
                     "lastNotNull"
@@ -377,7 +392,9 @@
                   "fields": "",
                   "values": false
                 },
-                "textMode": "auto"
+                "showPercentChange": false,
+                "textMode": "auto",
+                "wideLayout": true
               },
               "fieldConfig": {
                 "defaults": {
@@ -387,7 +404,7 @@
                     "mode": "absolute",
                     "steps": [
                       {
-                        "value": null,
+                        "value": 0,
                         "color": "green"
                       },
                       {
@@ -447,13 +464,14 @@
           "vizConfig": {
             "kind": "VizConfig",
             "group": "stat",
-            "version": "10.0.0",
+            "version": "13.0.0-23744474324",
             "spec": {
               "options": {
                 "colorMode": "value",
                 "graphMode": "area",
                 "justifyMode": "auto",
                 "orientation": "auto",
+                "percentChangeColorMode": "standard",
                 "reduceOptions": {
                   "calcs": [
                     "lastNotNull"
@@ -461,7 +479,9 @@
                   "fields": "",
                   "values": false
                 },
-                "textMode": "auto"
+                "showPercentChange": false,
+                "textMode": "auto",
+                "wideLayout": true
               },
               "fieldConfig": {
                 "defaults": {
@@ -473,7 +493,7 @@
                     "mode": "absolute",
                     "steps": [
                       {
-                        "value": null,
+                        "value": 0,
                         "color": "red"
                       },
                       {
@@ -534,9 +554,13 @@
           "vizConfig": {
             "kind": "VizConfig",
             "group": "timeseries",
-            "version": "10.0.0",
+            "version": "13.0.0-23744474324",
             "spec": {
               "options": {
+                "annotations": {
+                  "clustering": -1,
+                  "multiLane": false
+                },
                 "legend": {
                   "calcs": [
                     "mean",
@@ -548,6 +572,7 @@
                   "showLegend": true
                 },
                 "tooltip": {
+                  "hideZeros": false,
                   "mode": "multi",
                   "sort": "none"
                 }
@@ -559,7 +584,7 @@
                     "mode": "absolute",
                     "steps": [
                       {
-                        "value": null,
+                        "value": 0,
                         "color": "green"
                       }
                     ]
@@ -568,11 +593,13 @@
                     "mode": "palette-classic"
                   },
                   "custom": {
+                    "axisBorderShow": false,
                     "axisCenteredZero": false,
                     "axisColorMode": "text",
                     "axisLabel": "",
                     "axisPlacement": "auto",
                     "barAlignment": 0,
+                    "barWidthFactor": 0.6,
                     "drawStyle": "line",
                     "fillOpacity": 20,
                     "gradientMode": "none",
@@ -581,6 +608,7 @@
                       "tooltip": false,
                       "viz": false
                     },
+                    "insertNulls": false,
                     "lineInterpolation": "smooth",
                     "lineWidth": 2,
                     "pointSize": 5,
@@ -588,6 +616,7 @@
                       "type": "linear"
                     },
                     "showPoints": "never",
+                    "showValues": false,
                     "spanNulls": false,
                     "stacking": {
                       "group": "A",
@@ -642,9 +671,13 @@
           "vizConfig": {
             "kind": "VizConfig",
             "group": "timeseries",
-            "version": "10.0.0",
+            "version": "13.0.0-23744474324",
             "spec": {
               "options": {
+                "annotations": {
+                  "clustering": -1,
+                  "multiLane": false
+                },
                 "legend": {
                   "calcs": [],
                   "displayMode": "list",
@@ -652,6 +685,7 @@
                   "showLegend": true
                 },
                 "tooltip": {
+                  "hideZeros": false,
                   "mode": "multi",
                   "sort": "none"
                 }
@@ -663,7 +697,7 @@
                     "mode": "absolute",
                     "steps": [
                       {
-                        "value": null,
+                        "value": 0,
                         "color": "green"
                       }
                     ]
@@ -672,11 +706,13 @@
                     "mode": "palette-classic"
                   },
                   "custom": {
+                    "axisBorderShow": false,
                     "axisCenteredZero": false,
                     "axisColorMode": "text",
                     "axisLabel": "",
                     "axisPlacement": "auto",
                     "barAlignment": 0,
+                    "barWidthFactor": 0.6,
                     "drawStyle": "line",
                     "fillOpacity": 20,
                     "gradientMode": "none",
@@ -685,6 +721,7 @@
                       "tooltip": false,
                       "viz": false
                     },
+                    "insertNulls": false,
                     "lineInterpolation": "smooth",
                     "lineWidth": 2,
                     "pointSize": 5,
@@ -692,6 +729,7 @@
                       "type": "linear"
                     },
                     "showPoints": "never",
+                    "showValues": false,
                     "spanNulls": false,
                     "stacking": {
                       "group": "A",
@@ -742,9 +780,9 @@
               ],
               "transformations": [
                 {
-                  "kind": "organize",
+                  "kind": "Transformation",
+                  "group": "organize",
                   "spec": {
-                    "id": "organize",
                     "options": {
                       "excludeByName": {
                         "Time": true
@@ -765,18 +803,10 @@
           "vizConfig": {
             "kind": "VizConfig",
             "group": "table",
-            "version": "10.0.0",
+            "version": "13.0.0-23744474324",
             "spec": {
               "options": {
                 "cellHeight": "sm",
-                "footer": {
-                  "countRows": false,
-                  "fields": "",
-                  "reducer": [
-                    "sum"
-                  ],
-                  "show": false
-                },
                 "showHeader": true
               },
               "fieldConfig": {
@@ -786,7 +816,7 @@
                     "mode": "absolute",
                     "steps": [
                       {
-                        "value": null,
+                        "value": 0,
                         "color": "green"
                       },
                       {
@@ -806,6 +836,9 @@
                     "align": "auto",
                     "cellOptions": {
                       "type": "auto"
+                    },
+                    "footer": {
+                      "reducers": []
                     },
                     "inspect": false
                   }
@@ -854,7 +887,7 @@
           "vizConfig": {
             "kind": "VizConfig",
             "group": "piechart",
-            "version": "10.0.0",
+            "version": "13.0.0-23744474324",
             "spec": {
               "options": {
                 "displayLabels": [
@@ -877,7 +910,9 @@
                   "fields": "",
                   "values": false
                 },
+                "sort": "desc",
                 "tooltip": {
+                  "hideZeros": false,
                   "mode": "single",
                   "sort": "none"
                 }
@@ -938,13 +973,14 @@
           "vizConfig": {
             "kind": "VizConfig",
             "group": "stat",
-            "version": "10.0.0",
+            "version": "13.0.0-23744474324",
             "spec": {
               "options": {
                 "colorMode": "value",
                 "graphMode": "area",
                 "justifyMode": "auto",
                 "orientation": "auto",
+                "percentChangeColorMode": "standard",
                 "reduceOptions": {
                   "calcs": [
                     "lastNotNull"
@@ -952,7 +988,9 @@
                   "fields": "",
                   "values": false
                 },
-                "textMode": "auto"
+                "showPercentChange": false,
+                "textMode": "auto",
+                "wideLayout": true
               },
               "fieldConfig": {
                 "defaults": {
@@ -964,7 +1002,7 @@
                     "mode": "absolute",
                     "steps": [
                       {
-                        "value": null,
+                        "value": 0,
                         "color": "red"
                       },
                       {
@@ -1025,9 +1063,13 @@
           "vizConfig": {
             "kind": "VizConfig",
             "group": "timeseries",
-            "version": "10.0.0",
+            "version": "13.0.0-23744474324",
             "spec": {
               "options": {
+                "annotations": {
+                  "clustering": -1,
+                  "multiLane": false
+                },
                 "legend": {
                   "calcs": [
                     "mean",
@@ -1039,6 +1081,7 @@
                   "showLegend": true
                 },
                 "tooltip": {
+                  "hideZeros": false,
                   "mode": "multi",
                   "sort": "none"
                 }
@@ -1050,7 +1093,7 @@
                     "mode": "absolute",
                     "steps": [
                       {
-                        "value": null,
+                        "value": 0,
                         "color": "green"
                       }
                     ]
@@ -1059,11 +1102,13 @@
                     "mode": "palette-classic"
                   },
                   "custom": {
+                    "axisBorderShow": false,
                     "axisCenteredZero": false,
                     "axisColorMode": "text",
                     "axisLabel": "",
                     "axisPlacement": "auto",
                     "barAlignment": 0,
+                    "barWidthFactor": 0.6,
                     "drawStyle": "line",
                     "fillOpacity": 20,
                     "gradientMode": "none",
@@ -1072,6 +1117,7 @@
                       "tooltip": false,
                       "viz": false
                     },
+                    "insertNulls": false,
                     "lineInterpolation": "smooth",
                     "lineWidth": 2,
                     "pointSize": 5,
@@ -1079,6 +1125,7 @@
                       "type": "linear"
                     },
                     "showPoints": "never",
+                    "showValues": false,
                     "spanNulls": false,
                     "stacking": {
                       "group": "A",
@@ -1117,7 +1164,10 @@
                         "name": "${DS_LOKI}"
                       },
                       "spec": {
-                        "expr": "sum by (page_url) (count_over_time({service_name=\"blog-trenigma-dev\"} | logfmt | event_name=`faro.performance.navigation` [$__range]))"
+                        "direction": "backward",
+                        "editorMode": "code",
+                        "expr": "sum by (page_url) (count_over_time({service_name=\"blog-trenigma-dev\", source!=\"synthetic-monitoring-agent\"} | logfmt | event_name=`faro.performance.navigation` | keep page_url [24h]))",
+                        "queryType": "range"
                       }
                     },
                     "refId": "A",
@@ -1132,10 +1182,16 @@
           "vizConfig": {
             "kind": "VizConfig",
             "group": "bargauge",
-            "version": "13.0.0-23605486576",
+            "version": "13.0.0-23744474324",
             "spec": {
               "options": {
                 "displayMode": "gradient",
+                "legend": {
+                  "calcs": [],
+                  "displayMode": "list",
+                  "placement": "bottom",
+                  "showLegend": false
+                },
                 "maxVizHeight": 300,
                 "minVizHeight": 16,
                 "minVizWidth": 8,
@@ -1143,7 +1199,7 @@
                 "orientation": "horizontal",
                 "reduceOptions": {
                   "calcs": [
-                    "sum"
+                    "last"
                   ],
                   "fields": "",
                   "values": false
@@ -1196,7 +1252,10 @@
                         "name": "${DS_LOKI}"
                       },
                       "spec": {
-                        "expr": "count_over_time({service_name=\"littlelink-trenigma-dev\"} | logfmt | event_name=`faro.performance.navigation` [$__interval])"
+                        "direction": "backward",
+                        "editorMode": "code",
+                        "expr": "sum(count_over_time({service_name=\"littlelink-trenigma-dev\"} | logfmt | event_name=`faro.performance.navigation` | keep page_url [24h]))",
+                        "queryType": "instant"
                       }
                     },
                     "refId": "A",
@@ -1211,9 +1270,13 @@
           "vizConfig": {
             "kind": "VizConfig",
             "group": "timeseries",
-            "version": "13.0.0-23605486576",
+            "version": "13.0.0-23744474324",
             "spec": {
               "options": {
+                "annotations": {
+                  "clustering": -1,
+                  "multiLane": false
+                },
                 "legend": {
                   "calcs": [
                     "sum"
@@ -1306,7 +1369,10 @@
                         "name": "${DS_LOKI}"
                       },
                       "spec": {
-                        "expr": "sum by (event_data_button_name) (count_over_time({service_name=\"littlelink-trenigma-dev\"} | logfmt | event_name=`button_click` [$__range]))"
+                        "direction": "backward",
+                        "editorMode": "code",
+                        "expr": "sum by (event_data_button_name) (count_over_time({service_name=\"littlelink-trenigma-dev\"} | logfmt | event_name=`button_click` | keep event_data_button_name [24h]))",
+                        "queryType": "range"
                       }
                     },
                     "refId": "A",
@@ -1316,9 +1382,9 @@
               ],
               "transformations": [
                 {
-                  "kind": "renameByRegex",
+                  "kind": "Transformation",
+                  "group": "renameByRegex",
                   "spec": {
-                    "id": "renameByRegex",
                     "options": {
                       "regex": ".*event_data_button_name=\"([^\"]+)\".*",
                       "renamePattern": "$1"
@@ -1332,10 +1398,16 @@
           "vizConfig": {
             "kind": "VizConfig",
             "group": "bargauge",
-            "version": "13.0.0-23605486576",
+            "version": "13.0.0-23744474324",
             "spec": {
               "options": {
                 "displayMode": "gradient",
+                "legend": {
+                  "calcs": [],
+                  "displayMode": "list",
+                  "placement": "bottom",
+                  "showLegend": false
+                },
                 "maxVizHeight": 300,
                 "minVizHeight": 16,
                 "minVizWidth": 8,
@@ -1343,7 +1415,7 @@
                 "orientation": "horizontal",
                 "reduceOptions": {
                   "calcs": [
-                    "sum"
+                    "last"
                   ],
                   "fields": "",
                   "values": false
@@ -1680,7 +1752,7 @@
       "noc"
     ],
     "timeSettings": {
-      "timezone": "",
+      "timezone": "browser",
       "from": "now-6h",
       "to": "now",
       "autoRefresh": "30s",
@@ -1699,7 +1771,7 @@
       "hideTimepicker": false,
       "fiscalYearStartMonth": 0
     },
-    "title": "trenigma-sites (Personal NOC)",
+    "title": "trenigma-noc-golden-v4",
     "variables": [
       {
         "kind": "DatasourceVariable",
