@@ -1,29 +1,29 @@
 {
-  "generated_at": "2026-10-19T12:11:16.639899+00:00",
-  "generated_at_pacific": "2026-10-19 12:11 PM PST",
+  "generated_at": "2026-10-19T18:09:19.097836+00:00",
+  "generated_at_pacific": "2026-10-19 06:09 PM PST",
   "crags": [
     {
       "id": "index",
       "name": "Index Town Wall",
       "region": "Sky Valley / US-2",
       "signal": "go",
-      "score": 100,
+      "score": 88,
       "reasons": [
-        "Ideal temp (57.0\u00b0F)"
+        "Elevated humidity (83%)"
       ],
       "conditions": {
         "precip_24h": 0,
         "precip_48h": 0.19,
         "precip_forecast_48h": 0,
-        "humidity": 62,
-        "temp_f": 57.0,
-        "windspeed_mph": 6.2
+        "humidity": 83,
+        "temp_f": 53.4,
+        "windspeed_mph": 4.7
       },
       "streamflow": {
-        "cfs": 514,
+        "cfs": 508,
         "trend": "steady",
         "gauge_id": "12134500",
-        "fetched_at": "2026-10-19T12:11:17.313246+00:00"
+        "fetched_at": "2026-10-19T18:09:20.087007+00:00"
       },
       "aqi": null,
       "crag_meta": {
@@ -32,7 +32,7 @@
         "elevation_ft": 900,
         "notes": "Granite dries fast. Lower Wall sheds water quickly; Upper Wall slower after heavy rain."
       },
-      "last_go": "2026-10-19T06:15:43.174639+00:00"
+      "last_go": "2026-10-19T12:11:16.639899+00:00"
     },
     {
       "id": "leavenworth",
@@ -41,16 +41,16 @@
       "signal": "go",
       "score": 100,
       "reasons": [
-        "Low humidity (28%) \u2014 good drying conditions",
-        "Ideal temp (58.2\u00b0F)"
+        "Low humidity (27%) \u2014 good drying conditions",
+        "Ideal temp (58.4\u00b0F)"
       ],
       "conditions": {
         "precip_24h": 0,
         "precip_48h": 0,
         "precip_forecast_48h": 0,
-        "humidity": 28,
-        "temp_f": 58.2,
-        "windspeed_mph": 1.4
+        "humidity": 27,
+        "temp_f": 58.4,
+        "windspeed_mph": 4.3
       },
       "streamflow": null,
       "aqi": null,
@@ -60,7 +60,7 @@
         "elevation_ft": 1100,
         "notes": "Rain shadow effect \u2014 dries significantly faster than west-side crags. Icicle Canyon blocks moisture."
       },
-      "last_go": "2026-10-19T06:15:43.174639+00:00"
+      "last_go": "2026-10-19T12:11:16.639899+00:00"
     },
     {
       "id": "vantage",
@@ -69,16 +69,16 @@
       "signal": "go",
       "score": 100,
       "reasons": [
-        "Low humidity (28%) \u2014 good drying conditions",
-        "Ideal temp (59.7\u00b0F)"
+        "Low humidity (27%) \u2014 good drying conditions",
+        "Ideal temp (57.8\u00b0F)"
       ],
       "conditions": {
         "precip_24h": 0,
         "precip_48h": 0,
         "precip_forecast_48h": 0,
-        "humidity": 28,
-        "temp_f": 59.7,
-        "windspeed_mph": 2.7
+        "humidity": 27,
+        "temp_f": 57.8,
+        "windspeed_mph": 0.5
       },
       "streamflow": null,
       "aqi": null,
@@ -88,24 +88,24 @@
         "elevation_ft": 800,
         "notes": "Desert climate, basalt dries fast. Wind is a major factor \u2014 often climbable when west-side crags are soaked."
       },
-      "last_go": "2026-10-19T06:15:43.174639+00:00"
+      "last_go": "2026-10-19T12:11:16.639899+00:00"
     },
     {
       "id": "little-si",
       "name": "Little Si",
       "region": "North Bend / I-90",
       "signal": "go",
-      "score": 100,
+      "score": 88,
       "reasons": [
-        "Ideal temp (57.3\u00b0F)"
+        "Elevated humidity (76%)"
       ],
       "conditions": {
         "precip_24h": 0,
         "precip_48h": 0.06,
         "precip_forecast_48h": 0,
-        "humidity": 63,
-        "temp_f": 57.3,
-        "windspeed_mph": 2.5
+        "humidity": 76,
+        "temp_f": 53.7,
+        "windspeed_mph": 7.0
       },
       "streamflow": null,
       "aqi": null,
@@ -115,7 +115,7 @@
         "elevation_ft": 1200,
         "notes": "Wetter microclimate than Index. Higher humidity typical. Needs more drying time."
       },
-      "last_go": "2026-10-19T06:15:43.174639+00:00"
+      "last_go": "2026-10-19T12:11:16.639899+00:00"
     },
     {
       "id": "mt-erie",
@@ -124,15 +124,15 @@
       "signal": "go",
       "score": 88,
       "reasons": [
-        "Elevated humidity (75%)"
+        "Elevated humidity (76%)"
       ],
       "conditions": {
         "precip_24h": 0,
         "precip_48h": 0,
         "precip_forecast_48h": 0,
-        "humidity": 75,
-        "temp_f": 53.7,
-        "windspeed_mph": 2.4
+        "humidity": 76,
+        "temp_f": 50.2,
+        "windspeed_mph": 4.3
       },
       "streamflow": null,
       "aqi": null,
@@ -142,7 +142,7 @@
         "elevation_ft": 1270,
         "notes": "Island climate \u2014 high humidity, slow drying. Needs 48h+ after rain to be reliable."
       },
-      "last_go": "2026-10-19T06:15:43.174639+00:00"
+      "last_go": "2026-10-19T12:11:16.639899+00:00"
     },
     {
       "id": "peshastin",
@@ -151,16 +151,16 @@
       "signal": "go",
       "score": 100,
       "reasons": [
-        "Low humidity (30%) \u2014 good drying conditions",
-        "Ideal temp (55.3\u00b0F)"
+        "Low humidity (28%) \u2014 good drying conditions",
+        "Ideal temp (55.1\u00b0F)"
       ],
       "conditions": {
         "precip_24h": 0,
         "precip_48h": 0,
         "precip_forecast_48h": 0,
-        "humidity": 30,
-        "temp_f": 55.3,
-        "windspeed_mph": 2.3
+        "humidity": 28,
+        "temp_f": 55.1,
+        "windspeed_mph": 4.1
       },
       "streamflow": null,
       "aqi": null,
@@ -170,24 +170,24 @@
         "elevation_ft": 1400,
         "notes": "Sandstone \u2014 NEVER climb when wet. Holds water in pockets, damages rock when damp. Needs 48-72h after rain."
       },
-      "last_go": "2026-10-19T06:15:43.174639+00:00"
+      "last_go": "2026-10-19T12:11:16.639899+00:00"
     },
     {
       "id": "exit-38",
       "name": "Exit 38",
       "region": "I-90 Corridor / North Bend",
-      "signal": "go",
-      "score": 88,
+      "signal": "wait",
+      "score": 75,
       "reasons": [
-        "Elevated humidity (74%)"
+        "Very high humidity (88%) \u2014 rock stays damp"
       ],
       "conditions": {
         "precip_24h": 0,
         "precip_48h": 0.11,
         "precip_forecast_48h": 0,
-        "humidity": 74,
-        "temp_f": 53.9,
-        "windspeed_mph": 5.7
+        "humidity": 88,
+        "temp_f": 50.8,
+        "windspeed_mph": 4.5
       },
       "streamflow": null,
       "aqi": null,
@@ -197,24 +197,24 @@
         "elevation_ft": 1400,
         "notes": "Closest sport climbing to Seattle. Metamorphic andesite dries slower than granite. Many walls face north or are shaded by forest \u2014 factor in extra drying time. Deception Crags is most popular; Far Side and Mt Washington have longer approaches."
       },
-      "last_go": "2026-10-19T06:15:43.174639+00:00"
+      "last_go": "2026-10-19T12:11:16.639899+00:00"
     },
     {
       "id": "castle-rock",
       "name": "Castle Rock",
       "region": "Tumwater Canyon / US-2",
       "signal": "go",
-      "score": 100,
+      "score": 90,
       "reasons": [
-        "Dry conditions, good temps"
+        "Cold (38.7\u00b0F) \u2014 slow drying"
       ],
       "conditions": {
         "precip_24h": 0,
         "precip_48h": 0.03,
         "precip_forecast_48h": 0,
-        "humidity": 46,
-        "temp_f": 40.2,
-        "windspeed_mph": 3.8
+        "humidity": 63,
+        "temp_f": 38.7,
+        "windspeed_mph": 3.7
       },
       "streamflow": null,
       "aqi": null,
@@ -224,18 +224,25 @@
         "elevation_ft": 2200,
         "notes": "Southwest-facing granite in Tumwater Canyon. Gets afternoon sun, dries reasonably fast. Home to Washington's first multipitch technical rock climb (Midway, 1948). Rock is polished from heavy traffic \u2014 friction matters more when damp."
       },
-      "last_go": "2026-10-19T06:15:43.174639+00:00"
+      "last_go": "2026-10-19T12:11:16.639899+00:00"
     },
     {
       "id": "smith-rock",
       "name": "Smith Rock",
       "region": "Central Oregon",
-      "signal": "unknown",
-      "score": null,
+      "signal": "go",
+      "score": 100,
       "reasons": [
-        "Data unavailable"
+        "Dry conditions, good temps"
       ],
-      "conditions": null,
+      "conditions": {
+        "precip_24h": 0,
+        "precip_48h": 0,
+        "precip_forecast_48h": 0,
+        "humidity": 60,
+        "temp_f": 52.9,
+        "windspeed_mph": 7.1
+      },
       "streamflow": null,
       "aqi": null,
       "crag_meta": {
@@ -250,19 +257,12 @@
       "id": "squamish-chief",
       "name": "The Chief",
       "region": "Squamish, BC",
-      "signal": "go",
-      "score": 100,
+      "signal": "unknown",
+      "score": null,
       "reasons": [
-        "Dry conditions, good temps"
+        "Data unavailable"
       ],
-      "conditions": {
-        "precip_24h": 0,
-        "precip_48h": 0.14,
-        "precip_forecast_48h": 0,
-        "humidity": 43,
-        "temp_f": 51.0,
-        "windspeed_mph": 1.4
-      },
+      "conditions": null,
       "streamflow": null,
       "aqi": null,
       "crag_meta": {
@@ -271,7 +271,7 @@
         "elevation_ft": 2100,
         "notes": "The big one. Massive south-facing granite wall \u2014 beautiful in good conditions but very slow to dry due to size and coastal moisture. Seeps can persist for days after heavy rain. Upper Chief dries slower than the base. Check the access society for any closures before heading up."
       },
-      "last_go": "2026-10-19T06:15:43.174639+00:00"
+      "last_go": "2026-10-19T12:11:16.639899+00:00"
     },
     {
       "id": "squamish-smoke-bluffs",
@@ -280,15 +280,15 @@
       "signal": "go",
       "score": 100,
       "reasons": [
-        "Ideal temp (57.8\u00b0F)"
+        "Dry conditions, good temps"
       ],
       "conditions": {
         "precip_24h": 0,
         "precip_48h": 0.04,
         "precip_forecast_48h": 0,
-        "humidity": 40,
-        "temp_f": 57.8,
-        "windspeed_mph": 1.1
+        "humidity": 58,
+        "temp_f": 52.9,
+        "windspeed_mph": 3.0
       },
       "streamflow": null,
       "aqi": null,
@@ -298,7 +298,7 @@
         "elevation_ft": 600,
         "notes": "The local's playground \u2014 lower elevation, well-traveled, and significantly faster-drying than The Chief. Often climbable a day after rain clears when the Chief is still weeping. Varied aspects mean some walls see sun most of the day. One of the best urban crags in North America."
       },
-      "last_go": "2026-10-19T00:20:05.354692+00:00"
+      "last_go": "2026-10-19T12:11:16.639899+00:00"
     },
     {
       "id": "miller-river",
@@ -307,21 +307,21 @@
       "signal": "go",
       "score": 100,
       "reasons": [
-        "Ideal temp (56.7\u00b0F)"
+        "Dry conditions, good temps"
       ],
       "conditions": {
         "precip_24h": 0,
         "precip_48h": 0.09,
         "precip_forecast_48h": 0,
-        "humidity": 57,
-        "temp_f": 56.7,
-        "windspeed_mph": 3.0
+        "humidity": 69,
+        "temp_f": 53.1,
+        "windspeed_mph": 2.3
       },
       "streamflow": {
-        "cfs": 514,
+        "cfs": 508,
         "trend": "steady",
         "gauge_id": "12134500",
-        "fetched_at": "2026-10-19T12:11:34.782625+00:00"
+        "fetched_at": "2026-10-19T18:09:37.872419+00:00"
       },
       "aqi": null,
       "crag_meta": {
@@ -330,7 +330,7 @@
         "elevation_ft": 1266,
         "notes": "Deep forest setting, slow drying. 6 sub-areas: Morpheus, Paradise, Prospect, Hideout, Jungle Gym, Apex. 205 problems. Needs significant dry time after rain."
       },
-      "last_go": "2026-10-19T06:15:43.174639+00:00"
+      "last_go": "2026-10-19T12:11:16.639899+00:00"
     }
   ]
 }
