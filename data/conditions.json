@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-10-26T18:11:29.255744+00:00",
-  "generated_at_pacific": "2026-10-26 06:11 PM PST",
+  "generated_at": "2026-10-27T00:17:30.362077+00:00",
+  "generated_at_pacific": "2026-10-27 12:17 AM PST",
   "crags": [
     {
       "id": "index",
@@ -9,22 +9,22 @@
       "signal": "wait",
       "score": 78,
       "reasons": [
-        "Elevated humidity (83%)",
-        "0.93\" rain forecasted \u2014 conditions deteriorating"
+        "Elevated humidity (81%)",
+        "0.74\" rain forecasted \u2014 conditions deteriorating"
       ],
       "conditions": {
         "precip_24h": 0.06,
         "precip_48h": 0.06,
-        "precip_forecast_48h": 0.93,
-        "humidity": 83,
-        "temp_f": 49.3,
-        "windspeed_mph": 3.6
+        "precip_forecast_48h": 0.74,
+        "humidity": 81,
+        "temp_f": 45.8,
+        "windspeed_mph": 3.9
       },
       "streamflow": {
         "cfs": 398,
-        "trend": "rising",
+        "trend": "steady",
         "gauge_id": "12134500",
-        "fetched_at": "2026-10-26T18:11:30.082514+00:00"
+        "fetched_at": "2026-10-27T00:17:30.958122+00:00"
       },
       "aqi": null,
       "crag_meta": {
@@ -47,10 +47,10 @@
       "conditions": {
         "precip_24h": 0.04,
         "precip_48h": 0.04,
-        "precip_forecast_48h": 0.07,
-        "humidity": 69,
-        "temp_f": 51.8,
-        "windspeed_mph": 2.6
+        "precip_forecast_48h": 0.04,
+        "humidity": 66,
+        "temp_f": 42.3,
+        "windspeed_mph": 3.4
       },
       "streamflow": null,
       "aqi": null,
@@ -60,7 +60,7 @@
         "elevation_ft": 1100,
         "notes": "Rain shadow effect \u2014 dries significantly faster than west-side crags. Icicle Canyon blocks moisture."
       },
-      "last_go": "2026-10-26T13:33:53.322573+00:00"
+      "last_go": "2026-10-26T18:11:29.255744+00:00"
     },
     {
       "id": "vantage",
@@ -69,15 +69,15 @@
       "signal": "go",
       "score": 100,
       "reasons": [
-        "Ideal temp (55.0\u00b0F)"
+        "Dry conditions, good temps"
       ],
       "conditions": {
         "precip_24h": 0,
         "precip_48h": 0,
         "precip_forecast_48h": 0,
-        "humidity": 56,
-        "temp_f": 55.0,
-        "windspeed_mph": 8.4
+        "humidity": 70,
+        "temp_f": 45.3,
+        "windspeed_mph": 4.3
       },
       "streamflow": null,
       "aqi": null,
@@ -87,24 +87,25 @@
         "elevation_ft": 800,
         "notes": "Desert climate, basalt dries fast. Wind is a major factor \u2014 often climbable when west-side crags are soaked."
       },
-      "last_go": "2026-10-26T13:33:53.322573+00:00"
+      "last_go": "2026-10-26T18:11:29.255744+00:00"
     },
     {
       "id": "little-si",
       "name": "Little Si",
       "region": "North Bend / I-90",
-      "signal": "go",
-      "score": 88,
+      "signal": "wait",
+      "score": 78,
       "reasons": [
-        "Elevated humidity (77%)"
+        "Elevated humidity (74%)",
+        "0.76\" rain forecasted \u2014 conditions deteriorating"
       ],
       "conditions": {
         "precip_24h": 0.08,
         "precip_48h": 0.08,
-        "precip_forecast_48h": 0.5,
-        "humidity": 77,
-        "temp_f": 50.3,
-        "windspeed_mph": 2.6
+        "precip_forecast_48h": 0.76,
+        "humidity": 74,
+        "temp_f": 45.1,
+        "windspeed_mph": 3.4
       },
       "streamflow": null,
       "aqi": null,
@@ -114,25 +115,25 @@
         "elevation_ft": 1200,
         "notes": "Wetter microclimate than Index. Higher humidity typical. Needs more drying time."
       },
-      "last_go": "2026-10-26T06:15:32.565469+00:00"
+      "last_go": "2026-10-26T18:11:29.255744+00:00"
     },
     {
       "id": "mt-erie",
       "name": "Mt. Erie",
       "region": "Anacortes / Fidalgo Island",
-      "signal": "wait",
-      "score": 71,
+      "signal": "go",
+      "score": 84,
       "reasons": [
         "0.16\" rain in last 24h (light)",
-        "Very high humidity (88%) \u2014 rock stays damp"
+        "Elevated humidity (81%)"
       ],
       "conditions": {
         "precip_24h": 0.16,
         "precip_48h": 0.23,
-        "precip_forecast_48h": 0.13,
-        "humidity": 88,
-        "temp_f": 48.6,
-        "windspeed_mph": 2.7
+        "precip_forecast_48h": 0.37,
+        "humidity": 81,
+        "temp_f": 43.1,
+        "windspeed_mph": 3.3
       },
       "streamflow": null,
       "aqi": null,
@@ -158,8 +159,8 @@
         "precip_48h": 0,
         "precip_forecast_48h": 0.06,
         "humidity": 64,
-        "temp_f": 47.8,
-        "windspeed_mph": 2.7
+        "temp_f": 41.8,
+        "windspeed_mph": 5.4
       },
       "streamflow": null,
       "aqi": null,
@@ -169,7 +170,7 @@
         "elevation_ft": 1400,
         "notes": "Sandstone \u2014 NEVER climb when wet. Holds water in pockets, damages rock when damp. Needs 48-72h after rain."
       },
-      "last_go": "2026-10-26T13:33:53.322573+00:00"
+      "last_go": "2026-10-26T18:11:29.255744+00:00"
     },
     {
       "id": "exit-38",
@@ -179,16 +180,16 @@
       "score": 73,
       "reasons": [
         "0.23\" rain in last 24h (light)",
-        "Elevated humidity (82%)",
-        "0.55\" rain forecasted \u2014 conditions deteriorating"
+        "Elevated humidity (83%)",
+        "0.59\" rain forecasted \u2014 conditions deteriorating"
       ],
       "conditions": {
         "precip_24h": 0.23,
         "precip_48h": 0.23,
-        "precip_forecast_48h": 0.55,
-        "humidity": 82,
-        "temp_f": 46.7,
-        "windspeed_mph": 4.5
+        "precip_forecast_48h": 0.59,
+        "humidity": 83,
+        "temp_f": 43.4,
+        "windspeed_mph": 5.2
       },
       "streamflow": null,
       "aqi": null,
@@ -208,16 +209,16 @@
       "score": 55,
       "reasons": [
         "0.2\" rain in last 24h (light)",
-        "Elevated humidity (84%)",
-        "Below freezing (29.9\u00b0F) \u2014 ice risk"
+        "Elevated humidity (80%)",
+        "Below freezing (29.2\u00b0F) \u2014 ice risk"
       ],
       "conditions": {
         "precip_24h": 0.2,
         "precip_48h": 0.2,
-        "precip_forecast_48h": 0.24,
-        "humidity": 84,
-        "temp_f": 29.9,
-        "windspeed_mph": 14.3
+        "precip_forecast_48h": 0.16,
+        "humidity": 80,
+        "temp_f": 29.2,
+        "windspeed_mph": 13.1
       },
       "streamflow": null,
       "aqi": null,
@@ -234,17 +235,17 @@
       "name": "Smith Rock",
       "region": "Central Oregon",
       "signal": "go",
-      "score": 100,
+      "score": 90,
       "reasons": [
-        "Dry conditions, good temps"
+        "Cold (38.8\u00b0F) \u2014 slow drying"
       ],
       "conditions": {
         "precip_24h": 0,
         "precip_48h": 0,
         "precip_forecast_48h": 0,
-        "humidity": 55,
-        "temp_f": 47.2,
-        "windspeed_mph": 7.5
+        "humidity": 70,
+        "temp_f": 38.8,
+        "windspeed_mph": 7.6
       },
       "streamflow": null,
       "aqi": null,
@@ -254,24 +255,25 @@
         "elevation_ft": 3200,
         "notes": "High desert volcanic tuff dries fast and the climate is much drier than PNW. Often climbable year-round. Watch for seasonal raptor closures (Feb-Aug on some walls). Juniper Basin area dries fastest."
       },
-      "last_go": "2026-10-26T13:33:53.322573+00:00"
+      "last_go": "2026-10-26T18:11:29.255744+00:00"
     },
     {
       "id": "squamish-chief",
       "name": "The Chief",
       "region": "Squamish, BC",
       "signal": "go",
-      "score": 95,
+      "score": 85,
       "reasons": [
-        "0.21\" rain in last 24h (light)"
+        "0.21\" rain in last 24h (light)",
+        "Cold (39.8\u00b0F) \u2014 slow drying"
       ],
       "conditions": {
         "precip_24h": 0.21,
         "precip_48h": 0.57,
         "precip_forecast_48h": 0,
-        "humidity": 63,
-        "temp_f": 46.3,
-        "windspeed_mph": 2.1
+        "humidity": 69,
+        "temp_f": 39.8,
+        "windspeed_mph": 3.7
       },
       "streamflow": null,
       "aqi": null,
@@ -281,7 +283,7 @@
         "elevation_ft": 2100,
         "notes": "The big one. Massive south-facing granite wall \u2014 beautiful in good conditions but very slow to dry due to size and coastal moisture. Seeps can persist for days after heavy rain. Upper Chief dries slower than the base. Check the access society for any closures before heading up."
       },
-      "last_go": "2026-10-26T13:33:53.322573+00:00"
+      "last_go": "2026-10-26T18:11:29.255744+00:00"
     },
     {
       "id": "squamish-smoke-bluffs",
@@ -296,9 +298,9 @@
         "precip_24h": 0.15,
         "precip_48h": 0.52,
         "precip_forecast_48h": 0,
-        "humidity": 57,
-        "temp_f": 52.1,
-        "windspeed_mph": 2.9
+        "humidity": 68,
+        "temp_f": 44.7,
+        "windspeed_mph": 2.4
       },
       "streamflow": null,
       "aqi": null,
@@ -308,7 +310,7 @@
         "elevation_ft": 600,
         "notes": "The local's playground \u2014 lower elevation, well-traveled, and significantly faster-drying than The Chief. Often climbable a day after rain clears when the Chief is still weeping. Varied aspects mean some walls see sun most of the day. One of the best urban crags in North America."
       },
-      "last_go": "2026-10-26T13:33:53.322573+00:00"
+      "last_go": "2026-10-26T18:11:29.255744+00:00"
     },
     {
       "id": "miller-river",
@@ -317,22 +319,22 @@
       "signal": "wait",
       "score": 78,
       "reasons": [
-        "Elevated humidity (82%)",
-        "0.95\" rain forecasted \u2014 conditions deteriorating"
+        "Elevated humidity (74%)",
+        "0.53\" rain forecasted \u2014 conditions deteriorating"
       ],
       "conditions": {
         "precip_24h": 0.04,
         "precip_48h": 0.04,
-        "precip_forecast_48h": 0.95,
-        "humidity": 82,
-        "temp_f": 47.9,
-        "windspeed_mph": 1.3
+        "precip_forecast_48h": 0.53,
+        "humidity": 74,
+        "temp_f": 45.4,
+        "windspeed_mph": 3.6
       },
       "streamflow": {
         "cfs": 398,
-        "trend": "rising",
+        "trend": "steady",
         "gauge_id": "12134500",
-        "fetched_at": "2026-10-26T18:11:37.312754+00:00"
+        "fetched_at": "2026-10-27T00:17:36.179072+00:00"
       },
       "aqi": null,
       "crag_meta": {
