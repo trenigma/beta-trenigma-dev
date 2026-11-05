@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-11-05T00:12:29.534417+00:00",
-  "generated_at_pacific": "2026-11-05 12:12 AM PST",
+  "generated_at": "2026-11-05T06:07:39.248160+00:00",
+  "generated_at_pacific": "2026-11-05 06:07 AM PST",
   "crags": [
     {
       "id": "index",
@@ -9,21 +9,21 @@
       "signal": "wait",
       "score": 75,
       "reasons": [
-        "Very high humidity (97%) \u2014 rock stays damp"
+        "Very high humidity (93%) \u2014 rock stays damp"
       ],
       "conditions": {
         "precip_24h": 0,
         "precip_48h": 0,
-        "precip_forecast_48h": 0.27,
-        "humidity": 97,
-        "temp_f": 48.2,
-        "windspeed_mph": 6.7
+        "precip_forecast_48h": 0.24,
+        "humidity": 93,
+        "temp_f": 48.5,
+        "windspeed_mph": 4.7
       },
       "streamflow": {
-        "cfs": 537,
-        "trend": "steady",
+        "cfs": 544,
+        "trend": "rising",
         "gauge_id": "12134500",
-        "fetched_at": "2026-11-05T00:12:30.135908+00:00"
+        "fetched_at": "2026-11-05T06:07:39.742478+00:00"
       },
       "aqi": null,
       "crag_meta": {
@@ -39,17 +39,18 @@
       "name": "Leavenworth",
       "region": "Wenatchee River Valley",
       "signal": "wait",
-      "score": 75,
+      "score": 78,
       "reasons": [
-        "Very high humidity (93%) \u2014 rock stays damp"
+        "Elevated humidity (82%)",
+        "Cold (37.2\u00b0F) \u2014 slow drying"
       ],
       "conditions": {
         "precip_24h": 0,
         "precip_48h": 0,
         "precip_forecast_48h": 0.03,
-        "humidity": 93,
-        "temp_f": 40.4,
-        "windspeed_mph": 2.9
+        "humidity": 82,
+        "temp_f": 37.2,
+        "windspeed_mph": 5.8
       },
       "streamflow": null,
       "aqi": null,
@@ -65,18 +66,19 @@
       "id": "vantage",
       "name": "Vantage",
       "region": "Columbia River Gorge",
-      "signal": "go",
-      "score": 88,
+      "signal": "wait",
+      "score": 78,
       "reasons": [
-        "Elevated humidity (85%)"
+        "Elevated humidity (76%)",
+        "Cold (39.7\u00b0F) \u2014 slow drying"
       ],
       "conditions": {
         "precip_24h": 0,
         "precip_48h": 0,
         "precip_forecast_48h": 0,
-        "humidity": 85,
-        "temp_f": 41.4,
-        "windspeed_mph": 2.7
+        "humidity": 76,
+        "temp_f": 39.7,
+        "windspeed_mph": 1.9
       },
       "streamflow": null,
       "aqi": null,
@@ -86,7 +88,7 @@
         "elevation_ft": 800,
         "notes": "Desert climate, basalt dries fast. Wind is a major factor \u2014 often climbable when west-side crags are soaked."
       },
-      "last_go": "2026-11-04T18:05:06.739123+00:00"
+      "last_go": "2026-11-05T00:12:29.534417+00:00"
     },
     {
       "id": "little-si",
@@ -100,10 +102,10 @@
       "conditions": {
         "precip_24h": 0,
         "precip_48h": 0,
-        "precip_forecast_48h": 0.17,
+        "precip_forecast_48h": 0.2,
         "humidity": 86,
-        "temp_f": 49.3,
-        "windspeed_mph": 5.9
+        "temp_f": 48.2,
+        "windspeed_mph": 4.3
       },
       "streamflow": null,
       "aqi": null,
@@ -122,15 +124,15 @@
       "signal": "wait",
       "score": 75,
       "reasons": [
-        "Very high humidity (91%) \u2014 rock stays damp"
+        "Very high humidity (89%) \u2014 rock stays damp"
       ],
       "conditions": {
         "precip_24h": 0,
         "precip_48h": 0,
-        "precip_forecast_48h": 0.15,
-        "humidity": 91,
-        "temp_f": 48.6,
-        "windspeed_mph": 10.6
+        "precip_forecast_48h": 0,
+        "humidity": 89,
+        "temp_f": 46.6,
+        "windspeed_mph": 6.3
       },
       "streamflow": null,
       "aqi": null,
@@ -147,18 +149,18 @@
       "name": "Peshastin Pinnacles",
       "region": "Cashmere / US-2",
       "signal": "wait",
-      "score": 65,
+      "score": 78,
       "reasons": [
-        "Very high humidity (94%) \u2014 rock stays damp",
-        "Cold (38.0\u00b0F) \u2014 slow drying"
+        "Elevated humidity (73%)",
+        "Cold (35.3\u00b0F) \u2014 slow drying"
       ],
       "conditions": {
         "precip_24h": 0,
         "precip_48h": 0,
-        "precip_forecast_48h": 0.02,
-        "humidity": 94,
-        "temp_f": 38.0,
-        "windspeed_mph": 3.6
+        "precip_forecast_48h": 0,
+        "humidity": 73,
+        "temp_f": 35.3,
+        "windspeed_mph": 1.4
       },
       "streamflow": null,
       "aqi": null,
@@ -177,15 +179,15 @@
       "signal": "wait",
       "score": 75,
       "reasons": [
-        "Very high humidity (98%) \u2014 rock stays damp"
+        "Very high humidity (93%) \u2014 rock stays damp"
       ],
       "conditions": {
         "precip_24h": 0,
         "precip_48h": 0,
-        "precip_forecast_48h": 0.21,
-        "humidity": 98,
-        "temp_f": 46.7,
-        "windspeed_mph": 2.1
+        "precip_forecast_48h": 0.17,
+        "humidity": 93,
+        "temp_f": 44.8,
+        "windspeed_mph": 5.4
       },
       "streamflow": null,
       "aqi": null,
@@ -205,15 +207,15 @@
       "score": 58,
       "reasons": [
         "Elevated humidity (80%)",
-        "Below freezing (29.3\u00b0F) \u2014 ice risk"
+        "Below freezing (27.9\u00b0F) \u2014 ice risk"
       ],
       "conditions": {
         "precip_24h": 0,
         "precip_48h": 0,
-        "precip_forecast_48h": 0.09,
+        "precip_forecast_48h": 0.13,
         "humidity": 80,
-        "temp_f": 29.3,
-        "windspeed_mph": 1.8
+        "temp_f": 27.9,
+        "windspeed_mph": 17.0
       },
       "streamflow": null,
       "aqi": null,
@@ -229,18 +231,19 @@
       "id": "smith-rock",
       "name": "Smith Rock",
       "region": "Central Oregon",
-      "signal": "go",
-      "score": 88,
+      "signal": "wait",
+      "score": 78,
       "reasons": [
-        "Elevated humidity (73%)"
+        "Elevated humidity (80%)",
+        "Cold (37.4\u00b0F) \u2014 slow drying"
       ],
       "conditions": {
         "precip_24h": 0,
         "precip_48h": 0,
         "precip_forecast_48h": 0,
-        "humidity": 73,
-        "temp_f": 42.5,
-        "windspeed_mph": 7.2
+        "humidity": 80,
+        "temp_f": 37.4,
+        "windspeed_mph": 6.7
       },
       "streamflow": null,
       "aqi": null,
@@ -250,25 +253,25 @@
         "elevation_ft": 3200,
         "notes": "High desert volcanic tuff dries fast and the climate is much drier than PNW. Often climbable year-round. Watch for seasonal raptor closures (Feb-Aug on some walls). Juniper Basin area dries fastest."
       },
-      "last_go": "2026-11-04T18:05:06.739123+00:00"
+      "last_go": "2026-11-05T00:12:29.534417+00:00"
     },
     {
       "id": "squamish-chief",
       "name": "The Chief",
       "region": "Squamish, BC",
       "signal": "wait",
-      "score": 65,
+      "score": 78,
       "reasons": [
-        "Very high humidity (86%) \u2014 rock stays damp",
-        "0.78\" rain forecasted \u2014 conditions deteriorating"
+        "Elevated humidity (76%)",
+        "Cold (39.9\u00b0F) \u2014 slow drying"
       ],
       "conditions": {
         "precip_24h": 0,
         "precip_48h": 0,
-        "precip_forecast_48h": 0.78,
-        "humidity": 86,
-        "temp_f": 41.8,
-        "windspeed_mph": 2.6
+        "precip_forecast_48h": 0.48,
+        "humidity": 76,
+        "temp_f": 39.9,
+        "windspeed_mph": 2.1
       },
       "streamflow": null,
       "aqi": null,
@@ -284,19 +287,18 @@
       "id": "squamish-smoke-bluffs",
       "name": "Smoke Bluffs",
       "region": "Squamish, BC",
-      "signal": "wait",
-      "score": 78,
+      "signal": "go",
+      "score": 88,
       "reasons": [
-        "Elevated humidity (85%)",
-        "0.61\" rain forecasted \u2014 conditions deteriorating"
+        "Elevated humidity (72%)"
       ],
       "conditions": {
         "precip_24h": 0,
         "precip_48h": 0,
-        "precip_forecast_48h": 0.61,
-        "humidity": 85,
-        "temp_f": 47.9,
-        "windspeed_mph": 4.5
+        "precip_forecast_48h": 0.44,
+        "humidity": 72,
+        "temp_f": 47.3,
+        "windspeed_mph": 2.6
       },
       "streamflow": null,
       "aqi": null,
@@ -312,24 +314,24 @@
       "id": "miller-river",
       "name": "Miller River Boulders",
       "region": "Skykomish / US-2",
-      "signal": "wait",
-      "score": 75,
+      "signal": "go",
+      "score": 88,
       "reasons": [
-        "Very high humidity (86%) \u2014 rock stays damp"
+        "Elevated humidity (80%)"
       ],
       "conditions": {
         "precip_24h": 0,
         "precip_48h": 0,
-        "precip_forecast_48h": 0.3,
-        "humidity": 86,
-        "temp_f": 46.0,
-        "windspeed_mph": 3.2
+        "precip_forecast_48h": 0.11,
+        "humidity": 80,
+        "temp_f": 43.6,
+        "windspeed_mph": 3.7
       },
       "streamflow": {
-        "cfs": 537,
-        "trend": "steady",
+        "cfs": 544,
+        "trend": "rising",
         "gauge_id": "12134500",
-        "fetched_at": "2026-11-05T00:12:36.533563+00:00"
+        "fetched_at": "2026-11-05T06:07:45.895388+00:00"
       },
       "aqi": null,
       "crag_meta": {
