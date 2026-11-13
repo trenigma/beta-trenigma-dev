@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-11-13T00:12:13.283079+00:00",
-  "generated_at_pacific": "2026-11-13 12:12 AM PST",
+  "generated_at": "2026-11-13T06:07:28.942632+00:00",
+  "generated_at_pacific": "2026-11-13 06:07 AM PST",
   "crags": [
     {
       "id": "index",
@@ -10,21 +10,21 @@
       "score": 89,
       "reasons": [
         "1.07\" rain in last 48h",
-        "Ideal temp (56.0\u00b0F)"
+        "Ideal temp (55.9\u00b0F)"
       ],
       "conditions": {
         "precip_24h": 0,
         "precip_48h": 1.07,
-        "precip_forecast_48h": 0.23,
-        "humidity": 44,
-        "temp_f": 56.0,
-        "windspeed_mph": 9.1
+        "precip_forecast_48h": 0.26,
+        "humidity": 49,
+        "temp_f": 55.9,
+        "windspeed_mph": 10.3
       },
       "streamflow": {
-        "cfs": 2230,
+        "cfs": 2040,
         "trend": "falling",
         "gauge_id": "12134500",
-        "fetched_at": "2026-11-13T00:12:13.946937+00:00"
+        "fetched_at": "2026-11-13T06:07:29.300988+00:00"
       },
       "aqi": null,
       "crag_meta": {
@@ -33,7 +33,7 @@
         "elevation_ft": 900,
         "notes": "Granite dries fast. Lower Wall sheds water quickly; Upper Wall slower after heavy rain."
       },
-      "last_go": "2026-11-12T18:05:14.130849+00:00"
+      "last_go": "2026-11-13T00:12:13.283079+00:00"
     },
     {
       "id": "leavenworth",
@@ -42,15 +42,15 @@
       "signal": "go",
       "score": 88,
       "reasons": [
-        "Elevated humidity (79%)"
+        "Elevated humidity (71%)"
       ],
       "conditions": {
         "precip_24h": 0,
         "precip_48h": 0.24,
-        "precip_forecast_48h": 0.25,
-        "humidity": 79,
-        "temp_f": 44.2,
-        "windspeed_mph": 6.3
+        "precip_forecast_48h": 0.15,
+        "humidity": 71,
+        "temp_f": 42.5,
+        "windspeed_mph": 6.1
       },
       "streamflow": null,
       "aqi": null,
@@ -60,7 +60,7 @@
         "elevation_ft": 1100,
         "notes": "Rain shadow effect \u2014 dries significantly faster than west-side crags. Icicle Canyon blocks moisture."
       },
-      "last_go": "2026-11-12T00:12:23.078391+00:00"
+      "last_go": "2026-11-13T00:12:13.283079+00:00"
     },
     {
       "id": "vantage",
@@ -69,15 +69,15 @@
       "signal": "go",
       "score": 88,
       "reasons": [
-        "Elevated humidity (73%)"
+        "Elevated humidity (82%)"
       ],
       "conditions": {
         "precip_24h": 0,
         "precip_48h": 0.02,
         "precip_forecast_48h": 0.1,
-        "humidity": 73,
-        "temp_f": 43.2,
-        "windspeed_mph": 4.3
+        "humidity": 82,
+        "temp_f": 40.3,
+        "windspeed_mph": 6.5
       },
       "streamflow": null,
       "aqi": null,
@@ -87,7 +87,7 @@
         "elevation_ft": 800,
         "notes": "Desert climate, basalt dries fast. Wind is a major factor \u2014 often climbable when west-side crags are soaked."
       },
-      "last_go": "2026-11-11T18:05:00.930333+00:00"
+      "last_go": "2026-11-13T00:12:13.283079+00:00"
     },
     {
       "id": "little-si",
@@ -96,15 +96,15 @@
       "signal": "go",
       "score": 100,
       "reasons": [
-        "Dry conditions, good temps"
+        "Ideal temp (56.4\u00b0F)"
       ],
       "conditions": {
         "precip_24h": 0,
         "precip_48h": 0.49,
-        "precip_forecast_48h": 0.16,
-        "humidity": 46,
-        "temp_f": 54.3,
-        "windspeed_mph": 6.5
+        "precip_forecast_48h": 0.35,
+        "humidity": 44,
+        "temp_f": 56.4,
+        "windspeed_mph": 17.3
       },
       "streamflow": null,
       "aqi": null,
@@ -114,7 +114,7 @@
         "elevation_ft": 1200,
         "notes": "Wetter microclimate than Index. Higher humidity typical. Needs more drying time."
       },
-      "last_go": "2026-11-12T18:05:14.130849+00:00"
+      "last_go": "2026-11-13T00:12:13.283079+00:00"
     },
     {
       "id": "mt-erie",
@@ -128,10 +128,10 @@
       "conditions": {
         "precip_24h": 0,
         "precip_48h": 0.51,
-        "precip_forecast_48h": 0,
-        "humidity": 54,
-        "temp_f": 53.1,
-        "windspeed_mph": 7.7
+        "precip_forecast_48h": 0.04,
+        "humidity": 51,
+        "temp_f": 52.8,
+        "windspeed_mph": 5.9
       },
       "streamflow": null,
       "aqi": null,
@@ -141,7 +141,7 @@
         "elevation_ft": 1270,
         "notes": "Island climate \u2014 high humidity, slow drying. Needs 48h+ after rain to be reliable."
       },
-      "last_go": "2026-11-12T18:05:14.130849+00:00"
+      "last_go": "2026-11-13T00:12:13.283079+00:00"
     },
     {
       "id": "peshastin",
@@ -155,10 +155,10 @@
       "conditions": {
         "precip_24h": 0,
         "precip_48h": 0.22,
-        "precip_forecast_48h": 0.07,
-        "humidity": 66,
-        "temp_f": 43.4,
-        "windspeed_mph": 4.0
+        "precip_forecast_48h": 0.14,
+        "humidity": 68,
+        "temp_f": 40.7,
+        "windspeed_mph": 3.4
       },
       "streamflow": null,
       "aqi": null,
@@ -182,10 +182,10 @@
       "conditions": {
         "precip_24h": 0,
         "precip_48h": 0.89,
-        "precip_forecast_48h": 0.04,
-        "humidity": 49,
-        "temp_f": 53.0,
-        "windspeed_mph": 15.4
+        "precip_forecast_48h": 0.3,
+        "humidity": 55,
+        "temp_f": 52.6,
+        "windspeed_mph": 15.8
       },
       "streamflow": null,
       "aqi": null,
@@ -195,25 +195,25 @@
         "elevation_ft": 1400,
         "notes": "Closest sport climbing to Seattle. Metamorphic andesite dries slower than granite. Many walls face north or are shaded by forest \u2014 factor in extra drying time. Deception Crags is most popular; Far Side and Mt Washington have longer approaches."
       },
-      "last_go": "2026-11-12T18:05:14.130849+00:00"
+      "last_go": "2026-11-13T00:12:13.283079+00:00"
     },
     {
       "id": "castle-rock",
       "name": "Castle Rock",
       "region": "Tumwater Canyon / US-2",
       "signal": "wait",
-      "score": 78,
+      "score": 58,
       "reasons": [
-        "Elevated humidity (75%)",
-        "Cold (32.8\u00b0F) \u2014 slow drying"
+        "Elevated humidity (85%)",
+        "Below freezing (30.8\u00b0F) \u2014 ice risk"
       ],
       "conditions": {
         "precip_24h": 0,
         "precip_48h": 0.37,
-        "precip_forecast_48h": 0.29,
-        "humidity": 75,
-        "temp_f": 32.8,
-        "windspeed_mph": 10.2
+        "precip_forecast_48h": 0.17,
+        "humidity": 85,
+        "temp_f": 30.8,
+        "windspeed_mph": 10.5
       },
       "streamflow": null,
       "aqi": null,
@@ -232,15 +232,15 @@
       "signal": "go",
       "score": 100,
       "reasons": [
-        "Low humidity (31%) \u2014 good drying conditions"
+        "Dry conditions, good temps"
       ],
       "conditions": {
         "precip_24h": 0,
         "precip_48h": 0,
-        "precip_forecast_48h": 0.04,
-        "humidity": 31,
-        "temp_f": 53.1,
-        "windspeed_mph": 13.2
+        "precip_forecast_48h": 0.03,
+        "humidity": 51,
+        "temp_f": 50.4,
+        "windspeed_mph": 17.9
       },
       "streamflow": null,
       "aqi": null,
@@ -250,26 +250,25 @@
         "elevation_ft": 3200,
         "notes": "High desert volcanic tuff dries fast and the climate is much drier than PNW. Often climbable year-round. Watch for seasonal raptor closures (Feb-Aug on some walls). Juniper Basin area dries fastest."
       },
-      "last_go": "2026-11-12T18:05:14.130849+00:00"
+      "last_go": "2026-11-13T00:12:13.283079+00:00"
     },
     {
       "id": "squamish-chief",
       "name": "The Chief",
       "region": "Squamish, BC",
       "signal": "no-go",
-      "score": 35,
+      "score": 30,
       "reasons": [
         "1.72\" rain in last 24h",
-        "Low humidity (38%) \u2014 good drying conditions",
-        "1.28\" rain forecasted \u2014 conditions deteriorating"
+        "1.94\" rain forecasted \u2014 conditions deteriorating"
       ],
       "conditions": {
         "precip_24h": 1.72,
         "precip_48h": 3.12,
-        "precip_forecast_48h": 1.28,
-        "humidity": 38,
-        "temp_f": 53.2,
-        "windspeed_mph": 9.1
+        "precip_forecast_48h": 1.94,
+        "humidity": 53,
+        "temp_f": 50.3,
+        "windspeed_mph": 6.8
       },
       "streamflow": null,
       "aqi": null,
@@ -286,20 +285,19 @@
       "name": "Smoke Bluffs",
       "region": "Squamish, BC",
       "signal": "no-go",
-      "score": 40,
+      "score": 35,
       "reasons": [
         "1.62\" rain in last 24h",
-        "Low humidity (34%) \u2014 good drying conditions",
-        "Ideal temp (59.3\u00b0F)",
-        "1.04\" rain forecasted \u2014 conditions deteriorating"
+        "Ideal temp (55.0\u00b0F)",
+        "1.49\" rain forecasted \u2014 conditions deteriorating"
       ],
       "conditions": {
         "precip_24h": 1.62,
         "precip_48h": 2.67,
-        "precip_forecast_48h": 1.04,
-        "humidity": 34,
-        "temp_f": 59.3,
-        "windspeed_mph": 4.5
+        "precip_forecast_48h": 1.49,
+        "humidity": 48,
+        "temp_f": 55.0,
+        "windspeed_mph": 3.1
       },
       "streamflow": null,
       "aqi": null,
@@ -319,21 +317,21 @@
       "score": 93,
       "reasons": [
         "0.63\" rain in last 48h",
-        "Ideal temp (56.0\u00b0F)"
+        "Ideal temp (55.1\u00b0F)"
       ],
       "conditions": {
         "precip_24h": 0,
         "precip_48h": 0.63,
-        "precip_forecast_48h": 0.03,
-        "humidity": 42,
-        "temp_f": 56.0,
-        "windspeed_mph": 8.3
+        "precip_forecast_48h": 0.13,
+        "humidity": 47,
+        "temp_f": 55.1,
+        "windspeed_mph": 10.2
       },
       "streamflow": {
-        "cfs": 2230,
+        "cfs": 2040,
         "trend": "falling",
         "gauge_id": "12134500",
-        "fetched_at": "2026-11-13T00:12:16.431511+00:00"
+        "fetched_at": "2026-11-13T06:07:32.652350+00:00"
       },
       "aqi": null,
       "crag_meta": {
@@ -342,7 +340,7 @@
         "elevation_ft": 1266,
         "notes": "Deep forest setting, slow drying. 6 sub-areas: Morpheus, Paradise, Prospect, Hideout, Jungle Gym, Apex. 205 problems. Needs significant dry time after rain."
       },
-      "last_go": "2026-11-12T18:05:14.130849+00:00"
+      "last_go": "2026-11-13T00:12:13.283079+00:00"
     }
   ]
 }
