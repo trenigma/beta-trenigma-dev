@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-11-20T00:11:05.626980+00:00",
-  "generated_at_pacific": "2026-11-20 12:11 AM PST",
+  "generated_at": "2026-11-20T06:07:32.015537+00:00",
+  "generated_at_pacific": "2026-11-20 06:08 AM PST",
   "crags": [
     {
       "id": "index",
@@ -9,22 +9,22 @@
       "signal": "wait",
       "score": 78,
       "reasons": [
-        "Elevated humidity (74%)",
-        "Cold (37.9\u00b0F) \u2014 slow drying"
+        "Elevated humidity (72%)",
+        "Cold (35.9\u00b0F) \u2014 slow drying"
       ],
       "conditions": {
         "precip_24h": 0,
         "precip_48h": 0,
         "precip_forecast_48h": 0,
-        "humidity": 74,
-        "temp_f": 37.9,
-        "windspeed_mph": 4.7
+        "humidity": 72,
+        "temp_f": 35.9,
+        "windspeed_mph": 5.5
       },
       "streamflow": {
-        "cfs": 1210,
-        "trend": "steady",
+        "cfs": 1170,
+        "trend": "rising",
         "gauge_id": "12134500",
-        "fetched_at": "2026-11-20T00:11:20.244324+00:00"
+        "fetched_at": "2026-11-20T06:07:36.568622+00:00"
       },
       "aqi": null,
       "crag_meta": {
@@ -42,15 +42,15 @@
       "signal": "go",
       "score": 90,
       "reasons": [
-        "Cold (35.9\u00b0F) \u2014 slow drying"
+        "Cold (36.9\u00b0F) \u2014 slow drying"
       ],
       "conditions": {
         "precip_24h": 0.02,
         "precip_48h": 0.02,
         "precip_forecast_48h": 0,
-        "humidity": 68,
-        "temp_f": 35.9,
-        "windspeed_mph": 2.5
+        "humidity": 51,
+        "temp_f": 36.9,
+        "windspeed_mph": 4.8
       },
       "streamflow": null,
       "aqi": null,
@@ -60,7 +60,7 @@
         "elevation_ft": 1100,
         "notes": "Rain shadow effect \u2014 dries significantly faster than west-side crags. Icicle Canyon blocks moisture."
       },
-      "last_go": "2026-11-19T18:05:12.560091+00:00"
+      "last_go": "2026-11-20T00:11:05.626980+00:00"
     },
     {
       "id": "vantage",
@@ -69,15 +69,15 @@
       "signal": "go",
       "score": 90,
       "reasons": [
-        "Cold (36.3\u00b0F) \u2014 slow drying"
+        "Cold (35.9\u00b0F) \u2014 slow drying"
       ],
       "conditions": {
         "precip_24h": 0.05,
         "precip_48h": 0.05,
         "precip_forecast_48h": 0.03,
-        "humidity": 58,
-        "temp_f": 36.3,
-        "windspeed_mph": 6.0
+        "humidity": 66,
+        "temp_f": 35.9,
+        "windspeed_mph": 0.9
       },
       "streamflow": null,
       "aqi": null,
@@ -87,24 +87,23 @@
         "elevation_ft": 800,
         "notes": "Desert climate, basalt dries fast. Wind is a major factor \u2014 often climbable when west-side crags are soaked."
       },
-      "last_go": "2026-11-19T18:05:12.560091+00:00"
+      "last_go": "2026-11-20T00:11:05.626980+00:00"
     },
     {
       "id": "little-si",
       "name": "Little Si",
       "region": "North Bend / I-90",
-      "signal": "wait",
-      "score": 78,
+      "signal": "go",
+      "score": 90,
       "reasons": [
-        "Elevated humidity (73%)",
-        "Cold (36.4\u00b0F) \u2014 slow drying"
+        "Cold (35.5\u00b0F) \u2014 slow drying"
       ],
       "conditions": {
         "precip_24h": 0,
         "precip_48h": 0,
         "precip_forecast_48h": 0,
-        "humidity": 73,
-        "temp_f": 36.4,
+        "humidity": 68,
+        "temp_f": 35.5,
         "windspeed_mph": 1.6
       },
       "streamflow": null,
@@ -124,16 +123,16 @@
       "signal": "wait",
       "score": 78,
       "reasons": [
-        "Elevated humidity (75%)",
-        "Cold (37.6\u00b0F) \u2014 slow drying"
+        "Elevated humidity (72%)",
+        "Cold (36.0\u00b0F) \u2014 slow drying"
       ],
       "conditions": {
         "precip_24h": 0,
         "precip_48h": 0,
         "precip_forecast_48h": 0,
-        "humidity": 75,
-        "temp_f": 37.6,
-        "windspeed_mph": 2.6
+        "humidity": 72,
+        "temp_f": 36.0,
+        "windspeed_mph": 3.7
       },
       "streamflow": null,
       "aqi": null,
@@ -154,15 +153,15 @@
       "reasons": [
         "0.11\" rain in last 24h (light)",
         "Sandstone \u2014 never climb wet, damages rock",
-        "Cold (35.7\u00b0F) \u2014 slow drying"
+        "Cold (37.2\u00b0F) \u2014 slow drying"
       ],
       "conditions": {
         "precip_24h": 0.11,
         "precip_48h": 0.11,
         "precip_forecast_48h": 0,
-        "humidity": 64,
-        "temp_f": 35.7,
-        "windspeed_mph": 5.4
+        "humidity": 48,
+        "temp_f": 37.2,
+        "windspeed_mph": 6.1
       },
       "streamflow": null,
       "aqi": null,
@@ -178,20 +177,12 @@
       "id": "exit-38",
       "name": "Exit 38",
       "region": "I-90 Corridor / North Bend",
-      "signal": "wait",
-      "score": 78,
+      "signal": "unknown",
+      "score": null,
       "reasons": [
-        "Elevated humidity (76%)",
-        "Cold (37.7\u00b0F) \u2014 slow drying"
+        "Data unavailable"
       ],
-      "conditions": {
-        "precip_24h": 0,
-        "precip_48h": 0,
-        "precip_forecast_48h": 0,
-        "humidity": 76,
-        "temp_f": 37.7,
-        "windspeed_mph": 5.4
-      },
+      "conditions": null,
       "streamflow": null,
       "aqi": null,
       "crag_meta": {
@@ -209,15 +200,15 @@
       "signal": "wait",
       "score": 70,
       "reasons": [
-        "Below freezing (21.5\u00b0F) \u2014 ice risk"
+        "Below freezing (23.1\u00b0F) \u2014 ice risk"
       ],
       "conditions": {
         "precip_24h": 0.09,
         "precip_48h": 0.09,
         "precip_forecast_48h": 0.04,
-        "humidity": 67,
-        "temp_f": 21.5,
-        "windspeed_mph": 11.9
+        "humidity": 51,
+        "temp_f": 23.1,
+        "windspeed_mph": 14.5
       },
       "streamflow": null,
       "aqi": null,
@@ -233,19 +224,19 @@
       "id": "smith-rock",
       "name": "Smith Rock",
       "region": "Central Oregon",
-      "signal": "no-go",
-      "score": 45,
+      "signal": "wait",
+      "score": 58,
       "reasons": [
-        "Very high humidity (89%) \u2014 rock stays damp",
-        "Below freezing (30.1\u00b0F) \u2014 ice risk"
+        "Elevated humidity (82%)",
+        "Below freezing (24.8\u00b0F) \u2014 ice risk"
       ],
       "conditions": {
         "precip_24h": 0.04,
         "precip_48h": 0.04,
-        "precip_forecast_48h": 0.02,
-        "humidity": 89,
-        "temp_f": 30.1,
-        "windspeed_mph": 4.4
+        "precip_forecast_48h": 0,
+        "humidity": 82,
+        "temp_f": 24.8,
+        "windspeed_mph": 5.2
       },
       "streamflow": null,
       "aqi": null,
@@ -262,18 +253,17 @@
       "name": "The Chief",
       "region": "Squamish, BC",
       "signal": "go",
-      "score": 95,
+      "score": 90,
       "reasons": [
-        "Low humidity (29%) \u2014 good drying conditions",
-        "Cold (39.4\u00b0F) \u2014 slow drying"
+        "Cold (36.1\u00b0F) \u2014 slow drying"
       ],
       "conditions": {
         "precip_24h": 0,
         "precip_48h": 0,
         "precip_forecast_48h": 0,
-        "humidity": 29,
-        "temp_f": 39.4,
-        "windspeed_mph": 5.1
+        "humidity": 41,
+        "temp_f": 36.1,
+        "windspeed_mph": 4.7
       },
       "streamflow": null,
       "aqi": null,
@@ -283,7 +273,7 @@
         "elevation_ft": 2100,
         "notes": "The big one. Massive south-facing granite wall \u2014 beautiful in good conditions but very slow to dry due to size and coastal moisture. Seeps can persist for days after heavy rain. Upper Chief dries slower than the base. Check the access society for any closures before heading up."
       },
-      "last_go": "2026-11-19T18:05:12.560091+00:00"
+      "last_go": "2026-11-20T00:11:05.626980+00:00"
     },
     {
       "id": "squamish-smoke-bluffs",
@@ -292,15 +282,15 @@
       "signal": "go",
       "score": 100,
       "reasons": [
-        "Low humidity (34%) \u2014 good drying conditions"
+        "Dry conditions, good temps"
       ],
       "conditions": {
         "precip_24h": 0,
         "precip_48h": 0,
         "precip_forecast_48h": 0,
-        "humidity": 34,
-        "temp_f": 41.4,
-        "windspeed_mph": 1.6
+        "humidity": 41,
+        "temp_f": 40.7,
+        "windspeed_mph": 3.5
       },
       "streamflow": null,
       "aqi": null,
@@ -310,31 +300,30 @@
         "elevation_ft": 600,
         "notes": "The local's playground \u2014 lower elevation, well-traveled, and significantly faster-drying than The Chief. Often climbable a day after rain clears when the Chief is still weeping. Varied aspects mean some walls see sun most of the day. One of the best urban crags in North America."
       },
-      "last_go": "2026-11-19T18:05:12.560091+00:00"
+      "last_go": "2026-11-20T00:11:05.626980+00:00"
     },
     {
       "id": "miller-river",
       "name": "Miller River Boulders",
       "region": "Skykomish / US-2",
-      "signal": "wait",
-      "score": 78,
+      "signal": "go",
+      "score": 90,
       "reasons": [
-        "Elevated humidity (71%)",
-        "Cold (38.3\u00b0F) \u2014 slow drying"
+        "Cold (38.5\u00b0F) \u2014 slow drying"
       ],
       "conditions": {
         "precip_24h": 0,
         "precip_48h": 0,
         "precip_forecast_48h": 0,
-        "humidity": 71,
-        "temp_f": 38.3,
-        "windspeed_mph": 1.6
+        "humidity": 57,
+        "temp_f": 38.5,
+        "windspeed_mph": 3.4
       },
       "streamflow": {
-        "cfs": 1210,
-        "trend": "steady",
+        "cfs": 1170,
+        "trend": "rising",
         "gauge_id": "12134500",
-        "fetched_at": "2026-11-20T00:11:27.328231+00:00"
+        "fetched_at": "2026-11-20T06:08:05.494857+00:00"
       },
       "aqi": null,
       "crag_meta": {
