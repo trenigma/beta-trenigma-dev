@@ -1,30 +1,22 @@
 {
-  "generated_at": "2026-11-21T00:12:22.721046+00:00",
-  "generated_at_pacific": "2026-11-21 12:12 AM PST",
+  "generated_at": "2026-11-21T06:07:11.531196+00:00",
+  "generated_at_pacific": "2026-11-21 06:09 AM PST",
   "crags": [
     {
       "id": "index",
       "name": "Index Town Wall",
       "region": "Sky Valley / US-2",
-      "signal": "wait",
-      "score": 78,
+      "signal": "unknown",
+      "score": null,
       "reasons": [
-        "Elevated humidity (76%)",
-        "Cold (35.4\u00b0F) \u2014 slow drying"
+        "Data unavailable"
       ],
-      "conditions": {
-        "precip_24h": 0,
-        "precip_48h": 0,
-        "precip_forecast_48h": 0,
-        "humidity": 76,
-        "temp_f": 35.4,
-        "windspeed_mph": 1.1
-      },
+      "conditions": null,
       "streamflow": {
-        "cfs": 1090,
+        "cfs": 1060,
         "trend": "steady",
         "gauge_id": "12134500",
-        "fetched_at": "2026-11-21T00:12:31.080739+00:00"
+        "fetched_at": "2026-11-21T06:07:25.653049+00:00"
       },
       "aqi": null,
       "crag_meta": {
@@ -59,20 +51,12 @@
       "id": "vantage",
       "name": "Vantage",
       "region": "Columbia River Gorge",
-      "signal": "wait",
-      "score": 65,
+      "signal": "unknown",
+      "score": null,
       "reasons": [
-        "Very high humidity (86%) \u2014 rock stays damp",
-        "Cold (33.2\u00b0F) \u2014 slow drying"
+        "Data unavailable"
       ],
-      "conditions": {
-        "precip_24h": 0.03,
-        "precip_48h": 0.08,
-        "precip_forecast_48h": 0,
-        "humidity": 86,
-        "temp_f": 33.2,
-        "windspeed_mph": 7.2
-      },
+      "conditions": null,
       "streamflow": null,
       "aqi": null,
       "crag_meta": {
@@ -87,20 +71,12 @@
       "id": "little-si",
       "name": "Little Si",
       "region": "North Bend / I-90",
-      "signal": "wait",
-      "score": 78,
+      "signal": "unknown",
+      "score": null,
       "reasons": [
-        "Elevated humidity (76%)",
-        "Cold (35.0\u00b0F) \u2014 slow drying"
+        "Data unavailable"
       ],
-      "conditions": {
-        "precip_24h": 0,
-        "precip_48h": 0,
-        "precip_forecast_48h": 0,
-        "humidity": 76,
-        "temp_f": 35.0,
-        "windspeed_mph": 1.8
-      },
+      "conditions": null,
       "streamflow": null,
       "aqi": null,
       "crag_meta": {
@@ -115,20 +91,12 @@
       "id": "mt-erie",
       "name": "Mt. Erie",
       "region": "Anacortes / Fidalgo Island",
-      "signal": "wait",
-      "score": 65,
+      "signal": "unknown",
+      "score": null,
       "reasons": [
-        "Very high humidity (88%) \u2014 rock stays damp",
-        "Cold (35.4\u00b0F) \u2014 slow drying"
+        "Data unavailable"
       ],
-      "conditions": {
-        "precip_24h": 0,
-        "precip_48h": 0,
-        "precip_forecast_48h": 0,
-        "humidity": 88,
-        "temp_f": 35.4,
-        "windspeed_mph": 5.0
-      },
+      "conditions": null,
       "streamflow": null,
       "aqi": null,
       "crag_meta": {
@@ -143,20 +111,12 @@
       "id": "peshastin",
       "name": "Peshastin Pinnacles",
       "region": "Cashmere / US-2",
-      "signal": "no-go",
-      "score": 0,
+      "signal": "unknown",
+      "score": null,
       "reasons": [
-        "Sandstone \u2014 never climb wet, damages rock",
-        "Cold (33.9\u00b0F) \u2014 slow drying"
+        "Data unavailable"
       ],
-      "conditions": {
-        "precip_24h": 0,
-        "precip_48h": 0.11,
-        "precip_forecast_48h": 0,
-        "humidity": 62,
-        "temp_f": 33.9,
-        "windspeed_mph": 3.3
-      },
+      "conditions": null,
       "streamflow": null,
       "aqi": null,
       "crag_meta": {
@@ -171,20 +131,12 @@
       "id": "exit-38",
       "name": "Exit 38",
       "region": "I-90 Corridor / North Bend",
-      "signal": "wait",
-      "score": 78,
+      "signal": "unknown",
+      "score": null,
       "reasons": [
-        "Elevated humidity (81%)",
-        "Cold (36.5\u00b0F) \u2014 slow drying"
+        "Data unavailable"
       ],
-      "conditions": {
-        "precip_24h": 0,
-        "precip_48h": 0,
-        "precip_forecast_48h": 0,
-        "humidity": 81,
-        "temp_f": 36.5,
-        "windspeed_mph": 1.1
-      },
+      "conditions": null,
       "streamflow": null,
       "aqi": null,
       "crag_meta": {
@@ -199,19 +151,12 @@
       "id": "castle-rock",
       "name": "Castle Rock",
       "region": "Tumwater Canyon / US-2",
-      "signal": "wait",
-      "score": 70,
+      "signal": "unknown",
+      "score": null,
       "reasons": [
-        "Below freezing (22.4\u00b0F) \u2014 ice risk"
+        "Data unavailable"
       ],
-      "conditions": {
-        "precip_24h": 0.04,
-        "precip_48h": 0.14,
-        "precip_forecast_48h": 0.16,
-        "humidity": 44,
-        "temp_f": 22.4,
-        "windspeed_mph": 1.1
-      },
+      "conditions": null,
       "streamflow": null,
       "aqi": null,
       "crag_meta": {
@@ -226,19 +171,12 @@
       "id": "smith-rock",
       "name": "Smith Rock",
       "region": "Central Oregon",
-      "signal": "wait",
-      "score": 70,
+      "signal": "unknown",
+      "score": null,
       "reasons": [
-        "Below freezing (29.4\u00b0F) \u2014 ice risk"
+        "Data unavailable"
       ],
-      "conditions": {
-        "precip_24h": 0,
-        "precip_48h": 0.04,
-        "precip_forecast_48h": 0,
-        "humidity": 67,
-        "temp_f": 29.4,
-        "windspeed_mph": 8.6
-      },
+      "conditions": null,
       "streamflow": null,
       "aqi": null,
       "crag_meta": {
@@ -253,20 +191,12 @@
       "id": "squamish-chief",
       "name": "The Chief",
       "region": "Squamish, BC",
-      "signal": "wait",
-      "score": 58,
+      "signal": "unknown",
+      "score": null,
       "reasons": [
-        "Elevated humidity (74%)",
-        "Below freezing (31.9\u00b0F) \u2014 ice risk"
+        "Data unavailable"
       ],
-      "conditions": {
-        "precip_24h": 0,
-        "precip_48h": 0,
-        "precip_forecast_48h": 0.16,
-        "humidity": 74,
-        "temp_f": 31.9,
-        "windspeed_mph": 2.6
-      },
+      "conditions": null,
       "streamflow": null,
       "aqi": null,
       "crag_meta": {
@@ -281,20 +211,12 @@
       "id": "squamish-smoke-bluffs",
       "name": "Smoke Bluffs",
       "region": "Squamish, BC",
-      "signal": "wait",
-      "score": 78,
+      "signal": "unknown",
+      "score": null,
       "reasons": [
-        "Elevated humidity (78%)",
-        "Cold (35.1\u00b0F) \u2014 slow drying"
+        "Data unavailable"
       ],
-      "conditions": {
-        "precip_24h": 0,
-        "precip_48h": 0,
-        "precip_forecast_48h": 0.1,
-        "humidity": 78,
-        "temp_f": 35.1,
-        "windspeed_mph": 4.6
-      },
+      "conditions": null,
       "streamflow": null,
       "aqi": null,
       "crag_meta": {
@@ -309,24 +231,17 @@
       "id": "miller-river",
       "name": "Miller River Boulders",
       "region": "Skykomish / US-2",
-      "signal": "go",
-      "score": 90,
+      "signal": "unknown",
+      "score": null,
       "reasons": [
-        "Cold (36.5\u00b0F) \u2014 slow drying"
+        "Data unavailable"
       ],
-      "conditions": {
-        "precip_24h": 0,
-        "precip_48h": 0,
-        "precip_forecast_48h": 0,
-        "humidity": 66,
-        "temp_f": 36.5,
-        "windspeed_mph": 4.0
-      },
+      "conditions": null,
       "streamflow": {
-        "cfs": 1090,
+        "cfs": 1060,
         "trend": "steady",
         "gauge_id": "12134500",
-        "fetched_at": "2026-11-21T00:12:54.424269+00:00"
+        "fetched_at": "2026-11-21T06:09:29.742265+00:00"
       },
       "aqi": null,
       "crag_meta": {
@@ -335,7 +250,7 @@
         "elevation_ft": 1266,
         "notes": "Deep forest setting, slow drying. 6 sub-areas: Morpheus, Paradise, Prospect, Hideout, Jungle Gym, Apex. 205 problems. Needs significant dry time after rain."
       },
-      "last_go": "2026-11-20T18:05:23.249850+00:00"
+      "last_go": "2026-11-21T00:12:22.721046+00:00"
     }
   ]
 }
