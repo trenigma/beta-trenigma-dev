@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-11-21T06:07:11.531196+00:00",
-  "generated_at_pacific": "2026-11-21 06:09 AM PST",
+  "generated_at": "2026-11-21T12:05:45.914160+00:00",
+  "generated_at_pacific": "2026-11-21 12:08 PM PST",
   "crags": [
     {
       "id": "index",
@@ -13,10 +13,10 @@
       ],
       "conditions": null,
       "streamflow": {
-        "cfs": 1060,
+        "cfs": 1030,
         "trend": "steady",
         "gauge_id": "12134500",
-        "fetched_at": "2026-11-21T06:07:25.653049+00:00"
+        "fetched_at": "2026-11-21T12:06:06.296207+00:00"
       },
       "aqi": null,
       "crag_meta": {
@@ -238,10 +238,10 @@
       ],
       "conditions": null,
       "streamflow": {
-        "cfs": 1060,
+        "cfs": 1030,
         "trend": "steady",
         "gauge_id": "12134500",
-        "fetched_at": "2026-11-21T06:09:29.742265+00:00"
+        "fetched_at": "2026-11-21T12:08:08.096011+00:00"
       },
       "aqi": null,
       "crag_meta": {
