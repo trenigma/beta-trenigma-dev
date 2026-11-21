@@ -1,29 +1,30 @@
 {
-  "generated_at": "2026-11-20T18:05:23.249850+00:00",
-  "generated_at_pacific": "2026-11-20 06:05 PM PST",
+  "generated_at": "2026-11-21T00:12:22.721046+00:00",
+  "generated_at_pacific": "2026-11-21 12:12 AM PST",
   "crags": [
     {
       "id": "index",
       "name": "Index Town Wall",
       "region": "Sky Valley / US-2",
-      "signal": "go",
-      "score": 90,
+      "signal": "wait",
+      "score": 78,
       "reasons": [
-        "Cold (37.1\u00b0F) \u2014 slow drying"
+        "Elevated humidity (76%)",
+        "Cold (35.4\u00b0F) \u2014 slow drying"
       ],
       "conditions": {
         "precip_24h": 0,
         "precip_48h": 0,
         "precip_forecast_48h": 0,
-        "humidity": 67,
-        "temp_f": 37.1,
-        "windspeed_mph": 5.6
+        "humidity": 76,
+        "temp_f": 35.4,
+        "windspeed_mph": 1.1
       },
       "streamflow": {
-        "cfs": 1110,
-        "trend": "falling",
+        "cfs": 1090,
+        "trend": "steady",
         "gauge_id": "12134500",
-        "fetched_at": "2026-11-20T18:05:27.672284+00:00"
+        "fetched_at": "2026-11-21T00:12:31.080739+00:00"
       },
       "aqi": null,
       "crag_meta": {
@@ -32,25 +33,18 @@
         "elevation_ft": 900,
         "notes": "Granite dries fast. Lower Wall sheds water quickly; Upper Wall slower after heavy rain."
       },
-      "last_go": "2026-11-19T12:06:25.204701+00:00"
+      "last_go": "2026-11-20T18:05:23.249850+00:00"
     },
     {
       "id": "leavenworth",
       "name": "Leavenworth",
       "region": "Wenatchee River Valley",
-      "signal": "go",
-      "score": 90,
+      "signal": "unknown",
+      "score": null,
       "reasons": [
-        "Cold (37.7\u00b0F) \u2014 slow drying"
+        "Data unavailable"
       ],
-      "conditions": {
-        "precip_24h": 0,
-        "precip_48h": 0.02,
-        "precip_forecast_48h": 0.07,
-        "humidity": 44,
-        "temp_f": 37.7,
-        "windspeed_mph": 5.1
-      },
+      "conditions": null,
       "streamflow": null,
       "aqi": null,
       "crag_meta": {
@@ -59,25 +53,25 @@
         "elevation_ft": 1100,
         "notes": "Rain shadow effect \u2014 dries significantly faster than west-side crags. Icicle Canyon blocks moisture."
       },
-      "last_go": "2026-11-20T06:07:32.015537+00:00"
+      "last_go": "2026-11-20T18:05:23.249850+00:00"
     },
     {
       "id": "vantage",
       "name": "Vantage",
       "region": "Columbia River Gorge",
       "signal": "wait",
-      "score": 78,
+      "score": 65,
       "reasons": [
-        "Elevated humidity (75%)",
-        "Cold (38.5\u00b0F) \u2014 slow drying"
+        "Very high humidity (86%) \u2014 rock stays damp",
+        "Cold (33.2\u00b0F) \u2014 slow drying"
       ],
       "conditions": {
         "precip_24h": 0.03,
         "precip_48h": 0.08,
         "precip_forecast_48h": 0,
-        "humidity": 75,
-        "temp_f": 38.5,
-        "windspeed_mph": 6.7
+        "humidity": 86,
+        "temp_f": 33.2,
+        "windspeed_mph": 7.2
       },
       "streamflow": null,
       "aqi": null,
@@ -96,16 +90,16 @@
       "signal": "wait",
       "score": 78,
       "reasons": [
-        "Elevated humidity (73%)",
-        "Cold (38.1\u00b0F) \u2014 slow drying"
+        "Elevated humidity (76%)",
+        "Cold (35.0\u00b0F) \u2014 slow drying"
       ],
       "conditions": {
         "precip_24h": 0,
         "precip_48h": 0,
         "precip_forecast_48h": 0,
-        "humidity": 73,
-        "temp_f": 38.1,
-        "windspeed_mph": 5.7
+        "humidity": 76,
+        "temp_f": 35.0,
+        "windspeed_mph": 1.8
       },
       "streamflow": null,
       "aqi": null,
@@ -124,15 +118,15 @@
       "signal": "wait",
       "score": 65,
       "reasons": [
-        "Very high humidity (87%) \u2014 rock stays damp",
-        "Cold (37.1\u00b0F) \u2014 slow drying"
+        "Very high humidity (88%) \u2014 rock stays damp",
+        "Cold (35.4\u00b0F) \u2014 slow drying"
       ],
       "conditions": {
         "precip_24h": 0,
         "precip_48h": 0,
         "precip_forecast_48h": 0,
-        "humidity": 87,
-        "temp_f": 37.1,
+        "humidity": 88,
+        "temp_f": 35.4,
         "windspeed_mph": 5.0
       },
       "streamflow": null,
@@ -153,16 +147,15 @@
       "score": 0,
       "reasons": [
         "Sandstone \u2014 never climb wet, damages rock",
-        "Low humidity (33%) \u2014 good drying conditions",
-        "Cold (38.8\u00b0F) \u2014 slow drying"
+        "Cold (33.9\u00b0F) \u2014 slow drying"
       ],
       "conditions": {
         "precip_24h": 0,
         "precip_48h": 0.11,
-        "precip_forecast_48h": 0.07,
-        "humidity": 33,
-        "temp_f": 38.8,
-        "windspeed_mph": 6.9
+        "precip_forecast_48h": 0,
+        "humidity": 62,
+        "temp_f": 33.9,
+        "windspeed_mph": 3.3
       },
       "streamflow": null,
       "aqi": null,
@@ -179,18 +172,18 @@
       "name": "Exit 38",
       "region": "I-90 Corridor / North Bend",
       "signal": "wait",
-      "score": 65,
+      "score": 78,
       "reasons": [
-        "Very high humidity (90%) \u2014 rock stays damp",
-        "Cold (36.6\u00b0F) \u2014 slow drying"
+        "Elevated humidity (81%)",
+        "Cold (36.5\u00b0F) \u2014 slow drying"
       ],
       "conditions": {
         "precip_24h": 0,
         "precip_48h": 0,
         "precip_forecast_48h": 0,
-        "humidity": 90,
-        "temp_f": 36.6,
-        "windspeed_mph": 7.9
+        "humidity": 81,
+        "temp_f": 36.5,
+        "windspeed_mph": 1.1
       },
       "streamflow": null,
       "aqi": null,
@@ -209,15 +202,15 @@
       "signal": "wait",
       "score": 70,
       "reasons": [
-        "Below freezing (22.7\u00b0F) \u2014 ice risk"
+        "Below freezing (22.4\u00b0F) \u2014 ice risk"
       ],
       "conditions": {
         "precip_24h": 0.04,
         "precip_48h": 0.14,
-        "precip_forecast_48h": 0.34,
-        "humidity": 43,
-        "temp_f": 22.7,
-        "windspeed_mph": 15.6
+        "precip_forecast_48h": 0.16,
+        "humidity": 44,
+        "temp_f": 22.4,
+        "windspeed_mph": 1.1
       },
       "streamflow": null,
       "aqi": null,
@@ -233,18 +226,18 @@
       "id": "smith-rock",
       "name": "Smith Rock",
       "region": "Central Oregon",
-      "signal": "go",
-      "score": 90,
+      "signal": "wait",
+      "score": 70,
       "reasons": [
-        "Cold (34.6\u00b0F) \u2014 slow drying"
+        "Below freezing (29.4\u00b0F) \u2014 ice risk"
       ],
       "conditions": {
         "precip_24h": 0,
         "precip_48h": 0.04,
         "precip_forecast_48h": 0,
-        "humidity": 56,
-        "temp_f": 34.6,
-        "windspeed_mph": 3.4
+        "humidity": 67,
+        "temp_f": 29.4,
+        "windspeed_mph": 8.6
       },
       "streamflow": null,
       "aqi": null,
@@ -254,25 +247,25 @@
         "elevation_ft": 3200,
         "notes": "High desert volcanic tuff dries fast and the climate is much drier than PNW. Often climbable year-round. Watch for seasonal raptor closures (Feb-Aug on some walls). Juniper Basin area dries fastest."
       },
-      "last_go": "2026-11-19T12:06:25.204701+00:00"
+      "last_go": "2026-11-20T18:05:23.249850+00:00"
     },
     {
       "id": "squamish-chief",
       "name": "The Chief",
       "region": "Squamish, BC",
       "signal": "wait",
-      "score": 78,
+      "score": 58,
       "reasons": [
-        "Elevated humidity (80%)",
-        "Cold (33.2\u00b0F) \u2014 slow drying"
+        "Elevated humidity (74%)",
+        "Below freezing (31.9\u00b0F) \u2014 ice risk"
       ],
       "conditions": {
         "precip_24h": 0,
         "precip_48h": 0,
-        "precip_forecast_48h": 0.06,
-        "humidity": 80,
-        "temp_f": 33.2,
-        "windspeed_mph": 1.1
+        "precip_forecast_48h": 0.16,
+        "humidity": 74,
+        "temp_f": 31.9,
+        "windspeed_mph": 2.6
       },
       "streamflow": null,
       "aqi": null,
@@ -291,16 +284,16 @@
       "signal": "wait",
       "score": 78,
       "reasons": [
-        "Elevated humidity (82%)",
-        "Cold (38.0\u00b0F) \u2014 slow drying"
+        "Elevated humidity (78%)",
+        "Cold (35.1\u00b0F) \u2014 slow drying"
       ],
       "conditions": {
         "precip_24h": 0,
         "precip_48h": 0,
-        "precip_forecast_48h": 0,
-        "humidity": 82,
-        "temp_f": 38.0,
-        "windspeed_mph": 3.5
+        "precip_forecast_48h": 0.1,
+        "humidity": 78,
+        "temp_f": 35.1,
+        "windspeed_mph": 4.6
       },
       "streamflow": null,
       "aqi": null,
@@ -319,17 +312,22 @@
       "signal": "go",
       "score": 90,
       "reasons": [
-        "Cold (37.2\u00b0F) \u2014 slow drying"
+        "Cold (36.5\u00b0F) \u2014 slow drying"
       ],
       "conditions": {
         "precip_24h": 0,
         "precip_48h": 0,
         "precip_forecast_48h": 0,
-        "humidity": 54,
-        "temp_f": 37.2,
-        "windspeed_mph": 5.2
+        "humidity": 66,
+        "temp_f": 36.5,
+        "windspeed_mph": 4.0
       },
-      "streamflow": null,
+      "streamflow": {
+        "cfs": 1090,
+        "trend": "steady",
+        "gauge_id": "12134500",
+        "fetched_at": "2026-11-21T00:12:54.424269+00:00"
+      },
       "aqi": null,
       "crag_meta": {
         "rock_type": "granodiorite",
@@ -337,7 +335,7 @@
         "elevation_ft": 1266,
         "notes": "Deep forest setting, slow drying. 6 sub-areas: Morpheus, Paradise, Prospect, Hideout, Jungle Gym, Apex. 205 problems. Needs significant dry time after rain."
       },
-      "last_go": "2026-11-20T06:07:32.015537+00:00"
+      "last_go": "2026-11-20T18:05:23.249850+00:00"
     }
   ]
 }
