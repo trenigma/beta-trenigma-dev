@@ -1,29 +1,29 @@
 {
-  "generated_at": "2026-11-23T06:10:57.582670+00:00",
-  "generated_at_pacific": "2026-11-23 06:11 AM PST",
+  "generated_at": "2026-11-23T12:07:02.886275+00:00",
+  "generated_at_pacific": "2026-11-23 12:07 PM PST",
   "crags": [
     {
       "id": "index",
       "name": "Index Town Wall",
       "region": "Sky Valley / US-2",
       "signal": "go",
-      "score": 100,
+      "score": 90,
       "reasons": [
-        "Dry conditions, good temps"
+        "1.03\" rain forecasted \u2014 conditions deteriorating"
       ],
       "conditions": {
-        "precip_24h": 0.05,
-        "precip_48h": 0.05,
-        "precip_forecast_48h": 0.03,
-        "humidity": 54,
-        "temp_f": 42.7,
-        "windspeed_mph": 8.0
+        "precip_24h": 0.03,
+        "precip_48h": 0.08,
+        "precip_forecast_48h": 1.03,
+        "humidity": 48,
+        "temp_f": 50.8,
+        "windspeed_mph": 8.8
       },
       "streamflow": {
-        "cfs": 904,
-        "trend": "falling",
+        "cfs": 889,
+        "trend": "steady",
         "gauge_id": "12134500",
-        "fetched_at": "2026-11-23T06:11:05.699938+00:00"
+        "fetched_at": "2026-11-23T12:07:11.161794+00:00"
       },
       "aqi": null,
       "crag_meta": {
@@ -32,25 +32,24 @@
         "elevation_ft": 900,
         "notes": "Granite dries fast. Lower Wall sheds water quickly; Upper Wall slower after heavy rain."
       },
-      "last_go": "2026-11-22T18:04:44.401036+00:00"
+      "last_go": "2026-11-23T06:10:57.582670+00:00"
     },
     {
       "id": "leavenworth",
       "name": "Leavenworth",
       "region": "Wenatchee River Valley",
-      "signal": "wait",
-      "score": 65,
+      "signal": "go",
+      "score": 88,
       "reasons": [
-        "Very high humidity (94%) \u2014 rock stays damp",
-        "Cold (33.7\u00b0F) \u2014 slow drying"
+        "Elevated humidity (74%)"
       ],
       "conditions": {
         "precip_24h": 0,
         "precip_48h": 0,
-        "precip_forecast_48h": 0,
-        "humidity": 94,
-        "temp_f": 33.7,
-        "windspeed_mph": 3.8
+        "precip_forecast_48h": 0.22,
+        "humidity": 74,
+        "temp_f": 40.9,
+        "windspeed_mph": 6.7
       },
       "streamflow": null,
       "aqi": null,
@@ -66,19 +65,19 @@
       "id": "vantage",
       "name": "Vantage",
       "region": "Columbia River Gorge",
-      "signal": "wait",
-      "score": 65,
+      "signal": "go",
+      "score": 87,
       "reasons": [
-        "Very high humidity (86%) \u2014 rock stays damp",
-        "Cold (36.0\u00b0F) \u2014 slow drying"
+        "0.14\" rain in last 24h (light)",
+        "Elevated humidity (78%)"
       ],
       "conditions": {
-        "precip_24h": 0.04,
-        "precip_48h": 0.04,
-        "precip_forecast_48h": 0.14,
-        "humidity": 86,
-        "temp_f": 36.0,
-        "windspeed_mph": 2.2
+        "precip_24h": 0.14,
+        "precip_48h": 0.18,
+        "precip_forecast_48h": 0,
+        "humidity": 78,
+        "temp_f": 42.3,
+        "windspeed_mph": 3.7
       },
       "streamflow": null,
       "aqi": null,
@@ -95,17 +94,17 @@
       "name": "Little Si",
       "region": "North Bend / I-90",
       "signal": "go",
-      "score": 100,
+      "score": 90,
       "reasons": [
-        "Dry conditions, good temps"
+        "0.59\" rain forecasted \u2014 conditions deteriorating"
       ],
       "conditions": {
         "precip_24h": 0,
         "precip_48h": 0,
-        "precip_forecast_48h": 0.03,
-        "humidity": 51,
-        "temp_f": 42.7,
-        "windspeed_mph": 12.2
+        "precip_forecast_48h": 0.59,
+        "humidity": 45,
+        "temp_f": 49.5,
+        "windspeed_mph": 13.5
       },
       "streamflow": null,
       "aqi": null,
@@ -115,7 +114,7 @@
         "elevation_ft": 1200,
         "notes": "Wetter microclimate than Index. Higher humidity typical. Needs more drying time."
       },
-      "last_go": "2026-11-22T18:04:44.401036+00:00"
+      "last_go": "2026-11-23T06:10:57.582670+00:00"
     },
     {
       "id": "mt-erie",
@@ -129,10 +128,10 @@
       "conditions": {
         "precip_24h": 0,
         "precip_48h": 0,
-        "precip_forecast_48h": 0.02,
-        "humidity": 63,
-        "temp_f": 41.7,
-        "windspeed_mph": 8.6
+        "precip_forecast_48h": 0,
+        "humidity": 54,
+        "temp_f": 48.4,
+        "windspeed_mph": 11.6
       },
       "streamflow": null,
       "aqi": null,
@@ -142,25 +141,25 @@
         "elevation_ft": 1270,
         "notes": "Island climate \u2014 high humidity, slow drying. Needs 48h+ after rain to be reliable."
       },
-      "last_go": "2026-11-22T18:04:44.401036+00:00"
+      "last_go": "2026-11-23T06:10:57.582670+00:00"
     },
     {
       "id": "peshastin",
       "name": "Peshastin Pinnacles",
       "region": "Cashmere / US-2",
-      "signal": "no-go",
-      "score": 45,
+      "signal": "wait",
+      "score": 78,
       "reasons": [
-        "Very high humidity (90%) \u2014 rock stays damp",
-        "Below freezing (31.7\u00b0F) \u2014 ice risk"
+        "Elevated humidity (80%)",
+        "Cold (37.1\u00b0F) \u2014 slow drying"
       ],
       "conditions": {
-        "precip_24h": 0,
-        "precip_48h": 0,
-        "precip_forecast_48h": 0.02,
-        "humidity": 90,
-        "temp_f": 31.7,
-        "windspeed_mph": 4.3
+        "precip_24h": 0.02,
+        "precip_48h": 0.02,
+        "precip_forecast_48h": 0.15,
+        "humidity": 80,
+        "temp_f": 37.1,
+        "windspeed_mph": 9.2
       },
       "streamflow": null,
       "aqi": null,
@@ -177,17 +176,17 @@
       "name": "Exit 38",
       "region": "I-90 Corridor / North Bend",
       "signal": "go",
-      "score": 90,
+      "score": 100,
       "reasons": [
-        "Cold (37.3\u00b0F) \u2014 slow drying"
+        "Dry conditions, good temps"
       ],
       "conditions": {
-        "precip_24h": 0.02,
+        "precip_24h": 0,
         "precip_48h": 0.02,
-        "precip_forecast_48h": 0,
-        "humidity": 68,
-        "temp_f": 37.3,
-        "windspeed_mph": 14.7
+        "precip_forecast_48h": 0.32,
+        "humidity": 57,
+        "temp_f": 44.3,
+        "windspeed_mph": 13.8
       },
       "streamflow": null,
       "aqi": null,
@@ -197,25 +196,26 @@
         "elevation_ft": 1400,
         "notes": "Closest sport climbing to Seattle. Metamorphic andesite dries slower than granite. Many walls face north or are shaded by forest \u2014 factor in extra drying time. Deception Crags is most popular; Far Side and Mt Washington have longer approaches."
       },
-      "last_go": "2026-11-19T12:06:25.204701+00:00"
+      "last_go": "2026-11-23T06:10:57.582670+00:00"
     },
     {
       "id": "castle-rock",
       "name": "Castle Rock",
       "region": "Tumwater Canyon / US-2",
       "signal": "no-go",
-      "score": 45,
+      "score": 48,
       "reasons": [
-        "Very high humidity (88%) \u2014 rock stays damp",
-        "Below freezing (18.6\u00b0F) \u2014 ice risk"
+        "Elevated humidity (84%)",
+        "Below freezing (23.1\u00b0F) \u2014 ice risk",
+        "0.55\" rain forecasted \u2014 conditions deteriorating"
       ],
       "conditions": {
-        "precip_24h": 0.05,
-        "precip_48h": 0.05,
-        "precip_forecast_48h": 0.02,
-        "humidity": 88,
-        "temp_f": 18.6,
-        "windspeed_mph": 9.5
+        "precip_24h": 0.02,
+        "precip_48h": 0.06,
+        "precip_forecast_48h": 0.55,
+        "humidity": 84,
+        "temp_f": 23.1,
+        "windspeed_mph": 10.6
       },
       "streamflow": null,
       "aqi": null,
@@ -231,18 +231,18 @@
       "id": "smith-rock",
       "name": "Smith Rock",
       "region": "Central Oregon",
-      "signal": "wait",
-      "score": 70,
+      "signal": "go",
+      "score": 100,
       "reasons": [
-        "Below freezing (28.9\u00b0F) \u2014 ice risk"
+        "Low humidity (33%) \u2014 good drying conditions"
       ],
       "conditions": {
         "precip_24h": 0,
         "precip_48h": 0,
         "precip_forecast_48h": 0,
-        "humidity": 62,
-        "temp_f": 28.9,
-        "windspeed_mph": 10.0
+        "humidity": 33,
+        "temp_f": 46.3,
+        "windspeed_mph": 12.5
       },
       "streamflow": null,
       "aqi": null,
@@ -261,17 +261,17 @@
       "signal": "wait",
       "score": 55,
       "reasons": [
-        "Very high humidity (91%) \u2014 rock stays damp",
-        "Cold (34.3\u00b0F) \u2014 slow drying",
-        "2.23\" rain forecasted \u2014 conditions deteriorating"
+        "Very high humidity (87%) \u2014 rock stays damp",
+        "Cold (38.7\u00b0F) \u2014 slow drying",
+        "5.03\" rain forecasted \u2014 conditions deteriorating"
       ],
       "conditions": {
-        "precip_24h": 0.04,
-        "precip_48h": 0.04,
-        "precip_forecast_48h": 2.23,
-        "humidity": 91,
-        "temp_f": 34.3,
-        "windspeed_mph": 4.1
+        "precip_24h": 0.02,
+        "precip_48h": 0.06,
+        "precip_forecast_48h": 5.03,
+        "humidity": 87,
+        "temp_f": 38.7,
+        "windspeed_mph": 3.2
       },
       "streamflow": null,
       "aqi": null,
@@ -287,19 +287,18 @@
       "id": "squamish-smoke-bluffs",
       "name": "Smoke Bluffs",
       "region": "Squamish, BC",
-      "signal": "wait",
-      "score": 78,
+      "signal": "go",
+      "score": 90,
       "reasons": [
-        "Elevated humidity (74%)",
-        "0.62\" rain forecasted \u2014 conditions deteriorating"
+        "2.42\" rain forecasted \u2014 conditions deteriorating"
       ],
       "conditions": {
         "precip_24h": 0,
         "precip_48h": 0,
-        "precip_forecast_48h": 0.62,
-        "humidity": 74,
-        "temp_f": 40.8,
-        "windspeed_mph": 1.1
+        "precip_forecast_48h": 2.42,
+        "humidity": 68,
+        "temp_f": 45.1,
+        "windspeed_mph": 1.8
       },
       "streamflow": null,
       "aqi": null,
@@ -321,18 +320,18 @@
         "Dry conditions, good temps"
       ],
       "conditions": {
-        "precip_24h": 0.06,
+        "precip_24h": 0,
         "precip_48h": 0.06,
-        "precip_forecast_48h": 0,
-        "humidity": 53,
-        "temp_f": 40.9,
-        "windspeed_mph": 7.1
+        "precip_forecast_48h": 0.4,
+        "humidity": 48,
+        "temp_f": 48.7,
+        "windspeed_mph": 2.8
       },
       "streamflow": {
-        "cfs": 904,
-        "trend": "falling",
+        "cfs": 889,
+        "trend": "steady",
         "gauge_id": "12134500",
-        "fetched_at": "2026-11-23T06:11:15.176444+00:00"
+        "fetched_at": "2026-11-23T12:07:25.908954+00:00"
       },
       "aqi": null,
       "crag_meta": {
@@ -341,7 +340,7 @@
         "elevation_ft": 1266,
         "notes": "Deep forest setting, slow drying. 6 sub-areas: Morpheus, Paradise, Prospect, Hideout, Jungle Gym, Apex. 205 problems. Needs significant dry time after rain."
       },
-      "last_go": "2026-11-22T18:04:44.401036+00:00"
+      "last_go": "2026-11-23T06:10:57.582670+00:00"
     }
   ]
 }
