@@ -1,22 +1,29 @@
 {
-  "generated_at": "2026-11-23T00:12:47.066296+00:00",
-  "generated_at_pacific": "2026-11-23 12:14 AM PST",
+  "generated_at": "2026-11-23T06:10:57.582670+00:00",
+  "generated_at_pacific": "2026-11-23 06:11 AM PST",
   "crags": [
     {
       "id": "index",
       "name": "Index Town Wall",
       "region": "Sky Valley / US-2",
-      "signal": "unknown",
-      "score": null,
+      "signal": "go",
+      "score": 100,
       "reasons": [
-        "Data unavailable"
+        "Dry conditions, good temps"
       ],
-      "conditions": null,
+      "conditions": {
+        "precip_24h": 0.05,
+        "precip_48h": 0.05,
+        "precip_forecast_48h": 0.03,
+        "humidity": 54,
+        "temp_f": 42.7,
+        "windspeed_mph": 8.0
+      },
       "streamflow": {
-        "cfs": 928,
-        "trend": "steady",
+        "cfs": 904,
+        "trend": "falling",
         "gauge_id": "12134500",
-        "fetched_at": "2026-11-23T00:13:01.269599+00:00"
+        "fetched_at": "2026-11-23T06:11:05.699938+00:00"
       },
       "aqi": null,
       "crag_meta": {
@@ -31,12 +38,20 @@
       "id": "leavenworth",
       "name": "Leavenworth",
       "region": "Wenatchee River Valley",
-      "signal": "unknown",
-      "score": null,
+      "signal": "wait",
+      "score": 65,
       "reasons": [
-        "Data unavailable"
+        "Very high humidity (94%) \u2014 rock stays damp",
+        "Cold (33.7\u00b0F) \u2014 slow drying"
       ],
-      "conditions": null,
+      "conditions": {
+        "precip_24h": 0,
+        "precip_48h": 0,
+        "precip_forecast_48h": 0,
+        "humidity": 94,
+        "temp_f": 33.7,
+        "windspeed_mph": 3.8
+      },
       "streamflow": null,
       "aqi": null,
       "crag_meta": {
@@ -51,12 +66,20 @@
       "id": "vantage",
       "name": "Vantage",
       "region": "Columbia River Gorge",
-      "signal": "unknown",
-      "score": null,
+      "signal": "wait",
+      "score": 65,
       "reasons": [
-        "Data unavailable"
+        "Very high humidity (86%) \u2014 rock stays damp",
+        "Cold (36.0\u00b0F) \u2014 slow drying"
       ],
-      "conditions": null,
+      "conditions": {
+        "precip_24h": 0.04,
+        "precip_48h": 0.04,
+        "precip_forecast_48h": 0.14,
+        "humidity": 86,
+        "temp_f": 36.0,
+        "windspeed_mph": 2.2
+      },
       "streamflow": null,
       "aqi": null,
       "crag_meta": {
@@ -71,12 +94,19 @@
       "id": "little-si",
       "name": "Little Si",
       "region": "North Bend / I-90",
-      "signal": "unknown",
-      "score": null,
+      "signal": "go",
+      "score": 100,
       "reasons": [
-        "Data unavailable"
+        "Dry conditions, good temps"
       ],
-      "conditions": null,
+      "conditions": {
+        "precip_24h": 0,
+        "precip_48h": 0,
+        "precip_forecast_48h": 0.03,
+        "humidity": 51,
+        "temp_f": 42.7,
+        "windspeed_mph": 12.2
+      },
       "streamflow": null,
       "aqi": null,
       "crag_meta": {
@@ -91,12 +121,19 @@
       "id": "mt-erie",
       "name": "Mt. Erie",
       "region": "Anacortes / Fidalgo Island",
-      "signal": "unknown",
-      "score": null,
+      "signal": "go",
+      "score": 100,
       "reasons": [
-        "Data unavailable"
+        "Dry conditions, good temps"
       ],
-      "conditions": null,
+      "conditions": {
+        "precip_24h": 0,
+        "precip_48h": 0,
+        "precip_forecast_48h": 0.02,
+        "humidity": 63,
+        "temp_f": 41.7,
+        "windspeed_mph": 8.6
+      },
       "streamflow": null,
       "aqi": null,
       "crag_meta": {
@@ -111,12 +148,20 @@
       "id": "peshastin",
       "name": "Peshastin Pinnacles",
       "region": "Cashmere / US-2",
-      "signal": "unknown",
-      "score": null,
+      "signal": "no-go",
+      "score": 45,
       "reasons": [
-        "Data unavailable"
+        "Very high humidity (90%) \u2014 rock stays damp",
+        "Below freezing (31.7\u00b0F) \u2014 ice risk"
       ],
-      "conditions": null,
+      "conditions": {
+        "precip_24h": 0,
+        "precip_48h": 0,
+        "precip_forecast_48h": 0.02,
+        "humidity": 90,
+        "temp_f": 31.7,
+        "windspeed_mph": 4.3
+      },
       "streamflow": null,
       "aqi": null,
       "crag_meta": {
@@ -131,12 +176,19 @@
       "id": "exit-38",
       "name": "Exit 38",
       "region": "I-90 Corridor / North Bend",
-      "signal": "unknown",
-      "score": null,
+      "signal": "go",
+      "score": 90,
       "reasons": [
-        "Data unavailable"
+        "Cold (37.3\u00b0F) \u2014 slow drying"
       ],
-      "conditions": null,
+      "conditions": {
+        "precip_24h": 0.02,
+        "precip_48h": 0.02,
+        "precip_forecast_48h": 0,
+        "humidity": 68,
+        "temp_f": 37.3,
+        "windspeed_mph": 14.7
+      },
       "streamflow": null,
       "aqi": null,
       "crag_meta": {
@@ -151,12 +203,20 @@
       "id": "castle-rock",
       "name": "Castle Rock",
       "region": "Tumwater Canyon / US-2",
-      "signal": "unknown",
-      "score": null,
+      "signal": "no-go",
+      "score": 45,
       "reasons": [
-        "Data unavailable"
+        "Very high humidity (88%) \u2014 rock stays damp",
+        "Below freezing (18.6\u00b0F) \u2014 ice risk"
       ],
-      "conditions": null,
+      "conditions": {
+        "precip_24h": 0.05,
+        "precip_48h": 0.05,
+        "precip_forecast_48h": 0.02,
+        "humidity": 88,
+        "temp_f": 18.6,
+        "windspeed_mph": 9.5
+      },
       "streamflow": null,
       "aqi": null,
       "crag_meta": {
@@ -171,12 +231,19 @@
       "id": "smith-rock",
       "name": "Smith Rock",
       "region": "Central Oregon",
-      "signal": "unknown",
-      "score": null,
+      "signal": "wait",
+      "score": 70,
       "reasons": [
-        "Data unavailable"
+        "Below freezing (28.9\u00b0F) \u2014 ice risk"
       ],
-      "conditions": null,
+      "conditions": {
+        "precip_24h": 0,
+        "precip_48h": 0,
+        "precip_forecast_48h": 0,
+        "humidity": 62,
+        "temp_f": 28.9,
+        "windspeed_mph": 10.0
+      },
       "streamflow": null,
       "aqi": null,
       "crag_meta": {
@@ -191,12 +258,21 @@
       "id": "squamish-chief",
       "name": "The Chief",
       "region": "Squamish, BC",
-      "signal": "unknown",
-      "score": null,
+      "signal": "wait",
+      "score": 55,
       "reasons": [
-        "Data unavailable"
+        "Very high humidity (91%) \u2014 rock stays damp",
+        "Cold (34.3\u00b0F) \u2014 slow drying",
+        "2.23\" rain forecasted \u2014 conditions deteriorating"
       ],
-      "conditions": null,
+      "conditions": {
+        "precip_24h": 0.04,
+        "precip_48h": 0.04,
+        "precip_forecast_48h": 2.23,
+        "humidity": 91,
+        "temp_f": 34.3,
+        "windspeed_mph": 4.1
+      },
       "streamflow": null,
       "aqi": null,
       "crag_meta": {
@@ -211,12 +287,20 @@
       "id": "squamish-smoke-bluffs",
       "name": "Smoke Bluffs",
       "region": "Squamish, BC",
-      "signal": "unknown",
-      "score": null,
+      "signal": "wait",
+      "score": 78,
       "reasons": [
-        "Data unavailable"
+        "Elevated humidity (74%)",
+        "0.62\" rain forecasted \u2014 conditions deteriorating"
       ],
-      "conditions": null,
+      "conditions": {
+        "precip_24h": 0,
+        "precip_48h": 0,
+        "precip_forecast_48h": 0.62,
+        "humidity": 74,
+        "temp_f": 40.8,
+        "windspeed_mph": 1.1
+      },
       "streamflow": null,
       "aqi": null,
       "crag_meta": {
@@ -231,17 +315,24 @@
       "id": "miller-river",
       "name": "Miller River Boulders",
       "region": "Skykomish / US-2",
-      "signal": "unknown",
-      "score": null,
+      "signal": "go",
+      "score": 100,
       "reasons": [
-        "Data unavailable"
+        "Dry conditions, good temps"
       ],
-      "conditions": null,
+      "conditions": {
+        "precip_24h": 0.06,
+        "precip_48h": 0.06,
+        "precip_forecast_48h": 0,
+        "humidity": 53,
+        "temp_f": 40.9,
+        "windspeed_mph": 7.1
+      },
       "streamflow": {
-        "cfs": 928,
-        "trend": "steady",
+        "cfs": 904,
+        "trend": "falling",
         "gauge_id": "12134500",
-        "fetched_at": "2026-11-23T00:14:57.163034+00:00"
+        "fetched_at": "2026-11-23T06:11:15.176444+00:00"
       },
       "aqi": null,
       "crag_meta": {
