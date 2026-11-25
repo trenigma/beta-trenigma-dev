@@ -1,25 +1,24 @@
 {
-  "generated_at": "2026-11-25T12:07:01.769344+00:00",
-  "generated_at_pacific": "2026-11-25 12:07 PM PST",
+  "generated_at": "2026-11-25T18:05:01.549387+00:00",
+  "generated_at_pacific": "2026-11-25 06:05 PM PST",
   "crags": [
     {
       "id": "index",
       "name": "Index Town Wall",
       "region": "Sky Valley / US-2",
-      "signal": "wait",
-      "score": 76,
+      "signal": "go",
+      "score": 88,
       "reasons": [
         "0.13\" rain in last 24h (light)",
-        "Elevated humidity (80%)",
-        "3.7\" rain forecasted \u2014 conditions deteriorating"
+        "2.65\" rain forecasted \u2014 conditions deteriorating"
       ],
       "conditions": {
         "precip_24h": 0.13,
         "precip_48h": 0.13,
-        "precip_forecast_48h": 3.7,
-        "humidity": 80,
-        "temp_f": 52.6,
-        "windspeed_mph": 8.0
+        "precip_forecast_48h": 2.65,
+        "humidity": 61,
+        "temp_f": 52.7,
+        "windspeed_mph": 6.0
       },
       "streamflow": null,
       "aqi": null,
@@ -44,10 +43,10 @@
       "conditions": {
         "precip_24h": 0.36,
         "precip_48h": 0.36,
-        "precip_forecast_48h": 0.18,
+        "precip_forecast_48h": 0.35,
         "humidity": 91,
-        "temp_f": 43.1,
-        "windspeed_mph": 4.9
+        "temp_f": 44.0,
+        "windspeed_mph": 7.9
       },
       "streamflow": null,
       "aqi": null,
@@ -66,15 +65,15 @@
       "signal": "go",
       "score": 88,
       "reasons": [
-        "Elevated humidity (77%)"
+        "Elevated humidity (75%)"
       ],
       "conditions": {
         "precip_24h": 0.1,
         "precip_48h": 0.1,
         "precip_forecast_48h": 0.03,
-        "humidity": 77,
-        "temp_f": 49.7,
-        "windspeed_mph": 4.6
+        "humidity": 75,
+        "temp_f": 44.2,
+        "windspeed_mph": 3.6
       },
       "streamflow": null,
       "aqi": null,
@@ -84,26 +83,25 @@
         "elevation_ft": 800,
         "notes": "Desert climate, basalt dries fast. Wind is a major factor \u2014 often climbable when west-side crags are soaked."
       },
-      "last_go": "2026-11-25T06:08:00.838560+00:00"
+      "last_go": "2026-11-25T12:07:01.769344+00:00"
     },
     {
       "id": "little-si",
       "name": "Little Si",
       "region": "North Bend / I-90",
       "signal": "go",
-      "score": 93,
+      "score": 88,
       "reasons": [
         "0.12\" rain in last 24h (light)",
-        "Ideal temp (56.9\u00b0F)",
-        "2.13\" rain forecasted \u2014 conditions deteriorating"
+        "0.9\" rain forecasted \u2014 conditions deteriorating"
       ],
       "conditions": {
         "precip_24h": 0.12,
         "precip_48h": 0.12,
-        "precip_forecast_48h": 2.13,
-        "humidity": 58,
-        "temp_f": 56.9,
-        "windspeed_mph": 6.2
+        "precip_forecast_48h": 0.9,
+        "humidity": 50,
+        "temp_f": 54.0,
+        "windspeed_mph": 7.9
       },
       "streamflow": null,
       "aqi": null,
@@ -113,24 +111,24 @@
         "elevation_ft": 1200,
         "notes": "Wetter microclimate than Index. Higher humidity typical. Needs more drying time."
       },
-      "last_go": "2026-11-25T06:08:00.838560+00:00"
+      "last_go": "2026-11-25T12:07:01.769344+00:00"
     },
     {
       "id": "mt-erie",
       "name": "Mt. Erie",
       "region": "Anacortes / Fidalgo Island",
       "signal": "go",
-      "score": 88,
+      "score": 100,
       "reasons": [
-        "Elevated humidity (81%)"
+        "Dry conditions, good temps"
       ],
       "conditions": {
         "precip_24h": 0.02,
         "precip_48h": 0.02,
-        "precip_forecast_48h": 0.5,
-        "humidity": 81,
-        "temp_f": 54.6,
-        "windspeed_mph": 17.0
+        "precip_forecast_48h": 0.26,
+        "humidity": 68,
+        "temp_f": 52.9,
+        "windspeed_mph": 14.2
       },
       "streamflow": null,
       "aqi": null,
@@ -140,7 +138,7 @@
         "elevation_ft": 1270,
         "notes": "Island climate \u2014 high humidity, slow drying. Needs 48h+ after rain to be reliable."
       },
-      "last_go": "2026-11-25T06:08:00.838560+00:00"
+      "last_go": "2026-11-25T12:07:01.769344+00:00"
     },
     {
       "id": "peshastin",
@@ -151,15 +149,15 @@
       "reasons": [
         "0.36\" rain in last 24h (light)",
         "Sandstone \u2014 never climb wet, damages rock",
-        "Elevated humidity (83%)"
+        "Elevated humidity (82%)"
       ],
       "conditions": {
         "precip_24h": 0.36,
         "precip_48h": 0.36,
-        "precip_forecast_48h": 0.2,
-        "humidity": 83,
-        "temp_f": 42.3,
-        "windspeed_mph": 5.2
+        "precip_forecast_48h": 0.41,
+        "humidity": 82,
+        "temp_f": 40.7,
+        "windspeed_mph": 4.3
       },
       "streamflow": null,
       "aqi": null,
@@ -175,20 +173,19 @@
       "id": "exit-38",
       "name": "Exit 38",
       "region": "I-90 Corridor / North Bend",
-      "signal": "wait",
-      "score": 70,
+      "signal": "go",
+      "score": 82,
       "reasons": [
         "0.32\" rain in last 24h (light)",
-        "Elevated humidity (71%)",
-        "1.62\" rain forecasted \u2014 conditions deteriorating"
+        "1.55\" rain forecasted \u2014 conditions deteriorating"
       ],
       "conditions": {
         "precip_24h": 0.32,
         "precip_48h": 0.32,
-        "precip_forecast_48h": 1.62,
-        "humidity": 71,
-        "temp_f": 52.9,
-        "windspeed_mph": 4.8
+        "precip_forecast_48h": 1.55,
+        "humidity": 62,
+        "temp_f": 49.8,
+        "windspeed_mph": 7.2
       },
       "streamflow": null,
       "aqi": null,
@@ -204,21 +201,20 @@
       "id": "castle-rock",
       "name": "Castle Rock",
       "region": "Tumwater Canyon / US-2",
-      "signal": "no-go",
-      "score": 40,
+      "signal": "wait",
+      "score": 52,
       "reasons": [
         "0.48\" rain in last 24h (light)",
-        "Elevated humidity (77%)",
-        "Below freezing (31.6\u00b0F) \u2014 ice risk",
-        "0.82\" rain forecasted \u2014 conditions deteriorating"
+        "Below freezing (31.3\u00b0F) \u2014 ice risk",
+        "0.91\" rain forecasted \u2014 conditions deteriorating"
       ],
       "conditions": {
         "precip_24h": 0.48,
         "precip_48h": 0.5,
-        "precip_forecast_48h": 0.82,
-        "humidity": 77,
-        "temp_f": 31.6,
-        "windspeed_mph": 6.3
+        "precip_forecast_48h": 0.91,
+        "humidity": 61,
+        "temp_f": 31.3,
+        "windspeed_mph": 6.4
       },
       "streamflow": null,
       "aqi": null,
@@ -237,15 +233,15 @@
       "signal": "go",
       "score": 100,
       "reasons": [
-        "Ideal temp (55.8\u00b0F)"
+        "Dry conditions, good temps"
       ],
       "conditions": {
         "precip_24h": 0,
         "precip_48h": 0,
         "precip_forecast_48h": 0,
-        "humidity": 40,
-        "temp_f": 55.8,
-        "windspeed_mph": 11.4
+        "humidity": 46,
+        "temp_f": 50.4,
+        "windspeed_mph": 7.9
       },
       "streamflow": null,
       "aqi": null,
@@ -255,26 +251,26 @@
         "elevation_ft": 3200,
         "notes": "High desert volcanic tuff dries fast and the climate is much drier than PNW. Often climbable year-round. Watch for seasonal raptor closures (Feb-Aug on some walls). Juniper Basin area dries fastest."
       },
-      "last_go": "2026-11-25T06:08:00.838560+00:00"
+      "last_go": "2026-11-25T12:07:01.769344+00:00"
     },
     {
       "id": "squamish-chief",
       "name": "The Chief",
       "region": "Squamish, BC",
       "signal": "no-go",
-      "score": 5,
+      "score": 18,
       "reasons": [
         "2.4\" rain in last 24h",
-        "Very high humidity (86%) \u2014 rock stays damp",
-        "3.87\" rain forecasted \u2014 conditions deteriorating"
+        "Elevated humidity (81%)",
+        "3.94\" rain forecasted \u2014 conditions deteriorating"
       ],
       "conditions": {
         "precip_24h": 2.4,
         "precip_48h": 2.61,
-        "precip_forecast_48h": 3.87,
-        "humidity": 86,
-        "temp_f": 46.6,
-        "windspeed_mph": 4.7
+        "precip_forecast_48h": 3.94,
+        "humidity": 81,
+        "temp_f": 45.9,
+        "windspeed_mph": 4.8
       },
       "streamflow": null,
       "aqi": null,
@@ -294,16 +290,16 @@
       "score": 22,
       "reasons": [
         "1.4\" rain in last 24h",
-        "Elevated humidity (74%)",
-        "2.95\" rain forecasted \u2014 conditions deteriorating"
+        "Elevated humidity (80%)",
+        "2.8\" rain forecasted \u2014 conditions deteriorating"
       ],
       "conditions": {
         "precip_24h": 1.4,
         "precip_48h": 1.43,
-        "precip_forecast_48h": 2.95,
-        "humidity": 74,
-        "temp_f": 52.0,
-        "windspeed_mph": 1.5
+        "precip_forecast_48h": 2.8,
+        "humidity": 80,
+        "temp_f": 50.9,
+        "windspeed_mph": 2.8
       },
       "streamflow": null,
       "aqi": null,
@@ -319,25 +315,24 @@
       "id": "miller-river",
       "name": "Miller River Boulders",
       "region": "Skykomish / US-2",
-      "signal": "wait",
-      "score": 78,
+      "signal": "go",
+      "score": 90,
       "reasons": [
-        "Elevated humidity (74%)",
-        "2.78\" rain forecasted \u2014 conditions deteriorating"
+        "1.98\" rain forecasted \u2014 conditions deteriorating"
       ],
       "conditions": {
         "precip_24h": 0.07,
         "precip_48h": 0.07,
-        "precip_forecast_48h": 2.78,
-        "humidity": 74,
-        "temp_f": 51.2,
-        "windspeed_mph": 1.1
+        "precip_forecast_48h": 1.98,
+        "humidity": 51,
+        "temp_f": 51.8,
+        "windspeed_mph": 5.1
       },
       "streamflow": {
-        "cfs": 805,
+        "cfs": 798,
         "trend": "steady",
         "gauge_id": "12134500",
-        "fetched_at": "2026-11-25T12:07:17.682356+00:00"
+        "fetched_at": "2026-11-25T18:05:13.641241+00:00"
       },
       "aqi": null,
       "crag_meta": {
